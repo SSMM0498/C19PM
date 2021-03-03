@@ -1,10 +1,10 @@
 
-import Extraction
-text = Extraction.getText()
-print(Extraction.getDate(text))
-print(Extraction.getTests(text))
-print(Extraction.getCasContact(text))
-print(Extraction.getCasCom(text))
+import DataExtractor
+text = DataExtractor.getText()
+print(DataExtractor.getDate(text))
+print(DataExtractor.getTests(text))
+print(DataExtractor.getCasContact(text))
+print(DataExtractor.getCasCom(text))
 # fic = {
 #     "Annee": 2020,
 #     "Mois": "Mars",

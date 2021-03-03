@@ -84,8 +84,3 @@ def getCasCom(text):
         if(word.isdigit()):
             number = int(word)
     return  number
-
-# pip freeze > requirements.txt
-# pip install -r requirements.txt
-
-# Create Docker

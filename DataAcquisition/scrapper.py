@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import os 
 
-headers = {'User-Agent': 'Mozilla/5.0 (X11; U; Linux i686; fr; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1'}
+headers = {'User-Agent': 'Mozilla/5.0 (Android; Linux armv7l; rv:5.0) Gecko/20110615 Firefox/5.0 Fennec/5.0'}
 
 def crawl_link(link, tag, class_name):
     response = requests.get(link, headers=headers)
@@ -66,27 +66,56 @@ def download_ressources(communique_list):
     
 
 
-print('Scrapping http://www.sante.gouv.sn/actualites ...')
-url = 'http://www.sante.gouv.sn/actualites'
-card_title_list = crawl_link(url, "h4", "card-title")
-links = get_links(card_title_list)
-file_span_list = []
-url = 'http://www.sante.gouv.sn/'
-for link in links:
-    file_span = crawl_link(url+link, "span", "file")
-    file_span_list.append(file_span)
+def scrawl_page(index, first_communique):
+    print()
+    isLastPage = False
+    if (index == 0):
+        url = 'http://www.sante.gouv.sn/Actualites'
+    else:
+        url = 'http://www.sante.gouv.sn/Actualites?page='+str(index)
+    print('Scrapping '+url+' ...')
+    card_title_list = crawl_link(url, "h4", "card-title")
+    links = get_links(card_title_list)
+    file_span_list = []
+    url = 'http://www.sante.gouv.sn/'
+    for link in links:
+        file_span = crawl_link(url+link, "span", "file")
+        file_span_list.append(file_span)
 
-list_communique = []
-for file_span in file_span_list:
-    communique = {
-        'title': '',
-        'links': []
-    }
-    if (len(file_span) > 0):
-        communique['title'] = file_span[0].text
-        communique['links'] = get_links(file_span)
-    list_communique.append(communique)
+    list_communique = []
+    for file_span in file_span_list:
+        communique = {
+            'title': '',
+            'links': []
+        }
+        if (len(file_span) > 0):
+            title = file_span[0].text
+            links = get_links(file_span)
+            if(title != '' and len(links) > 0):
+                communique['title'] = file_span[0].text
+                communique['links'] = get_links(file_span)
+                list_communique.append(communique)
+        if(communique == first_communique):
+            isLastPage = True
+            break
 
-download_ressources(list_communique)
-print()
-print('Il faut décommenter la ligne 64 pour télécharger les pdf')
+    # download_ressources(list_communique)
+    # for communique in list_communique:
+    #     print()
+    #     print(communique)
+    print()
+    print('Il faut décommenter la ligne 102 pour télécharger les pdf')
+    return isLastPage
+
+
+
+first_communique = {
+    'title': ' comcovid19.pdf',
+    'links': ['http://www.sante.gouv.sn/sites/default/files/comcovid19.pdf']
+}
+
+isLastPage = False
+pageIndex = 0
+while(not isLastPage):
+    isLastPage =  scrawl_page(pageIndex, first_communique)
+    pageIndex+=1

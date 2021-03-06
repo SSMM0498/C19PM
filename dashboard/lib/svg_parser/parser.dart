@@ -15,7 +15,6 @@ class SvgParser {
   // ignore: deprecated_member_use
   List<Path> _paths = new List<Path>();
 
-  // TODO effectue une analyse correcte et prend en charge hex-alpa et RGBA
   Color parseColor(String cStr) {
     if (cStr == null || cStr.isEmpty)
       throw UnsupportedError("Empty color field found.");
@@ -171,7 +170,7 @@ class PathSegment {
 
   /// Denotes relative index to  firstSegmentOfPathIndex
   int relativeIndex;
-//TODO parse/use those two and consider reducing fields and calculate more on the fly.
+
   /// If stroke, how to end
 // StrokeCap cap;
 //PaintingStyle

@@ -13,7 +13,7 @@ class _ExpandableListState extends State<ExpandableList> {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      itemCount: 5,
+      itemCount: widget.list.length,
       itemBuilder: (context, i) => ExpansionTile(
         collapsedBackgroundColor: Colors.green[900],
         backgroundColor: Palette.scaffold,

@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'ExpandableList.dart';
 import '../models/models.dart';
+import '../models/DataGetter.dart' as DataGetter;
+import '../data/DataLoader.dart' as DataLoader;
 
 class DataViewer extends StatefulWidget {
-  final List<Month> list = [
-    Month("Month 1"),
-    Month("Month 2"),
-    Month("Month 3"),
-    Month("Month 4"),
-    Month("Month 5"),
-  ];
+  final List<Month> list = DataGetter.retrieveJSON();
   DataViewer({Key key}) : super(key: key);
+
+  void initState() {
+    print(list);
+  }
 
   @override
   _DataViewerState createState() => _DataViewerState();
@@ -24,8 +24,9 @@ class _DataViewerState extends State<DataViewer> {
     return Column(
       children: <Widget>[
         Row(children: <Widget>[
+          SizedBox(width: 15),
           ElevatedButton(
-              onPressed: () => print("Send"),
+              onPressed: () => DataLoader.send(),
               child: Text("Charger les données")),
           Expanded(
             child: CheckboxListTile(
@@ -40,8 +41,4 @@ class _DataViewerState extends State<DataViewer> {
       ],
     );
   }
-}
-
-class DataGetter {
-
 }

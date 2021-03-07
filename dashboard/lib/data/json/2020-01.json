@@ -1,0 +1,870 @@
+[
+    {
+        "Date": "01-01-2020",
+        "Nombre de Test": 68,
+        "Nombre de nouveaux Cas": 8,
+        "Nombre de Cas contacts": 15,
+        "Nombre de Cas Communautaires": 78,
+        "Nombre de Guéris": 35,
+        "Nombre de Décès": 72,
+        "Nom Fichier Source": "2020-01",
+        "DateHeureExtraction": "Fri Feb 12 2021 12:15:37",
+        "Localités": [
+            {
+                "nomLocalité": "Port Emmieton",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 82
+            },
+            {
+                "nomLocalité": "Keelingtown",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 59
+            },
+            {
+                "nomLocalité": "North May",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 16
+            }
+        ]
+    },
+    {
+        "Date": "02-01-2020",
+        "Nombre de Test": 52,
+        "Nombre de nouveaux Cas": 10,
+        "Nombre de Cas contacts": 4,
+        "Nombre de Cas Communautaires": 96,
+        "Nombre de Guéris": 5,
+        "Nombre de Décès": 79,
+        "Nom Fichier Source": "2020-01",
+        "DateHeureExtraction": "Fri Feb 12 2021 12:15:37",
+        "Localités": [
+            {
+                "nomLocalité": "Schoenshire",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 4
+            },
+            {
+                "nomLocalité": "Ernestinaburgh",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 29
+            },
+            {
+                "nomLocalité": "Lake Joaquinville",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 97
+            }
+        ]
+    },
+    {
+        "Date": "03-01-2020",
+        "Nombre de Test": 88,
+        "Nombre de nouveaux Cas": 10,
+        "Nombre de Cas contacts": 13,
+        "Nombre de Cas Communautaires": 76,
+        "Nombre de Guéris": 7,
+        "Nombre de Décès": 93,
+        "Nom Fichier Source": "2020-01",
+        "DateHeureExtraction": "Fri Feb 12 2021 12:15:37",
+        "Localités": [
+            {
+                "nomLocalité": "Stanburgh",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 6
+            },
+            {
+                "nomLocalité": "Cummingshaven",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 90
+            },
+            {
+                "nomLocalité": "Bernhardberg",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 80
+            }
+        ]
+    },
+    {
+        "Date": "04-01-2020",
+        "Nombre de Test": 35,
+        "Nombre de nouveaux Cas": 50,
+        "Nombre de Cas contacts": 77,
+        "Nombre de Cas Communautaires": 11,
+        "Nombre de Guéris": 62,
+        "Nombre de Décès": 57,
+        "Nom Fichier Source": "2020-01",
+        "DateHeureExtraction": "Fri Feb 12 2021 12:15:37",
+        "Localités": [
+            {
+                "nomLocalité": "Juanitafurt",
+                "niveauAdministratif": "region",
+                "Nombre de Cas": 86
+            },
+            {
+                "nomLocalité": "Lake Freida",
+                "niveauAdministratif": "region",
+                "Nombre de Cas": 31
+            },
+            {
+                "nomLocalité": "North Chelseyport",
+                "niveauAdministratif": "region",
+                "Nombre de Cas": 26
+            }
+        ]
+    },
+    {
+        "Date": "05-01-2020",
+        "Nombre de Test": 96,
+        "Nombre de nouveaux Cas": 59,
+        "Nombre de Cas contacts": 15,
+        "Nombre de Cas Communautaires": 73,
+        "Nombre de Guéris": 16,
+        "Nombre de Décès": 74,
+        "Nom Fichier Source": "2020-01",
+        "DateHeureExtraction": "Fri Feb 12 2021 12:15:37",
+        "Localités": [
+            {
+                "nomLocalité": "Port Keshawn",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 28
+            },
+            {
+                "nomLocalité": "Bergstromshire",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 29
+            },
+            {
+                "nomLocalité": "Lake Bobby",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 91
+            }
+        ]
+    },
+    {
+        "Date": "06-01-2020",
+        "Nombre de Test": 84,
+        "Nombre de nouveaux Cas": 50,
+        "Nombre de Cas contacts": 5,
+        "Nombre de Cas Communautaires": 4,
+        "Nombre de Guéris": 9,
+        "Nombre de Décès": 91,
+        "Nom Fichier Source": "2020-01",
+        "DateHeureExtraction": "Fri Feb 12 2021 12:15:37",
+        "Localités": [
+            {
+                "nomLocalité": "New Percyfurt",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 71
+            },
+            {
+                "nomLocalité": "Josefinafurt",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 89
+            },
+            {
+                "nomLocalité": "Marleehaven",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 76
+            }
+        ]
+    },
+    {
+        "Date": "07-01-2020",
+        "Nombre de Test": 68,
+        "Nombre de nouveaux Cas": 71,
+        "Nombre de Cas contacts": 26,
+        "Nombre de Cas Communautaires": 99,
+        "Nombre de Guéris": 44,
+        "Nombre de Décès": 47,
+        "Nom Fichier Source": "2020-01",
+        "DateHeureExtraction": "Fri Feb 12 2021 12:15:37",
+        "Localités": [
+            {
+                "nomLocalité": "Lemkeview",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 82
+            },
+            {
+                "nomLocalité": "Vicenteton",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 76
+            },
+            {
+                "nomLocalité": "South Jasmin",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 43
+            }
+        ]
+    },
+    {
+        "Date": "08-01-2020",
+        "Nombre de Test": 13,
+        "Nombre de nouveaux Cas": 41,
+        "Nombre de Cas contacts": 89,
+        "Nombre de Cas Communautaires": 2,
+        "Nombre de Guéris": 52,
+        "Nombre de Décès": 90,
+        "Nom Fichier Source": "2020-01",
+        "DateHeureExtraction": "Fri Feb 12 2021 12:15:37",
+        "Localités": [
+            {
+                "nomLocalité": "Port Edafort",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 67
+            },
+            {
+                "nomLocalité": "Ortizland",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 2
+            },
+            {
+                "nomLocalité": "Alessandroland",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 20
+            }
+        ]
+    },
+    {
+        "Date": "09-01-2020",
+        "Nombre de Test": 35,
+        "Nombre de nouveaux Cas": 44,
+        "Nombre de Cas contacts": 45,
+        "Nombre de Cas Communautaires": 59,
+        "Nombre de Guéris": 65,
+        "Nombre de Décès": 45,
+        "Nom Fichier Source": "2020-01",
+        "DateHeureExtraction": "Fri Feb 12 2021 12:15:37",
+        "Localités": [
+            {
+                "nomLocalité": "Anikahaven",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 97
+            },
+            {
+                "nomLocalité": "West Tony",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 71
+            },
+            {
+                "nomLocalité": "South Maudie",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 17
+            }
+        ]
+    },
+    {
+        "Date": "10-01-2020",
+        "Nombre de Test": 49,
+        "Nombre de nouveaux Cas": 88,
+        "Nombre de Cas contacts": 64,
+        "Nombre de Cas Communautaires": 62,
+        "Nombre de Guéris": 71,
+        "Nombre de Décès": 26,
+        "Nom Fichier Source": "2020-01",
+        "DateHeureExtraction": "Fri Feb 12 2021 12:15:37",
+        "Localités": [
+            {
+                "nomLocalité": "New Wilfordmouth",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 49
+            },
+            {
+                "nomLocalité": "Bernhardton",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 30
+            },
+            {
+                "nomLocalité": "Tremaynefurt",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 66
+            }
+        ]
+    },
+    {
+        "Date": "11-01-2020",
+        "Nombre de Test": 81,
+        "Nombre de nouveaux Cas": 41,
+        "Nombre de Cas contacts": 13,
+        "Nombre de Cas Communautaires": 1,
+        "Nombre de Guéris": 88,
+        "Nombre de Décès": 74,
+        "Nom Fichier Source": "2020-01",
+        "DateHeureExtraction": "Fri Feb 12 2021 12:15:37",
+        "Localités": [
+            {
+                "nomLocalité": "North Phoebe",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 68
+            },
+            {
+                "nomLocalité": "Michealburgh",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 93
+            },
+            {
+                "nomLocalité": "Hackettside",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 60
+            }
+        ]
+    },
+    {
+        "Date": "12-01-2020",
+        "Nombre de Test": 2,
+        "Nombre de nouveaux Cas": 2,
+        "Nombre de Cas contacts": 5,
+        "Nombre de Cas Communautaires": 57,
+        "Nombre de Guéris": 18,
+        "Nombre de Décès": 42,
+        "Nom Fichier Source": "2020-01",
+        "DateHeureExtraction": "Fri Feb 12 2021 12:15:37",
+        "Localités": [
+            {
+                "nomLocalité": "Sophiabury",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 80
+            },
+            {
+                "nomLocalité": "Lake Dulce",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 2
+            },
+            {
+                "nomLocalité": "Sigmundfurt",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 39
+            }
+        ]
+    },
+    {
+        "Date": "13-01-2020",
+        "Nombre de Test": 32,
+        "Nombre de nouveaux Cas": 27,
+        "Nombre de Cas contacts": 50,
+        "Nombre de Cas Communautaires": 83,
+        "Nombre de Guéris": 70,
+        "Nombre de Décès": 20,
+        "Nom Fichier Source": "2020-01",
+        "DateHeureExtraction": "Fri Feb 12 2021 12:15:37",
+        "Localités": [
+            {
+                "nomLocalité": "Mrazborough",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 26
+            },
+            {
+                "nomLocalité": "Mitchellborough",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 2
+            },
+            {
+                "nomLocalité": "Lake Dixie",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 65
+            }
+        ]
+    },
+    {
+        "Date": "14-01-2020",
+        "Nombre de Test": 12,
+        "Nombre de nouveaux Cas": 10,
+        "Nombre de Cas contacts": 5,
+        "Nombre de Cas Communautaires": 25,
+        "Nombre de Guéris": 19,
+        "Nombre de Décès": 36,
+        "Nom Fichier Source": "2020-01",
+        "DateHeureExtraction": "Fri Feb 12 2021 12:15:37",
+        "Localités": [
+            {
+                "nomLocalité": "East Torreyborough",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 21
+            },
+            {
+                "nomLocalité": "Moenshire",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 55
+            },
+            {
+                "nomLocalité": "Faytown",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 20
+            }
+        ]
+    },
+    {
+        "Date": "15-01-2020",
+        "Nombre de Test": 75,
+        "Nombre de nouveaux Cas": 16,
+        "Nombre de Cas contacts": 22,
+        "Nombre de Cas Communautaires": 30,
+        "Nombre de Guéris": 97,
+        "Nombre de Décès": 50,
+        "Nom Fichier Source": "2020-01",
+        "DateHeureExtraction": "Fri Feb 12 2021 12:15:37",
+        "Localités": [
+            {
+                "nomLocalité": "West Andreanne",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 18
+            },
+            {
+                "nomLocalité": "South Murray",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 1
+            },
+            {
+                "nomLocalité": "Kavonmouth",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 42
+            }
+        ]
+    },
+    {
+        "Date": "16-01-2020",
+        "Nombre de Test": 19,
+        "Nombre de nouveaux Cas": 16,
+        "Nombre de Cas contacts": 11,
+        "Nombre de Cas Communautaires": 26,
+        "Nombre de Guéris": 82,
+        "Nombre de Décès": 32,
+        "Nom Fichier Source": "2020-01",
+        "DateHeureExtraction": "Fri Feb 12 2021 12:15:37",
+        "Localités": [
+            {
+                "nomLocalité": "Port Jana",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 14
+            },
+            {
+                "nomLocalité": "Port Greenview",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 30
+            },
+            {
+                "nomLocalité": "Maribelmouth",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 23
+            }
+        ]
+    },
+    {
+        "Date": "17-01-2020",
+        "Nombre de Test": 66,
+        "Nombre de nouveaux Cas": 47,
+        "Nombre de Cas contacts": 81,
+        "Nombre de Cas Communautaires": 48,
+        "Nombre de Guéris": 44,
+        "Nombre de Décès": 31,
+        "Nom Fichier Source": "2020-01",
+        "DateHeureExtraction": "Fri Feb 12 2021 12:15:37",
+        "Localités": [
+            {
+                "nomLocalité": "Lake Hectorbury",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 35
+            },
+            {
+                "nomLocalité": "North Corashire",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 10
+            },
+            {
+                "nomLocalité": "Domenickmouth",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 34
+            }
+        ]
+    },
+    {
+        "Date": "18-01-2020",
+        "Nombre de Test": 57,
+        "Nombre de nouveaux Cas": 18,
+        "Nombre de Cas contacts": 39,
+        "Nombre de Cas Communautaires": 70,
+        "Nombre de Guéris": 96,
+        "Nombre de Décès": 37,
+        "Nom Fichier Source": "2020-01",
+        "DateHeureExtraction": "Fri Feb 12 2021 12:15:37",
+        "Localités": [
+            {
+                "nomLocalité": "Celestinoton",
+                "niveauAdministratif": "region",
+                "Nombre de Cas": 80
+            },
+            {
+                "nomLocalité": "Elmiraberg",
+                "niveauAdministratif": "region",
+                "Nombre de Cas": 58
+            },
+            {
+                "nomLocalité": "Port Elmore",
+                "niveauAdministratif": "region",
+                "Nombre de Cas": 84
+            }
+        ]
+    },
+    {
+        "Date": "19-01-2020",
+        "Nombre de Test": 20,
+        "Nombre de nouveaux Cas": 9,
+        "Nombre de Cas contacts": 73,
+        "Nombre de Cas Communautaires": 29,
+        "Nombre de Guéris": 57,
+        "Nombre de Décès": 90,
+        "Nom Fichier Source": "2020-01",
+        "DateHeureExtraction": "Fri Feb 12 2021 12:15:37",
+        "Localités": [
+            {
+                "nomLocalité": "Klingland",
+                "niveauAdministratif": "region",
+                "Nombre de Cas": 90
+            },
+            {
+                "nomLocalité": "New Landen",
+                "niveauAdministratif": "region",
+                "Nombre de Cas": 3
+            },
+            {
+                "nomLocalité": "South Lillian",
+                "niveauAdministratif": "region",
+                "Nombre de Cas": 51
+            }
+        ]
+    },
+    {
+        "Date": "20-01-2020",
+        "Nombre de Test": 23,
+        "Nombre de nouveaux Cas": 56,
+        "Nombre de Cas contacts": 40,
+        "Nombre de Cas Communautaires": 35,
+        "Nombre de Guéris": 7,
+        "Nombre de Décès": 13,
+        "Nom Fichier Source": "2020-01",
+        "DateHeureExtraction": "Fri Feb 12 2021 12:15:37",
+        "Localités": [
+            {
+                "nomLocalité": "Yoshikoside",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 17
+            },
+            {
+                "nomLocalité": "New Saigefort",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 34
+            },
+            {
+                "nomLocalité": "Gibsonborough",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 60
+            }
+        ]
+    },
+    {
+        "Date": "21-01-2020",
+        "Nombre de Test": 80,
+        "Nombre de nouveaux Cas": 22,
+        "Nombre de Cas contacts": 51,
+        "Nombre de Cas Communautaires": 83,
+        "Nombre de Guéris": 3,
+        "Nombre de Décès": 25,
+        "Nom Fichier Source": "2020-01",
+        "DateHeureExtraction": "Fri Feb 12 2021 12:15:37",
+        "Localités": [
+            {
+                "nomLocalité": "Lake Terence",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 22
+            },
+            {
+                "nomLocalité": "Earnestburgh",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 41
+            },
+            {
+                "nomLocalité": "East Jeremieburgh",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 35
+            }
+        ]
+    },
+    {
+        "Date": "22-01-2020",
+        "Nombre de Test": 77,
+        "Nombre de nouveaux Cas": 14,
+        "Nombre de Cas contacts": 7,
+        "Nombre de Cas Communautaires": 70,
+        "Nombre de Guéris": 2,
+        "Nombre de Décès": 16,
+        "Nom Fichier Source": "2020-01",
+        "DateHeureExtraction": "Fri Feb 12 2021 12:15:37",
+        "Localités": [
+            {
+                "nomLocalité": "New Mose",
+                "niveauAdministratif": "region",
+                "Nombre de Cas": 3
+            },
+            {
+                "nomLocalité": "Emardmouth",
+                "niveauAdministratif": "region",
+                "Nombre de Cas": 46
+            },
+            {
+                "nomLocalité": "Alfredhaven",
+                "niveauAdministratif": "region",
+                "Nombre de Cas": 10
+            }
+        ]
+    },
+    {
+        "Date": "23-01-2020",
+        "Nombre de Test": 68,
+        "Nombre de nouveaux Cas": 10,
+        "Nombre de Cas contacts": 30,
+        "Nombre de Cas Communautaires": 87,
+        "Nombre de Guéris": 25,
+        "Nombre de Décès": 36,
+        "Nom Fichier Source": "2020-01",
+        "DateHeureExtraction": "Fri Feb 12 2021 12:15:37",
+        "Localités": [
+            {
+                "nomLocalité": "South Anastacioburgh",
+                "niveauAdministratif": "region",
+                "Nombre de Cas": 77
+            },
+            {
+                "nomLocalité": "North Catalina",
+                "niveauAdministratif": "region",
+                "Nombre de Cas": 51
+            },
+            {
+                "nomLocalité": "Pinkieland",
+                "niveauAdministratif": "region",
+                "Nombre de Cas": 65
+            }
+        ]
+    },
+    {
+        "Date": "24-01-2020",
+        "Nombre de Test": 71,
+        "Nombre de nouveaux Cas": 46,
+        "Nombre de Cas contacts": 63,
+        "Nombre de Cas Communautaires": 63,
+        "Nombre de Guéris": 24,
+        "Nombre de Décès": 46,
+        "Nom Fichier Source": "2020-01",
+        "DateHeureExtraction": "Fri Feb 12 2021 12:15:37",
+        "Localités": [
+            {
+                "nomLocalité": "Candidohaven",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 99
+            },
+            {
+                "nomLocalité": "Lake Magnus",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 51
+            },
+            {
+                "nomLocalité": "West Maiaview",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 36
+            }
+        ]
+    },
+    {
+        "Date": "25-01-2020",
+        "Nombre de Test": 52,
+        "Nombre de nouveaux Cas": 2,
+        "Nombre de Cas contacts": 53,
+        "Nombre de Cas Communautaires": 3,
+        "Nombre de Guéris": 89,
+        "Nombre de Décès": 99,
+        "Nom Fichier Source": "2020-01",
+        "DateHeureExtraction": "Fri Feb 12 2021 12:15:37",
+        "Localités": [
+            {
+                "nomLocalité": "Wardstad",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 85
+            },
+            {
+                "nomLocalité": "Huelsshire",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 73
+            },
+            {
+                "nomLocalité": "Schmelerview",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 54
+            }
+        ]
+    },
+    {
+        "Date": "26-01-2020",
+        "Nombre de Test": 33,
+        "Nombre de nouveaux Cas": 35,
+        "Nombre de Cas contacts": 65,
+        "Nombre de Cas Communautaires": 28,
+        "Nombre de Guéris": 24,
+        "Nombre de Décès": 51,
+        "Nom Fichier Source": "2020-01",
+        "DateHeureExtraction": "Fri Feb 12 2021 12:15:37",
+        "Localités": [
+            {
+                "nomLocalité": "North Josefafurt",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 9
+            },
+            {
+                "nomLocalité": "Lake Jesusberg",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 98
+            },
+            {
+                "nomLocalité": "Faybury",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 83
+            }
+        ]
+    },
+    {
+        "Date": "27-01-2020",
+        "Nombre de Test": 37,
+        "Nombre de nouveaux Cas": 52,
+        "Nombre de Cas contacts": 58,
+        "Nombre de Cas Communautaires": 23,
+        "Nombre de Guéris": 92,
+        "Nombre de Décès": 45,
+        "Nom Fichier Source": "2020-01",
+        "DateHeureExtraction": "Fri Feb 12 2021 12:15:37",
+        "Localités": [
+            {
+                "nomLocalité": "Angelicaberg",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 95
+            },
+            {
+                "nomLocalité": "Lake Kylietown",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 51
+            },
+            {
+                "nomLocalité": "Grimesborough",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 85
+            }
+        ]
+    },
+    {
+        "Date": "28-01-2020",
+        "Nombre de Test": 83,
+        "Nombre de nouveaux Cas": 68,
+        "Nombre de Cas contacts": 7,
+        "Nombre de Cas Communautaires": 18,
+        "Nombre de Guéris": 4,
+        "Nombre de Décès": 62,
+        "Nom Fichier Source": "2020-01",
+        "DateHeureExtraction": "Fri Feb 12 2021 12:15:37",
+        "Localités": [
+            {
+                "nomLocalité": "South Yvonnetown",
+                "niveauAdministratif": "region",
+                "Nombre de Cas": 27
+            },
+            {
+                "nomLocalité": "Langoshmouth",
+                "niveauAdministratif": "region",
+                "Nombre de Cas": 2
+            },
+            {
+                "nomLocalité": "East Fannie",
+                "niveauAdministratif": "region",
+                "Nombre de Cas": 85
+            }
+        ]
+    },
+    {
+        "Date": "29-01-2020",
+        "Nombre de Test": 85,
+        "Nombre de nouveaux Cas": 40,
+        "Nombre de Cas contacts": 74,
+        "Nombre de Cas Communautaires": 30,
+        "Nombre de Guéris": 4,
+        "Nombre de Décès": 91,
+        "Nom Fichier Source": "2020-01",
+        "DateHeureExtraction": "Fri Feb 12 2021 12:15:37",
+        "Localités": [
+            {
+                "nomLocalité": "South Zula",
+                "niveauAdministratif": "region",
+                "Nombre de Cas": 60
+            },
+            {
+                "nomLocalité": "Gunnerburgh",
+                "niveauAdministratif": "region",
+                "Nombre de Cas": 92
+            },
+            {
+                "nomLocalité": "Crooksbury",
+                "niveauAdministratif": "region",
+                "Nombre de Cas": 41
+            }
+        ]
+    },
+    {
+        "Date": "30-01-2020",
+        "Nombre de Test": 11,
+        "Nombre de nouveaux Cas": 47,
+        "Nombre de Cas contacts": 39,
+        "Nombre de Cas Communautaires": 96,
+        "Nombre de Guéris": 93,
+        "Nombre de Décès": 34,
+        "Nom Fichier Source": "2020-01",
+        "DateHeureExtraction": "Fri Feb 12 2021 12:15:37",
+        "Localités": [
+            {
+                "nomLocalité": "Kariannestad",
+                "niveauAdministratif": "region",
+                "Nombre de Cas": 21
+            },
+            {
+                "nomLocalité": "Jacobstown",
+                "niveauAdministratif": "region",
+                "Nombre de Cas": 5
+            },
+            {
+                "nomLocalité": "North Cara",
+                "niveauAdministratif": "region",
+                "Nombre de Cas": 85
+            }
+        ]
+    },
+    {
+        "Date": "31-01-2020",
+        "Nombre de Test": 26,
+        "Nombre de nouveaux Cas": 23,
+        "Nombre de Cas contacts": 64,
+        "Nombre de Cas Communautaires": 12,
+        "Nombre de Guéris": 43,
+        "Nombre de Décès": 50,
+        "Nom Fichier Source": "2020-01",
+        "DateHeureExtraction": "Fri Feb 12 2021 12:15:37",
+        "Localités": [
+            {
+                "nomLocalité": "Lake Sofialand",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 24
+            },
+            {
+                "nomLocalité": "South Jermey",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 85
+            },
+            {
+                "nomLocalité": "Kochfurt",
+                "niveauAdministratif": "departement",
+                "Nombre de Cas": 13
+            }
+        ]
+    }
+]

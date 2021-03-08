@@ -9,7 +9,7 @@ List<Month> retrieveJSON() {
 
   dir.listSync(recursive: false).forEach((file) {
     if (file is File) {
-      Month m = createMonth(file);
+      Month m = createMonthList(file);
       listMonth.add(m);
     }
   });
@@ -17,7 +17,7 @@ List<Month> retrieveJSON() {
   return listMonth;
 }
 
-Month createMonth(File fmonth) {
+Month createMonthList(File fmonth) {
   Month m = new Month(fmonth.path.split('/').last.split('.').first);
   String contents = fmonth.readAsStringSync();
   dynamic jsoncontent = jsonDecode(contents);

@@ -18,6 +18,13 @@ class DataViewer extends StatefulWidget {
 
 class _DataViewerState extends State<DataViewer> {
   bool _checked = false;
+  List<Day> _selectedDay;
+
+  @override
+  void initState() {
+    super.initState();
+    _selectedDay = [];
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +33,7 @@ class _DataViewerState extends State<DataViewer> {
         Row(children: <Widget>[
           SizedBox(width: 15),
           ElevatedButton(
-              onPressed: () => DataLoader.send(),
+              onPressed: () => DataLoader.send(_selectedDay, _checked),
               child: Text("Charger les données")),
           Expanded(
             child: CheckboxListTile(
@@ -37,7 +44,18 @@ class _DataViewerState extends State<DataViewer> {
                 title: Text("Mode transaction")),
           )
         ]),
-        Expanded(child: ExpandableList(list: widget.list)),
+        Expanded(
+            child: ExpandableList(
+                list: widget.list,
+                callBack: (Day d) {
+                  setState(() {
+                    if (d.checked == true) {
+                      _selectedDay.add(d);
+                    } else {
+                      _selectedDay.remove(d);
+                    }
+                  });
+                })),
       ],
     );
   }

@@ -4,12 +4,15 @@ import '../models/models.dart';
 
 class ExpandableList extends StatefulWidget {
   final List<Month> list;
-  ExpandableList({this.list});
+  final Function callBack;
+
+  ExpandableList({Key key, this.list, this.callBack}) : super(key: key);
   @override
   _ExpandableListState createState() => _ExpandableListState();
 }
 
 class _ExpandableListState extends State<ExpandableList> {
+  bool _allchecked = false;
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
@@ -25,16 +28,34 @@ class _ExpandableListState extends State<ExpandableList> {
             ),
           ],
         ),
-        children: widget.list[i].days
-            .map((day) => ListElement(
-                parentIndex: i,
-                day: day,
-                callBack: (Day d) {
-                  setState(() => day.checked = d.checked);
-                }))
-            .toList(),
+        children: <Widget>[
+          CheckboxListTile(
+              value: _allchecked,
+              onChanged: (bool newVal) {
+                setState(() {
+                  _allchecked = newVal;
+                  widget.list[i].days.forEach((d) {
+                    d.checked = _allchecked;
+                  });
+                });
+              },
+              title: Text("Tous cochés")),
+          ...createCheckbox(i)
+        ],
       ),
     );
+  }
+
+  List<ListElement> createCheckbox(int i) {
+    return widget.list[i].days
+        .map((day) => ListElement(
+            parentIndex: i,
+            day: day,
+            callBack: (Day d) {
+              setState(() => day.checked = d.checked);
+              widget.callBack(d);
+            }))
+        .toList();
   }
 }
 

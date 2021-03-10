@@ -151,7 +151,6 @@ class PathPainter extends CustomPainter {
         paths[i].transform(matrix4.storage).shift(Offset(offsetX, offsetY)),
         paint,
         onTapDown: (details) {
-          print(paths[i].getBounds());
           // print(curPath);
           String city = region(i);
           onPressed(paths[i], city);

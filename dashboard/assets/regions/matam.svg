@@ -9,8 +9,8 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="385.17831mm"
-   height="305.3797mm"
+   width="1455.7921"
+   height="1154.191"
    viewBox="0 0 385.17831 305.3797"
    version="1.1"
    id="svg8144"
@@ -28,7 +28,7 @@
      inkscape:zoom="0.35"
      inkscape:cx="213.61028"
      inkscape:cy="262.80977"
-     inkscape:document-units="mm"
+     inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      fit-margin-top="0"
@@ -39,7 +39,8 @@
      inkscape:window-height="738"
      inkscape:window-x="0"
      inkscape:window-y="0"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     units="px" />
   <metadata
      id="metadata8141">
     <rdf:RDF>

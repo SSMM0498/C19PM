@@ -1,26 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:covid19_progression_modeler/models/models.dart';
 import 'Map.dart';
+import '../models/DataGetter.dart' as DataGetter;
 
-class AppMap extends StatefulWidget {
-  AppMap({Key key}) : super(key: key);
-
-  @override
-  _AppMapState createState() => _AppMapState();
-}
-
-class _AppMapState extends State<AppMap> {
-  String city;
-  callback(newCity) {
-    setState(() {
-      city = newCity;
-    });
-    print(city);
-  }
-
+class AppMap extends StatelessWidget {
+  final List<Region> regions = DataGetter.createRegionList();
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Map(callback),
+      child: Map(regions: regions),
     );
   }
 }

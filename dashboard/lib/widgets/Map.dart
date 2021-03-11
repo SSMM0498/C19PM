@@ -1,50 +1,26 @@
+import 'package:covid19_progression_modeler/models/models.dart';
 import 'package:flutter/material.dart';
 import 'package:covid19_progression_modeler/svg_parser/parser.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:touchable/touchable.dart';
 
-// ignore: must_be_immutable
 class Map extends StatefulWidget {
-  Function(String) callback;
-  Map(this.callback);
+  final List<Region> regions;
+
+  Map({this.regions});
 
   @override
   _MapState createState() => _MapState();
-}
-
-class Region {
-  String name;
-  double top;
-  double left;
-  int nbCase;
-
-  Region({this.name, this.top, this.left, this.nbCase});
 }
 
 class _MapState extends State<Map> {
   Path _selectPath;
   final svgPath = "assets/senegal.svg";
   List<Path> paths = [];
-  final List<Region> regions = [
-    new Region(name: "Dakar", top: 255, left: 50, nbCase: 17),
-    new Region(name: "Diourbel", top: 250, left: 200, nbCase: 36),
-    new Region(name: "Fatick", top: 350, left: 150, nbCase: 4),
-    new Region(name: "Kédougou", top: 500, left: 675, nbCase: 82),
-    new Region(name: "Kaffrine", top: 325, left: 300, nbCase: 12),
-    new Region(name: "Kaolack", top: 370, left: 215, nbCase: 87),
-    new Region(name: "Kolda", top: 480, left: 400, nbCase: 19),
-    new Region(name: "Louga", top: 150, left: 225, nbCase: 50),
-    new Region(name: "Matam", top: 200, left: 500, nbCase: 50),
-    new Region(name: "Sédhiou", top: 490, left: 260, nbCase: 34),
-    new Region(name: "Saint-Louis", top: 60, left: 325, nbCase: 91),
-    new Region(name: "Tambacounda", top: 365, left: 525, nbCase: 54),
-    new Region(name: "Thiès", top: 250, left: 110, nbCase: 92),
-    new Region(name: "Ziguinchor", top: 500, left: 150, nbCase: 32)
-  ];
 
   @override
   void initState() {
     parseSvgToPath();
-
     super.initState();
   }
 
@@ -72,15 +48,16 @@ class _MapState extends State<Map> {
               context: context,
               paths: paths,
               curPath: _selectPath,
-              onPressed: (curPath, city) {
+              regions: widget.regions,
+              onPressed: (curPath) {
                 setState(() {
                   _selectPath = curPath;
-                  widget.callback(city);
                 });
               },
             ),
             child: Stack(
-              children: regions.map((region) => RegionInfo(region)).toList(),
+              children:
+                  widget.regions.map((region) => RegionInfo(region)).toList(),
             ),
           ),
         ),
@@ -122,8 +99,10 @@ class PathPainter extends CustomPainter {
   final BuildContext context;
   final List<Path> paths;
   final Path curPath;
-  final Function(Path curPath, String city) onPressed;
-  PathPainter({this.context, this.paths, this.curPath, this.onPressed});
+  final List<Region> regions;
+  final Function(Path curPath) onPressed;
+  PathPainter(
+      {this.context, this.paths, this.regions, this.curPath, this.onPressed});
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -152,8 +131,12 @@ class PathPainter extends CustomPainter {
         paint,
         onTapDown: (details) {
           // print(curPath);
-          String city = region(i);
-          onPressed(paths[i], city);
+          String city = regions[i].name;
+          onPressed(paths[i]);
+          return showDialog(
+            context: context,
+            builder: (ctx) => Popup(city: city, context: ctx),
+          );
         },
       );
     }
@@ -163,51 +146,65 @@ class PathPainter extends CustomPainter {
   bool shouldRepaint(PathPainter oldDelegate) => true;
 }
 
-String region(i) {
-  switch (i) {
-    case 0:
-      return "Dakar";
-      break;
-    case 1:
-      return "Diourbel";
-      break;
-    case 2:
-      return "Fatick";
-      break;
-    case 3:
-      return "Kédougou";
-      break;
-    case 4:
-      return "Kaffrine";
-      break;
-    case 5:
-      return "Kaolack";
-      break;
-    case 6:
-      return "Kolda";
-      break;
-    case 7:
-      return "Louga";
-      break;
-    case 8:
-      return "Matam";
-      break;
-    case 9:
-      return "Sédhiou";
-      break;
-    case 10:
-      return "Saint-Louis";
-      break;
-    case 11:
-      return "Tambacounda";
-      break;
-    case 12:
-      return "Thiès";
-      break;
-    case 13:
-      return "Ziguinchor";
-      break;
-    default:
-      return "";
+class Popup extends StatelessWidget {
+  const Popup({
+    Key key,
+    @required this.city,
+    @required this.context,
+  }) : super(key: key);
+
+  final String city;
+  final BuildContext context;
+
+  @override
+  Widget build(BuildContext context) {
+    return AlertDialog(
+      title: Text(city),
+      content: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Row(
+            mainAxisSize: MainAxisSize.max,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Container(
+                  child: SvgPicture.asset(
+                    "assets/regions/${getFileName(city)}.svg",
+                    fit: BoxFit.contain,
+                    // color: Colors.green,
+                  ),
+                  width: 500,
+                  height: 500),
+              SizedBox(width: 50),
+              Text("All infos about $city"),
+            ],
+          ),
+          Row(
+            mainAxisSize: MainAxisSize.max,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              ElevatedButton(
+                  onPressed: () => print("Download"),
+                  child: Text("Télécharger les stats")),
+              ElevatedButton(
+                  onPressed: () => print("Download"),
+                  child: Text("Télécharger l'image")),
+            ],
+          ),
+        ],
+      ),
+      actions: <Widget>[
+        ElevatedButton(
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+          child: Text("Okay"),
+        ),
+      ],
+    );
   }
+}
+
+String getFileName(String city) {
+  return city.toLowerCase().replaceAll(RegExp(r'é|è'), 'e').replaceAll('-', '');
 }

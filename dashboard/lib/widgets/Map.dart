@@ -1,22 +1,22 @@
-import 'package:covid19_progression_modeler/models/models.dart';
 import 'package:flutter/material.dart';
-import 'package:covid19_progression_modeler/svg_parser/parser.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:covid19_progression_modeler/models/models.dart';
+import 'package:covid19_progression_modeler/utils/parser.dart';
 import 'package:touchable/touchable.dart';
+import 'Popup.dart';
 
-class Map extends StatefulWidget {
+class MapWidget extends StatefulWidget {
   final List<Region> regions;
 
-  Map({this.regions});
+  MapWidget({this.regions});
 
   @override
-  _MapState createState() => _MapState();
+  _MapWidgetState createState() => _MapWidgetState();
 }
 
-class _MapState extends State<Map> {
+class _MapWidgetState extends State<MapWidget> {
   Path _selectPath;
   final svgPath = "assets/senegal.svg";
-  List<Path> paths = [];
+  Map<String, Path> paths;
 
   @override
   void initState() {
@@ -97,7 +97,7 @@ class RegionInfo extends StatelessWidget {
 
 class PathPainter extends CustomPainter {
   final BuildContext context;
-  final List<Path> paths;
+  final Map<String, Path> paths;
   final Path curPath;
   final List<Region> regions;
   final Function(Path curPath) onPressed;
@@ -123,88 +123,24 @@ class PathPainter extends CustomPainter {
       ..color = Colors.green
       ..strokeWidth = 1.5;
 
-    for (var i = 0; i < paths.length; i++) {
-      paint.style =
-          paths[i] == curPath ? PaintingStyle.fill : PaintingStyle.stroke;
+    paths.forEach((title, path) {
+      paint.style = path == curPath ? PaintingStyle.fill : PaintingStyle.stroke;
       touchCanvas.drawPath(
-        paths[i].transform(matrix4.storage).shift(Offset(offsetX, offsetY)),
+        path.transform(matrix4.storage).shift(Offset(offsetX, offsetY)),
         paint,
         onTapDown: (details) {
           // print(curPath);
-          String city = regions[i].name;
-          onPressed(paths[i]);
+          String city = title;
+          onPressed(path);
           return showDialog(
             context: context,
             builder: (ctx) => Popup(city: city, context: ctx),
           );
         },
       );
-    }
+    });
   }
 
   @override
   bool shouldRepaint(PathPainter oldDelegate) => true;
-}
-
-class Popup extends StatelessWidget {
-  const Popup({
-    Key key,
-    @required this.city,
-    @required this.context,
-  }) : super(key: key);
-
-  final String city;
-  final BuildContext context;
-
-  @override
-  Widget build(BuildContext context) {
-    return AlertDialog(
-      title: Text(city),
-      content: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Row(
-            mainAxisSize: MainAxisSize.max,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Container(
-                  child: SvgPicture.asset(
-                    "assets/regions/${getFileName(city)}.svg",
-                    fit: BoxFit.contain,
-                    // color: Colors.green,
-                  ),
-                  width: 500,
-                  height: 500),
-              SizedBox(width: 50),
-              Text("All infos about $city"),
-            ],
-          ),
-          Row(
-            mainAxisSize: MainAxisSize.max,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              ElevatedButton(
-                  onPressed: () => print("Download"),
-                  child: Text("Télécharger les stats")),
-              ElevatedButton(
-                  onPressed: () => print("Download"),
-                  child: Text("Télécharger l'image")),
-            ],
-          ),
-        ],
-      ),
-      actions: <Widget>[
-        ElevatedButton(
-          onPressed: () {
-            Navigator.of(context).pop();
-          },
-          child: Text("Okay"),
-        ),
-      ],
-    );
-  }
-}
-
-String getFileName(String city) {
-  return city.toLowerCase().replaceAll(RegExp(r'é|è'), 'e').replaceAll('-', '');
 }

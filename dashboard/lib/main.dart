@@ -1,4 +1,4 @@
-import 'package:covid19_progression_modeler/config/palette.dart';
+import 'package:covid19_progression_modeler/config/config.dart';
 import 'package:covid19_progression_modeler/screens/screens.dart';
 import 'package:flutter/material.dart';
 

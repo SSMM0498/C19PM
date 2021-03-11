@@ -13,7 +13,7 @@ class SvgParser {
   // ignore: deprecated_member_use
   final List<PathSegment> _pathSegments = List<PathSegment>();
   // ignore: deprecated_member_use
-  List<Path> _paths = new List<Path>();
+  Map<String, Path> _paths = new Map<String, Path>();
 
   Color parseColor(String cStr) {
     if (cStr == null || cStr.isEmpty)
@@ -61,6 +61,8 @@ class SvgParser {
         .forEach((attributes) {
       var dPath = attributes.firstWhere((attr) => attr.name.local == "d",
           orElse: () => null);
+      var title = attributes.firstWhere((attr) => attr.name.local == "title",
+          orElse: () => null);
       if (dPath != null) {
         Path path = new Path();
         writeSvgPathDataToPath(dPath.value, new PathModifier(path));
@@ -103,19 +105,19 @@ class SvgParser {
           strokeWidth = double.tryParse(strokeWidthElement.value) ?? null;
         }
 
-        this._paths.add(path);
+        this._paths[title.value] = path;
         addPathSegments(path, index, strokeWidth, color);
         index++;
       }
     });
   }
 
-  void loadFromPaths(List<Path> paths) {
+  void loadFromPaths(Map<String, Path> paths) {
     this._pathSegments.clear();
     this._paths = paths;
 
     int index = 0;
-    paths.forEach((p) {
+    paths.forEach((k, p) {
       assert(p != null, "Path element in `paths` must not be null.");
       addPathSegments(p, index, null, null);
       index++;
@@ -135,7 +137,7 @@ class SvgParser {
   }
 
   /// Returns extracted [Path] elements of parsed Svg
-  List<Path> getPaths() {
+  Map<String, Path> getPaths() {
     return this._paths;
   }
 }

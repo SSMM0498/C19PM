@@ -99,12 +99,12 @@ def scrawl_page(index, first_communique):
             isLastPage = True
             break
 
-    # download_ressources(list_communique)
+    download_ressources(list_communique)
     # for communique in list_communique:
     #     print()
     #     print(communique)
-    print()
-    print('Il faut décommenter la ligne 102 pour télécharger les pdf')
+    # print()
+    # print('Il faut décommenter la ligne 102 pour télécharger les pdf')
     return isLastPage
 
 

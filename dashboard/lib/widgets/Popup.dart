@@ -1,22 +1,27 @@
+import 'package:covid19_progression_modeler/models/models.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:covid19_progression_modeler/config/config.dart';
+
+import 'LocalityInfos.dart';
 
 class Popup extends StatefulWidget {
   const Popup({
     Key key,
     @required this.city,
+    @required this.deps,
     @required this.context,
   }) : super(key: key);
   final String city;
   final BuildContext context;
+  final List<Departement> deps;
 
   @override
   _PopupState createState() => _PopupState();
 }
 
 class _PopupState extends State<Popup> {
-  bool _showDetails = false;
+  bool _showDetails = true;
   void toggleDetails() {
     setState(() {
       _showDetails = !_showDetails;
@@ -35,7 +40,7 @@ class _PopupState extends State<Popup> {
           mainAxisSize: MainAxisSize.min,
           children: [
             ElevatedButton(
-              child: Text('Voir détails'),
+              child: Text(!_showDetails ? 'Voir détails' : 'Masquer détails'),
               onPressed: toggleDetails,
             ),
             Visibility(
@@ -46,14 +51,17 @@ class _PopupState extends State<Popup> {
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Container(
-                          child: SvgPicture.asset(
-                            "assets/regions/${getFileName(widget.city)}.svg",
-                            fit: BoxFit.contain,
-                            // color: Colors.green,
-                          ),
-                          height: SizeHelper.height() * 0.6,
-                          width: SizeHelper.width() * 0.5),
+                      Stack(children: [
+                        Container(
+                            child: SvgPicture.asset(
+                              "assets/regions/${getFileName(widget.city)}.svg",
+                              fit: BoxFit.contain,
+                              // color: Colors.green,
+                            ),
+                            height: SizeHelper.height() * 0.6,
+                            width: SizeHelper.width() * 0.5),
+                        ...widget.deps.map((d) => LocalityInfos(d)).toList(),
+                      ]),
                       SizedBox(width: 50),
                       Text("All infos about ${widget.city}"),
                     ],

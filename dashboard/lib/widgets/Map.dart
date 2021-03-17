@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:covid19_progression_modeler/models/models.dart';
 import 'package:covid19_progression_modeler/utils/parser.dart';
 import 'package:touchable/touchable.dart';
+import 'LocalityInfos.dart';
 import 'Popup.dart';
 
 class MapWidget extends StatefulWidget {
@@ -20,8 +21,8 @@ class _MapWidgetState extends State<MapWidget> {
 
   @override
   void initState() {
-    parseSvgToPath();
     super.initState();
+    parseSvgToPath();
   }
 
   void parseSvgToPath() {
@@ -56,42 +57,14 @@ class _MapWidgetState extends State<MapWidget> {
               },
             ),
             child: Stack(
-              children:
-                  widget.regions.map((region) => RegionInfo(region)).toList(),
+              children: widget.regions
+                  .map((region) => LocalityInfos(region))
+                  .toList(),
             ),
           ),
         ),
       ),
     );
-  }
-}
-
-class RegionInfo extends StatelessWidget {
-  final Region region;
-  const RegionInfo(this.region);
-
-  @override
-  Widget build(BuildContext context) {
-    return Positioned(
-        child: Column(
-          children: [
-            Container(
-                width: 45,
-                height: 45,
-                decoration: BoxDecoration(
-                    color: Color.fromRGBO(25, 125, 30, 0.75),
-                    shape: BoxShape.circle),
-                child: Center(
-                    child: Text("${region.nbCase}",
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 25,
-                            fontWeight: FontWeight.bold)))),
-            Text(region.name, style: TextStyle(fontSize: 18))
-          ],
-        ),
-        top: region.top,
-        left: region.left);
   }
 }
 
@@ -114,7 +87,7 @@ class PathPainter extends CustomPainter {
 
     // calculate offset to center the svg image
     double offsetX = 50;
-    double offsetY = -400;
+    double offsetY = 37.5;
 
     final TouchyCanvas touchCanvas = TouchyCanvas(context, canvas);
 
@@ -129,12 +102,14 @@ class PathPainter extends CustomPainter {
         path.transform(matrix4.storage).shift(Offset(offsetX, offsetY)),
         paint,
         onTapDown: (details) {
-          // print(curPath);
+          print(path.computeMetrics());
           String city = title;
+          List<Departement> deps =
+              regions.firstWhere((r) => r.name == city).departements;
           onPressed(path);
           return showDialog(
             context: context,
-            builder: (ctx) => Popup(city: city, context: ctx),
+            builder: (ctx) => Popup(city: city, context: ctx, deps: deps),
           );
         },
       );

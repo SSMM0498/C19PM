@@ -1,8 +1,9 @@
-class Region {
-  String name;
-  double top;
-  double left;
-  int nbCase;
+import 'Departement.dart';
+import 'Locality.dart';
 
-  Region({this.name, this.top, this.left, this.nbCase});
+class Region extends Locality {
+  List<Departement> departements;
+
+  Region({name, top, left, nbCase, this.departements})
+      : super(name: name, top: top, left: left, nbCase: nbCase);
 }

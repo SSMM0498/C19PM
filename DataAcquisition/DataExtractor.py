@@ -7,9 +7,10 @@ from pytesseract import pytesseract
 
 def pdfToImage(pdf):
     # File path you want to extract images from
-    file = "fic.pdf"
+    file = pdf
     # open the file
     pdf_file = fitz.open(file)
+    images = []
     for page_index in range(len(pdf_file)):
         # get the page itself
         page = pdf_file[page_index]
@@ -30,57 +31,144 @@ def pdfToImage(pdf):
             # load it to PIL
             image = Image.open(io.BytesIO(image_bytes))
             # save it to local disk
+            images.append(f"image{page_index+1}_{image_index}.{image_ext}")
             image.save(open(f"image{page_index+1}_{image_index}.{image_ext}", "wb"))
+    return images
 
-def getText():    
+def getText(image):    
     path_to_tesseract = r"C:\\Program Files (x86)\\tesseract.exe"
-    image_path = 'image1_1.png'
+    image_path = image
     img = Image.open(image_path)
-
     pytesseract.tesseract_cmd = path_to_tesseract
-
     text = pytesseract.image_to_string(img)
-    
+    text = text[0:-2]
     return text 
 
 def getDate(text):
-    days = ["Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche"]
+    days = ["lundi","mardi","mercredi","jeudi","vendredi","samedi","dimanche"]
     for day in days:
         try:
-            dateBeginIndex = text.index(day)
+            dateBeginIndex = text.find(day)
             dateEndIndex = text.index("2021") + 4
             date = text[dateBeginIndex:dateEndIndex]
-            return date
+            return { 'date':date,'endIndex':dateEndIndex }
         except:
             continue
 
 def getTests(text):
-    testBeginIndex = text.index("Sur")
-    testEndIndex = text.index("%.")
-    tests = text[testBeginIndex:testEndIndex]
-    tests = tests.split()
-    numbers = []
-    for word in tests:
-        if(word.isdigit()):
-            numbers.append(int(word))
-    numbers.append((numbers[1]*100)/numbers[0])      
-    return numbers
+    try:
+        testBeginIndex = text.index("sur")
+        testEndIndex = text.index("positifs")
+        tests = text[testBeginIndex:testEndIndex]
+        tests = tests.split()
+        numbers = []
+        for word in tests:
+            if(word.isdigit()):
+                numbers.append(int(word))
+        numbers.append((numbers[1]*100)/numbers[0])      
+        return { 'numbers' : numbers, 'endIndex':testEndIndex }
+    except: 
+        return { 'numbers' : 0, 'endIndex':0 }
 
 def getCasContact(text):
-    casBeginIndex = text.index("comme suit :")
-    casBeginIndex += 13
-    casEndIndex = text.index("services ;")
-    contact = text[casBeginIndex:casEndIndex].split() 
-    for word in contact:
-        if(word.isdigit()):
-            number = int(word)
-    return  number
+    try:
+        casBeginIndex = text.index("comme suit :")
+        casBeginIndex += 13
+        casEndIndex = text.index("services ;")
+        contact = text[casBeginIndex:casEndIndex].split() 
+        for word in contact:
+            if(word.isdigit()):
+                number = int(word)
+        return  {'number' : number,'endIndex':casEndIndex}
+    except:
+        return  {'number' : 0,'endIndex':0}
 
 def getCasCom(text):
-    casBeginIndex = text.index("transmission") - 30
-    casEndIndex = text.index("transmission")
-    contact = text[casBeginIndex:casEndIndex].split() 
-    for word in contact:
-        if(word.isdigit()):
-            number = int(word)
-    return  number
+    try:
+        casBeginIndex = text.index("transmission") - 30
+        casEndIndex = text.index("transmission")
+        contact = text[casBeginIndex:casEndIndex].split() 
+        for word in contact:
+            if(word.isdigit()):
+                number = int(word)
+        return  {'number': number,'endIndex':casEndIndex }
+    except:
+        return  {'number': 0,'endIndex':0 }
+
+def getCityCases(text):
+    cas = []
+    if(text.find('(') == -1 or text.find(')') == -1):
+        # print(text)
+        beginIndex = text.find('-')
+        text = text[beginIndex:text.find('patients')-8]
+        text = text.replace('.',';')
+        text = text.replace('|',';')
+        text = text.replace('et',',')
+        text = text.replace('\n','')
+        try:
+            beginIndex = text.index('régions')
+            endIndex = text.index(':')
+            text = text[0:beginIndex] + text[endIndex+1:]
+        except:
+            text = text
+        
+        m = re.split(';',text)
+        for words in m:
+            words = words.replace('-','')
+            words = words.replace('aux','')
+            tmp = words.split()
+            if(len(tmp) != 0):
+                nbCas = tmp[0]
+                if(not nbCas.isdigit()):
+                    nbCas = nbCas[:-1] 
+                tmp[0] = nbCas
+            separator = ' '
+            tmp = separator.join(tmp)
+            tmp = tmp.split()
+            if(len(tmp) != 0):
+                nbCasList = tmp[0]
+                if(not nbCasList.isdigit()):
+                    continue
+                else:
+                    tmp.pop(0)
+                    print(nbCasList)
+                    tmp = separator.join(tmp)
+                    tmp = tmp.split(',')
+                    for loc in tmp:
+                        loc = loc.strip()
+                        obj = {
+                            'lieu': '',
+                            'nbCas': 0
+                        }
+                        obj['lieu'] = loc
+                        obj['nbCas'] = int(nbCasList)
+                        cas.append(obj) 
+    else:    
+        beginIndex = 0
+        endIndex = text.index(".")
+        text = text[beginIndex:endIndex]
+        print(text)
+        text = text.replace("(","")
+        text = text.replace(")","")
+        text = text.replace("\n"," ")
+        text = text.replace("et",",")
+        text = text.split(',')
+        for words in text:
+            words = words.split()
+            obj = {
+                'lieu': '',
+                'nbCas': 0
+            }
+            i = 0
+            # print(cas)
+            while(i < len(words)-1):
+                obj['lieu'] += words[i]
+                i += 1
+            nbCas = words[len(words)-1]
+            if(nbCas.isdigit()):
+                obj['nbCas'] = int(nbCas)
+            else:
+                continue
+            cas.append(obj) 
+    return cas
+

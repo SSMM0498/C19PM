@@ -1,0 +1,3003 @@
+[
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "Dakar",
+    "COMMUNES": "Dakar",
+    "ARRONDISSEMENTS": "DAKAR-PLATEAU",
+    "C0MMUNESARRDT": "Gorée"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "Dakar",
+    "COMMUNES": "Dakar",
+    "ARRONDISSEMENTS": "DAKAR-PLATEAU",
+    "C0MMUNESARRDT": "Dakar - Plateau"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "Dakar",
+    "COMMUNES": "Dakar",
+    "ARRONDISSEMENTS": "DAKAR-PLATEAU",
+    "C0MMUNESARRDT": "Gueule Tapée – Fass-Colobane"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "Dakar",
+    "COMMUNES": "Dakar",
+    "ARRONDISSEMENTS": "DAKAR-PLATEAU",
+    "C0MMUNESARRDT": "Fann - Point E - Amitié"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "Dakar",
+    "COMMUNES": "Dakar",
+    "ARRONDISSEMENTS": "GRAND DAKAR",
+    "C0MMUNESARRDT": "Grand Dakar"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "Dakar",
+    "COMMUNES": "Dakar",
+    "ARRONDISSEMENTS": "GRAND DAKAR",
+    "C0MMUNESARRDT": "Biscuiterie"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "Dakar",
+    "COMMUNES": "Dakar",
+    "ARRONDISSEMENTS": "GRAND DAKAR",
+    "C0MMUNESARRDT": "Dieuppeul – Derklé"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "Dakar",
+    "COMMUNES": "Dakar",
+    "ARRONDISSEMENTS": "GRAND DAKAR",
+    "C0MMUNESARRDT": "Hann - Bel Air"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "Dakar",
+    "COMMUNES": "Dakar",
+    "ARRONDISSEMENTS": "GRAND DAKAR",
+    "C0MMUNESARRDT": "Sicap - Liberté"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "Dakar",
+    "COMMUNES": "Dakar",
+    "ARRONDISSEMENTS": "GRAND DAKAR",
+    "C0MMUNESARRDT": "H.L.M"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "Dakar",
+    "COMMUNES": "Dakar",
+    "ARRONDISSEMENTS": "ALMADIES",
+    "C0MMUNESARRDT": "Mermoz – Sacré Cœur"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "Dakar",
+    "COMMUNES": "Dakar",
+    "ARRONDISSEMENTS": "ALMADIES",
+    "C0MMUNESARRDT": "Ouakam"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "Dakar",
+    "COMMUNES": "Dakar",
+    "ARRONDISSEMENTS": "ALMADIES",
+    "C0MMUNESARRDT": "Ngor"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "Dakar",
+    "COMMUNES": "Dakar",
+    "ARRONDISSEMENTS": "ALMADIES",
+    "C0MMUNESARRDT": "Yoff"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "Dakar",
+    "COMMUNES": "Dakar",
+    "ARRONDISSEMENTS": "PARCELLES ASSAINIES",
+    "C0MMUNESARRDT": "Grand Yoff"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "Dakar",
+    "COMMUNES": "Dakar",
+    "ARRONDISSEMENTS": "PARCELLES ASSAINIES",
+    "C0MMUNESARRDT": "Patte D’Oie"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "Dakar",
+    "COMMUNES": "Dakar",
+    "ARRONDISSEMENTS": "PARCELLES ASSAINIES",
+    "C0MMUNESARRDT": "Parcelles Assainies"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "Dakar",
+    "COMMUNES": "Dakar",
+    "ARRONDISSEMENTS": "PARCELLES ASSAINIES",
+    "C0MMUNESARRDT": "Cambérène"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "GUEDIAWAYE",
+    "COMMUNES": "Guédiawaye",
+    "ARRONDISSEMENTS": "GUEDIAWAYE",
+    "C0MMUNESARRDT": "Golf Sud"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "GUEDIAWAYE",
+    "COMMUNES": "Guédiawaye",
+    "ARRONDISSEMENTS": "GUEDIAWAYE",
+    "C0MMUNESARRDT": "Sam Notaire"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "GUEDIAWAYE",
+    "COMMUNES": "Guédiawaye",
+    "ARRONDISSEMENTS": "GUEDIAWAYE",
+    "C0MMUNESARRDT": "Ndiarème Limamoulaye"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "GUEDIAWAYE",
+    "COMMUNES": "Guédiawaye",
+    "ARRONDISSEMENTS": "GUEDIAWAYE",
+    "C0MMUNESARRDT": "Médina Gounass"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "GUEDIAWAYE",
+    "COMMUNES": "Guédiawaye",
+    "ARRONDISSEMENTS": "GUEDIAWAYE",
+    "C0MMUNESARRDT": "Wakhinane Nimzath"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "GUEDIAWAYE",
+    "COMMUNES": "Guédiawaye",
+    "ARRONDISSEMENTS": "THIAROYE",
+    "C0MMUNESARRDT": "Thiaroye Gare"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "GUEDIAWAYE",
+    "COMMUNES": "Guédiawaye",
+    "ARRONDISSEMENTS": "THIAROYE",
+    "C0MMUNESARRDT": "Mbao"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "GUEDIAWAYE",
+    "COMMUNES": "Guédiawaye",
+    "ARRONDISSEMENTS": "THIAROYE",
+    "C0MMUNESARRDT": "Thiaroye sur Mer"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "GUEDIAWAYE",
+    "COMMUNES": "Guédiawaye",
+    "ARRONDISSEMENTS": "THIAROYE",
+    "C0MMUNESARRDT": "Tivaouane – Diack Sao"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "GUEDIAWAYE",
+    "COMMUNES": "Guédiawaye",
+    "ARRONDISSEMENTS": "THIAROYE",
+    "C0MMUNESARRDT": "Diamagueune Sicap Mbao"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "GUEDIAWAYE",
+    "COMMUNES": "Pikine",
+    "ARRONDISSEMENTS": "NIAYES",
+    "C0MMUNESARRDT": "Keur Massar"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "GUEDIAWAYE",
+    "COMMUNES": "Pikine",
+    "ARRONDISSEMENTS": "NIAYES",
+    "C0MMUNESARRDT": "Malika"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "GUEDIAWAYE",
+    "COMMUNES": "Pikine",
+    "ARRONDISSEMENTS": "NIAYES",
+    "C0MMUNESARRDT": "Yeumbeul Nord"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "GUEDIAWAYE",
+    "COMMUNES": "Pikine",
+    "ARRONDISSEMENTS": "NIAYES",
+    "C0MMUNESARRDT": "Yeumbeul Sud"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "GUEDIAWAYE",
+    "COMMUNES": "Pikine",
+    "ARRONDISSEMENTS": "PIKINE DAGOUDAN",
+    "C0MMUNESARRDT": "Pikine Ouest"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "GUEDIAWAYE",
+    "COMMUNES": "Pikine",
+    "ARRONDISSEMENTS": "PIKINE DAGOUDAN",
+    "C0MMUNESARRDT": "Pikine Est"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "GUEDIAWAYE",
+    "COMMUNES": "Pikine",
+    "ARRONDISSEMENTS": "PIKINE DAGOUDAN",
+    "C0MMUNESARRDT": "Pikine Nord"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "GUEDIAWAYE",
+    "COMMUNES": "Pikine",
+    "ARRONDISSEMENTS": "PIKINE DAGOUDAN",
+    "C0MMUNESARRDT": "Dalifort"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "GUEDIAWAYE",
+    "COMMUNES": "Pikine",
+    "ARRONDISSEMENTS": "PIKINE DAGOUDAN",
+    "C0MMUNESARRDT": "Djidah Thiaroye Kao"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "GUEDIAWAYE",
+    "COMMUNES": "Pikine",
+    "ARRONDISSEMENTS": "PIKINE DAGOUDAN",
+    "C0MMUNESARRDT": "Guinaw Rail Nord"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "GUEDIAWAYE",
+    "COMMUNES": "Pikine",
+    "ARRONDISSEMENTS": "PIKINE DAGOUDAN",
+    "C0MMUNESARRDT": "Guinaw Rail Sud"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "RUFISQUE",
+    "COMMUNES": "Rufisque",
+    "ARRONDISSEMENTS": "RUFISQUE - EST",
+    "C0MMUNESARRDT": "Rufisque Est"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "RUFISQUE",
+    "COMMUNES": "Rufisque",
+    "ARRONDISSEMENTS": "RUFISQUE - EST",
+    "C0MMUNESARRDT": "Bargny Rufisque Nord"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "RUFISQUE",
+    "COMMUNES": "Rufisque",
+    "ARRONDISSEMENTS": "RUFISQUE - EST",
+    "C0MMUNESARRDT": "Diamniadio Rufisque Ouest"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "RUFISQUE",
+    "COMMUNES": "Rufisque",
+    "ARRONDISSEMENTS": "RUFISQUE - EST",
+    "C0MMUNESARRDT": "Sébikotane"
+  },
+  {
+    "REGION": "DAKAR",
+    "DEPARTEMENTS": "RUFISQUE",
+    "COMMUNES": "Rufisque",
+    "ARRONDISSEMENTS": "SANGALKAM",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Sangalkam Yenne"
+  },
+  {
+    "REGION": "DIOURBEL",
+    "DEPARTEMENTS": "BAMBEY",
+    "COMMUNES": "Bambey",
+    "ARRONDISSEMENTS": "BABA GARAGE",
+    "C0MMUNESARRDT": "Dinguiraye"
+  },
+  {
+    "REGION": "DIOURBEL",
+    "DEPARTEMENTS": "BAMBEY",
+    "COMMUNES": "Bambey",
+    "ARRONDISSEMENTS": "BABA GARAGE",
+    "C0MMUNESARRDT": "Baba Garage"
+  },
+  {
+    "REGION": "DIOURBEL",
+    "DEPARTEMENTS": "BAMBEY",
+    "COMMUNES": "Bambey",
+    "ARRONDISSEMENTS": "BABA GARAGE",
+    "C0MMUNESARRDT": "Keur Samba Kane"
+  },
+  {
+    "REGION": "DIOURBEL",
+    "DEPARTEMENTS": "BAMBEY",
+    "COMMUNES": "Bambey",
+    "ARRONDISSEMENTS": "NGOYE Ngoye",
+    "C0MMUNESARRDT": "Thiakhar"
+  },
+  {
+    "REGION": "DIOURBEL",
+    "DEPARTEMENTS": "BAMBEY",
+    "COMMUNES": "Bambey",
+    "ARRONDISSEMENTS": "NGOYE Ngoye",
+    "C0MMUNESARRDT": "Ndondol"
+  },
+  {
+    "REGION": "DIOURBEL",
+    "DEPARTEMENTS": "BAMBEY",
+    "COMMUNES": "Bambey",
+    "ARRONDISSEMENTS": "NGOYE Ngoye",
+    "C0MMUNESARRDT": "Ndangalma"
+  },
+  {
+    "REGION": "DIOURBEL",
+    "DEPARTEMENTS": "BAMBEY",
+    "COMMUNES": "Bambey",
+    "ARRONDISSEMENTS": "LAMBAYE",
+    "C0MMUNESARRDT": "Lambaye"
+  },
+  {
+    "REGION": "DIOURBEL",
+    "DEPARTEMENTS": "BAMBEY",
+    "COMMUNES": "Bambey",
+    "ARRONDISSEMENTS": "LAMBAYE",
+    "C0MMUNESARRDT": "Réfane"
+  },
+  {
+    "REGION": "DIOURBEL",
+    "DEPARTEMENTS": "BAMBEY",
+    "COMMUNES": "Bambey",
+    "ARRONDISSEMENTS": "LAMBAYE",
+    "C0MMUNESARRDT": "Gawane"
+  },
+  {
+    "REGION": "DIOURBEL",
+    "DEPARTEMENTS": "BAMBEY",
+    "COMMUNES": "Bambey",
+    "ARRONDISSEMENTS": "LAMBAYE",
+    "C0MMUNESARRDT": "Ngogom"
+  },
+  {
+    "REGION": "DIOURBEL",
+    "DEPARTEMENTS": "DIOURBEL",
+    "COMMUNES": "Diourbel",
+    "ARRONDISSEMENTS": "NDOULO",
+    "C0MMUNESARRDT": "Ndoulo"
+  },
+  {
+    "REGION": "DIOURBEL",
+    "DEPARTEMENTS": "DIOURBEL",
+    "COMMUNES": "Diourbel",
+    "ARRONDISSEMENTS": "NDOULO",
+    "C0MMUNESARRDT": "Ngohe"
+  },
+  {
+    "REGION": "DIOURBEL",
+    "DEPARTEMENTS": "DIOURBEL",
+    "COMMUNES": "Diourbel",
+    "ARRONDISSEMENTS": "NDOULO",
+    "C0MMUNESARRDT": "Pattar"
+  },
+  {
+    "REGION": "DIOURBEL",
+    "DEPARTEMENTS": "DIOURBEL",
+    "COMMUNES": "Diourbel",
+    "ARRONDISSEMENTS": "NDOULO",
+    "C0MMUNESARRDT": "Tocky Gare"
+  },
+  {
+    "REGION": "DIOURBEL",
+    "DEPARTEMENTS": "DIOURBEL",
+    "COMMUNES": "Diourbel",
+    "ARRONDISSEMENTS": "NDOULO",
+    "C0MMUNESARRDT": "Touré Mbondé"
+  },
+  {
+    "REGION": "DIOURBEL",
+    "DEPARTEMENTS": "DIOURBEL",
+    "COMMUNES": "Diourbel",
+    "ARRONDISSEMENTS": "NDINDY",
+    "C0MMUNESARRDT": "Ndankh Séne"
+  },
+  {
+    "REGION": "DIOURBEL",
+    "DEPARTEMENTS": "DIOURBEL",
+    "COMMUNES": "Diourbel",
+    "ARRONDISSEMENTS": "NDINDY",
+    "C0MMUNESARRDT": "Gade Escale"
+  },
+  {
+    "REGION": "DIOURBEL",
+    "DEPARTEMENTS": "DIOURBEL",
+    "COMMUNES": "Diourbel",
+    "ARRONDISSEMENTS": "NDINDY",
+    "C0MMUNESARRDT": "Keur Ngalgou"
+  },
+  {
+    "REGION": "DIOURBEL",
+    "DEPARTEMENTS": "DIOURBEL",
+    "COMMUNES": "Diourbel",
+    "ARRONDISSEMENTS": "NDINDY",
+    "C0MMUNESARRDT": "Ndindy"
+  },
+  {
+    "REGION": "DIOURBEL",
+    "DEPARTEMENTS": "DIOURBEL",
+    "COMMUNES": "Diourbel",
+    "ARRONDISSEMENTS": "NDINDY",
+    "C0MMUNESARRDT": "Taïba Moutoupha"
+  },
+  {
+    "REGION": "DIOURBEL",
+    "DEPARTEMENTS": "MBACKE",
+    "COMMUNES": "Mbacké",
+    "ARRONDISSEMENTS": "NDAME",
+    "C0MMUNESARRDT": "Touba Mosquée"
+  },
+  {
+    "REGION": "DIOURBEL",
+    "DEPARTEMENTS": "MBACKE",
+    "COMMUNES": "Mbacké",
+    "ARRONDISSEMENTS": "NDAME",
+    "C0MMUNESARRDT": "Dalla Ngabou"
+  },
+  {
+    "REGION": "DIOURBEL",
+    "DEPARTEMENTS": "MBACKE",
+    "COMMUNES": "Mbacké",
+    "ARRONDISSEMENTS": "NDAME",
+    "C0MMUNESARRDT": "Missirah"
+  },
+  {
+    "REGION": "DIOURBEL",
+    "DEPARTEMENTS": "MBACKE",
+    "COMMUNES": "Mbacké",
+    "ARRONDISSEMENTS": "NDAME",
+    "C0MMUNESARRDT": "Nghaye"
+  },
+  {
+    "REGION": "DIOURBEL",
+    "DEPARTEMENTS": "MBACKE",
+    "COMMUNES": "Mbacké",
+    "ARRONDISSEMENTS": "NDAME",
+    "C0MMUNESARRDT": "Touba Fall"
+  },
+  {
+    "REGION": "DIOURBEL",
+    "DEPARTEMENTS": "MBACKE",
+    "COMMUNES": "Mbacké",
+    "ARRONDISSEMENTS": "Kael",
+    "C0MMUNESARRDT": "Madina"
+  },
+  {
+    "REGION": "DIOURBEL",
+    "DEPARTEMENTS": "MBACKE",
+    "COMMUNES": "Mbacké",
+    "ARRONDISSEMENTS": "Kael",
+    "C0MMUNESARRDT": "KAEL Touba Mboul"
+  },
+  {
+    "REGION": "DIOURBEL",
+    "DEPARTEMENTS": "MBACKE",
+    "COMMUNES": "Mbacké",
+    "ARRONDISSEMENTS": "Kael",
+    "C0MMUNESARRDT": "Dendèye Gouy Gui"
+  },
+  {
+    "REGION": "DIOURBEL",
+    "DEPARTEMENTS": "MBACKE",
+    "COMMUNES": "Mbacké",
+    "ARRONDISSEMENTS": "Kael",
+    "C0MMUNESARRDT": "Ndioumane Taïba Thièkène"
+  },
+  {
+    "REGION": "DIOURBEL",
+    "DEPARTEMENTS": "MBACKE",
+    "COMMUNES": "Mbacké",
+    "ARRONDISSEMENTS": "TAIF",
+    "C0MMUNESARRDT": "Taïf"
+  },
+  {
+    "REGION": "DIOURBEL",
+    "DEPARTEMENTS": "MBACKE",
+    "COMMUNES": "Mbacké",
+    "ARRONDISSEMENTS": "TAIF",
+    "C0MMUNESARRDT": "Sadio"
+  },
+  {
+    "REGION": "FATICK",
+    "DEPARTEMENTS": "FATICK Dioffior",
+    "COMMUNES": "Fatick",
+    "ARRONDISSEMENTS": "DIAKHAO",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Diakhao"
+  },
+  {
+    "REGION": "FATICK",
+    "DEPARTEMENTS": "FATICK Dioffior",
+    "COMMUNES": "Fatick",
+    "ARRONDISSEMENTS": "DIAKHAO",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Diaoulé"
+  },
+  {
+    "REGION": "FATICK",
+    "DEPARTEMENTS": "FATICK Dioffior",
+    "COMMUNES": "Fatick",
+    "ARRONDISSEMENTS": "DIAKHAO",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Mbéllacadiao"
+  },
+  {
+    "REGION": "FATICK",
+    "DEPARTEMENTS": "FATICK Dioffior",
+    "COMMUNES": "Fatick",
+    "ARRONDISSEMENTS": "DIAKHAO",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ndiop"
+  },
+  {
+    "REGION": "FATICK",
+    "DEPARTEMENTS": "FATICK Dioffior",
+    "COMMUNES": "Fatick",
+    "ARRONDISSEMENTS": "FIMELA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Djilasse"
+  },
+  {
+    "REGION": "FATICK",
+    "DEPARTEMENTS": "FATICK Dioffior",
+    "COMMUNES": "Fatick",
+    "ARRONDISSEMENTS": "FIMELA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Fimela"
+  },
+  {
+    "REGION": "FATICK",
+    "DEPARTEMENTS": "FATICK Dioffior",
+    "COMMUNES": "Fatick",
+    "ARRONDISSEMENTS": "FIMELA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Loul Sessène"
+  },
+  {
+    "REGION": "FATICK",
+    "DEPARTEMENTS": "FATICK Dioffior",
+    "COMMUNES": "Fatick",
+    "ARRONDISSEMENTS": "FIMELA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Palmarin Facao"
+  },
+  {
+    "REGION": "FATICK",
+    "DEPARTEMENTS": "FATICK Dioffior",
+    "COMMUNES": "Fatick",
+    "ARRONDISSEMENTS": "NIAKHAR",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Niakhar"
+  },
+  {
+    "REGION": "FATICK",
+    "DEPARTEMENTS": "FATICK Dioffior",
+    "COMMUNES": "Fatick",
+    "ARRONDISSEMENTS": "NIAKHAR",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ngayokhème"
+  },
+  {
+    "REGION": "FATICK",
+    "DEPARTEMENTS": "FATICK Dioffior",
+    "COMMUNES": "Fatick",
+    "ARRONDISSEMENTS": "NIAKHAR",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Patar"
+  },
+  {
+    "REGION": "FATICK",
+    "DEPARTEMENTS": "FATICK Dioffior",
+    "COMMUNES": "Fatick",
+    "ARRONDISSEMENTS": "TATTAGUINE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Diarrère"
+  },
+  {
+    "REGION": "FATICK",
+    "DEPARTEMENTS": "FATICK Dioffior",
+    "COMMUNES": "Fatick",
+    "ARRONDISSEMENTS": "TATTAGUINE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Diouroup"
+  },
+  {
+    "REGION": "FATICK",
+    "DEPARTEMENTS": "FATICK Dioffior",
+    "COMMUNES": "Fatick",
+    "ARRONDISSEMENTS": "TATTAGUINE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Tattaguine"
+  },
+  {
+    "REGION": "FATICK",
+    "DEPARTEMENTS": "FATICK Dioffior",
+    "COMMUNES": "Fatick",
+    "ARRONDISSEMENTS": "TOUBACOUTA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Keur Saloum Diané"
+  },
+  {
+    "REGION": "FATICK",
+    "DEPARTEMENTS": "FATICK Dioffior",
+    "COMMUNES": "Fatick",
+    "ARRONDISSEMENTS": "TOUBACOUTA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Keur Samba Guèye"
+  },
+  {
+    "REGION": "FATICK",
+    "DEPARTEMENTS": "FATICK Dioffior",
+    "COMMUNES": "Fatick",
+    "ARRONDISSEMENTS": "TOUBACOUTA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Tobacouta"
+  },
+  {
+    "REGION": "FATICK",
+    "DEPARTEMENTS": "FATICK Dioffior",
+    "COMMUNES": "Fatick",
+    "ARRONDISSEMENTS": "TOUBACOUTA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Nioro Alassane Talla"
+  },
+  {
+    "REGION": "FATICK",
+    "DEPARTEMENTS": "FOUNDIOUGNE",
+    "COMMUNES": "Foundiougne Passy",
+    "ARRONDISSEMENTS": "",
+    "C0MMUNESARRDT": ""
+  },
+  {
+    "REGION": "FATICK",
+    "DEPARTEMENTS": "FOUNDIOUGNE",
+    "COMMUNES": "Sokone Soum Karang Post",
+    "ARRONDISSEMENTS": "DJILOR",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Diossong"
+  },
+  {
+    "REGION": "FATICK",
+    "DEPARTEMENTS": "FOUNDIOUGNE",
+    "COMMUNES": "Sokone Soum Karang Post",
+    "ARRONDISSEMENTS": "DJILOR",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Djilor"
+  },
+  {
+    "REGION": "FATICK",
+    "DEPARTEMENTS": "FOUNDIOUGNE",
+    "COMMUNES": "Sokone Soum Karang Post",
+    "ARRONDISSEMENTS": "NIODIOR",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Bassoul"
+  },
+  {
+    "REGION": "FATICK",
+    "DEPARTEMENTS": "FOUNDIOUGNE",
+    "COMMUNES": "Sokone Soum Karang Post",
+    "ARRONDISSEMENTS": "NIODIOR",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Dionewar"
+  },
+  {
+    "REGION": "FATICK",
+    "DEPARTEMENTS": "FOUNDIOUGNE",
+    "COMMUNES": "Sokone Soum Karang Post",
+    "ARRONDISSEMENTS": "NIODIOR",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Djirnda"
+  },
+  {
+    "REGION": "FATICK",
+    "DEPARTEMENTS": "FOUNDIOUGNE",
+    "COMMUNES": "Sokone Soum Karang Post",
+    "ARRONDISSEMENTS": "COLOBANE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Colobane"
+  },
+  {
+    "REGION": "FATICK",
+    "DEPARTEMENTS": "FOUNDIOUGNE",
+    "COMMUNES": "Sokone Soum Karang Post",
+    "ARRONDISSEMENTS": "COLOBANE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Mbar"
+  },
+  {
+    "REGION": "FATICK",
+    "DEPARTEMENTS": "GOSSAS",
+    "COMMUNES": "Gossas",
+    "ARRONDISSEMENTS": "OUADIOUR",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ndiene Lagan"
+  },
+  {
+    "REGION": "FATICK",
+    "DEPARTEMENTS": "GOSSAS",
+    "COMMUNES": "Gossas",
+    "ARRONDISSEMENTS": "OUADIOUR",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ouadiour"
+  },
+  {
+    "REGION": "FATICK",
+    "DEPARTEMENTS": "GOSSAS",
+    "COMMUNES": "Gossas",
+    "ARRONDISSEMENTS": "OUADIOUR",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Patar Lia"
+  },
+  {
+    "REGION": "KAFFRINE",
+    "DEPARTEMENTS": "KEUR MBOUCKI",
+    "COMMUNES": "",
+    "ARRONDISSEMENTS": "BIRKELANE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Keur Mboucki"
+  },
+  {
+    "REGION": "KAFFRINE",
+    "DEPARTEMENTS": "KEUR MBOUCKI",
+    "COMMUNES": "",
+    "ARRONDISSEMENTS": "BIRKELANE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Birkelane"
+  },
+  {
+    "REGION": "KAFFRINE",
+    "DEPARTEMENTS": "KEUR MBOUCKI",
+    "COMMUNES": "",
+    "ARRONDISSEMENTS": "MABO",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Mabo"
+  },
+  {
+    "REGION": "KAFFRINE",
+    "DEPARTEMENTS": "KEUR MBOUCKI",
+    "COMMUNES": "",
+    "ARRONDISSEMENTS": "MABO",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ndiognick"
+  },
+  {
+    "REGION": "KAFFRINE",
+    "DEPARTEMENTS": "KEUR MBOUCKI",
+    "COMMUNES": "",
+    "ARRONDISSEMENTS": "MABO",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Touba Mbella"
+  },
+  {
+    "REGION": "KAFFRINE",
+    "DEPARTEMENTS": "KAFFRINE",
+    "COMMUNES": "Kaffrine Nganda",
+    "ARRONDISSEMENTS": "KATAKEL",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Diamagadio"
+  },
+  {
+    "REGION": "KAFFRINE",
+    "DEPARTEMENTS": "KAFFRINE",
+    "COMMUNES": "Kaffrine Nganda",
+    "ARRONDISSEMENTS": "KATAKEL",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Diokoul Belbouck"
+  },
+  {
+    "REGION": "KAFFRINE",
+    "DEPARTEMENTS": "KAFFRINE",
+    "COMMUNES": "Kaffrine Nganda",
+    "ARRONDISSEMENTS": "KATAKEL",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Kathiotte"
+  },
+  {
+    "REGION": "KAFFRINE",
+    "DEPARTEMENTS": "KAFFRINE",
+    "COMMUNES": "Kaffrine Nganda",
+    "ARRONDISSEMENTS": "KATAKEL",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Médinatoul Salam 2"
+  },
+  {
+    "REGION": "KAFFRINE",
+    "DEPARTEMENTS": "KAFFRINE",
+    "COMMUNES": "Kaffrine Nganda",
+    "ARRONDISSEMENTS": "GNIBY",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Gniby"
+  },
+  {
+    "REGION": "KAFFRINE",
+    "DEPARTEMENTS": "KAFFRINE",
+    "COMMUNES": "Kaffrine Nganda",
+    "ARRONDISSEMENTS": "GNIBY",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Boulel"
+  },
+  {
+    "REGION": "KAFFRINE",
+    "DEPARTEMENTS": "KAFFRINE",
+    "COMMUNES": "Kaffrine Nganda",
+    "ARRONDISSEMENTS": "GNIBY",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Kahi"
+  },
+  {
+    "REGION": "KAFFRINE",
+    "DEPARTEMENTS": "KOUNGHEUL",
+    "COMMUNES": "Koungheul",
+    "ARRONDISSEMENTS": "MISSIRAH WADENE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Missirah Wadène"
+  },
+  {
+    "REGION": "KAFFRINE",
+    "DEPARTEMENTS": "KOUNGHEUL",
+    "COMMUNES": "Koungheul",
+    "ARRONDISSEMENTS": "MISSIRAH WADENE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Maka Yop"
+  },
+  {
+    "REGION": "KAFFRINE",
+    "DEPARTEMENTS": "KOUNGHEUL",
+    "COMMUNES": "Koungheul",
+    "ARRONDISSEMENTS": "MISSIRAH WADENE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ngainthe Pathé"
+  },
+  {
+    "REGION": "KAFFRINE",
+    "DEPARTEMENTS": "KOUNGHEUL",
+    "COMMUNES": "Koungheul",
+    "ARRONDISSEMENTS": "IDA MOURIDE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Fass Thièkène"
+  },
+  {
+    "REGION": "KAFFRINE",
+    "DEPARTEMENTS": "KOUNGHEUL",
+    "COMMUNES": "Koungheul",
+    "ARRONDISSEMENTS": "IDA MOURIDE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Saly Escale"
+  },
+  {
+    "REGION": "KAFFRINE",
+    "DEPARTEMENTS": "KOUNGHEUL",
+    "COMMUNES": "Koungheul",
+    "ARRONDISSEMENTS": "IDA MOURIDE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ida Mouride"
+  },
+  {
+    "REGION": "KAFFRINE",
+    "DEPARTEMENTS": "KOUNGHEUL",
+    "COMMUNES": "Koungheul",
+    "ARRONDISSEMENTS": "LOUR ESCALE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ribot Escale"
+  },
+  {
+    "REGION": "KAFFRINE",
+    "DEPARTEMENTS": "KOUNGHEUL",
+    "COMMUNES": "Koungheul",
+    "ARRONDISSEMENTS": "LOUR ESCALE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Lour Escale"
+  },
+  {
+    "REGION": "KAFFRINE",
+    "DEPARTEMENTS": "MALEM HODDAR",
+    "COMMUNES": "Malem Hoddar",
+    "ARRONDISSEMENTS": "DAROU MINAME 2",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Darou Miname 2"
+  },
+  {
+    "REGION": "KAFFRINE",
+    "DEPARTEMENTS": "MALEM HODDAR",
+    "COMMUNES": "Malem Hoddar",
+    "ARRONDISSEMENTS": "DAROU MINAME 2",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Khelcom"
+  },
+  {
+    "REGION": "KAFFRINE",
+    "DEPARTEMENTS": "MALEM HODDAR",
+    "COMMUNES": "Malem Hoddar",
+    "ARRONDISSEMENTS": "DAROU MINAME 2",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ndioum Ngainth"
+  },
+  {
+    "REGION": "KAFFRINE",
+    "DEPARTEMENTS": "MALEM HODDAR",
+    "COMMUNES": "Malem Hoddar",
+    "ARRONDISSEMENTS": "SAGNA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Sagna"
+  },
+  {
+    "REGION": "KAFFRINE",
+    "DEPARTEMENTS": "MALEM HODDAR",
+    "COMMUNES": "Malem Hoddar",
+    "ARRONDISSEMENTS": "SAGNA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Dianké Souf"
+  },
+  {
+    "REGION": "KAOLACK",
+    "DEPARTEMENTS": "MBADAKHOUNE",
+    "COMMUNES": "Guinguinéo",
+    "ARRONDISSEMENTS": "GUINGUINEO",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Khelcom - Birane "
+  },
+  {
+    "REGION": "KAOLACK",
+    "DEPARTEMENTS": "MBADAKHOUNE",
+    "COMMUNES": "Guinguinéo",
+    "ARRONDISSEMENTS": "GUINGUINEO",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Mbadakhoune "
+  },
+  {
+    "REGION": "KAOLACK",
+    "DEPARTEMENTS": "MBADAKHOUNE",
+    "COMMUNES": "Guinguinéo",
+    "ARRONDISSEMENTS": "GUINGUINEO",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ndiago "
+  },
+  {
+    "REGION": "KAOLACK",
+    "DEPARTEMENTS": "MBADAKHOUNE",
+    "COMMUNES": "Guinguinéo",
+    "ARRONDISSEMENTS": "GUINGUINEO",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ngathie Naoudé"
+  },
+  {
+    "REGION": "KAOLACK",
+    "DEPARTEMENTS": "MBADAKHOUNE",
+    "COMMUNES": "Guinguinéo",
+    "ARRONDISSEMENTS": "NGUELOU",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Gagnick "
+  },
+  {
+    "REGION": "KAOLACK",
+    "DEPARTEMENTS": "MBADAKHOUNE",
+    "COMMUNES": "Guinguinéo",
+    "ARRONDISSEMENTS": "NGUELOU",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Mboss "
+  },
+  {
+    "REGION": "KAOLACK",
+    "DEPARTEMENTS": "MBADAKHOUNE",
+    "COMMUNES": "Guinguinéo",
+    "ARRONDISSEMENTS": "NGUELOU",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ourour"
+  },
+  {
+    "REGION": "KAOLACK",
+    "DEPARTEMENTS": "KAOLACK",
+    "COMMUNES": "Kaolack Kahone Ndoffane Gandiaye",
+    "ARRONDISSEMENTS": "KOUMBAL",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Keur Baka"
+  },
+  {
+    "REGION": "KAOLACK",
+    "DEPARTEMENTS": "KAOLACK",
+    "COMMUNES": "Kaolack Kahone Ndoffane Gandiaye",
+    "ARRONDISSEMENTS": "KOUMBAL",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Latmingué"
+  },
+  {
+    "REGION": "KAOLACK",
+    "DEPARTEMENTS": "KAOLACK",
+    "COMMUNES": "Kaolack Kahone Ndoffane Gandiaye",
+    "ARRONDISSEMENTS": "KOUMBAL",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Thiaré"
+  },
+  {
+    "REGION": "KAOLACK",
+    "DEPARTEMENTS": "KAOLACK",
+    "COMMUNES": "Kaolack Kahone Ndoffane Gandiaye",
+    "ARRONDISSEMENTS": "NDIEDIENG",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Keur Socé"
+  },
+  {
+    "REGION": "KAOLACK",
+    "DEPARTEMENTS": "KAOLACK",
+    "COMMUNES": "Kaolack Kahone Ndoffane Gandiaye",
+    "ARRONDISSEMENTS": "NDIEDIENG",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ndiaffate"
+  },
+  {
+    "REGION": "KAOLACK",
+    "DEPARTEMENTS": "KAOLACK",
+    "COMMUNES": "Kaolack Kahone Ndoffane Gandiaye",
+    "ARRONDISSEMENTS": "NDIEDIENG",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ndiedieng"
+  },
+  {
+    "REGION": "KAOLACK",
+    "DEPARTEMENTS": "KAOLACK",
+    "COMMUNES": "Kaolack Kahone Ndoffane Gandiaye",
+    "ARRONDISSEMENTS": "SIBASSOR",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Dya"
+  },
+  {
+    "REGION": "KAOLACK",
+    "DEPARTEMENTS": "KAOLACK",
+    "COMMUNES": "Kaolack Kahone Ndoffane Gandiaye",
+    "ARRONDISSEMENTS": "SIBASSOR",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ndiébel"
+  },
+  {
+    "REGION": "KAOLACK",
+    "DEPARTEMENTS": "KAOLACK",
+    "COMMUNES": "Kaolack Kahone Ndoffane Gandiaye",
+    "ARRONDISSEMENTS": "SIBASSOR",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Thiomby"
+  },
+  {
+    "REGION": "KAOLACK",
+    "DEPARTEMENTS": "NIORO",
+    "COMMUNES": "Nioro Keur Madiabel",
+    "ARRONDISSEMENTS": "MEDINA SABAKH",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Kayemor"
+  },
+  {
+    "REGION": "KAOLACK",
+    "DEPARTEMENTS": "NIORO",
+    "COMMUNES": "Nioro Keur Madiabel",
+    "ARRONDISSEMENTS": "MEDINA SABAKH",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Médina Sabakh"
+  },
+  {
+    "REGION": "KAOLACK",
+    "DEPARTEMENTS": "NIORO",
+    "COMMUNES": "Nioro Keur Madiabel",
+    "ARRONDISSEMENTS": "MEDINA SABAKH",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ngayene"
+  },
+  {
+    "REGION": "KAOLACK",
+    "DEPARTEMENTS": "NIORO",
+    "COMMUNES": "Nioro Keur Madiabel",
+    "ARRONDISSEMENTS": "PAOS KOTO",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Gainthe Kaye"
+  },
+  {
+    "REGION": "KAOLACK",
+    "DEPARTEMENTS": "NIORO",
+    "COMMUNES": "Nioro Keur Madiabel",
+    "ARRONDISSEMENTS": "PAOS KOTO",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Paos Koto"
+  },
+  {
+    "REGION": "KAOLACK",
+    "DEPARTEMENTS": "NIORO",
+    "COMMUNES": "Nioro Keur Madiabel",
+    "ARRONDISSEMENTS": "PAOS KOTO",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Porokhane"
+  },
+  {
+    "REGION": "KAOLACK",
+    "DEPARTEMENTS": "NIORO",
+    "COMMUNES": "Nioro Keur Madiabel",
+    "ARRONDISSEMENTS": "PAOS KOTO",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Taïba Niassène"
+  },
+  {
+    "REGION": "KAOLACK",
+    "DEPARTEMENTS": "NIORO",
+    "COMMUNES": "Nioro Keur Madiabel",
+    "ARRONDISSEMENTS": "WACK NGOUNA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Keur Maba Diakhou"
+  },
+  {
+    "REGION": "KAOLACK",
+    "DEPARTEMENTS": "NIORO",
+    "COMMUNES": "Nioro Keur Madiabel",
+    "ARRONDISSEMENTS": "WACK NGOUNA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Keur Madongo"
+  },
+  {
+    "REGION": "KAOLACK",
+    "DEPARTEMENTS": "NIORO",
+    "COMMUNES": "Nioro Keur Madiabel",
+    "ARRONDISSEMENTS": "WACK NGOUNA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ndramé Escale"
+  },
+  {
+    "REGION": "KAOLACK",
+    "DEPARTEMENTS": "NIORO",
+    "COMMUNES": "Nioro Keur Madiabel",
+    "ARRONDISSEMENTS": "WACK NGOUNA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Wack Ngouna"
+  },
+  {
+    "REGION": "KEDOUGOU",
+    "DEPARTEMENTS": "KEDOUGOU",
+    "COMMUNES": "Kédougou",
+    "ARRONDISSEMENTS": "BANDAFASSI",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Tomboroncoto"
+  },
+  {
+    "REGION": "KEDOUGOU",
+    "DEPARTEMENTS": "KEDOUGOU",
+    "COMMUNES": "Kédougou",
+    "ARRONDISSEMENTS": "BANDAFASSI",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Dindefelo Ninéfécha"
+  },
+  {
+    "REGION": "KEDOUGOU",
+    "DEPARTEMENTS": "KEDOUGOU",
+    "COMMUNES": "Kédougou",
+    "ARRONDISSEMENTS": "BANDAFASSI",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Bandafassi"
+  },
+  {
+    "REGION": "KEDOUGOU",
+    "DEPARTEMENTS": "KEDOUGOU",
+    "COMMUNES": "Kédougou",
+    "ARRONDISSEMENTS": "FONGOLIMBI",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Fongolimbi"
+  },
+  {
+    "REGION": "KEDOUGOU",
+    "DEPARTEMENTS": "KEDOUGOU",
+    "COMMUNES": "Kédougou",
+    "ARRONDISSEMENTS": "FONGOLIMBI",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Dimboli"
+  },
+  {
+    "REGION": "KEDOUGOU",
+    "DEPARTEMENTS": "SALEMATA",
+    "COMMUNES": "Salémata",
+    "ARRONDISSEMENTS": "DAKATELI",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Thiankoye"
+  },
+  {
+    "REGION": "KEDOUGOU",
+    "DEPARTEMENTS": "SALEMATA",
+    "COMMUNES": "Salémata",
+    "ARRONDISSEMENTS": "DAKATELI",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Dakatéli"
+  },
+  {
+    "REGION": "KEDOUGOU",
+    "DEPARTEMENTS": "SALEMATA",
+    "COMMUNES": "Salémata",
+    "ARRONDISSEMENTS": "DAR SALAM",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ethiolo"
+  },
+  {
+    "REGION": "KEDOUGOU",
+    "DEPARTEMENTS": "SALEMATA",
+    "COMMUNES": "Salémata",
+    "ARRONDISSEMENTS": "DAR SALAM",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Oubadj"
+  },
+  {
+    "REGION": "KEDOUGOU",
+    "DEPARTEMENTS": "SALEMATA",
+    "COMMUNES": "Salémata",
+    "ARRONDISSEMENTS": "DAR SALAM",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Dar Salam"
+  },
+  {
+    "REGION": "KEDOUGOU",
+    "DEPARTEMENTS": "SARAYA",
+    "COMMUNES": "Saraya",
+    "ARRONDISSEMENTS": "BEMBOU",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Bembou"
+  },
+  {
+    "REGION": "KEDOUGOU",
+    "DEPARTEMENTS": "SARAYA",
+    "COMMUNES": "Saraya",
+    "ARRONDISSEMENTS": "BEMBOU",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Médina Baffé"
+  },
+  {
+    "REGION": "KEDOUGOU",
+    "DEPARTEMENTS": "SARAYA",
+    "COMMUNES": "Saraya",
+    "ARRONDISSEMENTS": "SABODALA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Sabodala"
+  },
+  {
+    "REGION": "KEDOUGOU",
+    "DEPARTEMENTS": "SARAYA",
+    "COMMUNES": "Saraya",
+    "ARRONDISSEMENTS": "SABODALA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Khossanto"
+  },
+  {
+    "REGION": "KEDOUGOU",
+    "DEPARTEMENTS": "SARAYA",
+    "COMMUNES": "Saraya",
+    "ARRONDISSEMENTS": "SABODALA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Missirah Sirimana"
+  },
+  {
+    "REGION": "KOLDA",
+    "DEPARTEMENTS": "KOLDA",
+    "COMMUNES": "Kolda Dabo Salikégné Saré YobaDiéga ",
+    "ARRONDISSEMENTS": "MAMPATIM",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Dialambéré Médina Chérif Bagadadji Mampatim Coumbacara"
+  },
+  {
+    "REGION": "KOLDA",
+    "DEPARTEMENTS": "KOLDA",
+    "COMMUNES": "Kolda Dabo Salikégné Saré YobaDiéga ",
+    "ARRONDISSEMENTS": "SARE BIDJI",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Thiétty"
+  },
+  {
+    "REGION": "KOLDA",
+    "DEPARTEMENTS": "KOLDA",
+    "COMMUNES": "Kolda Dabo Salikégné Saré YobaDiéga ",
+    "ARRONDISSEMENTS": "SARE BIDJI",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Saré Bidji"
+  },
+  {
+    "REGION": "KOLDA",
+    "DEPARTEMENTS": "KOLDA",
+    "COMMUNES": "Kolda Dabo Salikégné Saré YobaDiéga ",
+    "ARRONDISSEMENTS": "DIOULACOLON",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Guiro Yéro Bocar"
+  },
+  {
+    "REGION": "KOLDA",
+    "DEPARTEMENTS": "KOLDA",
+    "COMMUNES": "Kolda Dabo Salikégné Saré YobaDiéga ",
+    "ARRONDISSEMENTS": "DIOULACOLON",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Dioulacolon"
+  },
+  {
+    "REGION": "KOLDA",
+    "DEPARTEMENTS": "KOLDA",
+    "COMMUNES": "Kolda Dabo Salikégné Saré YobaDiéga ",
+    "ARRONDISSEMENTS": "DIOULACOLON",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Tankanto Escale"
+  },
+  {
+    "REGION": "KOLDA",
+    "DEPARTEMENTS": "KOLDA",
+    "COMMUNES": "Kolda Dabo Salikégné Saré YobaDiéga ",
+    "ARRONDISSEMENTS": "DIOULACOLON",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Médina El Hadj"
+  },
+  {
+    "REGION": "KOLDA",
+    "DEPARTEMENTS": "MEDINA YORO FOULAH",
+    "COMMUNES": "Médina Yoro Foulah Pata",
+    "ARRONDISSEMENTS": "FAFACOUROU Badion Fafacourou",
+    "C0MMUNESARRDT": ""
+  },
+  {
+    "REGION": "KOLDA",
+    "DEPARTEMENTS": "MEDINA YORO FOULAH",
+    "COMMUNES": "Médina Yoro Foulah Pata",
+    "ARRONDISSEMENTS": "NDORNA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Bourouco"
+  },
+  {
+    "REGION": "KOLDA",
+    "DEPARTEMENTS": "MEDINA YORO FOULAH",
+    "COMMUNES": "Médina Yoro Foulah Pata",
+    "ARRONDISSEMENTS": "NDORNA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Bignarabé"
+  },
+  {
+    "REGION": "KOLDA",
+    "DEPARTEMENTS": "MEDINA YORO FOULAH",
+    "COMMUNES": "Médina Yoro Foulah Pata",
+    "ARRONDISSEMENTS": "NDORNA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ndorna"
+  },
+  {
+    "REGION": "KOLDA",
+    "DEPARTEMENTS": "MEDINA YORO FOULAH",
+    "COMMUNES": "Médina Yoro Foulah Pata",
+    "ARRONDISSEMENTS": "NDORNA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Koulinto"
+  },
+  {
+    "REGION": "KOLDA",
+    "DEPARTEMENTS": "MEDINA YORO FOULAH",
+    "COMMUNES": "Médina Yoro Foulah Pata",
+    "ARRONDISSEMENTS": "NIAMING",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Niaming"
+  },
+  {
+    "REGION": "KOLDA",
+    "DEPARTEMENTS": "MEDINA YORO FOULAH",
+    "COMMUNES": "Médina Yoro Foulah Pata",
+    "ARRONDISSEMENTS": "NIAMING",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Dinguiraye"
+  },
+  {
+    "REGION": "KOLDA",
+    "DEPARTEMENTS": "MEDINA YORO FOULAH",
+    "COMMUNES": "Médina Yoro Foulah Pata",
+    "ARRONDISSEMENTS": "NIAMING",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Kéréwane"
+  },
+  {
+    "REGION": "KOLDA",
+    "DEPARTEMENTS": "MEDINA YORO FOULAH",
+    "COMMUNES": "Médina Yoro Foulah Pata",
+    "ARRONDISSEMENTS": "SARE COLY SALLE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Kandiaye"
+  },
+  {
+    "REGION": "KOLDA",
+    "DEPARTEMENTS": "MEDINA YORO FOULAH",
+    "COMMUNES": "Médina Yoro Foulah Pata",
+    "ARRONDISSEMENTS": "SARE COLY SALLE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Saré Coly Sallé"
+  },
+  {
+    "REGION": "KOLDA",
+    "DEPARTEMENTS": "MEDINA YORO FOULAH",
+    "COMMUNES": "Médina Yoro Foulah Pata",
+    "ARRONDISSEMENTS": "SARE COLY SALLE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Kandia"
+  },
+  {
+    "REGION": "KOLDA",
+    "DEPARTEMENTS": "MEDINA YORO FOULAH",
+    "COMMUNES": "Médina Yoro Foulah Pata",
+    "ARRONDISSEMENTS": "SARE COLY SALLE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Némataba"
+  },
+  {
+    "REGION": "KOLDA",
+    "DEPARTEMENTS": "VELINGARA",
+    "COMMUNES": "Vélingara Kounkané Diaobé-Kabendou",
+    "ARRONDISSEMENTS": "PAKOUR",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Pakour"
+  },
+  {
+    "REGION": "KOLDA",
+    "DEPARTEMENTS": "VELINGARA",
+    "COMMUNES": "Vélingara Kounkané Diaobé-Kabendou",
+    "ARRONDISSEMENTS": "PAKOUR",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Paroumba"
+  },
+  {
+    "REGION": "KOLDA",
+    "DEPARTEMENTS": "VELINGARA",
+    "COMMUNES": "Vélingara Kounkané Diaobé-Kabendou",
+    "ARRONDISSEMENTS": "PAKOUR",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ouassadou"
+  },
+  {
+    "REGION": "KOLDA",
+    "DEPARTEMENTS": "VELINGARA",
+    "COMMUNES": "Vélingara Kounkané Diaobé-Kabendou",
+    "ARRONDISSEMENTS": "BONCONTO",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Bonconto"
+  },
+  {
+    "REGION": "KOLDA",
+    "DEPARTEMENTS": "VELINGARA",
+    "COMMUNES": "Vélingara Kounkané Diaobé-Kabendou",
+    "ARRONDISSEMENTS": "BONCONTO",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Linkering"
+  },
+  {
+    "REGION": "KOLDA",
+    "DEPARTEMENTS": "VELINGARA",
+    "COMMUNES": "Vélingara Kounkané Diaobé-Kabendou",
+    "ARRONDISSEMENTS": "BONCONTO",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Médina Gounass"
+  },
+  {
+    "REGION": "KOLDA",
+    "DEPARTEMENTS": "VELINGARA",
+    "COMMUNES": "Vélingara Kounkané Diaobé-Kabendou",
+    "ARRONDISSEMENTS": "BONCONTO",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Sinthiang Koundara"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "KEBEMER",
+    "COMMUNES": "Kébémer Guéoul",
+    "ARRONDISSEMENTS": "NDANDE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Bandegne Ouolof"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "KEBEMER",
+    "COMMUNES": "Kébémer Guéoul",
+    "ARRONDISSEMENTS": "NDANDE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Diokoul Diawrigne"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "KEBEMER",
+    "COMMUNES": "Kébémer Guéoul",
+    "ARRONDISSEMENTS": "NDANDE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Kab Gaye"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "KEBEMER",
+    "COMMUNES": "Kébémer Guéoul",
+    "ARRONDISSEMENTS": "NDANDE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ndande"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "KEBEMER",
+    "COMMUNES": "Kébémer Guéoul",
+    "ARRONDISSEMENTS": "NDANDE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Thieppe"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "KEBEMER",
+    "COMMUNES": "Kébémer Guéoul",
+    "ARRONDISSEMENTS": "DAROU MOUSTY",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Mbacké Cajor"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "KEBEMER",
+    "COMMUNES": "Kébémer Guéoul",
+    "ARRONDISSEMENTS": "DAROU MOUSTY",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Darou Marnane"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "KEBEMER",
+    "COMMUNES": "Kébémer Guéoul",
+    "ARRONDISSEMENTS": "DAROU MOUSTY",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Darou Mousty"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "KEBEMER",
+    "COMMUNES": "Kébémer Guéoul",
+    "ARRONDISSEMENTS": "DAROU MOUSTY",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Mbadiane"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "KEBEMER",
+    "COMMUNES": "Kébémer Guéoul",
+    "ARRONDISSEMENTS": "DAROU MOUSTY",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ndoyene"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "KEBEMER",
+    "COMMUNES": "Kébémer Guéoul",
+    "ARRONDISSEMENTS": "DAROU MOUSTY",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Sam Yabal"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "KEBEMER",
+    "COMMUNES": "Kébémer Guéoul",
+    "ARRONDISSEMENTS": "DAROU MOUSTY",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Touba Mérina"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "KEBEMER",
+    "COMMUNES": "Kébémer Guéoul",
+    "ARRONDISSEMENTS": "SAGATTA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ngourane Ouolof"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "KEBEMER",
+    "COMMUNES": "Kébémer Guéoul",
+    "ARRONDISSEMENTS": "SAGATTA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Thiolom Fall"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "KEBEMER",
+    "COMMUNES": "Kébémer Guéoul",
+    "ARRONDISSEMENTS": "SAGATTA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Sagatta Gueth"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "KEBEMER",
+    "COMMUNES": "Kébémer Guéoul",
+    "ARRONDISSEMENTS": "SAGATTA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Kanène Ndiob"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "KEBEMER",
+    "COMMUNES": "Kébémer Guéoul",
+    "ARRONDISSEMENTS": "SAGATTA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Loro"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "KEBEMER",
+    "COMMUNES": "BARKEDJI",
+    "ARRONDISSEMENTS": "Barkédji Gassane Thiarny Thiel",
+    "C0MMUNESARRDT": ""
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "KEBEMER",
+    "COMMUNES": "BARKEDJI",
+    "ARRONDISSEMENTS": "SAGATTA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "DJOLOF Boulal"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "KEBEMER",
+    "COMMUNES": "BARKEDJI",
+    "ARRONDISSEMENTS": "SAGATTA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Dealy"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "KEBEMER",
+    "COMMUNES": "BARKEDJI",
+    "ARRONDISSEMENTS": "SAGATTA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Thiamène Passe"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "KEBEMER",
+    "COMMUNES": "BARKEDJI",
+    "ARRONDISSEMENTS": "SAGATTA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Sagatta Djolof"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "LINGUERE",
+    "COMMUNES": "Linguère Dahra",
+    "ARRONDISSEMENTS": "DODJI",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Dodji"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "LINGUERE",
+    "COMMUNES": "Linguère Dahra",
+    "ARRONDISSEMENTS": "DODJI",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Labgar"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "LINGUERE",
+    "COMMUNES": "Linguère Dahra",
+    "ARRONDISSEMENTS": "DODJI",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ouarkhokh"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "LINGUERE",
+    "COMMUNES": "Linguère Dahra",
+    "ARRONDISSEMENTS": "YANG YANG",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Kamb Mbeuleukhé"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "LINGUERE",
+    "COMMUNES": "Linguère Dahra",
+    "ARRONDISSEMENTS": "YANG YANG",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Mboula"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "LINGUERE",
+    "COMMUNES": "Linguère Dahra",
+    "ARRONDISSEMENTS": "YANG YANG",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Téssékéré Forage"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "LOUGA",
+    "COMMUNES": "Louga",
+    "ARRONDISSEMENTS": "COKI Coki",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ndiagne"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "LOUGA",
+    "COMMUNES": "Louga",
+    "ARRONDISSEMENTS": "COKI Coki",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Thiamène"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "LOUGA",
+    "COMMUNES": "Louga",
+    "ARRONDISSEMENTS": "COKI Coki",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Pété Ouarack"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "LOUGA",
+    "COMMUNES": "Louga",
+    "ARRONDISSEMENTS": "KEUR MOMAR SARR",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Keur Momar Sarr Nguer Malal"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "LOUGA",
+    "COMMUNES": "Louga",
+    "ARRONDISSEMENTS": "KEUR MOMAR SARR",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Syer"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "LOUGA",
+    "COMMUNES": "Louga",
+    "ARRONDISSEMENTS": "KEUR MOMAR SARR",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Gande"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "LOUGA",
+    "COMMUNES": "Louga",
+    "ARRONDISSEMENTS": "MBEDIENE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Mbédiene"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "LOUGA",
+    "COMMUNES": "Louga",
+    "ARRONDISSEMENTS": "MBEDIENE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Niomré"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "LOUGA",
+    "COMMUNES": "Louga",
+    "ARRONDISSEMENTS": "MBEDIENE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Nguidilé"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "LOUGA",
+    "COMMUNES": "Louga",
+    "ARRONDISSEMENTS": "MBEDIENE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Kéle Gueye"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "LOUGA",
+    "COMMUNES": "Louga",
+    "ARRONDISSEMENTS": "SAKAL",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Léona"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "LOUGA",
+    "COMMUNES": "Louga",
+    "ARRONDISSEMENTS": "SAKAL",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ngueune Sarr"
+  },
+  {
+    "REGION": "LOUGA",
+    "DEPARTEMENTS": "LOUGA",
+    "COMMUNES": "Louga",
+    "ARRONDISSEMENTS": "SAKAL",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Sakal"
+  },
+  {
+    "REGION": "MATAM",
+    "DEPARTEMENTS": "KANEL",
+    "COMMUNES": "Kanel Ouaoundé Semmé Dembancané",
+    "ARRONDISSEMENTS": "WOURO SIDY",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Wouro Sidy"
+  },
+  {
+    "REGION": "MATAM",
+    "DEPARTEMENTS": "KANEL",
+    "COMMUNES": "Kanel Ouaoundé Semmé Dembancané",
+    "ARRONDISSEMENTS": "WOURO SIDY",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ndendory"
+  },
+  {
+    "REGION": "MATAM",
+    "DEPARTEMENTS": "MATAM",
+    "COMMUNES": "Hamady Hounaré Sinthiou Bamambé-Banadji",
+    "ARRONDISSEMENTS": "ORKADIERE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Aouré"
+  },
+  {
+    "REGION": "MATAM",
+    "DEPARTEMENTS": "MATAM",
+    "COMMUNES": "Hamady Hounaré Sinthiou Bamambé-Banadji",
+    "ARRONDISSEMENTS": "ORKADIERE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Bokiladji"
+  },
+  {
+    "REGION": "MATAM",
+    "DEPARTEMENTS": "MATAM",
+    "COMMUNES": "Hamady Hounaré Sinthiou Bamambé-Banadji",
+    "ARRONDISSEMENTS": "ORKADIERE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Orkadiéré"
+  },
+  {
+    "REGION": "MATAM",
+    "DEPARTEMENTS": "MATAM",
+    "COMMUNES": "Matam Ourossogui Thilogne",
+    "ARRONDISSEMENTS": "AGNAM CIVOL",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Dabia"
+  },
+  {
+    "REGION": "MATAM",
+    "DEPARTEMENTS": "MATAM",
+    "COMMUNES": "Matam Ourossogui Thilogne",
+    "ARRONDISSEMENTS": "AGNAM CIVOL",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Des Agnam"
+  },
+  {
+    "REGION": "MATAM",
+    "DEPARTEMENTS": "MATAM",
+    "COMMUNES": "Matam Ourossogui Thilogne",
+    "ARRONDISSEMENTS": "AGNAM CIVOL",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Oréfondé"
+  },
+  {
+    "REGION": "MATAM",
+    "DEPARTEMENTS": "RANEROU FERLO",
+    "COMMUNES": "Matam Ourossogui Thilogne",
+    "ARRONDISSEMENTS": "OGO",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Bokidiawé"
+  },
+  {
+    "REGION": "MATAM",
+    "DEPARTEMENTS": "RANEROU FERLO",
+    "COMMUNES": "Matam Ourossogui Thilogne",
+    "ARRONDISSEMENTS": "OGO",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Nabadji Civol"
+  },
+  {
+    "REGION": "MATAM",
+    "DEPARTEMENTS": "RANEROU FERLO",
+    "COMMUNES": "Matam Ourossogui Thilogne",
+    "ARRONDISSEMENTS": "OGO",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ogo"
+  },
+  {
+    "REGION": "MATAM",
+    "DEPARTEMENTS": "RANEROU FERLO",
+    "COMMUNES": "Ranérou",
+    "ARRONDISSEMENTS": "VELINGARA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Lougré Thioly"
+  },
+  {
+    "REGION": "MATAM",
+    "DEPARTEMENTS": "RANEROU FERLO",
+    "COMMUNES": "Ranérou",
+    "ARRONDISSEMENTS": "VELINGARA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Oudalaye"
+  },
+  {
+    "REGION": "MATAM",
+    "DEPARTEMENTS": "RANEROU FERLO",
+    "COMMUNES": "Ranérou",
+    "ARRONDISSEMENTS": "VELINGARA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Vélingara"
+  },
+  {
+    "REGION": "SAINT LOUIS",
+    "DEPARTEMENTS": "DAGANA ",
+    "COMMUNES": "Dagana Richard Toll Rosso Diama Gaé",
+    "ARRONDISSEMENTS": "NDIAYE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ngnith"
+  },
+  {
+    "REGION": "SAINT LOUIS",
+    "DEPARTEMENTS": "DAGANA ",
+    "COMMUNES": "Dagana Richard Toll Rosso Diama Gaé",
+    "ARRONDISSEMENTS": "NDIAYE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ronkh"
+  },
+  {
+    "REGION": "SAINT LOUIS",
+    "DEPARTEMENTS": "DAGANA ",
+    "COMMUNES": "Ross-Béthio ",
+    "ARRONDISSEMENTS": "MBANE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Bokhol"
+  },
+  {
+    "REGION": "SAINT LOUIS",
+    "DEPARTEMENTS": "DAGANA ",
+    "COMMUNES": "Ross-Béthio ",
+    "ARRONDISSEMENTS": "MBANE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Mbane"
+  },
+  {
+    "REGION": "SAINT LOUIS",
+    "DEPARTEMENTS": "PODOR ",
+    "COMMUNES": "Podor Golléré Ndioum Niandane Mbouma",
+    "ARRONDISSEMENTS": "CAS CAS",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Méry"
+  },
+  {
+    "REGION": "SAINT LOUIS",
+    "DEPARTEMENTS": "PODOR ",
+    "COMMUNES": "Podor Golléré Ndioum Niandane Mbouma",
+    "ARRONDISSEMENTS": "CAS CAS",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Aéré Lao"
+  },
+  {
+    "REGION": "SAINT LOUIS",
+    "DEPARTEMENTS": "PODOR ",
+    "COMMUNES": "Podor Golléré Ndioum Niandane Mbouma",
+    "ARRONDISSEMENTS": "CAS CAS",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Madina Diathbé"
+  },
+  {
+    "REGION": "SAINT LOUIS",
+    "DEPARTEMENTS": "PODOR ",
+    "COMMUNES": "Guédé Chantier Démette Galoya Toucouleur",
+    "ARRONDISSEMENTS": "GAMADJI SARE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Gamadji Saré"
+  },
+  {
+    "REGION": "SAINT LOUIS",
+    "DEPARTEMENTS": "PODOR ",
+    "COMMUNES": "Guédé Chantier Démette Galoya Toucouleur",
+    "ARRONDISSEMENTS": "GAMADJI SARE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Dodel"
+  },
+  {
+    "REGION": "SAINT LOUIS",
+    "DEPARTEMENTS": "PODOR ",
+    "COMMUNES": "Guédé Chantier Démette Galoya Toucouleur",
+    "ARRONDISSEMENTS": "GAMADJI SARE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Guedé Village"
+  },
+  {
+    "REGION": "SAINT LOUIS",
+    "DEPARTEMENTS": "PODOR ",
+    "COMMUNES": "Guédé Chantier Démette Galoya Toucouleur",
+    "ARRONDISSEMENTS": "THILE BOUBACAR",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Fanaye"
+  },
+  {
+    "REGION": "SAINT LOUIS",
+    "DEPARTEMENTS": "PODOR ",
+    "COMMUNES": "Guédé Chantier Démette Galoya Toucouleur",
+    "ARRONDISSEMENTS": "THILE BOUBACAR",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ndiayene Peindao"
+  },
+  {
+    "REGION": "SAINT LOUIS",
+    "DEPARTEMENTS": "PODOR ",
+    "COMMUNES": "Guédé Chantier Démette Galoya Toucouleur",
+    "ARRONDISSEMENTS": "SALDE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Mbolo Birane"
+  },
+  {
+    "REGION": "SAINT LOUIS",
+    "DEPARTEMENTS": "PODOR ",
+    "COMMUNES": "Guédé Chantier Démette Galoya Toucouleur",
+    "ARRONDISSEMENTS": "SALDE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Pété"
+  },
+  {
+    "REGION": "SAINT LOUIS",
+    "DEPARTEMENTS": "SAINT LOUIS ",
+    "COMMUNES": "Saint Louis Mpal",
+    "ARRONDISSEMENTS": "RAO",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Fass Ngom"
+  },
+  {
+    "REGION": "SAINT LOUIS",
+    "DEPARTEMENTS": "SAINT LOUIS ",
+    "COMMUNES": "Saint Louis Mpal",
+    "ARRONDISSEMENTS": "RAO",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ndiébène Gandiole"
+  },
+  {
+    "REGION": "SAINT LOUIS",
+    "DEPARTEMENTS": "SAINT LOUIS ",
+    "COMMUNES": "Saint Louis Mpal",
+    "ARRONDISSEMENTS": "RAO",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Gandon"
+  },
+  {
+    "REGION": "SEDHIOU",
+    "DEPARTEMENTS": "BOUNKILING",
+    "COMMUNES": "Bounkiling Madina Wandifa",
+    "ARRONDISSEMENTS": "",
+    "C0MMUNESARRDT": ""
+  },
+  {
+    "REGION": "SEDHIOU",
+    "DEPARTEMENTS": "BOUNKILING",
+    "COMMUNES": "Bounkiling Madina Wandifa",
+    "ARRONDISSEMENTS": "BOGHAL",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Boghal"
+  },
+  {
+    "REGION": "SEDHIOU",
+    "DEPARTEMENTS": "BOUNKILING",
+    "COMMUNES": "Bounkiling Madina Wandifa",
+    "ARRONDISSEMENTS": "BOGHAL",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Tankon"
+  },
+  {
+    "REGION": "SEDHIOU",
+    "DEPARTEMENTS": "BOUNKILING",
+    "COMMUNES": "Bounkiling Madina Wandifa",
+    "ARRONDISSEMENTS": "BOGHAL",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ndiamacouta"
+  },
+  {
+    "REGION": "SEDHIOU",
+    "DEPARTEMENTS": "BOUNKILING",
+    "COMMUNES": "Bounkiling Madina Wandifa",
+    "ARRONDISSEMENTS": "BONA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Diacounda"
+  },
+  {
+    "REGION": "SEDHIOU",
+    "DEPARTEMENTS": "BOUNKILING",
+    "COMMUNES": "Bounkiling Madina Wandifa",
+    "ARRONDISSEMENTS": "BONA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Inor"
+  },
+  {
+    "REGION": "SEDHIOU",
+    "DEPARTEMENTS": "BOUNKILING",
+    "COMMUNES": "Bounkiling Madina Wandifa",
+    "ARRONDISSEMENTS": "BONA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Kandion Mangana"
+  },
+  {
+    "REGION": "SEDHIOU",
+    "DEPARTEMENTS": "BOUNKILING",
+    "COMMUNES": "Bounkiling Madina Wandifa",
+    "ARRONDISSEMENTS": "BONA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Bona"
+  },
+  {
+    "REGION": "SEDHIOU",
+    "DEPARTEMENTS": "BOUNKILING",
+    "COMMUNES": "Bounkiling Madina Wandifa",
+    "ARRONDISSEMENTS": "DIAROUME",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Diambati"
+  },
+  {
+    "REGION": "SEDHIOU",
+    "DEPARTEMENTS": "BOUNKILING",
+    "COMMUNES": "Bounkiling Madina Wandifa",
+    "ARRONDISSEMENTS": "DIAROUME",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Faoune"
+  },
+  {
+    "REGION": "SEDHIOU",
+    "DEPARTEMENTS": "BOUNKILING",
+    "COMMUNES": "Bounkiling Madina Wandifa",
+    "ARRONDISSEMENTS": "DIAROUME",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Diaroumé"
+  },
+  {
+    "REGION": "SEDHIOU",
+    "DEPARTEMENTS": "GOUDOMP",
+    "COMMUNES": "Goudomp Samine Tanaff Diattacounda",
+    "ARRONDISSEMENTS": "DIAROUME",
+    "C0MMUNESARRDT": ""
+  },
+  {
+    "REGION": "SEDHIOU",
+    "DEPARTEMENTS": "GOUDOMP",
+    "COMMUNES": "Goudomp Samine Tanaff Diattacounda",
+    "ARRONDISSEMENTS": "DJIBANAR",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Yarang Balante"
+  },
+  {
+    "REGION": "SEDHIOU",
+    "DEPARTEMENTS": "GOUDOMP",
+    "COMMUNES": "Goudomp Samine Tanaff Diattacounda",
+    "ARRONDISSEMENTS": "DJIBANAR",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Mangaroungou Santo"
+  },
+  {
+    "REGION": "SEDHIOU",
+    "DEPARTEMENTS": "GOUDOMP",
+    "COMMUNES": "Goudomp Samine Tanaff Diattacounda",
+    "ARRONDISSEMENTS": "DJIBANAR",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Simbandi Balante"
+  },
+  {
+    "REGION": "SEDHIOU",
+    "DEPARTEMENTS": "GOUDOMP",
+    "COMMUNES": "Goudomp Samine Tanaff Diattacounda",
+    "ARRONDISSEMENTS": "DJIBANAR",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Djibanar"
+  },
+  {
+    "REGION": "SEDHIOU",
+    "DEPARTEMENTS": "GOUDOMP",
+    "COMMUNES": "Goudomp Samine Tanaff Diattacounda",
+    "ARRONDISSEMENTS": "DJIBANAR",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Kaour"
+  },
+  {
+    "REGION": "SEDHIOU",
+    "DEPARTEMENTS": "GOUDOMP",
+    "COMMUNES": "Goudomp Samine Tanaff Diattacounda",
+    "ARRONDISSEMENTS": "SIMBANDI BRASSOU",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Diouboudou"
+  },
+  {
+    "REGION": "SEDHIOU",
+    "DEPARTEMENTS": "GOUDOMP",
+    "COMMUNES": "Goudomp Samine Tanaff Diattacounda",
+    "ARRONDISSEMENTS": "SIMBANDI BRASSOU",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Simbandi Brassou"
+  },
+  {
+    "REGION": "SEDHIOU",
+    "DEPARTEMENTS": "GOUDOMP",
+    "COMMUNES": "Goudomp Samine Tanaff Diattacounda",
+    "ARRONDISSEMENTS": "SIMBANDI BRASSOU",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Niagha"
+  },
+  {
+    "REGION": "SEDHIOU",
+    "DEPARTEMENTS": "GOUDOMP",
+    "COMMUNES": "Goudomp Samine Tanaff Diattacounda",
+    "ARRONDISSEMENTS": "KARANTABA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Karantaba"
+  },
+  {
+    "REGION": "SEDHIOU",
+    "DEPARTEMENTS": "GOUDOMP",
+    "COMMUNES": "Goudomp Samine Tanaff Diattacounda",
+    "ARRONDISSEMENTS": "KARANTABA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Kolibantang"
+  },
+  {
+    "REGION": "SEDHIOU",
+    "DEPARTEMENTS": "GOUDOMP",
+    "COMMUNES": "Goudomp Samine Tanaff Diattacounda",
+    "ARRONDISSEMENTS": "DJIREDJI",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Djiredji"
+  },
+  {
+    "REGION": "SEDHIOU",
+    "DEPARTEMENTS": "GOUDOMP",
+    "COMMUNES": "Goudomp Samine Tanaff Diattacounda",
+    "ARRONDISSEMENTS": "DJIREDJI",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Bambaly"
+  },
+  {
+    "REGION": "SEDHIOU",
+    "DEPARTEMENTS": "SEDHIOU",
+    "COMMUNES": "Sédhiou Diannah Malary Marsassoum",
+    "ARRONDISSEMENTS": "",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "DIENDE Oudoucar"
+  },
+  {
+    "REGION": "SEDHIOU",
+    "DEPARTEMENTS": "SEDHIOU",
+    "COMMUNES": "Sédhiou Diannah Malary Marsassoum",
+    "ARRONDISSEMENTS": "",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Koussy"
+  },
+  {
+    "REGION": "SEDHIOU",
+    "DEPARTEMENTS": "SEDHIOU",
+    "COMMUNES": "Sédhiou Diannah Malary Marsassoum",
+    "ARRONDISSEMENTS": "",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Sakar"
+  },
+  {
+    "REGION": "SEDHIOU",
+    "DEPARTEMENTS": "SEDHIOU",
+    "COMMUNES": "Sédhiou Diannah Malary Marsassoum",
+    "ARRONDISSEMENTS": "",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Diendé"
+  },
+  {
+    "REGION": "SEDHIOU",
+    "DEPARTEMENTS": "SEDHIOU",
+    "COMMUNES": "Sédhiou Diannah Malary Marsassoum",
+    "ARRONDISSEMENTS": "DJIBABOUYA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "San Samba"
+  },
+  {
+    "REGION": "SEDHIOU",
+    "DEPARTEMENTS": "SEDHIOU",
+    "COMMUNES": "Sédhiou Diannah Malary Marsassoum",
+    "ARRONDISSEMENTS": "DJIBABOUYA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Bémet Bidjini"
+  },
+  {
+    "REGION": "SEDHIOU",
+    "DEPARTEMENTS": "SEDHIOU",
+    "COMMUNES": "Sédhiou Diannah Malary Marsassoum",
+    "ARRONDISSEMENTS": "DJIBABOUYA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Djibabouya"
+  },
+  {
+    "REGION": "TAMBACOUNDA",
+    "DEPARTEMENTS": "BAKEL",
+    "COMMUNES": "Bakel Kidira Diawara",
+    "ARRONDISSEMENTS": "BELE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Bélé"
+  },
+  {
+    "REGION": "TAMBACOUNDA",
+    "DEPARTEMENTS": "BAKEL",
+    "COMMUNES": "Bakel Kidira Diawara",
+    "ARRONDISSEMENTS": "BELE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Sinthiou Fissa"
+  },
+  {
+    "REGION": "TAMBACOUNDA",
+    "DEPARTEMENTS": "BAKEL",
+    "COMMUNES": "Bakel Kidira Diawara",
+    "ARRONDISSEMENTS": "KENIEBA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Toumboura Sadatou"
+  },
+  {
+    "REGION": "TAMBACOUNDA",
+    "DEPARTEMENTS": "BAKEL",
+    "COMMUNES": "Bakel Kidira Diawara",
+    "ARRONDISSEMENTS": "KENIEBA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Madina Foulbé"
+  },
+  {
+    "REGION": "TAMBACOUNDA",
+    "DEPARTEMENTS": "BAKEL",
+    "COMMUNES": "Bakel Kidira Diawara",
+    "ARRONDISSEMENTS": "MOUDERY",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Moudery"
+  },
+  {
+    "REGION": "TAMBACOUNDA",
+    "DEPARTEMENTS": "BAKEL",
+    "COMMUNES": "Bakel Kidira Diawara",
+    "ARRONDISSEMENTS": "MOUDERY",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ballou"
+  },
+  {
+    "REGION": "TAMBACOUNDA",
+    "DEPARTEMENTS": "BAKEL",
+    "COMMUNES": "Bakel Kidira Diawara",
+    "ARRONDISSEMENTS": "MOUDERY",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Gabou"
+  },
+  {
+    "REGION": "TAMBACOUNDA",
+    "DEPARTEMENTS": "BAKEL",
+    "COMMUNES": "Bakel Kidira Diawara",
+    "ARRONDISSEMENTS": "BOYNGUEL BAMBA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Boynguel Bamba"
+  },
+  {
+    "REGION": "TAMBACOUNDA",
+    "DEPARTEMENTS": "BAKEL",
+    "COMMUNES": "Bakel Kidira Diawara",
+    "ARRONDISSEMENTS": "BOYNGUEL BAMBA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Sinthiou Mamadou Boubou"
+  },
+  {
+    "REGION": "TAMBACOUNDA",
+    "DEPARTEMENTS": "BAKEL",
+    "COMMUNES": "Bakel Kidira Diawara",
+    "ARRONDISSEMENTS": "BOYNGUEL BAMBA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Koussan"
+  },
+  {
+    "REGION": "TAMBACOUNDA",
+    "DEPARTEMENTS": "BAKEL",
+    "COMMUNES": "Bakel Kidira Diawara",
+    "ARRONDISSEMENTS": "BOYNGUEL BAMBA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Dougué"
+  },
+  {
+    "REGION": "TAMBACOUNDA",
+    "DEPARTEMENTS": "GOUDIRY",
+    "COMMUNES": "Goudiry Kothiary",
+    "ARRONDISSEMENTS": "DIANKE MAKHA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Dianké Makha"
+  },
+  {
+    "REGION": "TAMBACOUNDA",
+    "DEPARTEMENTS": "GOUDIRY",
+    "COMMUNES": "Goudiry Kothiary",
+    "ARRONDISSEMENTS": "DIANKE MAKHA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Boutoucoufara"
+  },
+  {
+    "REGION": "TAMBACOUNDA",
+    "DEPARTEMENTS": "GOUDIRY",
+    "COMMUNES": "Goudiry Kothiary",
+    "ARRONDISSEMENTS": "DIANKE MAKHA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Bani Israel"
+  },
+  {
+    "REGION": "TAMBACOUNDA",
+    "DEPARTEMENTS": "GOUDIRY",
+    "COMMUNES": "Goudiry Kothiary",
+    "ARRONDISSEMENTS": "DIANKE MAKHA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Komoti"
+  },
+  {
+    "REGION": "TAMBACOUNDA",
+    "DEPARTEMENTS": "GOUDIRY",
+    "COMMUNES": "Goudiry Kothiary",
+    "ARRONDISSEMENTS": "KOULOR",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Sinthiou Bocar Aly"
+  },
+  {
+    "REGION": "TAMBACOUNDA",
+    "DEPARTEMENTS": "GOUDIRY",
+    "COMMUNES": "Goudiry Kothiary",
+    "ARRONDISSEMENTS": "KOULOR",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Koulor"
+  },
+  {
+    "REGION": "TAMBACOUNDA",
+    "DEPARTEMENTS": "GOUDIRY",
+    "COMMUNES": "Goudiry Kothiary",
+    "ARRONDISSEMENTS": "BALA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Bala"
+  },
+  {
+    "REGION": "TAMBACOUNDA",
+    "DEPARTEMENTS": "GOUDIRY",
+    "COMMUNES": "Goudiry Kothiary",
+    "ARRONDISSEMENTS": "BALA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Koar"
+  },
+  {
+    "REGION": "TAMBACOUNDA",
+    "DEPARTEMENTS": "GOUDIRY",
+    "COMMUNES": "Goudiry Kothiary",
+    "ARRONDISSEMENTS": "BALA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Goumbayel"
+  },
+  {
+    "REGION": "TAMBACOUNDA",
+    "DEPARTEMENTS": "KOUPENTOUM",
+    "COMMUNES": "Koumpentoum",
+    "ARRONDISSEMENTS": "BAMBA THIALENE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ndame"
+  },
+  {
+    "REGION": "TAMBACOUNDA",
+    "DEPARTEMENTS": "KOUPENTOUM",
+    "COMMUNES": "Koumpentoum",
+    "ARRONDISSEMENTS": "BAMBA THIALENE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Kahène"
+  },
+  {
+    "REGION": "TAMBACOUNDA",
+    "DEPARTEMENTS": "KOUPENTOUM",
+    "COMMUNES": "Koumpentoum",
+    "ARRONDISSEMENTS": "BAMBA THIALENE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Bamba Thialène"
+  },
+  {
+    "REGION": "TAMBACOUNDA",
+    "DEPARTEMENTS": "KOUPENTOUM",
+    "COMMUNES": "Koumpentoum",
+    "ARRONDISSEMENTS": "KOUTHIABA WOLOF",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Payar"
+  },
+  {
+    "REGION": "TAMBACOUNDA",
+    "DEPARTEMENTS": "KOUPENTOUM",
+    "COMMUNES": "Koumpentoum",
+    "ARRONDISSEMENTS": "KOUTHIABA WOLOF",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Kouthiaba Wolof"
+  },
+  {
+    "REGION": "TAMBACOUNDA",
+    "DEPARTEMENTS": "KOUPENTOUM",
+    "COMMUNES": "Koumpentoum",
+    "ARRONDISSEMENTS": "KOUTHIABA WOLOF",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Malème Niani"
+  },
+  {
+    "REGION": "TAMBACOUNDA",
+    "DEPARTEMENTS": "KOUPENTOUM",
+    "COMMUNES": "Koumpentoum",
+    "ARRONDISSEMENTS": "MAKACOLIBANTANG",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Niani Toucouleur"
+  },
+  {
+    "REGION": "TAMBACOUNDA",
+    "DEPARTEMENTS": "KOUPENTOUM",
+    "COMMUNES": "Koumpentoum",
+    "ARRONDISSEMENTS": "MAKACOLIBANTANG",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Makacolibantang"
+  },
+  {
+    "REGION": "TAMBACOUNDA",
+    "DEPARTEMENTS": "KOUPENTOUM",
+    "COMMUNES": "Koumpentoum",
+    "ARRONDISSEMENTS": "MAKACOLIBANTANG",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ndoga Babacar"
+  },
+  {
+    "REGION": "TAMBACOUNDA",
+    "DEPARTEMENTS": "TAMBA",
+    "COMMUNES": "Tambacounda",
+    "ARRONDISSEMENTS": "MISSIRAH",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Dialacoto Missirah"
+  },
+  {
+    "REGION": "TAMBACOUNDA",
+    "DEPARTEMENTS": "TAMBA",
+    "COMMUNES": "Tambacounda",
+    "ARRONDISSEMENTS": "MISSIRAH",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Néttéboulou"
+  },
+  {
+    "REGION": "TAMBACOUNDA",
+    "DEPARTEMENTS": "TAMBA",
+    "COMMUNES": "Tambacounda",
+    "ARRONDISSEMENTS": "KOUSSANAR ",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Sinthiou Malème"
+  },
+  {
+    "REGION": "TAMBACOUNDA",
+    "DEPARTEMENTS": "TAMBA",
+    "COMMUNES": "Tambacounda",
+    "ARRONDISSEMENTS": "KOUSSANAR ",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Koussanar"
+  },
+  {
+    "REGION": "THIES",
+    "DEPARTEMENTS": "MBOUR",
+    "COMMUNES": "Joal – Fadhiouth Diass Nguekhokh Thiadiaye Saly Portudal Ngaparou Somone Popenguine",
+    "ARRONDISSEMENTS": "FISSEL",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Fissel"
+  },
+  {
+    "REGION": "THIES",
+    "DEPARTEMENTS": "MBOUR",
+    "COMMUNES": "Joal – Fadhiouth Diass Nguekhokh Thiadiaye Saly Portudal Ngaparou Somone Popenguine",
+    "ARRONDISSEMENTS": "FISSEL",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ndiaganiao"
+  },
+  {
+    "REGION": "THIES",
+    "DEPARTEMENTS": "MBOUR",
+    "COMMUNES": "Joal – Fadhiouth Diass Nguekhokh Thiadiaye Saly Portudal Ngaparou Somone Popenguine",
+    "ARRONDISSEMENTS": "SESSENE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Sessene"
+  },
+  {
+    "REGION": "THIES",
+    "DEPARTEMENTS": "MBOUR",
+    "COMMUNES": "Joal – Fadhiouth Diass Nguekhokh Thiadiaye Saly Portudal Ngaparou Somone Popenguine",
+    "ARRONDISSEMENTS": "SESSENE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Sandiara"
+  },
+  {
+    "REGION": "THIES",
+    "DEPARTEMENTS": "MBOUR",
+    "COMMUNES": "Joal – Fadhiouth Diass Nguekhokh Thiadiaye Saly Portudal Ngaparou Somone Popenguine",
+    "ARRONDISSEMENTS": "SESSENE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Nguéniène"
+  },
+  {
+    "REGION": "THIES",
+    "DEPARTEMENTS": "MBOUR",
+    "COMMUNES": "Joal – Fadhiouth Diass Nguekhokh Thiadiaye Saly Portudal Ngaparou Somone Popenguine",
+    "ARRONDISSEMENTS": "SINDIA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Sindia Mbour Malicounda"
+  },
+  {
+    "REGION": "THIES",
+    "DEPARTEMENTS": "MBOUR",
+    "COMMUNES": "Joal – Fadhiouth Diass Nguekhokh Thiadiaye Saly Portudal Ngaparou Somone Popenguine",
+    "ARRONDISSEMENTS": "THIENABA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Thiénaba"
+  },
+  {
+    "REGION": "THIES",
+    "DEPARTEMENTS": "MBOUR",
+    "COMMUNES": "Joal – Fadhiouth Diass Nguekhokh Thiadiaye Saly Portudal Ngaparou Somone Popenguine",
+    "ARRONDISSEMENTS": "THIENABA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ngoudiane"
+  },
+  {
+    "REGION": "THIES",
+    "DEPARTEMENTS": "MBOUR",
+    "COMMUNES": "Joal – Fadhiouth Diass Nguekhokh Thiadiaye Saly Portudal Ngaparou Somone Popenguine",
+    "ARRONDISSEMENTS": "THIENABA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ndiéyène Sirakh"
+  },
+  {
+    "REGION": "THIES",
+    "DEPARTEMENTS": "MBOUR",
+    "COMMUNES": "Joal – Fadhiouth Diass Nguekhokh Thiadiaye Saly Portudal Ngaparou Somone Popenguine",
+    "ARRONDISSEMENTS": "THIENABA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Touba Toul"
+  },
+  {
+    "REGION": "THIES",
+    "DEPARTEMENTS": "THIES",
+    "COMMUNES": "Thies Kayar Khombole Pout",
+    "ARRONDISSEMENTS": "KEUR MOUSSA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Keur Moussa Diender"
+  },
+  {
+    "REGION": "THIES",
+    "DEPARTEMENTS": "THIES",
+    "COMMUNES": "Thies Kayar Khombole Pout",
+    "ARRONDISSEMENTS": "KEUR MOUSSA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Fandène"
+  },
+  {
+    "REGION": "THIES",
+    "DEPARTEMENTS": "THIES",
+    "COMMUNES": "Thies Kayar Khombole Pout",
+    "ARRONDISSEMENTS": "NOTTO",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Notto"
+  },
+  {
+    "REGION": "THIES",
+    "DEPARTEMENTS": "THIES",
+    "COMMUNES": "Thies Kayar Khombole Pout",
+    "ARRONDISSEMENTS": "NOTTO",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Tassète"
+  },
+  {
+    "REGION": "THIES",
+    "DEPARTEMENTS": "THIES",
+    "COMMUNES": "Thies Kayar Khombole Pout",
+    "ARRONDISSEMENTS": "MEOUANE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Méouane"
+  },
+  {
+    "REGION": "THIES",
+    "DEPARTEMENTS": "THIES",
+    "COMMUNES": "Thies Kayar Khombole Pout",
+    "ARRONDISSEMENTS": "MEOUANE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Darou Khoudoss"
+  },
+  {
+    "REGION": "THIES",
+    "DEPARTEMENTS": "THIES",
+    "COMMUNES": "Thies Kayar Khombole Pout",
+    "ARRONDISSEMENTS": "MEOUANE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Taïba Ndiaye"
+  },
+  {
+    "REGION": "THIES",
+    "DEPARTEMENTS": "TIVAOUANE",
+    "COMMUNES": "Tivaouane Mboro Mékhé",
+    "ARRONDISSEMENTS": "MERINA DAKHAR",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Mérina Dakhar"
+  },
+  {
+    "REGION": "THIES",
+    "DEPARTEMENTS": "TIVAOUANE",
+    "COMMUNES": "Tivaouane Mboro Mékhé",
+    "ARRONDISSEMENTS": "MERINA DAKHAR",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Koul"
+  },
+  {
+    "REGION": "THIES",
+    "DEPARTEMENTS": "TIVAOUANE",
+    "COMMUNES": "Tivaouane Mboro Mékhé",
+    "ARRONDISSEMENTS": "MERINA DAKHAR",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Pékèsse"
+  },
+  {
+    "REGION": "THIES",
+    "DEPARTEMENTS": "TIVAOUANE",
+    "COMMUNES": "Tivaouane Mboro Mékhé",
+    "ARRONDISSEMENTS": "NIAKHENE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Niakhène"
+  },
+  {
+    "REGION": "THIES",
+    "DEPARTEMENTS": "TIVAOUANE",
+    "COMMUNES": "Tivaouane Mboro Mékhé",
+    "ARRONDISSEMENTS": "NIAKHENE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Mbayène"
+  },
+  {
+    "REGION": "THIES",
+    "DEPARTEMENTS": "TIVAOUANE",
+    "COMMUNES": "Tivaouane Mboro Mékhé",
+    "ARRONDISSEMENTS": "NIAKHENE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Thilmakha"
+  },
+  {
+    "REGION": "THIES",
+    "DEPARTEMENTS": "TIVAOUANE",
+    "COMMUNES": "Tivaouane Mboro Mékhé",
+    "ARRONDISSEMENTS": "NIAKHENE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ngandiouf"
+  },
+  {
+    "REGION": "THIES",
+    "DEPARTEMENTS": "TIVAOUANE",
+    "COMMUNES": "Tivaouane Mboro Mékhé",
+    "ARRONDISSEMENTS": "PAMBAL",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Notto Gouye Diama"
+  },
+  {
+    "REGION": "THIES",
+    "DEPARTEMENTS": "TIVAOUANE",
+    "COMMUNES": "Tivaouane Mboro Mékhé",
+    "ARRONDISSEMENTS": "PAMBAL",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Mont Rolland"
+  },
+  {
+    "REGION": "THIES",
+    "DEPARTEMENTS": "TIVAOUANE",
+    "COMMUNES": "Tivaouane Mboro Mékhé",
+    "ARRONDISSEMENTS": "PAMBAL",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Pire Goureye"
+  },
+  {
+    "REGION": "THIES",
+    "DEPARTEMENTS": "TIVAOUANE",
+    "COMMUNES": "Tivaouane Mboro Mékhé",
+    "ARRONDISSEMENTS": "PAMBAL",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Chérif Lo"
+  },
+  {
+    "REGION": "ZIGUINCHOR",
+    "DEPARTEMENTS": "ZIGUINCHOR",
+    "COMMUNES": "Ziguinchor",
+    "ARRONDISSEMENTS": "NIAGUIS",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Niaguis"
+  },
+  {
+    "REGION": "ZIGUINCHOR",
+    "DEPARTEMENTS": "ZIGUINCHOR",
+    "COMMUNES": "Ziguinchor",
+    "ARRONDISSEMENTS": "NIAGUIS",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Adéane"
+  },
+  {
+    "REGION": "ZIGUINCHOR",
+    "DEPARTEMENTS": "ZIGUINCHOR",
+    "COMMUNES": "Ziguinchor",
+    "ARRONDISSEMENTS": "NIAGUIS",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Boutoupa Camaracounda"
+  },
+  {
+    "REGION": "ZIGUINCHOR",
+    "DEPARTEMENTS": "ZIGUINCHOR",
+    "COMMUNES": "Ziguinchor",
+    "ARRONDISSEMENTS": "NIASSIA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Niassia"
+  },
+  {
+    "REGION": "ZIGUINCHOR",
+    "DEPARTEMENTS": "ZIGUINCHOR",
+    "COMMUNES": "Ziguinchor",
+    "ARRONDISSEMENTS": "NIASSIA",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Enampore"
+  },
+  {
+    "REGION": "ZIGUINCHOR",
+    "DEPARTEMENTS": "OUSSOUYE",
+    "COMMUNES": "Oussouye",
+    "ARRONDISSEMENTS": "CABROUSSE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Diembéring"
+  },
+  {
+    "REGION": "ZIGUINCHOR",
+    "DEPARTEMENTS": "OUSSOUYE",
+    "COMMUNES": "Oussouye",
+    "ARRONDISSEMENTS": "CABROUSSE",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Santhiaba Manjack"
+  },
+  {
+    "REGION": "ZIGUINCHOR",
+    "DEPARTEMENTS": "OUSSOUYE",
+    "COMMUNES": "Oussouye",
+    "ARRONDISSEMENTS": "LOUDIA OUOLOF",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Oukout"
+  },
+  {
+    "REGION": "ZIGUINCHOR",
+    "DEPARTEMENTS": "OUSSOUYE",
+    "COMMUNES": "Oussouye",
+    "ARRONDISSEMENTS": "LOUDIA OUOLOF",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Mlomp"
+  },
+  {
+    "REGION": "ZIGUINCHOR",
+    "DEPARTEMENTS": "OUSSOUYE",
+    "COMMUNES": "Oussouye",
+    "ARRONDISSEMENTS": "KATABA 1",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Kataba 1"
+  },
+  {
+    "REGION": "ZIGUINCHOR",
+    "DEPARTEMENTS": "OUSSOUYE",
+    "COMMUNES": "Oussouye",
+    "ARRONDISSEMENTS": "KATABA 2",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Djinaky"
+  },
+  {
+    "REGION": "ZIGUINCHOR",
+    "DEPARTEMENTS": "OUSSOUYE",
+    "COMMUNES": "Oussouye",
+    "ARRONDISSEMENTS": "KATABA 3",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Kafontine"
+  },
+  {
+    "REGION": "ZIGUINCHOR",
+    "DEPARTEMENTS": "BIGNONA",
+    "COMMUNES": "Bignona Thionck-Essyl Diouloulou",
+    "ARRONDISSEMENTS": "TENGHORI",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Niamone Tenghori"
+  },
+  {
+    "REGION": "ZIGUINCHOR",
+    "DEPARTEMENTS": "BIGNONA",
+    "COMMUNES": "Bignona Thionck-Essyl Diouloulou",
+    "ARRONDISSEMENTS": "TENGHORI",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Ouonck"
+  },
+  {
+    "REGION": "ZIGUINCHOR",
+    "DEPARTEMENTS": "BIGNONA",
+    "COMMUNES": "Bignona Thionck-Essyl Diouloulou",
+    "ARRONDISSEMENTS": "TENGHORI",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Coubalan"
+  },
+  {
+    "REGION": "ZIGUINCHOR",
+    "DEPARTEMENTS": "BIGNONA",
+    "COMMUNES": "Bignona Thionck-Essyl Diouloulou",
+    "ARRONDISSEMENTS": "TENDOUCK",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Balinghore"
+  },
+  {
+    "REGION": "ZIGUINCHOR",
+    "DEPARTEMENTS": "BIGNONA",
+    "COMMUNES": "Bignona Thionck-Essyl Diouloulou",
+    "ARRONDISSEMENTS": "TENDOUCK",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Diégoune"
+  },
+  {
+    "REGION": "ZIGUINCHOR",
+    "DEPARTEMENTS": "BIGNONA",
+    "COMMUNES": "Bignona Thionck-Essyl Diouloulou",
+    "ARRONDISSEMENTS": "TENDOUCK",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Kartiack"
+  },
+  {
+    "REGION": "ZIGUINCHOR",
+    "DEPARTEMENTS": "BIGNONA",
+    "COMMUNES": "Bignona Thionck-Essyl Diouloulou",
+    "ARRONDISSEMENTS": "TENDOUCK",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Mangagoulack"
+  },
+  {
+    "REGION": "ZIGUINCHOR",
+    "DEPARTEMENTS": "BIGNONA",
+    "COMMUNES": "Bignona Thionck-Essyl Diouloulou",
+    "ARRONDISSEMENTS": "TENDOUCK",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Mlom"
+  },
+  {
+    "REGION": "ZIGUINCHOR",
+    "DEPARTEMENTS": "BIGNONA",
+    "COMMUNES": "Bignona Thionck-Essyl Diouloulou",
+    "ARRONDISSEMENTS": "SINDIAN",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Djibidione"
+  },
+  {
+    "REGION": "ZIGUINCHOR",
+    "DEPARTEMENTS": "BIGNONA",
+    "COMMUNES": "Bignona Thionck-Essyl Diouloulou",
+    "ARRONDISSEMENTS": "SINDIAN",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Oulampane"
+  },
+  {
+    "REGION": "ZIGUINCHOR",
+    "DEPARTEMENTS": "BIGNONA",
+    "COMMUNES": "Bignona Thionck-Essyl Diouloulou",
+    "ARRONDISSEMENTS": "SINDIAN",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Sindian"
+  },
+  {
+    "REGION": "ZIGUINCHOR",
+    "DEPARTEMENTS": "BIGNONA",
+    "COMMUNES": "Bignona Thionck-Essyl Diouloulou",
+    "ARRONDISSEMENTS": "SINDIAN",
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": "Suelle"
+  }
+]

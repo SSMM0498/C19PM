@@ -37,11 +37,11 @@ class _MapWidgetState extends State<MapWidget> {
         positions = parser.getPositions();
       });
       widget.localities.forEach((l) {
-        double offsetX = (widget.havePopup) ? SizeHelper.width() / 50 * 2 : 0;
-        double offsetY = (widget.havePopup) ? SizeHelper.height() / 50 * 2 : 0;
-        double scale = (widget.havePopup) ? SizeHelper.width() / 850 * SizeHelper.height() / 950 : 1;
-        l.left = (positions[l.name].x * scale) + offsetX - 25;
-        l.top = (positions[l.name].y * scale) + offsetY - 25;
+        double scale = (widget.havePopup)
+            ? SizeHelper.width() / 850 * SizeHelper.height() / 950
+            : 1;
+        l.left = (positions[l.name].x * scale) - 25;
+        l.top = (positions[l.name].y * scale) - 25;
         if (l.name == "Fatick") {
           l.left -= 35;
         } else if (l.name == "Kaolack") {
@@ -58,7 +58,7 @@ class _MapWidgetState extends State<MapWidget> {
       color: Colors.grey[900], // just make a difference
       width: double
           .infinity, // full screen here, you can change size to see different effect
-      height: SizeHelper.height() * .8,
+      height: SizeHelper.height() * .75,
       child: CanvasTouchDetector(
         builder: (context) => CustomPaint(
           painter: PathPainter(
@@ -102,7 +102,8 @@ class PathPainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    double scale = (havePopup) ? SizeHelper.width() / 850 * SizeHelper.height() / 950 : 1;
+    double scale =
+        (havePopup) ? SizeHelper.width() / 850 * SizeHelper.height() / 950 : 1;
 
     // scale each path to match canvas size
     final Matrix4 matrix4 = Matrix4.identity();
@@ -122,7 +123,7 @@ class PathPainter extends CustomPainter {
     paths.forEach((title, path) {
       paint.style = path == curPath ? PaintingStyle.fill : PaintingStyle.stroke;
       touchCanvas.drawPath(
-        path.transform(matrix4.storage).shift(Offset(offsetX, offsetY)),
+        path.transform(matrix4.storage).shift(Offset(0, 0)),
         paint,
         onTapDown: (details) {
           String city = title;

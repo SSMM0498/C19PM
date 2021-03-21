@@ -12,11 +12,13 @@ class HomeScreen extends StatelessWidget {
         children: <Widget>[
           Container(
             width: SizeHelper.width() * 0.05,
+            height: double.infinity,
             color: Colors.green,
+            child: SideBar(),
           ),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
-            width: SizeHelper.width() * 0.70,
+            width: SizeHelper.width() * 0.65,
             height: SizeHelper.height() * 1,
             color: Colors.grey[900],
             child: Column(
@@ -27,7 +29,7 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           Container(
-              width: SizeHelper.width() * 0.25,
+              width: SizeHelper.width() * 0.3,
               color: Colors.green,
               child: DataViewer()),
         ],

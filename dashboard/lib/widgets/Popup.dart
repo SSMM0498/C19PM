@@ -1,9 +1,7 @@
 import 'package:covid19_progression_modeler/models/models.dart';
+import 'package:covid19_progression_modeler/widgets/Map.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:covid19_progression_modeler/config/config.dart';
-
-import 'LocalityInfos.dart';
 
 class Popup extends StatefulWidget {
   const Popup({
@@ -33,65 +31,57 @@ class _PopupState extends State<Popup> {
     return AlertDialog(
       title: Text(widget.city),
       // scrollable: true,
+      titlePadding: EdgeInsets.all(15),
+      contentPadding: EdgeInsets.all(5),
+      backgroundColor: Colors.grey[900],
       content: Container(
         width: SizeHelper.width() * 0.8,
-        height: SizeHelper.height() * 0.8,
+        height: SizeHelper.height() * 0.85,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            ElevatedButton(
-              child: Text(!_showDetails ? 'Voir détails' : 'Masquer détails'),
-              onPressed: toggleDetails,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                ElevatedButton(
+                  child:
+                      Text(!_showDetails ? 'Voir détails' : 'Masquer détails'),
+                  onPressed: toggleDetails,
+                ),
+                ElevatedButton(
+                  onPressed: () => print("Download"),
+                  child: Text("Télécharger les stats"),
+                ),
+                ElevatedButton(
+                  onPressed: () => print("Download"),
+                  child: Text("Télécharger l'image"),
+                ),
+              ],
             ),
+            SizedBox(height: 15),
             Visibility(
               visible: _showDetails,
-              child: Column(
-                children: [
-                  Row(
-                    mainAxisSize: MainAxisSize.max,
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Stack(children: [
-                        Container(
-                            child: SvgPicture.asset(
-                              "assets/regions/${getFileName(widget.city)}.svg",
-                              fit: BoxFit.contain,
-                              // color: Colors.green,
-                            ),
-                            height: SizeHelper.height() * 0.6,
-                            width: SizeHelper.width() * 0.5),
-                        ...widget.deps.map((d) => LocalityInfos(d)).toList(),
-                      ]),
-                      SizedBox(width: 50),
-                      Text("All infos about ${widget.city}"),
-                    ],
-                  ),
-                  Row(
-                    mainAxisSize: MainAxisSize.max,
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      ElevatedButton(
-                          onPressed: () => print("Download"),
-                          child: Text("Télécharger les stats")),
-                      ElevatedButton(
-                          onPressed: () => print("Download"),
-                          child: Text("Télécharger l'image")),
-                    ],
-                  ),
-                ],
+              child: Container(
+                child: MapWidget(
+                  localities: widget.deps,
+                  mapname: "regions/${getFileName(widget.city)}",
+                  havePopup: false,
+                ),
+                width: SizeHelper.width() * 0.5,
+                height: SizeHelper.height() * 0.75,
               ),
             ),
           ],
         ),
       ),
-      actions: <Widget>[
-        ElevatedButton(
-          onPressed: () {
-            Navigator.of(context).pop();
-          },
-          child: Text("Okay"),
-        ),
-      ],
+      // actions: <Widget>[
+      //   ElevatedButton(
+      //     onPressed: () {
+      //       Navigator.of(context).pop();
+      //     },
+      //     child: Text("Okay"),
+      //   ),
+      // ],
     );
   }
 }

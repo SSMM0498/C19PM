@@ -18,8 +18,7 @@ class HomeScreen extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
             width: SizeHelper.width() * 0.70,
             height: SizeHelper.height() * 1,
-            color: Colors.white,
-            // color: Colors.grey[900],
+            color: Colors.grey[900],
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,

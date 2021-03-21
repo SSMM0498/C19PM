@@ -7,13 +7,19 @@ import 'package:path_parsing/path_parsing.dart';
 import 'package:xml/xml.dart' as xml;
 //SVG parsing
 
+class Position {
+  double x;
+  double y;
+
+  Position({this.x, this.y});
+}
+
 /// Parses a minimal subset of a SVG file and extracts all paths segments.
 class SvgParser {
   /// Each [PathSegment] represents a continuous Path element of the parent Path
   // ignore: deprecated_member_use
-  final List<PathSegment> _pathSegments = List<PathSegment>();
-  // ignore: deprecated_member_use
   Map<String, Path> _paths = new Map<String, Path>();
+  Map<String, Position> _positions = new Map<String, Position>();
 
   Color parseColor(String cStr) {
     if (cStr == null || cStr.isEmpty)
@@ -29,30 +35,7 @@ class SvgParser {
     }
   }
 
-  //Extract segments of each path and create [PathSegment] representation
-  void addPathSegments(Path path, int index, double strokeWidth, Color color) {
-    int firstPathSegmentIndex = this._pathSegments.length;
-    int relativeIndex = 0;
-    path.computeMetrics().forEach((pp) {
-      PathSegment segment = new PathSegment()
-        ..path = pp.extractPath(0, pp.length)
-        ..length = pp.length
-        ..firstSegmentOfPathIndex = firstPathSegmentIndex
-        ..pathIndex = index
-        ..relativeIndex = relativeIndex;
-
-      if (color != null) segment.color = color;
-
-      if (strokeWidth != null) segment.strokeWidth = strokeWidth;
-
-      this._pathSegments.add(segment);
-      relativeIndex++;
-    });
-  }
-
   void loadFromString(String svgString) {
-    this._pathSegments.clear();
-    int index = 0; //number of parsed path elements
     // ignore: deprecated_member_use
     var doc = xml.parse(svgString);
     doc
@@ -67,116 +50,28 @@ class SvgParser {
         Path path = new Path();
         writeSvgPathDataToPath(dPath.value, new PathModifier(path));
 
-        Color color;
-        double strokeWidth;
-
-        //Attributes - [1] css-styling
-        var style = attributes.firstWhere((attr) => attr.name.local == "style",
-            orElse: () => null);
-        if (style != null) {
-          //Parse color of stroke
-          RegExp exp = new RegExp(r"stroke:([^;]+);");
-          Match match = exp.firstMatch(style.value);
-          if (match != null) {
-            String cStr = match.group(1);
-            color = parseColor(cStr);
-          }
-          //Parse stroke-width
-          exp = new RegExp(r"stroke-width:([0-9.]+)");
-          match = exp.firstMatch(style.value);
-          if (match != null) {
-            String cStr = match.group(1);
-            strokeWidth = double.tryParse(cStr) ?? null;
-          }
-        }
-
-        //Attributes - [2] svg-attributes
-        var strokeElement = attributes.firstWhere(
-            (attr) => attr.name.local == "stroke",
-            orElse: () => null);
-        if (strokeElement != null) {
-          color = parseColor(strokeElement.value);
-        }
-
-        var strokeWidthElement = attributes.firstWhere(
-            (attr) => attr.name.local == "stroke-width",
-            orElse: () => null);
-        if (strokeWidthElement != null) {
-          strokeWidth = double.tryParse(strokeWidthElement.value) ?? null;
-        }
-
         this._paths[title.value] = path;
-        addPathSegments(path, index, strokeWidth, color);
-        index++;
+        this._positions[title.value] = new Position(
+            x: path.getBounds().center.dx, y: path.getBounds().center.dy);
       }
-    });
-  }
-
-  void loadFromPaths(Map<String, Path> paths) {
-    this._pathSegments.clear();
-    this._paths = paths;
-
-    int index = 0;
-    paths.forEach((k, p) {
-      assert(p != null, "Path element in `paths` must not be null.");
-      addPathSegments(p, index, null, null);
-      index++;
     });
   }
 
   /// Parses Svg from provided asset path
   Future<void> loadFromFile(String file) async {
-    this._pathSegments.clear();
     String svgString = await rootBundle.loadString(file);
     loadFromString(svgString);
-  }
-
-  /// Returns extracted [PathSegment] elements of parsed Svg
-  List<PathSegment> getPathSegments() {
-    return this._pathSegments;
   }
 
   /// Returns extracted [Path] elements of parsed Svg
   Map<String, Path> getPaths() {
     return this._paths;
   }
-}
 
-/// Represents a segment of path, as returned by path.computeMetrics() and the associated painting parameters for each Path
-class PathSegment {
-  PathSegment()
-      : strokeWidth = 0.0,
-        color = Colors.black,
-        firstSegmentOfPathIndex = 0,
-        relativeIndex = 0,
-        pathIndex = 0 {
-    //That is fun.
-    // List colors = [Colors.red, Colors.green, Colors.yellow];
-    // Random random = new Random();
-    // color = colors[random.nextInt(3)];
+  /// Returns extracted [Path] elements of parsed Svg
+  Map<String, Position> getPositions() {
+    return this._positions;
   }
-
-  /// A continuous path/segment
-  Path path;
-  double strokeWidth;
-  Color color;
-
-  /// Length of the segment path
-  double length;
-
-  /// Denotes the index of the first segment of the containing path when PathOrder.original
-  int firstSegmentOfPathIndex;
-
-  /// Corresponding containing path index
-  int pathIndex;
-
-  /// Denotes relative index to  firstSegmentOfPathIndex
-  int relativeIndex;
-
-  /// If stroke, how to end
-// StrokeCap cap;
-//PaintingStyle
-// PaintingStyle style;
 }
 
 /// A [PathProxy] that saves Path command in path

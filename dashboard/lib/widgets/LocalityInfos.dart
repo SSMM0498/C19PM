@@ -11,8 +11,8 @@ class LocalityInfos extends StatelessWidget {
         child: Column(
           children: [
             Container(
-                width: 45,
-                height: 45,
+                width: 40,
+                height: 40,
                 decoration: BoxDecoration(
                     color: Color.fromRGBO(25, 125, 30, 0.75),
                     shape: BoxShape.circle),
@@ -20,9 +20,13 @@ class LocalityInfos extends StatelessWidget {
                     child: Text("${locality.nbCase}",
                         style: TextStyle(
                             color: Colors.white,
-                            fontSize: 25,
+                            fontSize: 20,
                             fontWeight: FontWeight.bold)))),
-            Text(locality.name, style: TextStyle(fontSize: 18))
+            Text(locality.name,
+                style: TextStyle(
+                  fontSize: 18,
+                  color: Colors.white,
+                ))
           ],
         ),
         top: locality.top,

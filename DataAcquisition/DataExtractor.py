@@ -1,46 +1,47 @@
 import re
-import fitz 
 import io
-from PIL import Image
+from PIL import Image, ImageEnhance, ImageFilter
 from pytesseract import pytesseract
+# import fitz 
 
-
-def pdfToImage(pdf):
-    # File path you want to extract images from
-    file = pdf
-    # open the file
-    pdf_file = fitz.open(file)
-    images = []
-    for page_index in range(len(pdf_file)):
-        # get the page itself
-        page = pdf_file[page_index]
-        image_list = page.getImageList()
-        # printing number of images found in this page
-        if image_list:
-            print(f"[+] Found a total of {len(image_list)} images in page {page_index}")
-        else:
-            print("[!] No images found on page", page_index)
-        for image_index, img in enumerate(page.getImageList(), start=1):
-            # get the XREF of the image
-            xref = img[0]
-            # extract the image bytes
-            base_image = pdf_file.extractImage(xref)
-            image_bytes = base_image["image"]
-            # get the image extension
-            image_ext = base_image["ext"]
-            # load it to PIL
-            image = Image.open(io.BytesIO(image_bytes))
-            # save it to local disk
-            images.append(f"image{page_index+1}_{image_index}.{image_ext}")
-            image.save(open(f"image{page_index+1}_{image_index}.{image_ext}", "wb"))
-    return images
+# Function To Get Images from a pdf file : Works if U install fitz
+# def pdfToImage(pdf):
+#     # File path you want to extract images from
+#     file = pdf
+#     # open the file
+#     pdf_file = fitz.open(file)
+#     images = []
+#     for page_index in range(len(pdf_file)):
+#         # get the page itself
+#         page = pdf_file[page_index]
+#         image_list = page.getImageList()
+#         # printing number of images found in this page
+#         # if image_list:
+#         #     print(f'[+] Found a total of {len(image_list)} images in page {page_index}')
+#         # else:
+#         #     print("[!] No images found on page", page_index)
+#         for image_index, img in enumerate(page.getImageList(), start=1):
+#             # get the XREF of the image
+#             xref = img[0]
+#             # extract the image bytes
+#             base_image = pdf_file.extractImage(xref)
+#             image_bytes = base_image["image"]
+#             # get the image extension
+#             image_ext = base_image["ext"]
+#             # load it to PIL
+#             image = Image.open(io.BytesIO(image_bytes))
+#             # save it to local disk
+#             images.append(f"image{page_index+1}_{image_index}.{image_ext}")
+#             image.save(open(f"image{page_index+1}_{image_index}.{image_ext}", "wb"))
+#     return images
 
 def getText(image):    
-    path_to_tesseract = r"C:\\Program Files (x86)\\tesseract.exe"
+    path_to_tesseract = r"/opt/homebrew/Cellar/tesseract/4.1.1/bin/tesseract"
+    # path_to_tesseract = <-- pathToTesseract here
     image_path = image
     img = Image.open(image_path)
     pytesseract.tesseract_cmd = path_to_tesseract
-    text = pytesseract.image_to_string(img)
+    text = pytesseract.image_to_string(img,lang='fra')
     text = text[0:-2]
     return text 
 
@@ -98,11 +99,9 @@ def getCasCom(text):
 def getCityCases(text):
     cas = []
     if(text.find('(') == -1 or text.find(')') == -1):
-        # print(text)
         beginIndex = text.find('-')
         text = text[beginIndex:text.find('patients')-8]
         text = text.replace('.',';')
-        text = text.replace('|',';')
         text = text.replace('et',',')
         text = text.replace('\n','')
         try:
@@ -131,8 +130,8 @@ def getCityCases(text):
                     continue
                 else:
                     tmp.pop(0)
-                    print(nbCasList)
                     tmp = separator.join(tmp)
+                    tmp = tmp.replace('à','')
                     tmp = tmp.split(',')
                     for loc in tmp:
                         loc = loc.strip()
@@ -147,7 +146,6 @@ def getCityCases(text):
         beginIndex = 0
         endIndex = text.index(".")
         text = text[beginIndex:endIndex]
-        print(text)
         text = text.replace("(","")
         text = text.replace(")","")
         text = text.replace("\n"," ")
@@ -160,7 +158,6 @@ def getCityCases(text):
                 'nbCas': 0
             }
             i = 0
-            # print(cas)
             while(i < len(words)-1):
                 obj['lieu'] += words[i]
                 i += 1
@@ -171,4 +168,6 @@ def getCityCases(text):
                 continue
             cas.append(obj) 
     return cas
+
+
 

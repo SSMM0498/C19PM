@@ -12,9 +12,13 @@
                 "arrond": "DAKAR-PLATEAU",
                 "comard": [
                   "Gorée",
-                  "Dakar - Plateau",
-                  "Gueule Tapée – Fass-Colobane",
-                  "Fann - Point E - Amitié"
+                  "Dakar-Plateau",
+                  "Gueule Tapée",
+                  "Fass",
+                  "Colobane",
+                  "Fann",
+                  "Point E",
+                  "Amitié"
                 ]
               },
               {
@@ -22,15 +26,19 @@
                 "comard": [
                   "Grand Dakar",
                   "Biscuiterie",
-                  "Dieuppeul – Derklé",
-                  "Hann - Bel Air",
-                  "Sicap - Liberté",
+                  "Dieuppeul",
+                  "Derklé",
+                  "Hann",
+                  "Mariste",
+                  "Bel Air",
+                  "Sicap",
+                  "Liberté",
                   "H.L.M"
                 ]
               },
               {
                 "arrond": "ALMADIES",
-                "comard": ["Mermoz – Sacré Cœur", "Ouakam", "Ngor", "Yoff"]
+                "comard": ["Mermoz", "Sacré-Cœur", "Ouakam", "Ngor", "Yoff"]
               },
               {
                 "arrond": "PARCELLES ASSAINIES",
@@ -67,8 +75,10 @@
                   "Thiaroye Gare",
                   "Mbao",
                   "Thiaroye sur Mer",
-                  "Tivaouane – Diack Sao",
-                  "Diamagueune Sicap Mbao"
+                  "Tivaouane",
+                  "Diack Sao",
+                  "Diamagueune",
+                  "Sicap Mbao"
                 ]
               }
             ]
@@ -111,8 +121,10 @@
                 "arrond": "RUFISQUE - EST",
                 "comard": [
                   "Rufisque Est",
-                  "Bargny Rufisque Nord",
-                  "Diamniadio Rufisque Ouest",
+                  "Bargny",
+                  "Rufisque Nord",
+                  "Diamniadio",
+                  "Rufisque Ouest",
                   "Sébikotane"
                 ]
               },

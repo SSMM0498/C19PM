@@ -2,9 +2,10 @@ import 'dart:convert';
 import 'dart:io';
 import 'models.dart';
 
+// String pathToJsonFiles =
+//     '/home/ssmm0498/Documents/Courses/_DIC/_DIC2/1rst Semester/Advanced Database Management System/Exercices/Project/repo/dashboard/lib/data/json/';
 String pathToJsonFiles =
-    '/home/ssmm0498/Documents/Courses/_DIC/_DIC2/1rst Semester/Advanced Database Management System/Exercices/Project/repo/dashboard/lib/data/json/';
-
+    'C:/Users/SWIFT 5/Desktop/DIC2/SGBD/C19PM/dashboard/lib/data/json';
 List<Month> retrieveJSON() {
   Directory dir = Directory(pathToJsonFiles);
   List<Month> listMonth = [];

@@ -20,7 +20,7 @@ class MapWidget extends StatefulWidget {
 
 class _MapWidgetState extends State<MapWidget> {
   Path _selectPath;
-  Map<String, Path> paths;
+  Map<String, Path> paths = new Map();
   Map<String, Position> positions;
 
   @override

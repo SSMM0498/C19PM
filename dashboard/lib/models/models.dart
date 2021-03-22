@@ -3,3 +3,4 @@ export 'Day.dart';
 export 'Locality.dart';
 export 'Region.dart';
 export 'Departement.dart';
+export 'User.dart';

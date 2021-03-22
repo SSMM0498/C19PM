@@ -5,6 +5,9 @@ class Palette {
 
   static const Color droossBlue = Color(0xFF1777F2);
 
+  static const Color primaryAppColor = Color(0xFF21BFBD);
+  static const Color secondaryAppColor = Color(0xFF7A9BEE);
+
   static const LinearGradient createRoomGradient = LinearGradient(
     colors: [Color(0xFF496AE1), Color(0xFFCE48B1)],
   );

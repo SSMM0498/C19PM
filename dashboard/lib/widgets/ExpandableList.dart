@@ -18,7 +18,7 @@ class _ExpandableListState extends State<ExpandableList> {
     return ListView.builder(
       itemCount: widget.list.length,
       itemBuilder: (context, i) => ExpansionTile(
-        collapsedBackgroundColor: Colors.green[900],
+        collapsedBackgroundColor: Palette.primaryAppColor,
         backgroundColor: Palette.scaffold,
         title: Row(
           children: [
@@ -34,8 +34,10 @@ class _ExpandableListState extends State<ExpandableList> {
               onChanged: (bool newVal) {
                 setState(() {
                   _allchecked = newVal;
-                  widget.list[i].days.forEach((d) {
+                  widget.list[i].days.map((d) {
                     d.checked = _allchecked;
+                    // print(d.checked);
+                    setState(() => d.checked = _allchecked);
                   });
                 });
               },

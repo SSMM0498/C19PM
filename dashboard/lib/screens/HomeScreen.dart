@@ -25,7 +25,7 @@ class HomeScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               mainAxisSize: MainAxisSize.max,
-              children: <Widget>[MainHeader(), SizedBox(height: 50), AppMap()],
+              children: <Widget>[MainHeader(), SizedBox(height: 30), AppMap()],
             ),
           ),
           Container(

@@ -36,28 +36,27 @@ class _MapWidgetState extends State<MapWidget> {
         paths = parser.getPaths();
         positions = parser.getPositions();
       });
-      widget.localities.forEach((l) {
-        double scale = (widget.havePopup)
-            ? SizeHelper.width() / 850 * SizeHelper.height() / 950
-            : 1;
-        l.left = (positions[l.name].x * scale) - 25;
-        l.top = (positions[l.name].y * scale) - 25;
-        if (l.name == "Fatick") {
-          l.left -= 35;
-        } else if (l.name == "Kaolack") {
-          l.left -= 5;
-        }
-      });
     });
   }
 
   @override
   Widget build(BuildContext context) {
+    widget.localities.forEach((l) {
+      double scale = (widget.havePopup)
+          ? SizeHelper.width() / 850 * SizeHelper.height() / 950
+          : 1;
+      l.left = (positions[l.name].x * scale) - 25;
+      l.top = (positions[l.name].y * scale) - 25;
+      if (l.name == "Fatick") {
+        l.left -= 35;
+      } else if (l.name == "Kaolack") {
+        l.left -= 5;
+      }
+    });
+
     return Container(
-      // color: Colors.white, // just make a difference
-      color: Colors.grey[900], // just make a difference
-      width: double
-          .infinity, // full screen here, you can change size to see different effect
+      color: Colors.grey[900],
+      width: double.infinity,
       height: SizeHelper.height() * .75,
       child: CanvasTouchDetector(
         builder: (context) => CustomPaint(

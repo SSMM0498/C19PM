@@ -21,20 +21,6 @@ class SvgParser {
   Map<String, Path> _paths = new Map<String, Path>();
   Map<String, Position> _positions = new Map<String, Position>();
 
-  Color parseColor(String cStr) {
-    if (cStr == null || cStr.isEmpty)
-      throw UnsupportedError("Empty color field found.");
-    if (cStr[0] == '#') {
-      return new Color(int.parse(cStr.substring(1), radix: 16)).withOpacity(
-          1.0); // Hex to int: from https://stackoverflow.com/a/51290420/9452450
-    } else if (cStr == 'none') {
-      return Colors.transparent;
-    } else {
-      throw UnsupportedError(
-          "Only hex color format currently supported. String:  $cStr");
-    }
-  }
-
   void loadFromString(String svgString) {
     // ignore: deprecated_member_use
     var doc = xml.parse(svgString);

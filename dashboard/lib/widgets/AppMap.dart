@@ -7,8 +7,6 @@ class AppMap extends StatelessWidget {
   final List<Region> regions = DataGetter.createRegionList();
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: MapWidget(regions: regions),
-    );
+    return MapWidget(localities: regions, mapname: "senegal");
   }
 }

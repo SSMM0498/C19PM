@@ -1,0 +1,52 @@
+import 'package:covid19_progression_modeler/config/config.dart';
+import 'package:covid19_progression_modeler/screens/HomeScreen.dart';
+import 'package:covid19_progression_modeler/screens/LoginScreen.dart';
+import 'package:flutter/material.dart';
+import 'CircleInfos.dart';
+
+class SideBar extends StatelessWidget {
+  const SideBar({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Column(
+            children: [
+              SizedBox(height: 25),
+              CircleInfos(infos: 125, label: "Cas"),
+              SizedBox(height: 50),
+              CircleInfos(infos: 25, label: "Guérris"),
+              SizedBox(height: 50),
+              CircleInfos(infos: 5, label: "Morts"),
+            ],
+          ),
+          Column(
+            children: [
+              // CircleAvatar(
+              //   radius: 22.5,
+              //   backgroundColor: Colors.grey[200],
+              //   // backgroundImage:
+              // ),
+              IconButton(
+                color: Colors.white,
+                hoverColor: Palette.secondaryAppColor,
+                tooltip: "Se déconnecter",
+                icon: Icon(Icons.exit_to_app),
+                onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => LoginScreen(),
+                  ),
+                ),
+              ),
+              SizedBox(height: 25),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}

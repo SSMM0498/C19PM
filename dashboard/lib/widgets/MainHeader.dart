@@ -16,7 +16,7 @@ class MainHeader extends StatelessWidget {
               "COVID-19 Progression Modeler",
               style: TextStyle(
                 fontSize: 30,
-                // color: Colors.white
+                color: Colors.white,
               ),
             )),
         Expanded(

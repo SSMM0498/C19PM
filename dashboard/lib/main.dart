@@ -1,8 +1,14 @@
+import 'dart:io';
 import 'package:covid19_progression_modeler/config/config.dart';
 import 'package:covid19_progression_modeler/screens/screens.dart';
 import 'package:flutter/material.dart';
+import 'package:window_size/window_size.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
+    setWindowTitle('COVID19 Progression Modeler');
+  }
   runApp(MyApp());
 }
 
@@ -16,7 +22,7 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity,
           scaffoldBackgroundColor: Palette.scaffold),
-      home: HomeScreen(),
+      home: LoginScreen(),
     );
   }
 }

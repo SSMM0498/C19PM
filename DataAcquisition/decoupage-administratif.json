@@ -1,306 +1,393 @@
 [
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "Dakar",
     "COMMUNES": "Dakar",
     "ARRONDISSEMENTS": "DAKAR-PLATEAU",
-    "C0MMUNESARRDT": "Gorée"
+    "C0MMUNESARRDT": "Gorée",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "Dakar",
     "COMMUNES": "Dakar",
     "ARRONDISSEMENTS": "DAKAR-PLATEAU",
-    "C0MMUNESARRDT": "Dakar - Plateau"
+    "C0MMUNESARRDT": "Dakar - Plateau",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "Dakar",
     "COMMUNES": "Dakar",
     "ARRONDISSEMENTS": "DAKAR-PLATEAU",
-    "C0MMUNESARRDT": "Gueule Tapée – Fass-Colobane"
+    "C0MMUNESARRDT": "Gueule Tapée – Fass-Colobane",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "Dakar",
     "COMMUNES": "Dakar",
     "ARRONDISSEMENTS": "DAKAR-PLATEAU",
-    "C0MMUNESARRDT": "Fann - Point E - Amitié"
+    "C0MMUNESARRDT": "Fann - Point E - Amitié",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "Dakar",
     "COMMUNES": "Dakar",
     "ARRONDISSEMENTS": "GRAND DAKAR",
-    "C0MMUNESARRDT": "Grand Dakar"
+    "C0MMUNESARRDT": "Grand Dakar",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "Dakar",
     "COMMUNES": "Dakar",
     "ARRONDISSEMENTS": "GRAND DAKAR",
-    "C0MMUNESARRDT": "Biscuiterie"
+    "C0MMUNESARRDT": "Biscuiterie",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "Dakar",
     "COMMUNES": "Dakar",
     "ARRONDISSEMENTS": "GRAND DAKAR",
-    "C0MMUNESARRDT": "Dieuppeul – Derklé"
+    "C0MMUNESARRDT": "Dieuppeul – Derklé",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "Dakar",
     "COMMUNES": "Dakar",
     "ARRONDISSEMENTS": "GRAND DAKAR",
-    "C0MMUNESARRDT": "Hann - Bel Air"
+    "C0MMUNESARRDT": "Hann - Bel Air",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "Dakar",
     "COMMUNES": "Dakar",
     "ARRONDISSEMENTS": "GRAND DAKAR",
-    "C0MMUNESARRDT": "Sicap - Liberté"
+    "C0MMUNESARRDT": "Sicap - Liberté",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "Dakar",
     "COMMUNES": "Dakar",
     "ARRONDISSEMENTS": "GRAND DAKAR",
-    "C0MMUNESARRDT": "H.L.M"
+    "C0MMUNESARRDT": "H.L.M",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "Dakar",
     "COMMUNES": "Dakar",
     "ARRONDISSEMENTS": "ALMADIES",
-    "C0MMUNESARRDT": "Mermoz – Sacré Cœur"
+    "C0MMUNESARRDT": "Mermoz – Sacré Cœur",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "Dakar",
     "COMMUNES": "Dakar",
     "ARRONDISSEMENTS": "ALMADIES",
-    "C0MMUNESARRDT": "Ouakam"
+    "C0MMUNESARRDT": "Ouakam",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "Dakar",
     "COMMUNES": "Dakar",
     "ARRONDISSEMENTS": "ALMADIES",
-    "C0MMUNESARRDT": "Ngor"
+    "C0MMUNESARRDT": "Ngor",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "Dakar",
     "COMMUNES": "Dakar",
     "ARRONDISSEMENTS": "ALMADIES",
-    "C0MMUNESARRDT": "Yoff"
+    "C0MMUNESARRDT": "Yoff",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "Dakar",
     "COMMUNES": "Dakar",
     "ARRONDISSEMENTS": "PARCELLES ASSAINIES",
-    "C0MMUNESARRDT": "Grand Yoff"
+    "C0MMUNESARRDT": "Grand Yoff",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "Dakar",
     "COMMUNES": "Dakar",
     "ARRONDISSEMENTS": "PARCELLES ASSAINIES",
-    "C0MMUNESARRDT": "Patte D’Oie"
+    "C0MMUNESARRDT": "Patte D’Oie",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "Dakar",
     "COMMUNES": "Dakar",
     "ARRONDISSEMENTS": "PARCELLES ASSAINIES",
-    "C0MMUNESARRDT": "Parcelles Assainies"
+    "C0MMUNESARRDT": "Parcelles Assainies",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "Dakar",
     "COMMUNES": "Dakar",
     "ARRONDISSEMENTS": "PARCELLES ASSAINIES",
-    "C0MMUNESARRDT": "Cambérène"
+    "C0MMUNESARRDT": "Cambérène",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "GUEDIAWAYE",
     "COMMUNES": "Guédiawaye",
     "ARRONDISSEMENTS": "GUEDIAWAYE",
-    "C0MMUNESARRDT": "Golf Sud"
+    "C0MMUNESARRDT": "Golf Sud",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "GUEDIAWAYE",
     "COMMUNES": "Guédiawaye",
     "ARRONDISSEMENTS": "GUEDIAWAYE",
-    "C0MMUNESARRDT": "Sam Notaire"
+    "C0MMUNESARRDT": "Sam Notaire",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "GUEDIAWAYE",
     "COMMUNES": "Guédiawaye",
     "ARRONDISSEMENTS": "GUEDIAWAYE",
-    "C0MMUNESARRDT": "Ndiarème Limamoulaye"
+    "C0MMUNESARRDT": "Ndiarème Limamoulaye",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "GUEDIAWAYE",
     "COMMUNES": "Guédiawaye",
     "ARRONDISSEMENTS": "GUEDIAWAYE",
-    "C0MMUNESARRDT": "Médina Gounass"
+    "C0MMUNESARRDT": "Médina Gounass",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "GUEDIAWAYE",
     "COMMUNES": "Guédiawaye",
     "ARRONDISSEMENTS": "GUEDIAWAYE",
-    "C0MMUNESARRDT": "Wakhinane Nimzath"
+    "C0MMUNESARRDT": "Wakhinane Nimzath",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "GUEDIAWAYE",
     "COMMUNES": "Guédiawaye",
     "ARRONDISSEMENTS": "THIAROYE",
-    "C0MMUNESARRDT": "Thiaroye Gare"
+    "C0MMUNESARRDT": "Thiaroye Gare",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "GUEDIAWAYE",
     "COMMUNES": "Guédiawaye",
     "ARRONDISSEMENTS": "THIAROYE",
-    "C0MMUNESARRDT": "Mbao"
+    "C0MMUNESARRDT": "Mbao",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "GUEDIAWAYE",
     "COMMUNES": "Guédiawaye",
     "ARRONDISSEMENTS": "THIAROYE",
-    "C0MMUNESARRDT": "Thiaroye sur Mer"
+    "C0MMUNESARRDT": "Thiaroye sur Mer",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "GUEDIAWAYE",
     "COMMUNES": "Guédiawaye",
     "ARRONDISSEMENTS": "THIAROYE",
-    "C0MMUNESARRDT": "Tivaouane – Diack Sao"
+    "C0MMUNESARRDT": "Tivaouane – Diack Sao",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "GUEDIAWAYE",
     "COMMUNES": "Guédiawaye",
     "ARRONDISSEMENTS": "THIAROYE",
-    "C0MMUNESARRDT": "Diamagueune Sicap Mbao"
+    "C0MMUNESARRDT": "Diamagueune Sicap Mbao",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "GUEDIAWAYE",
     "COMMUNES": "Pikine",
     "ARRONDISSEMENTS": "NIAYES",
-    "C0MMUNESARRDT": "Keur Massar"
+    "C0MMUNESARRDT": "Keur Massar",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "GUEDIAWAYE",
     "COMMUNES": "Pikine",
     "ARRONDISSEMENTS": "NIAYES",
-    "C0MMUNESARRDT": "Malika"
+    "C0MMUNESARRDT": "Malika",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "GUEDIAWAYE",
     "COMMUNES": "Pikine",
     "ARRONDISSEMENTS": "NIAYES",
-    "C0MMUNESARRDT": "Yeumbeul Nord"
+    "C0MMUNESARRDT": "Yeumbeul Nord",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "GUEDIAWAYE",
     "COMMUNES": "Pikine",
     "ARRONDISSEMENTS": "NIAYES",
-    "C0MMUNESARRDT": "Yeumbeul Sud"
+    "C0MMUNESARRDT": "Yeumbeul Sud",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "GUEDIAWAYE",
     "COMMUNES": "Pikine",
     "ARRONDISSEMENTS": "PIKINE DAGOUDAN",
-    "C0MMUNESARRDT": "Pikine Ouest"
+    "C0MMUNESARRDT": "Pikine Ouest",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "GUEDIAWAYE",
     "COMMUNES": "Pikine",
     "ARRONDISSEMENTS": "PIKINE DAGOUDAN",
-    "C0MMUNESARRDT": "Pikine Est"
+    "C0MMUNESARRDT": "Pikine Est",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "GUEDIAWAYE",
     "COMMUNES": "Pikine",
     "ARRONDISSEMENTS": "PIKINE DAGOUDAN",
-    "C0MMUNESARRDT": "Pikine Nord"
+    "C0MMUNESARRDT": "Pikine Nord",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "GUEDIAWAYE",
     "COMMUNES": "Pikine",
     "ARRONDISSEMENTS": "PIKINE DAGOUDAN",
-    "C0MMUNESARRDT": "Dalifort"
+    "C0MMUNESARRDT": "Dalifort",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "GUEDIAWAYE",
     "COMMUNES": "Pikine",
     "ARRONDISSEMENTS": "PIKINE DAGOUDAN",
-    "C0MMUNESARRDT": "Djidah Thiaroye Kao"
+    "C0MMUNESARRDT": "Djidah Thiaroye Kao",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "GUEDIAWAYE",
     "COMMUNES": "Pikine",
     "ARRONDISSEMENTS": "PIKINE DAGOUDAN",
-    "C0MMUNESARRDT": "Guinaw Rail Nord"
+    "C0MMUNESARRDT": "Guinaw Rail Nord",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "GUEDIAWAYE",
     "COMMUNES": "Pikine",
     "ARRONDISSEMENTS": "PIKINE DAGOUDAN",
-    "C0MMUNESARRDT": "Guinaw Rail Sud"
+    "C0MMUNESARRDT": "Guinaw Rail Sud",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "RUFISQUE",
     "COMMUNES": "Rufisque",
     "ARRONDISSEMENTS": "RUFISQUE - EST",
-    "C0MMUNESARRDT": "Rufisque Est"
+    "C0MMUNESARRDT": "Rufisque Est",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "RUFISQUE",
     "COMMUNES": "Rufisque",
     "ARRONDISSEMENTS": "RUFISQUE - EST",
-    "C0MMUNESARRDT": "Bargny Rufisque Nord"
+    "C0MMUNESARRDT": "Bargny Rufisque Nord",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "RUFISQUE",
     "COMMUNES": "Rufisque",
     "ARRONDISSEMENTS": "RUFISQUE - EST",
-    "C0MMUNESARRDT": "Diamniadio Rufisque Ouest"
+    "C0MMUNESARRDT": "Diamniadio Rufisque Ouest",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "RUFISQUE",
     "COMMUNES": "Rufisque",
     "ARRONDISSEMENTS": "RUFISQUE - EST",
-    "C0MMUNESARRDT": "Sébikotane"
+    "C0MMUNESARRDT": "Sébikotane",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DK",
     "REGION": "DAKAR",
     "DEPARTEMENTS": "RUFISQUE",
     "COMMUNES": "Rufisque",
@@ -309,223 +396,286 @@
     "COMM. RURALES": "Sangalkam Yenne"
   },
   {
+    "CODE REGION": "SN-DB",
     "REGION": "DIOURBEL",
     "DEPARTEMENTS": "BAMBEY",
     "COMMUNES": "Bambey",
     "ARRONDISSEMENTS": "BABA GARAGE",
-    "C0MMUNESARRDT": "Dinguiraye"
+    "C0MMUNESARRDT": "Dinguiraye",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DB",
     "REGION": "DIOURBEL",
     "DEPARTEMENTS": "BAMBEY",
     "COMMUNES": "Bambey",
     "ARRONDISSEMENTS": "BABA GARAGE",
-    "C0MMUNESARRDT": "Baba Garage"
+    "C0MMUNESARRDT": "Baba Garage",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DB",
     "REGION": "DIOURBEL",
     "DEPARTEMENTS": "BAMBEY",
     "COMMUNES": "Bambey",
     "ARRONDISSEMENTS": "BABA GARAGE",
-    "C0MMUNESARRDT": "Keur Samba Kane"
+    "C0MMUNESARRDT": "Keur Samba Kane",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DB",
     "REGION": "DIOURBEL",
     "DEPARTEMENTS": "BAMBEY",
     "COMMUNES": "Bambey",
     "ARRONDISSEMENTS": "NGOYE Ngoye",
-    "C0MMUNESARRDT": "Thiakhar"
+    "C0MMUNESARRDT": "Thiakhar",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DB",
     "REGION": "DIOURBEL",
     "DEPARTEMENTS": "BAMBEY",
     "COMMUNES": "Bambey",
     "ARRONDISSEMENTS": "NGOYE Ngoye",
-    "C0MMUNESARRDT": "Ndondol"
+    "C0MMUNESARRDT": "Ndondol",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DB",
     "REGION": "DIOURBEL",
     "DEPARTEMENTS": "BAMBEY",
     "COMMUNES": "Bambey",
     "ARRONDISSEMENTS": "NGOYE Ngoye",
-    "C0MMUNESARRDT": "Ndangalma"
+    "C0MMUNESARRDT": "Ndangalma",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DB",
     "REGION": "DIOURBEL",
     "DEPARTEMENTS": "BAMBEY",
     "COMMUNES": "Bambey",
     "ARRONDISSEMENTS": "LAMBAYE",
-    "C0MMUNESARRDT": "Lambaye"
+    "C0MMUNESARRDT": "Lambaye",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DB",
     "REGION": "DIOURBEL",
     "DEPARTEMENTS": "BAMBEY",
     "COMMUNES": "Bambey",
     "ARRONDISSEMENTS": "LAMBAYE",
-    "C0MMUNESARRDT": "Réfane"
+    "C0MMUNESARRDT": "Réfane",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DB",
     "REGION": "DIOURBEL",
     "DEPARTEMENTS": "BAMBEY",
     "COMMUNES": "Bambey",
     "ARRONDISSEMENTS": "LAMBAYE",
-    "C0MMUNESARRDT": "Gawane"
+    "C0MMUNESARRDT": "Gawane",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DB",
     "REGION": "DIOURBEL",
     "DEPARTEMENTS": "BAMBEY",
     "COMMUNES": "Bambey",
     "ARRONDISSEMENTS": "LAMBAYE",
-    "C0MMUNESARRDT": "Ngogom"
+    "C0MMUNESARRDT": "Ngogom",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DB",
     "REGION": "DIOURBEL",
     "DEPARTEMENTS": "DIOURBEL",
     "COMMUNES": "Diourbel",
     "ARRONDISSEMENTS": "NDOULO",
-    "C0MMUNESARRDT": "Ndoulo"
+    "C0MMUNESARRDT": "Ndoulo",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DB",
     "REGION": "DIOURBEL",
     "DEPARTEMENTS": "DIOURBEL",
     "COMMUNES": "Diourbel",
     "ARRONDISSEMENTS": "NDOULO",
-    "C0MMUNESARRDT": "Ngohe"
+    "C0MMUNESARRDT": "Ngohe",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DB",
     "REGION": "DIOURBEL",
     "DEPARTEMENTS": "DIOURBEL",
     "COMMUNES": "Diourbel",
     "ARRONDISSEMENTS": "NDOULO",
-    "C0MMUNESARRDT": "Pattar"
+    "C0MMUNESARRDT": "Pattar",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DB",
     "REGION": "DIOURBEL",
     "DEPARTEMENTS": "DIOURBEL",
     "COMMUNES": "Diourbel",
     "ARRONDISSEMENTS": "NDOULO",
-    "C0MMUNESARRDT": "Tocky Gare"
+    "C0MMUNESARRDT": "Tocky Gare",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DB",
     "REGION": "DIOURBEL",
     "DEPARTEMENTS": "DIOURBEL",
     "COMMUNES": "Diourbel",
     "ARRONDISSEMENTS": "NDOULO",
-    "C0MMUNESARRDT": "Touré Mbondé"
+    "C0MMUNESARRDT": "Touré Mbondé",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DB",
     "REGION": "DIOURBEL",
     "DEPARTEMENTS": "DIOURBEL",
     "COMMUNES": "Diourbel",
     "ARRONDISSEMENTS": "NDINDY",
-    "C0MMUNESARRDT": "Ndankh Séne"
+    "C0MMUNESARRDT": "Ndankh Séne",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DB",
     "REGION": "DIOURBEL",
     "DEPARTEMENTS": "DIOURBEL",
     "COMMUNES": "Diourbel",
     "ARRONDISSEMENTS": "NDINDY",
-    "C0MMUNESARRDT": "Gade Escale"
+    "C0MMUNESARRDT": "Gade Escale",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DB",
     "REGION": "DIOURBEL",
     "DEPARTEMENTS": "DIOURBEL",
     "COMMUNES": "Diourbel",
     "ARRONDISSEMENTS": "NDINDY",
-    "C0MMUNESARRDT": "Keur Ngalgou"
+    "C0MMUNESARRDT": "Keur Ngalgou",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DB",
     "REGION": "DIOURBEL",
     "DEPARTEMENTS": "DIOURBEL",
     "COMMUNES": "Diourbel",
     "ARRONDISSEMENTS": "NDINDY",
-    "C0MMUNESARRDT": "Ndindy"
+    "C0MMUNESARRDT": "Ndindy",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DB",
     "REGION": "DIOURBEL",
     "DEPARTEMENTS": "DIOURBEL",
     "COMMUNES": "Diourbel",
     "ARRONDISSEMENTS": "NDINDY",
-    "C0MMUNESARRDT": "Taïba Moutoupha"
+    "C0MMUNESARRDT": "Taïba Moutoupha",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DB",
     "REGION": "DIOURBEL",
     "DEPARTEMENTS": "MBACKE",
     "COMMUNES": "Mbacké",
     "ARRONDISSEMENTS": "NDAME",
-    "C0MMUNESARRDT": "Touba Mosquée"
+    "C0MMUNESARRDT": "Touba Mosquée",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DB",
     "REGION": "DIOURBEL",
     "DEPARTEMENTS": "MBACKE",
     "COMMUNES": "Mbacké",
     "ARRONDISSEMENTS": "NDAME",
-    "C0MMUNESARRDT": "Dalla Ngabou"
+    "C0MMUNESARRDT": "Dalla Ngabou",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DB",
     "REGION": "DIOURBEL",
     "DEPARTEMENTS": "MBACKE",
     "COMMUNES": "Mbacké",
     "ARRONDISSEMENTS": "NDAME",
-    "C0MMUNESARRDT": "Missirah"
+    "C0MMUNESARRDT": "Missirah",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DB",
     "REGION": "DIOURBEL",
     "DEPARTEMENTS": "MBACKE",
     "COMMUNES": "Mbacké",
     "ARRONDISSEMENTS": "NDAME",
-    "C0MMUNESARRDT": "Nghaye"
+    "C0MMUNESARRDT": "Nghaye",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DB",
     "REGION": "DIOURBEL",
     "DEPARTEMENTS": "MBACKE",
     "COMMUNES": "Mbacké",
     "ARRONDISSEMENTS": "NDAME",
-    "C0MMUNESARRDT": "Touba Fall"
+    "C0MMUNESARRDT": "Touba Fall",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DB",
     "REGION": "DIOURBEL",
     "DEPARTEMENTS": "MBACKE",
     "COMMUNES": "Mbacké",
     "ARRONDISSEMENTS": "Kael",
-    "C0MMUNESARRDT": "Madina"
+    "C0MMUNESARRDT": "Madina",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DB",
     "REGION": "DIOURBEL",
     "DEPARTEMENTS": "MBACKE",
     "COMMUNES": "Mbacké",
     "ARRONDISSEMENTS": "Kael",
-    "C0MMUNESARRDT": "KAEL Touba Mboul"
+    "C0MMUNESARRDT": "KAEL Touba Mboul",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DB",
     "REGION": "DIOURBEL",
     "DEPARTEMENTS": "MBACKE",
     "COMMUNES": "Mbacké",
     "ARRONDISSEMENTS": "Kael",
-    "C0MMUNESARRDT": "Dendèye Gouy Gui"
+    "C0MMUNESARRDT": "Dendèye Gouy Gui",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DB",
     "REGION": "DIOURBEL",
     "DEPARTEMENTS": "MBACKE",
     "COMMUNES": "Mbacké",
     "ARRONDISSEMENTS": "Kael",
-    "C0MMUNESARRDT": "Ndioumane Taïba Thièkène"
+    "C0MMUNESARRDT": "Ndioumane Taïba Thièkène",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DB",
     "REGION": "DIOURBEL",
     "DEPARTEMENTS": "MBACKE",
     "COMMUNES": "Mbacké",
     "ARRONDISSEMENTS": "TAIF",
-    "C0MMUNESARRDT": "Taïf"
+    "C0MMUNESARRDT": "Taïf",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-DB",
     "REGION": "DIOURBEL",
     "DEPARTEMENTS": "MBACKE",
     "COMMUNES": "Mbacké",
     "ARRONDISSEMENTS": "TAIF",
-    "C0MMUNESARRDT": "Sadio"
+    "C0MMUNESARRDT": "Sadio",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-FK",
     "REGION": "FATICK",
     "DEPARTEMENTS": "FATICK Dioffior",
     "COMMUNES": "Fatick",
@@ -534,6 +684,7 @@
     "COMM. RURALES": "Diakhao"
   },
   {
+    "CODE REGION": "SN-FK",
     "REGION": "FATICK",
     "DEPARTEMENTS": "FATICK Dioffior",
     "COMMUNES": "Fatick",
@@ -542,6 +693,7 @@
     "COMM. RURALES": "Diaoulé"
   },
   {
+    "CODE REGION": "SN-FK",
     "REGION": "FATICK",
     "DEPARTEMENTS": "FATICK Dioffior",
     "COMMUNES": "Fatick",
@@ -550,6 +702,7 @@
     "COMM. RURALES": "Mbéllacadiao"
   },
   {
+    "CODE REGION": "SN-FK",
     "REGION": "FATICK",
     "DEPARTEMENTS": "FATICK Dioffior",
     "COMMUNES": "Fatick",
@@ -558,6 +711,7 @@
     "COMM. RURALES": "Ndiop"
   },
   {
+    "CODE REGION": "SN-FK",
     "REGION": "FATICK",
     "DEPARTEMENTS": "FATICK Dioffior",
     "COMMUNES": "Fatick",
@@ -566,6 +720,7 @@
     "COMM. RURALES": "Djilasse"
   },
   {
+    "CODE REGION": "SN-FK",
     "REGION": "FATICK",
     "DEPARTEMENTS": "FATICK Dioffior",
     "COMMUNES": "Fatick",
@@ -574,6 +729,7 @@
     "COMM. RURALES": "Fimela"
   },
   {
+    "CODE REGION": "SN-FK",
     "REGION": "FATICK",
     "DEPARTEMENTS": "FATICK Dioffior",
     "COMMUNES": "Fatick",
@@ -582,6 +738,7 @@
     "COMM. RURALES": "Loul Sessène"
   },
   {
+    "CODE REGION": "SN-FK",
     "REGION": "FATICK",
     "DEPARTEMENTS": "FATICK Dioffior",
     "COMMUNES": "Fatick",
@@ -590,6 +747,7 @@
     "COMM. RURALES": "Palmarin Facao"
   },
   {
+    "CODE REGION": "SN-FK",
     "REGION": "FATICK",
     "DEPARTEMENTS": "FATICK Dioffior",
     "COMMUNES": "Fatick",
@@ -598,6 +756,7 @@
     "COMM. RURALES": "Niakhar"
   },
   {
+    "CODE REGION": "SN-FK",
     "REGION": "FATICK",
     "DEPARTEMENTS": "FATICK Dioffior",
     "COMMUNES": "Fatick",
@@ -606,6 +765,7 @@
     "COMM. RURALES": "Ngayokhème"
   },
   {
+    "CODE REGION": "SN-FK",
     "REGION": "FATICK",
     "DEPARTEMENTS": "FATICK Dioffior",
     "COMMUNES": "Fatick",
@@ -614,6 +774,7 @@
     "COMM. RURALES": "Patar"
   },
   {
+    "CODE REGION": "SN-FK",
     "REGION": "FATICK",
     "DEPARTEMENTS": "FATICK Dioffior",
     "COMMUNES": "Fatick",
@@ -622,6 +783,7 @@
     "COMM. RURALES": "Diarrère"
   },
   {
+    "CODE REGION": "SN-FK",
     "REGION": "FATICK",
     "DEPARTEMENTS": "FATICK Dioffior",
     "COMMUNES": "Fatick",
@@ -630,6 +792,7 @@
     "COMM. RURALES": "Diouroup"
   },
   {
+    "CODE REGION": "SN-FK",
     "REGION": "FATICK",
     "DEPARTEMENTS": "FATICK Dioffior",
     "COMMUNES": "Fatick",
@@ -638,6 +801,7 @@
     "COMM. RURALES": "Tattaguine"
   },
   {
+    "CODE REGION": "SN-FK",
     "REGION": "FATICK",
     "DEPARTEMENTS": "FATICK Dioffior",
     "COMMUNES": "Fatick",
@@ -646,6 +810,7 @@
     "COMM. RURALES": "Keur Saloum Diané"
   },
   {
+    "CODE REGION": "SN-FK",
     "REGION": "FATICK",
     "DEPARTEMENTS": "FATICK Dioffior",
     "COMMUNES": "Fatick",
@@ -654,6 +819,7 @@
     "COMM. RURALES": "Keur Samba Guèye"
   },
   {
+    "CODE REGION": "SN-FK",
     "REGION": "FATICK",
     "DEPARTEMENTS": "FATICK Dioffior",
     "COMMUNES": "Fatick",
@@ -662,6 +828,7 @@
     "COMM. RURALES": "Tobacouta"
   },
   {
+    "CODE REGION": "SN-FK",
     "REGION": "FATICK",
     "DEPARTEMENTS": "FATICK Dioffior",
     "COMMUNES": "Fatick",
@@ -670,13 +837,16 @@
     "COMM. RURALES": "Nioro Alassane Talla"
   },
   {
+    "CODE REGION": "SN-FK",
     "REGION": "FATICK",
     "DEPARTEMENTS": "FOUNDIOUGNE",
     "COMMUNES": "Foundiougne Passy",
     "ARRONDISSEMENTS": "",
-    "C0MMUNESARRDT": ""
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-FK",
     "REGION": "FATICK",
     "DEPARTEMENTS": "FOUNDIOUGNE",
     "COMMUNES": "Sokone Soum Karang Post",
@@ -685,6 +855,7 @@
     "COMM. RURALES": "Diossong"
   },
   {
+    "CODE REGION": "SN-FK",
     "REGION": "FATICK",
     "DEPARTEMENTS": "FOUNDIOUGNE",
     "COMMUNES": "Sokone Soum Karang Post",
@@ -693,6 +864,7 @@
     "COMM. RURALES": "Djilor"
   },
   {
+    "CODE REGION": "SN-FK",
     "REGION": "FATICK",
     "DEPARTEMENTS": "FOUNDIOUGNE",
     "COMMUNES": "Sokone Soum Karang Post",
@@ -701,6 +873,7 @@
     "COMM. RURALES": "Bassoul"
   },
   {
+    "CODE REGION": "SN-FK",
     "REGION": "FATICK",
     "DEPARTEMENTS": "FOUNDIOUGNE",
     "COMMUNES": "Sokone Soum Karang Post",
@@ -709,6 +882,7 @@
     "COMM. RURALES": "Dionewar"
   },
   {
+    "CODE REGION": "SN-FK",
     "REGION": "FATICK",
     "DEPARTEMENTS": "FOUNDIOUGNE",
     "COMMUNES": "Sokone Soum Karang Post",
@@ -717,6 +891,7 @@
     "COMM. RURALES": "Djirnda"
   },
   {
+    "CODE REGION": "SN-FK",
     "REGION": "FATICK",
     "DEPARTEMENTS": "FOUNDIOUGNE",
     "COMMUNES": "Sokone Soum Karang Post",
@@ -725,6 +900,7 @@
     "COMM. RURALES": "Colobane"
   },
   {
+    "CODE REGION": "SN-FK",
     "REGION": "FATICK",
     "DEPARTEMENTS": "FOUNDIOUGNE",
     "COMMUNES": "Sokone Soum Karang Post",
@@ -733,6 +909,7 @@
     "COMM. RURALES": "Mbar"
   },
   {
+    "CODE REGION": "SN-FK",
     "REGION": "FATICK",
     "DEPARTEMENTS": "GOSSAS",
     "COMMUNES": "Gossas",
@@ -741,6 +918,7 @@
     "COMM. RURALES": "Ndiene Lagan"
   },
   {
+    "CODE REGION": "SN-FK",
     "REGION": "FATICK",
     "DEPARTEMENTS": "GOSSAS",
     "COMMUNES": "Gossas",
@@ -749,6 +927,7 @@
     "COMM. RURALES": "Ouadiour"
   },
   {
+    "CODE REGION": "SN-FK",
     "REGION": "FATICK",
     "DEPARTEMENTS": "GOSSAS",
     "COMMUNES": "Gossas",
@@ -757,6 +936,7 @@
     "COMM. RURALES": "Patar Lia"
   },
   {
+    "CODE REGION": "SN-KA",
     "REGION": "KAFFRINE",
     "DEPARTEMENTS": "KEUR MBOUCKI",
     "COMMUNES": "",
@@ -765,6 +945,7 @@
     "COMM. RURALES": "Keur Mboucki"
   },
   {
+    "CODE REGION": "SN-KA",
     "REGION": "KAFFRINE",
     "DEPARTEMENTS": "KEUR MBOUCKI",
     "COMMUNES": "",
@@ -773,6 +954,7 @@
     "COMM. RURALES": "Birkelane"
   },
   {
+    "CODE REGION": "SN-KA",
     "REGION": "KAFFRINE",
     "DEPARTEMENTS": "KEUR MBOUCKI",
     "COMMUNES": "",
@@ -781,6 +963,7 @@
     "COMM. RURALES": "Mabo"
   },
   {
+    "CODE REGION": "SN-KA",
     "REGION": "KAFFRINE",
     "DEPARTEMENTS": "KEUR MBOUCKI",
     "COMMUNES": "",
@@ -789,6 +972,7 @@
     "COMM. RURALES": "Ndiognick"
   },
   {
+    "CODE REGION": "SN-KA",
     "REGION": "KAFFRINE",
     "DEPARTEMENTS": "KEUR MBOUCKI",
     "COMMUNES": "",
@@ -797,6 +981,7 @@
     "COMM. RURALES": "Touba Mbella"
   },
   {
+    "CODE REGION": "SN-KA",
     "REGION": "KAFFRINE",
     "DEPARTEMENTS": "KAFFRINE",
     "COMMUNES": "Kaffrine Nganda",
@@ -805,6 +990,7 @@
     "COMM. RURALES": "Diamagadio"
   },
   {
+    "CODE REGION": "SN-KA",
     "REGION": "KAFFRINE",
     "DEPARTEMENTS": "KAFFRINE",
     "COMMUNES": "Kaffrine Nganda",
@@ -813,6 +999,7 @@
     "COMM. RURALES": "Diokoul Belbouck"
   },
   {
+    "CODE REGION": "SN-KA",
     "REGION": "KAFFRINE",
     "DEPARTEMENTS": "KAFFRINE",
     "COMMUNES": "Kaffrine Nganda",
@@ -821,6 +1008,7 @@
     "COMM. RURALES": "Kathiotte"
   },
   {
+    "CODE REGION": "SN-KA",
     "REGION": "KAFFRINE",
     "DEPARTEMENTS": "KAFFRINE",
     "COMMUNES": "Kaffrine Nganda",
@@ -829,6 +1017,7 @@
     "COMM. RURALES": "Médinatoul Salam 2"
   },
   {
+    "CODE REGION": "SN-KA",
     "REGION": "KAFFRINE",
     "DEPARTEMENTS": "KAFFRINE",
     "COMMUNES": "Kaffrine Nganda",
@@ -837,6 +1026,7 @@
     "COMM. RURALES": "Gniby"
   },
   {
+    "CODE REGION": "SN-KA",
     "REGION": "KAFFRINE",
     "DEPARTEMENTS": "KAFFRINE",
     "COMMUNES": "Kaffrine Nganda",
@@ -845,6 +1035,7 @@
     "COMM. RURALES": "Boulel"
   },
   {
+    "CODE REGION": "SN-KA",
     "REGION": "KAFFRINE",
     "DEPARTEMENTS": "KAFFRINE",
     "COMMUNES": "Kaffrine Nganda",
@@ -853,6 +1044,7 @@
     "COMM. RURALES": "Kahi"
   },
   {
+    "CODE REGION": "SN-KA",
     "REGION": "KAFFRINE",
     "DEPARTEMENTS": "KOUNGHEUL",
     "COMMUNES": "Koungheul",
@@ -861,6 +1053,7 @@
     "COMM. RURALES": "Missirah Wadène"
   },
   {
+    "CODE REGION": "SN-KA",
     "REGION": "KAFFRINE",
     "DEPARTEMENTS": "KOUNGHEUL",
     "COMMUNES": "Koungheul",
@@ -869,6 +1062,7 @@
     "COMM. RURALES": "Maka Yop"
   },
   {
+    "CODE REGION": "SN-KA",
     "REGION": "KAFFRINE",
     "DEPARTEMENTS": "KOUNGHEUL",
     "COMMUNES": "Koungheul",
@@ -877,6 +1071,7 @@
     "COMM. RURALES": "Ngainthe Pathé"
   },
   {
+    "CODE REGION": "SN-KA",
     "REGION": "KAFFRINE",
     "DEPARTEMENTS": "KOUNGHEUL",
     "COMMUNES": "Koungheul",
@@ -885,6 +1080,7 @@
     "COMM. RURALES": "Fass Thièkène"
   },
   {
+    "CODE REGION": "SN-KA",
     "REGION": "KAFFRINE",
     "DEPARTEMENTS": "KOUNGHEUL",
     "COMMUNES": "Koungheul",
@@ -893,6 +1089,7 @@
     "COMM. RURALES": "Saly Escale"
   },
   {
+    "CODE REGION": "SN-KA",
     "REGION": "KAFFRINE",
     "DEPARTEMENTS": "KOUNGHEUL",
     "COMMUNES": "Koungheul",
@@ -901,6 +1098,7 @@
     "COMM. RURALES": "Ida Mouride"
   },
   {
+    "CODE REGION": "SN-KA",
     "REGION": "KAFFRINE",
     "DEPARTEMENTS": "KOUNGHEUL",
     "COMMUNES": "Koungheul",
@@ -909,6 +1107,7 @@
     "COMM. RURALES": "Ribot Escale"
   },
   {
+    "CODE REGION": "SN-KA",
     "REGION": "KAFFRINE",
     "DEPARTEMENTS": "KOUNGHEUL",
     "COMMUNES": "Koungheul",
@@ -917,6 +1116,7 @@
     "COMM. RURALES": "Lour Escale"
   },
   {
+    "CODE REGION": "SN-KA",
     "REGION": "KAFFRINE",
     "DEPARTEMENTS": "MALEM HODDAR",
     "COMMUNES": "Malem Hoddar",
@@ -925,6 +1125,7 @@
     "COMM. RURALES": "Darou Miname 2"
   },
   {
+    "CODE REGION": "SN-KA",
     "REGION": "KAFFRINE",
     "DEPARTEMENTS": "MALEM HODDAR",
     "COMMUNES": "Malem Hoddar",
@@ -933,6 +1134,7 @@
     "COMM. RURALES": "Khelcom"
   },
   {
+    "CODE REGION": "SN-KA",
     "REGION": "KAFFRINE",
     "DEPARTEMENTS": "MALEM HODDAR",
     "COMMUNES": "Malem Hoddar",
@@ -941,6 +1143,7 @@
     "COMM. RURALES": "Ndioum Ngainth"
   },
   {
+    "CODE REGION": "SN-KA",
     "REGION": "KAFFRINE",
     "DEPARTEMENTS": "MALEM HODDAR",
     "COMMUNES": "Malem Hoddar",
@@ -949,6 +1152,7 @@
     "COMM. RURALES": "Sagna"
   },
   {
+    "CODE REGION": "SN-KA",
     "REGION": "KAFFRINE",
     "DEPARTEMENTS": "MALEM HODDAR",
     "COMMUNES": "Malem Hoddar",
@@ -957,6 +1161,7 @@
     "COMM. RURALES": "Dianké Souf"
   },
   {
+    "CODE REGION": "SN-KL",
     "REGION": "KAOLACK",
     "DEPARTEMENTS": "MBADAKHOUNE",
     "COMMUNES": "Guinguinéo",
@@ -965,6 +1170,7 @@
     "COMM. RURALES": "Khelcom - Birane "
   },
   {
+    "CODE REGION": "SN-KL",
     "REGION": "KAOLACK",
     "DEPARTEMENTS": "MBADAKHOUNE",
     "COMMUNES": "Guinguinéo",
@@ -973,6 +1179,7 @@
     "COMM. RURALES": "Mbadakhoune "
   },
   {
+    "CODE REGION": "SN-KL",
     "REGION": "KAOLACK",
     "DEPARTEMENTS": "MBADAKHOUNE",
     "COMMUNES": "Guinguinéo",
@@ -981,6 +1188,7 @@
     "COMM. RURALES": "Ndiago "
   },
   {
+    "CODE REGION": "SN-KL",
     "REGION": "KAOLACK",
     "DEPARTEMENTS": "MBADAKHOUNE",
     "COMMUNES": "Guinguinéo",
@@ -989,6 +1197,7 @@
     "COMM. RURALES": "Ngathie Naoudé"
   },
   {
+    "CODE REGION": "SN-KL",
     "REGION": "KAOLACK",
     "DEPARTEMENTS": "MBADAKHOUNE",
     "COMMUNES": "Guinguinéo",
@@ -997,6 +1206,7 @@
     "COMM. RURALES": "Gagnick "
   },
   {
+    "CODE REGION": "SN-KL",
     "REGION": "KAOLACK",
     "DEPARTEMENTS": "MBADAKHOUNE",
     "COMMUNES": "Guinguinéo",
@@ -1005,6 +1215,7 @@
     "COMM. RURALES": "Mboss "
   },
   {
+    "CODE REGION": "SN-KL",
     "REGION": "KAOLACK",
     "DEPARTEMENTS": "MBADAKHOUNE",
     "COMMUNES": "Guinguinéo",
@@ -1013,6 +1224,7 @@
     "COMM. RURALES": "Ourour"
   },
   {
+    "CODE REGION": "SN-KL",
     "REGION": "KAOLACK",
     "DEPARTEMENTS": "KAOLACK",
     "COMMUNES": "Kaolack Kahone Ndoffane Gandiaye",
@@ -1021,6 +1233,7 @@
     "COMM. RURALES": "Keur Baka"
   },
   {
+    "CODE REGION": "SN-KL",
     "REGION": "KAOLACK",
     "DEPARTEMENTS": "KAOLACK",
     "COMMUNES": "Kaolack Kahone Ndoffane Gandiaye",
@@ -1029,6 +1242,7 @@
     "COMM. RURALES": "Latmingué"
   },
   {
+    "CODE REGION": "SN-KL",
     "REGION": "KAOLACK",
     "DEPARTEMENTS": "KAOLACK",
     "COMMUNES": "Kaolack Kahone Ndoffane Gandiaye",
@@ -1037,6 +1251,7 @@
     "COMM. RURALES": "Thiaré"
   },
   {
+    "CODE REGION": "SN-KL",
     "REGION": "KAOLACK",
     "DEPARTEMENTS": "KAOLACK",
     "COMMUNES": "Kaolack Kahone Ndoffane Gandiaye",
@@ -1045,6 +1260,7 @@
     "COMM. RURALES": "Keur Socé"
   },
   {
+    "CODE REGION": "SN-KL",
     "REGION": "KAOLACK",
     "DEPARTEMENTS": "KAOLACK",
     "COMMUNES": "Kaolack Kahone Ndoffane Gandiaye",
@@ -1053,6 +1269,7 @@
     "COMM. RURALES": "Ndiaffate"
   },
   {
+    "CODE REGION": "SN-KL",
     "REGION": "KAOLACK",
     "DEPARTEMENTS": "KAOLACK",
     "COMMUNES": "Kaolack Kahone Ndoffane Gandiaye",
@@ -1061,6 +1278,7 @@
     "COMM. RURALES": "Ndiedieng"
   },
   {
+    "CODE REGION": "SN-KL",
     "REGION": "KAOLACK",
     "DEPARTEMENTS": "KAOLACK",
     "COMMUNES": "Kaolack Kahone Ndoffane Gandiaye",
@@ -1069,6 +1287,7 @@
     "COMM. RURALES": "Dya"
   },
   {
+    "CODE REGION": "SN-KL",
     "REGION": "KAOLACK",
     "DEPARTEMENTS": "KAOLACK",
     "COMMUNES": "Kaolack Kahone Ndoffane Gandiaye",
@@ -1077,6 +1296,7 @@
     "COMM. RURALES": "Ndiébel"
   },
   {
+    "CODE REGION": "SN-KL",
     "REGION": "KAOLACK",
     "DEPARTEMENTS": "KAOLACK",
     "COMMUNES": "Kaolack Kahone Ndoffane Gandiaye",
@@ -1085,6 +1305,7 @@
     "COMM. RURALES": "Thiomby"
   },
   {
+    "CODE REGION": "SN-KL",
     "REGION": "KAOLACK",
     "DEPARTEMENTS": "NIORO",
     "COMMUNES": "Nioro Keur Madiabel",
@@ -1093,6 +1314,7 @@
     "COMM. RURALES": "Kayemor"
   },
   {
+    "CODE REGION": "SN-KL",
     "REGION": "KAOLACK",
     "DEPARTEMENTS": "NIORO",
     "COMMUNES": "Nioro Keur Madiabel",
@@ -1101,6 +1323,7 @@
     "COMM. RURALES": "Médina Sabakh"
   },
   {
+    "CODE REGION": "SN-KL",
     "REGION": "KAOLACK",
     "DEPARTEMENTS": "NIORO",
     "COMMUNES": "Nioro Keur Madiabel",
@@ -1109,6 +1332,7 @@
     "COMM. RURALES": "Ngayene"
   },
   {
+    "CODE REGION": "SN-KL",
     "REGION": "KAOLACK",
     "DEPARTEMENTS": "NIORO",
     "COMMUNES": "Nioro Keur Madiabel",
@@ -1117,6 +1341,7 @@
     "COMM. RURALES": "Gainthe Kaye"
   },
   {
+    "CODE REGION": "SN-KL",
     "REGION": "KAOLACK",
     "DEPARTEMENTS": "NIORO",
     "COMMUNES": "Nioro Keur Madiabel",
@@ -1125,6 +1350,7 @@
     "COMM. RURALES": "Paos Koto"
   },
   {
+    "CODE REGION": "SN-KL",
     "REGION": "KAOLACK",
     "DEPARTEMENTS": "NIORO",
     "COMMUNES": "Nioro Keur Madiabel",
@@ -1133,6 +1359,7 @@
     "COMM. RURALES": "Porokhane"
   },
   {
+    "CODE REGION": "SN-KL",
     "REGION": "KAOLACK",
     "DEPARTEMENTS": "NIORO",
     "COMMUNES": "Nioro Keur Madiabel",
@@ -1141,6 +1368,7 @@
     "COMM. RURALES": "Taïba Niassène"
   },
   {
+    "CODE REGION": "SN-KL",
     "REGION": "KAOLACK",
     "DEPARTEMENTS": "NIORO",
     "COMMUNES": "Nioro Keur Madiabel",
@@ -1149,6 +1377,7 @@
     "COMM. RURALES": "Keur Maba Diakhou"
   },
   {
+    "CODE REGION": "SN-KL",
     "REGION": "KAOLACK",
     "DEPARTEMENTS": "NIORO",
     "COMMUNES": "Nioro Keur Madiabel",
@@ -1157,6 +1386,7 @@
     "COMM. RURALES": "Keur Madongo"
   },
   {
+    "CODE REGION": "SN-KL",
     "REGION": "KAOLACK",
     "DEPARTEMENTS": "NIORO",
     "COMMUNES": "Nioro Keur Madiabel",
@@ -1165,6 +1395,7 @@
     "COMM. RURALES": "Ndramé Escale"
   },
   {
+    "CODE REGION": "SN-KL",
     "REGION": "KAOLACK",
     "DEPARTEMENTS": "NIORO",
     "COMMUNES": "Nioro Keur Madiabel",
@@ -1173,6 +1404,7 @@
     "COMM. RURALES": "Wack Ngouna"
   },
   {
+    "CODE REGION": "SN-KE",
     "REGION": "KEDOUGOU",
     "DEPARTEMENTS": "KEDOUGOU",
     "COMMUNES": "Kédougou",
@@ -1181,6 +1413,7 @@
     "COMM. RURALES": "Tomboroncoto"
   },
   {
+    "CODE REGION": "SN-KE",
     "REGION": "KEDOUGOU",
     "DEPARTEMENTS": "KEDOUGOU",
     "COMMUNES": "Kédougou",
@@ -1189,6 +1422,7 @@
     "COMM. RURALES": "Dindefelo Ninéfécha"
   },
   {
+    "CODE REGION": "SN-KE",
     "REGION": "KEDOUGOU",
     "DEPARTEMENTS": "KEDOUGOU",
     "COMMUNES": "Kédougou",
@@ -1197,6 +1431,7 @@
     "COMM. RURALES": "Bandafassi"
   },
   {
+    "CODE REGION": "SN-KE",
     "REGION": "KEDOUGOU",
     "DEPARTEMENTS": "KEDOUGOU",
     "COMMUNES": "Kédougou",
@@ -1205,6 +1440,7 @@
     "COMM. RURALES": "Fongolimbi"
   },
   {
+    "CODE REGION": "SN-KE",
     "REGION": "KEDOUGOU",
     "DEPARTEMENTS": "KEDOUGOU",
     "COMMUNES": "Kédougou",
@@ -1213,6 +1449,7 @@
     "COMM. RURALES": "Dimboli"
   },
   {
+    "CODE REGION": "SN-KE",
     "REGION": "KEDOUGOU",
     "DEPARTEMENTS": "SALEMATA",
     "COMMUNES": "Salémata",
@@ -1221,6 +1458,7 @@
     "COMM. RURALES": "Thiankoye"
   },
   {
+    "CODE REGION": "SN-KE",
     "REGION": "KEDOUGOU",
     "DEPARTEMENTS": "SALEMATA",
     "COMMUNES": "Salémata",
@@ -1229,6 +1467,7 @@
     "COMM. RURALES": "Dakatéli"
   },
   {
+    "CODE REGION": "SN-KE",
     "REGION": "KEDOUGOU",
     "DEPARTEMENTS": "SALEMATA",
     "COMMUNES": "Salémata",
@@ -1237,6 +1476,7 @@
     "COMM. RURALES": "Ethiolo"
   },
   {
+    "CODE REGION": "SN-KE",
     "REGION": "KEDOUGOU",
     "DEPARTEMENTS": "SALEMATA",
     "COMMUNES": "Salémata",
@@ -1245,6 +1485,7 @@
     "COMM. RURALES": "Oubadj"
   },
   {
+    "CODE REGION": "SN-KE",
     "REGION": "KEDOUGOU",
     "DEPARTEMENTS": "SALEMATA",
     "COMMUNES": "Salémata",
@@ -1253,6 +1494,7 @@
     "COMM. RURALES": "Dar Salam"
   },
   {
+    "CODE REGION": "SN-KE",
     "REGION": "KEDOUGOU",
     "DEPARTEMENTS": "SARAYA",
     "COMMUNES": "Saraya",
@@ -1261,6 +1503,7 @@
     "COMM. RURALES": "Bembou"
   },
   {
+    "CODE REGION": "SN-KE",
     "REGION": "KEDOUGOU",
     "DEPARTEMENTS": "SARAYA",
     "COMMUNES": "Saraya",
@@ -1269,6 +1512,7 @@
     "COMM. RURALES": "Médina Baffé"
   },
   {
+    "CODE REGION": "SN-KE",
     "REGION": "KEDOUGOU",
     "DEPARTEMENTS": "SARAYA",
     "COMMUNES": "Saraya",
@@ -1277,6 +1521,7 @@
     "COMM. RURALES": "Sabodala"
   },
   {
+    "CODE REGION": "SN-KE",
     "REGION": "KEDOUGOU",
     "DEPARTEMENTS": "SARAYA",
     "COMMUNES": "Saraya",
@@ -1285,6 +1530,7 @@
     "COMM. RURALES": "Khossanto"
   },
   {
+    "CODE REGION": "SN-KE",
     "REGION": "KEDOUGOU",
     "DEPARTEMENTS": "SARAYA",
     "COMMUNES": "Saraya",
@@ -1293,6 +1539,7 @@
     "COMM. RURALES": "Missirah Sirimana"
   },
   {
+    "CODE REGION": "SN-KD",
     "REGION": "KOLDA",
     "DEPARTEMENTS": "KOLDA",
     "COMMUNES": "Kolda Dabo Salikégné Saré YobaDiéga ",
@@ -1301,6 +1548,7 @@
     "COMM. RURALES": "Dialambéré Médina Chérif Bagadadji Mampatim Coumbacara"
   },
   {
+    "CODE REGION": "SN-KD",
     "REGION": "KOLDA",
     "DEPARTEMENTS": "KOLDA",
     "COMMUNES": "Kolda Dabo Salikégné Saré YobaDiéga ",
@@ -1309,6 +1557,7 @@
     "COMM. RURALES": "Thiétty"
   },
   {
+    "CODE REGION": "SN-KD",
     "REGION": "KOLDA",
     "DEPARTEMENTS": "KOLDA",
     "COMMUNES": "Kolda Dabo Salikégné Saré YobaDiéga ",
@@ -1317,6 +1566,7 @@
     "COMM. RURALES": "Saré Bidji"
   },
   {
+    "CODE REGION": "SN-KD",
     "REGION": "KOLDA",
     "DEPARTEMENTS": "KOLDA",
     "COMMUNES": "Kolda Dabo Salikégné Saré YobaDiéga ",
@@ -1325,6 +1575,7 @@
     "COMM. RURALES": "Guiro Yéro Bocar"
   },
   {
+    "CODE REGION": "SN-KD",
     "REGION": "KOLDA",
     "DEPARTEMENTS": "KOLDA",
     "COMMUNES": "Kolda Dabo Salikégné Saré YobaDiéga ",
@@ -1333,6 +1584,7 @@
     "COMM. RURALES": "Dioulacolon"
   },
   {
+    "CODE REGION": "SN-KD",
     "REGION": "KOLDA",
     "DEPARTEMENTS": "KOLDA",
     "COMMUNES": "Kolda Dabo Salikégné Saré YobaDiéga ",
@@ -1341,6 +1593,7 @@
     "COMM. RURALES": "Tankanto Escale"
   },
   {
+    "CODE REGION": "SN-KD",
     "REGION": "KOLDA",
     "DEPARTEMENTS": "KOLDA",
     "COMMUNES": "Kolda Dabo Salikégné Saré YobaDiéga ",
@@ -1349,13 +1602,16 @@
     "COMM. RURALES": "Médina El Hadj"
   },
   {
+    "CODE REGION": "SN-KD",
     "REGION": "KOLDA",
     "DEPARTEMENTS": "MEDINA YORO FOULAH",
     "COMMUNES": "Médina Yoro Foulah Pata",
     "ARRONDISSEMENTS": "FAFACOUROU Badion Fafacourou",
-    "C0MMUNESARRDT": ""
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-KD",
     "REGION": "KOLDA",
     "DEPARTEMENTS": "MEDINA YORO FOULAH",
     "COMMUNES": "Médina Yoro Foulah Pata",
@@ -1364,6 +1620,7 @@
     "COMM. RURALES": "Bourouco"
   },
   {
+    "CODE REGION": "SN-KD",
     "REGION": "KOLDA",
     "DEPARTEMENTS": "MEDINA YORO FOULAH",
     "COMMUNES": "Médina Yoro Foulah Pata",
@@ -1372,6 +1629,7 @@
     "COMM. RURALES": "Bignarabé"
   },
   {
+    "CODE REGION": "SN-KD",
     "REGION": "KOLDA",
     "DEPARTEMENTS": "MEDINA YORO FOULAH",
     "COMMUNES": "Médina Yoro Foulah Pata",
@@ -1380,6 +1638,7 @@
     "COMM. RURALES": "Ndorna"
   },
   {
+    "CODE REGION": "SN-KD",
     "REGION": "KOLDA",
     "DEPARTEMENTS": "MEDINA YORO FOULAH",
     "COMMUNES": "Médina Yoro Foulah Pata",
@@ -1388,6 +1647,7 @@
     "COMM. RURALES": "Koulinto"
   },
   {
+    "CODE REGION": "SN-KD",
     "REGION": "KOLDA",
     "DEPARTEMENTS": "MEDINA YORO FOULAH",
     "COMMUNES": "Médina Yoro Foulah Pata",
@@ -1396,6 +1656,7 @@
     "COMM. RURALES": "Niaming"
   },
   {
+    "CODE REGION": "SN-KD",
     "REGION": "KOLDA",
     "DEPARTEMENTS": "MEDINA YORO FOULAH",
     "COMMUNES": "Médina Yoro Foulah Pata",
@@ -1404,6 +1665,7 @@
     "COMM. RURALES": "Dinguiraye"
   },
   {
+    "CODE REGION": "SN-KD",
     "REGION": "KOLDA",
     "DEPARTEMENTS": "MEDINA YORO FOULAH",
     "COMMUNES": "Médina Yoro Foulah Pata",
@@ -1412,6 +1674,7 @@
     "COMM. RURALES": "Kéréwane"
   },
   {
+    "CODE REGION": "SN-KD",
     "REGION": "KOLDA",
     "DEPARTEMENTS": "MEDINA YORO FOULAH",
     "COMMUNES": "Médina Yoro Foulah Pata",
@@ -1420,6 +1683,7 @@
     "COMM. RURALES": "Kandiaye"
   },
   {
+    "CODE REGION": "SN-KD",
     "REGION": "KOLDA",
     "DEPARTEMENTS": "MEDINA YORO FOULAH",
     "COMMUNES": "Médina Yoro Foulah Pata",
@@ -1428,6 +1692,7 @@
     "COMM. RURALES": "Saré Coly Sallé"
   },
   {
+    "CODE REGION": "SN-KD",
     "REGION": "KOLDA",
     "DEPARTEMENTS": "MEDINA YORO FOULAH",
     "COMMUNES": "Médina Yoro Foulah Pata",
@@ -1436,6 +1701,7 @@
     "COMM. RURALES": "Kandia"
   },
   {
+    "CODE REGION": "SN-KD",
     "REGION": "KOLDA",
     "DEPARTEMENTS": "MEDINA YORO FOULAH",
     "COMMUNES": "Médina Yoro Foulah Pata",
@@ -1444,6 +1710,7 @@
     "COMM. RURALES": "Némataba"
   },
   {
+    "CODE REGION": "SN-KD",
     "REGION": "KOLDA",
     "DEPARTEMENTS": "VELINGARA",
     "COMMUNES": "Vélingara Kounkané Diaobé-Kabendou",
@@ -1452,6 +1719,7 @@
     "COMM. RURALES": "Pakour"
   },
   {
+    "CODE REGION": "SN-KD",
     "REGION": "KOLDA",
     "DEPARTEMENTS": "VELINGARA",
     "COMMUNES": "Vélingara Kounkané Diaobé-Kabendou",
@@ -1460,6 +1728,7 @@
     "COMM. RURALES": "Paroumba"
   },
   {
+    "CODE REGION": "SN-KD",
     "REGION": "KOLDA",
     "DEPARTEMENTS": "VELINGARA",
     "COMMUNES": "Vélingara Kounkané Diaobé-Kabendou",
@@ -1468,6 +1737,7 @@
     "COMM. RURALES": "Ouassadou"
   },
   {
+    "CODE REGION": "SN-KD",
     "REGION": "KOLDA",
     "DEPARTEMENTS": "VELINGARA",
     "COMMUNES": "Vélingara Kounkané Diaobé-Kabendou",
@@ -1476,6 +1746,7 @@
     "COMM. RURALES": "Bonconto"
   },
   {
+    "CODE REGION": "SN-KD",
     "REGION": "KOLDA",
     "DEPARTEMENTS": "VELINGARA",
     "COMMUNES": "Vélingara Kounkané Diaobé-Kabendou",
@@ -1484,6 +1755,7 @@
     "COMM. RURALES": "Linkering"
   },
   {
+    "CODE REGION": "SN-KD",
     "REGION": "KOLDA",
     "DEPARTEMENTS": "VELINGARA",
     "COMMUNES": "Vélingara Kounkané Diaobé-Kabendou",
@@ -1492,6 +1764,7 @@
     "COMM. RURALES": "Médina Gounass"
   },
   {
+    "CODE REGION": "SN-KD",
     "REGION": "KOLDA",
     "DEPARTEMENTS": "VELINGARA",
     "COMMUNES": "Vélingara Kounkané Diaobé-Kabendou",
@@ -1500,229 +1773,259 @@
     "COMM. RURALES": "Sinthiang Koundara"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
-    "DEPARTEMENTS": "KEBEMER",
+    "DEPARTEMENTS": "KEBEMER ",
     "COMMUNES": "Kébémer Guéoul",
     "ARRONDISSEMENTS": "NDANDE",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Bandegne Ouolof"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
-    "DEPARTEMENTS": "KEBEMER",
+    "DEPARTEMENTS": "KEBEMER ",
     "COMMUNES": "Kébémer Guéoul",
     "ARRONDISSEMENTS": "NDANDE",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Diokoul Diawrigne"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
-    "DEPARTEMENTS": "KEBEMER",
+    "DEPARTEMENTS": "KEBEMER ",
     "COMMUNES": "Kébémer Guéoul",
     "ARRONDISSEMENTS": "NDANDE",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Kab Gaye"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
-    "DEPARTEMENTS": "KEBEMER",
+    "DEPARTEMENTS": "KEBEMER ",
     "COMMUNES": "Kébémer Guéoul",
     "ARRONDISSEMENTS": "NDANDE",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Ndande"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
-    "DEPARTEMENTS": "KEBEMER",
+    "DEPARTEMENTS": "KEBEMER ",
     "COMMUNES": "Kébémer Guéoul",
     "ARRONDISSEMENTS": "NDANDE",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Thieppe"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
-    "DEPARTEMENTS": "KEBEMER",
+    "DEPARTEMENTS": "KEBEMER ",
     "COMMUNES": "Kébémer Guéoul",
     "ARRONDISSEMENTS": "DAROU MOUSTY",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Mbacké Cajor"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
-    "DEPARTEMENTS": "KEBEMER",
+    "DEPARTEMENTS": "KEBEMER ",
     "COMMUNES": "Kébémer Guéoul",
     "ARRONDISSEMENTS": "DAROU MOUSTY",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Darou Marnane"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
-    "DEPARTEMENTS": "KEBEMER",
+    "DEPARTEMENTS": "KEBEMER ",
     "COMMUNES": "Kébémer Guéoul",
     "ARRONDISSEMENTS": "DAROU MOUSTY",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Darou Mousty"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
-    "DEPARTEMENTS": "KEBEMER",
+    "DEPARTEMENTS": "KEBEMER ",
     "COMMUNES": "Kébémer Guéoul",
     "ARRONDISSEMENTS": "DAROU MOUSTY",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Mbadiane"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
-    "DEPARTEMENTS": "KEBEMER",
+    "DEPARTEMENTS": "KEBEMER ",
     "COMMUNES": "Kébémer Guéoul",
     "ARRONDISSEMENTS": "DAROU MOUSTY",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Ndoyene"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
-    "DEPARTEMENTS": "KEBEMER",
+    "DEPARTEMENTS": "KEBEMER ",
     "COMMUNES": "Kébémer Guéoul",
     "ARRONDISSEMENTS": "DAROU MOUSTY",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Sam Yabal"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
-    "DEPARTEMENTS": "KEBEMER",
+    "DEPARTEMENTS": "KEBEMER ",
     "COMMUNES": "Kébémer Guéoul",
     "ARRONDISSEMENTS": "DAROU MOUSTY",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Touba Mérina"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
-    "DEPARTEMENTS": "KEBEMER",
+    "DEPARTEMENTS": "KEBEMER ",
     "COMMUNES": "Kébémer Guéoul",
     "ARRONDISSEMENTS": "SAGATTA",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Ngourane Ouolof"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
-    "DEPARTEMENTS": "KEBEMER",
+    "DEPARTEMENTS": "KEBEMER ",
     "COMMUNES": "Kébémer Guéoul",
     "ARRONDISSEMENTS": "SAGATTA",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Thiolom Fall"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
-    "DEPARTEMENTS": "KEBEMER",
+    "DEPARTEMENTS": "KEBEMER ",
     "COMMUNES": "Kébémer Guéoul",
     "ARRONDISSEMENTS": "SAGATTA",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Sagatta Gueth"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
-    "DEPARTEMENTS": "KEBEMER",
+    "DEPARTEMENTS": "KEBEMER ",
     "COMMUNES": "Kébémer Guéoul",
     "ARRONDISSEMENTS": "SAGATTA",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Kanène Ndiob"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
-    "DEPARTEMENTS": "KEBEMER",
+    "DEPARTEMENTS": "KEBEMER ",
     "COMMUNES": "Kébémer Guéoul",
     "ARRONDISSEMENTS": "SAGATTA",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Loro"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
-    "DEPARTEMENTS": "KEBEMER",
+    "DEPARTEMENTS": "KEBEMER ",
     "COMMUNES": "BARKEDJI",
     "ARRONDISSEMENTS": "Barkédji Gassane Thiarny Thiel",
-    "C0MMUNESARRDT": ""
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
-    "DEPARTEMENTS": "KEBEMER",
+    "DEPARTEMENTS": "KEBEMER ",
     "COMMUNES": "BARKEDJI",
     "ARRONDISSEMENTS": "SAGATTA",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "DJOLOF Boulal"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
-    "DEPARTEMENTS": "KEBEMER",
+    "DEPARTEMENTS": "KEBEMER ",
     "COMMUNES": "BARKEDJI",
     "ARRONDISSEMENTS": "SAGATTA",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Dealy"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
-    "DEPARTEMENTS": "KEBEMER",
+    "DEPARTEMENTS": "KEBEMER ",
     "COMMUNES": "BARKEDJI",
     "ARRONDISSEMENTS": "SAGATTA",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Thiamène Passe"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
-    "DEPARTEMENTS": "KEBEMER",
+    "DEPARTEMENTS": "KEBEMER ",
     "COMMUNES": "BARKEDJI",
     "ARRONDISSEMENTS": "SAGATTA",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Sagatta Djolof"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
-    "DEPARTEMENTS": "LINGUERE",
+    "DEPARTEMENTS": "LINGUERE ",
     "COMMUNES": "Linguère Dahra",
     "ARRONDISSEMENTS": "DODJI",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Dodji"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
-    "DEPARTEMENTS": "LINGUERE",
+    "DEPARTEMENTS": "LINGUERE ",
     "COMMUNES": "Linguère Dahra",
     "ARRONDISSEMENTS": "DODJI",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Labgar"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
-    "DEPARTEMENTS": "LINGUERE",
+    "DEPARTEMENTS": "LINGUERE ",
     "COMMUNES": "Linguère Dahra",
     "ARRONDISSEMENTS": "DODJI",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Ouarkhokh"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
-    "DEPARTEMENTS": "LINGUERE",
+    "DEPARTEMENTS": "LINGUERE ",
     "COMMUNES": "Linguère Dahra",
     "ARRONDISSEMENTS": "YANG YANG",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Kamb Mbeuleukhé"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
-    "DEPARTEMENTS": "LINGUERE",
+    "DEPARTEMENTS": "LINGUERE ",
     "COMMUNES": "Linguère Dahra",
     "ARRONDISSEMENTS": "YANG YANG",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Mboula"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
-    "DEPARTEMENTS": "LINGUERE",
+    "DEPARTEMENTS": "LINGUERE ",
     "COMMUNES": "Linguère Dahra",
     "ARRONDISSEMENTS": "YANG YANG",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Téssékéré Forage"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
     "DEPARTEMENTS": "LOUGA",
     "COMMUNES": "Louga",
@@ -1731,6 +2034,7 @@
     "COMM. RURALES": "Ndiagne"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
     "DEPARTEMENTS": "LOUGA",
     "COMMUNES": "Louga",
@@ -1739,6 +2043,7 @@
     "COMM. RURALES": "Thiamène"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
     "DEPARTEMENTS": "LOUGA",
     "COMMUNES": "Louga",
@@ -1747,6 +2052,7 @@
     "COMM. RURALES": "Pété Ouarack"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
     "DEPARTEMENTS": "LOUGA",
     "COMMUNES": "Louga",
@@ -1755,6 +2061,7 @@
     "COMM. RURALES": "Keur Momar Sarr Nguer Malal"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
     "DEPARTEMENTS": "LOUGA",
     "COMMUNES": "Louga",
@@ -1763,6 +2070,7 @@
     "COMM. RURALES": "Syer"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
     "DEPARTEMENTS": "LOUGA",
     "COMMUNES": "Louga",
@@ -1771,6 +2079,7 @@
     "COMM. RURALES": "Gande"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
     "DEPARTEMENTS": "LOUGA",
     "COMMUNES": "Louga",
@@ -1779,6 +2088,7 @@
     "COMM. RURALES": "Mbédiene"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
     "DEPARTEMENTS": "LOUGA",
     "COMMUNES": "Louga",
@@ -1787,6 +2097,7 @@
     "COMM. RURALES": "Niomré"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
     "DEPARTEMENTS": "LOUGA",
     "COMMUNES": "Louga",
@@ -1795,6 +2106,7 @@
     "COMM. RURALES": "Nguidilé"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
     "DEPARTEMENTS": "LOUGA",
     "COMMUNES": "Louga",
@@ -1803,6 +2115,7 @@
     "COMM. RURALES": "Kéle Gueye"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
     "DEPARTEMENTS": "LOUGA",
     "COMMUNES": "Louga",
@@ -1811,6 +2124,7 @@
     "COMM. RURALES": "Léona"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
     "DEPARTEMENTS": "LOUGA",
     "COMMUNES": "Louga",
@@ -1819,6 +2133,7 @@
     "COMM. RURALES": "Ngueune Sarr"
   },
   {
+    "CODE REGION": "SN-LG",
     "REGION": "LOUGA",
     "DEPARTEMENTS": "LOUGA",
     "COMMUNES": "Louga",
@@ -1827,6 +2142,7 @@
     "COMM. RURALES": "Sakal"
   },
   {
+    "CODE REGION": "SN-MT",
     "REGION": "MATAM",
     "DEPARTEMENTS": "KANEL",
     "COMMUNES": "Kanel Ouaoundé Semmé Dembancané",
@@ -1835,6 +2151,7 @@
     "COMM. RURALES": "Wouro Sidy"
   },
   {
+    "CODE REGION": "SN-MT",
     "REGION": "MATAM",
     "DEPARTEMENTS": "KANEL",
     "COMMUNES": "Kanel Ouaoundé Semmé Dembancané",
@@ -1843,6 +2160,7 @@
     "COMM. RURALES": "Ndendory"
   },
   {
+    "CODE REGION": "SN-MT",
     "REGION": "MATAM",
     "DEPARTEMENTS": "MATAM",
     "COMMUNES": "Hamady Hounaré Sinthiou Bamambé-Banadji",
@@ -1851,6 +2169,7 @@
     "COMM. RURALES": "Aouré"
   },
   {
+    "CODE REGION": "SN-MT",
     "REGION": "MATAM",
     "DEPARTEMENTS": "MATAM",
     "COMMUNES": "Hamady Hounaré Sinthiou Bamambé-Banadji",
@@ -1859,6 +2178,7 @@
     "COMM. RURALES": "Bokiladji"
   },
   {
+    "CODE REGION": "SN-MT",
     "REGION": "MATAM",
     "DEPARTEMENTS": "MATAM",
     "COMMUNES": "Hamady Hounaré Sinthiou Bamambé-Banadji",
@@ -1867,6 +2187,7 @@
     "COMM. RURALES": "Orkadiéré"
   },
   {
+    "CODE REGION": "SN-MT",
     "REGION": "MATAM",
     "DEPARTEMENTS": "MATAM",
     "COMMUNES": "Matam Ourossogui Thilogne",
@@ -1875,6 +2196,7 @@
     "COMM. RURALES": "Dabia"
   },
   {
+    "CODE REGION": "SN-MT",
     "REGION": "MATAM",
     "DEPARTEMENTS": "MATAM",
     "COMMUNES": "Matam Ourossogui Thilogne",
@@ -1883,6 +2205,7 @@
     "COMM. RURALES": "Des Agnam"
   },
   {
+    "CODE REGION": "SN-MT",
     "REGION": "MATAM",
     "DEPARTEMENTS": "MATAM",
     "COMMUNES": "Matam Ourossogui Thilogne",
@@ -1891,6 +2214,7 @@
     "COMM. RURALES": "Oréfondé"
   },
   {
+    "CODE REGION": "SN-MT",
     "REGION": "MATAM",
     "DEPARTEMENTS": "RANEROU FERLO",
     "COMMUNES": "Matam Ourossogui Thilogne",
@@ -1899,6 +2223,7 @@
     "COMM. RURALES": "Bokidiawé"
   },
   {
+    "CODE REGION": "SN-MT",
     "REGION": "MATAM",
     "DEPARTEMENTS": "RANEROU FERLO",
     "COMMUNES": "Matam Ourossogui Thilogne",
@@ -1907,6 +2232,7 @@
     "COMM. RURALES": "Nabadji Civol"
   },
   {
+    "CODE REGION": "SN-MT",
     "REGION": "MATAM",
     "DEPARTEMENTS": "RANEROU FERLO",
     "COMMUNES": "Matam Ourossogui Thilogne",
@@ -1915,6 +2241,7 @@
     "COMM. RURALES": "Ogo"
   },
   {
+    "CODE REGION": "SN-MT",
     "REGION": "MATAM",
     "DEPARTEMENTS": "RANEROU FERLO",
     "COMMUNES": "Ranérou",
@@ -1923,6 +2250,7 @@
     "COMM. RURALES": "Lougré Thioly"
   },
   {
+    "CODE REGION": "SN-MT",
     "REGION": "MATAM",
     "DEPARTEMENTS": "RANEROU FERLO",
     "COMMUNES": "Ranérou",
@@ -1931,6 +2259,7 @@
     "COMM. RURALES": "Oudalaye"
   },
   {
+    "CODE REGION": "SN-MT",
     "REGION": "MATAM",
     "DEPARTEMENTS": "RANEROU FERLO",
     "COMMUNES": "Ranérou",
@@ -1939,6 +2268,7 @@
     "COMM. RURALES": "Vélingara"
   },
   {
+    "CODE REGION": "SN-SL",
     "REGION": "SAINT LOUIS",
     "DEPARTEMENTS": "DAGANA ",
     "COMMUNES": "Dagana Richard Toll Rosso Diama Gaé",
@@ -1947,6 +2277,7 @@
     "COMM. RURALES": "Ngnith"
   },
   {
+    "CODE REGION": "SN-SL",
     "REGION": "SAINT LOUIS",
     "DEPARTEMENTS": "DAGANA ",
     "COMMUNES": "Dagana Richard Toll Rosso Diama Gaé",
@@ -1955,6 +2286,7 @@
     "COMM. RURALES": "Ronkh"
   },
   {
+    "CODE REGION": "SN-SL",
     "REGION": "SAINT LOUIS",
     "DEPARTEMENTS": "DAGANA ",
     "COMMUNES": "Ross-Béthio ",
@@ -1963,6 +2295,7 @@
     "COMM. RURALES": "Bokhol"
   },
   {
+    "CODE REGION": "SN-SL",
     "REGION": "SAINT LOUIS",
     "DEPARTEMENTS": "DAGANA ",
     "COMMUNES": "Ross-Béthio ",
@@ -1971,6 +2304,7 @@
     "COMM. RURALES": "Mbane"
   },
   {
+    "CODE REGION": "SN-SL",
     "REGION": "SAINT LOUIS",
     "DEPARTEMENTS": "PODOR ",
     "COMMUNES": "Podor Golléré Ndioum Niandane Mbouma",
@@ -1979,6 +2313,7 @@
     "COMM. RURALES": "Méry"
   },
   {
+    "CODE REGION": "SN-SL",
     "REGION": "SAINT LOUIS",
     "DEPARTEMENTS": "PODOR ",
     "COMMUNES": "Podor Golléré Ndioum Niandane Mbouma",
@@ -1987,6 +2322,7 @@
     "COMM. RURALES": "Aéré Lao"
   },
   {
+    "CODE REGION": "SN-SL",
     "REGION": "SAINT LOUIS",
     "DEPARTEMENTS": "PODOR ",
     "COMMUNES": "Podor Golléré Ndioum Niandane Mbouma",
@@ -1995,6 +2331,7 @@
     "COMM. RURALES": "Madina Diathbé"
   },
   {
+    "CODE REGION": "SN-SL",
     "REGION": "SAINT LOUIS",
     "DEPARTEMENTS": "PODOR ",
     "COMMUNES": "Guédé Chantier Démette Galoya Toucouleur",
@@ -2003,6 +2340,7 @@
     "COMM. RURALES": "Gamadji Saré"
   },
   {
+    "CODE REGION": "SN-SL",
     "REGION": "SAINT LOUIS",
     "DEPARTEMENTS": "PODOR ",
     "COMMUNES": "Guédé Chantier Démette Galoya Toucouleur",
@@ -2011,6 +2349,7 @@
     "COMM. RURALES": "Dodel"
   },
   {
+    "CODE REGION": "SN-SL",
     "REGION": "SAINT LOUIS",
     "DEPARTEMENTS": "PODOR ",
     "COMMUNES": "Guédé Chantier Démette Galoya Toucouleur",
@@ -2019,6 +2358,7 @@
     "COMM. RURALES": "Guedé Village"
   },
   {
+    "CODE REGION": "SN-SL",
     "REGION": "SAINT LOUIS",
     "DEPARTEMENTS": "PODOR ",
     "COMMUNES": "Guédé Chantier Démette Galoya Toucouleur",
@@ -2027,6 +2367,7 @@
     "COMM. RURALES": "Fanaye"
   },
   {
+    "CODE REGION": "SN-SL",
     "REGION": "SAINT LOUIS",
     "DEPARTEMENTS": "PODOR ",
     "COMMUNES": "Guédé Chantier Démette Galoya Toucouleur",
@@ -2035,6 +2376,7 @@
     "COMM. RURALES": "Ndiayene Peindao"
   },
   {
+    "CODE REGION": "SN-SL",
     "REGION": "SAINT LOUIS",
     "DEPARTEMENTS": "PODOR ",
     "COMMUNES": "Guédé Chantier Démette Galoya Toucouleur",
@@ -2043,6 +2385,7 @@
     "COMM. RURALES": "Mbolo Birane"
   },
   {
+    "CODE REGION": "SN-SL",
     "REGION": "SAINT LOUIS",
     "DEPARTEMENTS": "PODOR ",
     "COMMUNES": "Guédé Chantier Démette Galoya Toucouleur",
@@ -2051,6 +2394,7 @@
     "COMM. RURALES": "Pété"
   },
   {
+    "CODE REGION": "SN-SL",
     "REGION": "SAINT LOUIS",
     "DEPARTEMENTS": "SAINT LOUIS ",
     "COMMUNES": "Saint Louis Mpal",
@@ -2059,6 +2403,7 @@
     "COMM. RURALES": "Fass Ngom"
   },
   {
+    "CODE REGION": "SN-SL",
     "REGION": "SAINT LOUIS",
     "DEPARTEMENTS": "SAINT LOUIS ",
     "COMMUNES": "Saint Louis Mpal",
@@ -2067,6 +2412,7 @@
     "COMM. RURALES": "Ndiébène Gandiole"
   },
   {
+    "CODE REGION": "SN-SL",
     "REGION": "SAINT LOUIS",
     "DEPARTEMENTS": "SAINT LOUIS ",
     "COMMUNES": "Saint Louis Mpal",
@@ -2075,196 +2421,223 @@
     "COMM. RURALES": "Gandon"
   },
   {
+    "CODE REGION": "SN-SE",
     "REGION": "SEDHIOU",
-    "DEPARTEMENTS": "BOUNKILING",
+    "DEPARTEMENTS": "BOUNKILING ",
     "COMMUNES": "Bounkiling Madina Wandifa",
     "ARRONDISSEMENTS": "",
-    "C0MMUNESARRDT": ""
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-SE",
     "REGION": "SEDHIOU",
-    "DEPARTEMENTS": "BOUNKILING",
+    "DEPARTEMENTS": "BOUNKILING ",
     "COMMUNES": "Bounkiling Madina Wandifa",
     "ARRONDISSEMENTS": "BOGHAL",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Boghal"
   },
   {
+    "CODE REGION": "SN-SE",
     "REGION": "SEDHIOU",
-    "DEPARTEMENTS": "BOUNKILING",
+    "DEPARTEMENTS": "BOUNKILING ",
     "COMMUNES": "Bounkiling Madina Wandifa",
     "ARRONDISSEMENTS": "BOGHAL",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Tankon"
   },
   {
+    "CODE REGION": "SN-SE",
     "REGION": "SEDHIOU",
-    "DEPARTEMENTS": "BOUNKILING",
+    "DEPARTEMENTS": "BOUNKILING ",
     "COMMUNES": "Bounkiling Madina Wandifa",
     "ARRONDISSEMENTS": "BOGHAL",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Ndiamacouta"
   },
   {
+    "CODE REGION": "SN-SE",
     "REGION": "SEDHIOU",
-    "DEPARTEMENTS": "BOUNKILING",
+    "DEPARTEMENTS": "BOUNKILING ",
     "COMMUNES": "Bounkiling Madina Wandifa",
     "ARRONDISSEMENTS": "BONA",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Diacounda"
   },
   {
+    "CODE REGION": "SN-SE",
     "REGION": "SEDHIOU",
-    "DEPARTEMENTS": "BOUNKILING",
+    "DEPARTEMENTS": "BOUNKILING ",
     "COMMUNES": "Bounkiling Madina Wandifa",
     "ARRONDISSEMENTS": "BONA",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Inor"
   },
   {
+    "CODE REGION": "SN-SE",
     "REGION": "SEDHIOU",
-    "DEPARTEMENTS": "BOUNKILING",
+    "DEPARTEMENTS": "BOUNKILING ",
     "COMMUNES": "Bounkiling Madina Wandifa",
     "ARRONDISSEMENTS": "BONA",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Kandion Mangana"
   },
   {
+    "CODE REGION": "SN-SE",
     "REGION": "SEDHIOU",
-    "DEPARTEMENTS": "BOUNKILING",
+    "DEPARTEMENTS": "BOUNKILING ",
     "COMMUNES": "Bounkiling Madina Wandifa",
     "ARRONDISSEMENTS": "BONA",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Bona"
   },
   {
+    "CODE REGION": "SN-SE",
     "REGION": "SEDHIOU",
-    "DEPARTEMENTS": "BOUNKILING",
+    "DEPARTEMENTS": "BOUNKILING ",
     "COMMUNES": "Bounkiling Madina Wandifa",
     "ARRONDISSEMENTS": "DIAROUME",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Diambati"
   },
   {
+    "CODE REGION": "SN-SE",
     "REGION": "SEDHIOU",
-    "DEPARTEMENTS": "BOUNKILING",
+    "DEPARTEMENTS": "BOUNKILING ",
     "COMMUNES": "Bounkiling Madina Wandifa",
     "ARRONDISSEMENTS": "DIAROUME",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Faoune"
   },
   {
+    "CODE REGION": "SN-SE",
     "REGION": "SEDHIOU",
-    "DEPARTEMENTS": "BOUNKILING",
+    "DEPARTEMENTS": "BOUNKILING ",
     "COMMUNES": "Bounkiling Madina Wandifa",
     "ARRONDISSEMENTS": "DIAROUME",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Diaroumé"
   },
   {
+    "CODE REGION": "SN-SE",
     "REGION": "SEDHIOU",
-    "DEPARTEMENTS": "GOUDOMP",
+    "DEPARTEMENTS": "GOUDOMP ",
     "COMMUNES": "Goudomp Samine Tanaff Diattacounda",
     "ARRONDISSEMENTS": "DIAROUME",
-    "C0MMUNESARRDT": ""
+    "C0MMUNESARRDT": "",
+    "COMM. RURALES": ""
   },
   {
+    "CODE REGION": "SN-SE",
     "REGION": "SEDHIOU",
-    "DEPARTEMENTS": "GOUDOMP",
+    "DEPARTEMENTS": "GOUDOMP ",
     "COMMUNES": "Goudomp Samine Tanaff Diattacounda",
     "ARRONDISSEMENTS": "DJIBANAR",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Yarang Balante"
   },
   {
+    "CODE REGION": "SN-SE",
     "REGION": "SEDHIOU",
-    "DEPARTEMENTS": "GOUDOMP",
+    "DEPARTEMENTS": "GOUDOMP ",
     "COMMUNES": "Goudomp Samine Tanaff Diattacounda",
     "ARRONDISSEMENTS": "DJIBANAR",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Mangaroungou Santo"
   },
   {
+    "CODE REGION": "SN-SE",
     "REGION": "SEDHIOU",
-    "DEPARTEMENTS": "GOUDOMP",
+    "DEPARTEMENTS": "GOUDOMP ",
     "COMMUNES": "Goudomp Samine Tanaff Diattacounda",
     "ARRONDISSEMENTS": "DJIBANAR",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Simbandi Balante"
   },
   {
+    "CODE REGION": "SN-SE",
     "REGION": "SEDHIOU",
-    "DEPARTEMENTS": "GOUDOMP",
+    "DEPARTEMENTS": "GOUDOMP ",
     "COMMUNES": "Goudomp Samine Tanaff Diattacounda",
     "ARRONDISSEMENTS": "DJIBANAR",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Djibanar"
   },
   {
+    "CODE REGION": "SN-SE",
     "REGION": "SEDHIOU",
-    "DEPARTEMENTS": "GOUDOMP",
+    "DEPARTEMENTS": "GOUDOMP ",
     "COMMUNES": "Goudomp Samine Tanaff Diattacounda",
     "ARRONDISSEMENTS": "DJIBANAR",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Kaour"
   },
   {
+    "CODE REGION": "SN-SE",
     "REGION": "SEDHIOU",
-    "DEPARTEMENTS": "GOUDOMP",
+    "DEPARTEMENTS": "GOUDOMP ",
     "COMMUNES": "Goudomp Samine Tanaff Diattacounda",
     "ARRONDISSEMENTS": "SIMBANDI BRASSOU",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Diouboudou"
   },
   {
+    "CODE REGION": "SN-SE",
     "REGION": "SEDHIOU",
-    "DEPARTEMENTS": "GOUDOMP",
+    "DEPARTEMENTS": "GOUDOMP ",
     "COMMUNES": "Goudomp Samine Tanaff Diattacounda",
     "ARRONDISSEMENTS": "SIMBANDI BRASSOU",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Simbandi Brassou"
   },
   {
+    "CODE REGION": "SN-SE",
     "REGION": "SEDHIOU",
-    "DEPARTEMENTS": "GOUDOMP",
+    "DEPARTEMENTS": "GOUDOMP ",
     "COMMUNES": "Goudomp Samine Tanaff Diattacounda",
     "ARRONDISSEMENTS": "SIMBANDI BRASSOU",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Niagha"
   },
   {
+    "CODE REGION": "SN-SE",
     "REGION": "SEDHIOU",
-    "DEPARTEMENTS": "GOUDOMP",
+    "DEPARTEMENTS": "GOUDOMP ",
     "COMMUNES": "Goudomp Samine Tanaff Diattacounda",
     "ARRONDISSEMENTS": "KARANTABA",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Karantaba"
   },
   {
+    "CODE REGION": "SN-SE",
     "REGION": "SEDHIOU",
-    "DEPARTEMENTS": "GOUDOMP",
+    "DEPARTEMENTS": "GOUDOMP ",
     "COMMUNES": "Goudomp Samine Tanaff Diattacounda",
     "ARRONDISSEMENTS": "KARANTABA",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Kolibantang"
   },
   {
+    "CODE REGION": "SN-SE",
     "REGION": "SEDHIOU",
-    "DEPARTEMENTS": "GOUDOMP",
+    "DEPARTEMENTS": "GOUDOMP ",
     "COMMUNES": "Goudomp Samine Tanaff Diattacounda",
     "ARRONDISSEMENTS": "DJIREDJI",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Djiredji"
   },
   {
+    "CODE REGION": "SN-SE",
     "REGION": "SEDHIOU",
-    "DEPARTEMENTS": "GOUDOMP",
+    "DEPARTEMENTS": "GOUDOMP ",
     "COMMUNES": "Goudomp Samine Tanaff Diattacounda",
     "ARRONDISSEMENTS": "DJIREDJI",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Bambaly"
   },
   {
+    "CODE REGION": "SN-SE",
     "REGION": "SEDHIOU",
     "DEPARTEMENTS": "SEDHIOU",
     "COMMUNES": "Sédhiou Diannah Malary Marsassoum",
@@ -2273,6 +2646,7 @@
     "COMM. RURALES": "DIENDE Oudoucar"
   },
   {
+    "CODE REGION": "SN-SE",
     "REGION": "SEDHIOU",
     "DEPARTEMENTS": "SEDHIOU",
     "COMMUNES": "Sédhiou Diannah Malary Marsassoum",
@@ -2281,6 +2655,7 @@
     "COMM. RURALES": "Koussy"
   },
   {
+    "CODE REGION": "SN-SE",
     "REGION": "SEDHIOU",
     "DEPARTEMENTS": "SEDHIOU",
     "COMMUNES": "Sédhiou Diannah Malary Marsassoum",
@@ -2289,6 +2664,7 @@
     "COMM. RURALES": "Sakar"
   },
   {
+    "CODE REGION": "SN-SE",
     "REGION": "SEDHIOU",
     "DEPARTEMENTS": "SEDHIOU",
     "COMMUNES": "Sédhiou Diannah Malary Marsassoum",
@@ -2297,6 +2673,7 @@
     "COMM. RURALES": "Diendé"
   },
   {
+    "CODE REGION": "SN-SE",
     "REGION": "SEDHIOU",
     "DEPARTEMENTS": "SEDHIOU",
     "COMMUNES": "Sédhiou Diannah Malary Marsassoum",
@@ -2305,6 +2682,7 @@
     "COMM. RURALES": "San Samba"
   },
   {
+    "CODE REGION": "SN-SE",
     "REGION": "SEDHIOU",
     "DEPARTEMENTS": "SEDHIOU",
     "COMMUNES": "Sédhiou Diannah Malary Marsassoum",
@@ -2313,6 +2691,7 @@
     "COMM. RURALES": "Bémet Bidjini"
   },
   {
+    "CODE REGION": "SN-SE",
     "REGION": "SEDHIOU",
     "DEPARTEMENTS": "SEDHIOU",
     "COMMUNES": "Sédhiou Diannah Malary Marsassoum",
@@ -2321,94 +2700,106 @@
     "COMM. RURALES": "Djibabouya"
   },
   {
+    "CODE REGION": "SN-TC",
     "REGION": "TAMBACOUNDA",
-    "DEPARTEMENTS": "BAKEL",
+    "DEPARTEMENTS": "BAKEL ",
     "COMMUNES": "Bakel Kidira Diawara",
     "ARRONDISSEMENTS": "BELE",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Bélé"
   },
   {
+    "CODE REGION": "SN-TC",
     "REGION": "TAMBACOUNDA",
-    "DEPARTEMENTS": "BAKEL",
+    "DEPARTEMENTS": "BAKEL ",
     "COMMUNES": "Bakel Kidira Diawara",
     "ARRONDISSEMENTS": "BELE",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Sinthiou Fissa"
   },
   {
+    "CODE REGION": "SN-TC",
     "REGION": "TAMBACOUNDA",
-    "DEPARTEMENTS": "BAKEL",
+    "DEPARTEMENTS": "BAKEL ",
     "COMMUNES": "Bakel Kidira Diawara",
     "ARRONDISSEMENTS": "KENIEBA",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Toumboura Sadatou"
   },
   {
+    "CODE REGION": "SN-TC",
     "REGION": "TAMBACOUNDA",
-    "DEPARTEMENTS": "BAKEL",
+    "DEPARTEMENTS": "BAKEL ",
     "COMMUNES": "Bakel Kidira Diawara",
     "ARRONDISSEMENTS": "KENIEBA",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Madina Foulbé"
   },
   {
+    "CODE REGION": "SN-TC",
     "REGION": "TAMBACOUNDA",
-    "DEPARTEMENTS": "BAKEL",
+    "DEPARTEMENTS": "BAKEL ",
     "COMMUNES": "Bakel Kidira Diawara",
     "ARRONDISSEMENTS": "MOUDERY",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Moudery"
   },
   {
+    "CODE REGION": "SN-TC",
     "REGION": "TAMBACOUNDA",
-    "DEPARTEMENTS": "BAKEL",
+    "DEPARTEMENTS": "BAKEL ",
     "COMMUNES": "Bakel Kidira Diawara",
     "ARRONDISSEMENTS": "MOUDERY",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Ballou"
   },
   {
+    "CODE REGION": "SN-TC",
     "REGION": "TAMBACOUNDA",
-    "DEPARTEMENTS": "BAKEL",
+    "DEPARTEMENTS": "BAKEL ",
     "COMMUNES": "Bakel Kidira Diawara",
     "ARRONDISSEMENTS": "MOUDERY",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Gabou"
   },
   {
+    "CODE REGION": "SN-TC",
     "REGION": "TAMBACOUNDA",
-    "DEPARTEMENTS": "BAKEL",
+    "DEPARTEMENTS": "BAKEL ",
     "COMMUNES": "Bakel Kidira Diawara",
     "ARRONDISSEMENTS": "BOYNGUEL BAMBA",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Boynguel Bamba"
   },
   {
+    "CODE REGION": "SN-TC",
     "REGION": "TAMBACOUNDA",
-    "DEPARTEMENTS": "BAKEL",
+    "DEPARTEMENTS": "BAKEL ",
     "COMMUNES": "Bakel Kidira Diawara",
     "ARRONDISSEMENTS": "BOYNGUEL BAMBA",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Sinthiou Mamadou Boubou"
   },
   {
+    "CODE REGION": "SN-TC",
     "REGION": "TAMBACOUNDA",
-    "DEPARTEMENTS": "BAKEL",
+    "DEPARTEMENTS": "BAKEL ",
     "COMMUNES": "Bakel Kidira Diawara",
     "ARRONDISSEMENTS": "BOYNGUEL BAMBA",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Koussan"
   },
   {
+    "CODE REGION": "SN-TC",
     "REGION": "TAMBACOUNDA",
-    "DEPARTEMENTS": "BAKEL",
+    "DEPARTEMENTS": "BAKEL ",
     "COMMUNES": "Bakel Kidira Diawara",
     "ARRONDISSEMENTS": "BOYNGUEL BAMBA",
     "C0MMUNESARRDT": "",
     "COMM. RURALES": "Dougué"
   },
   {
+    "CODE REGION": "SN-TC",
     "REGION": "TAMBACOUNDA",
     "DEPARTEMENTS": "GOUDIRY",
     "COMMUNES": "Goudiry Kothiary",
@@ -2417,6 +2808,7 @@
     "COMM. RURALES": "Dianké Makha"
   },
   {
+    "CODE REGION": "SN-TC",
     "REGION": "TAMBACOUNDA",
     "DEPARTEMENTS": "GOUDIRY",
     "COMMUNES": "Goudiry Kothiary",
@@ -2425,6 +2817,7 @@
     "COMM. RURALES": "Boutoucoufara"
   },
   {
+    "CODE REGION": "SN-TC",
     "REGION": "TAMBACOUNDA",
     "DEPARTEMENTS": "GOUDIRY",
     "COMMUNES": "Goudiry Kothiary",
@@ -2433,6 +2826,7 @@
     "COMM. RURALES": "Bani Israel"
   },
   {
+    "CODE REGION": "SN-TC",
     "REGION": "TAMBACOUNDA",
     "DEPARTEMENTS": "GOUDIRY",
     "COMMUNES": "Goudiry Kothiary",
@@ -2441,6 +2835,7 @@
     "COMM. RURALES": "Komoti"
   },
   {
+    "CODE REGION": "SN-TC",
     "REGION": "TAMBACOUNDA",
     "DEPARTEMENTS": "GOUDIRY",
     "COMMUNES": "Goudiry Kothiary",
@@ -2449,6 +2844,7 @@
     "COMM. RURALES": "Sinthiou Bocar Aly"
   },
   {
+    "CODE REGION": "SN-TC",
     "REGION": "TAMBACOUNDA",
     "DEPARTEMENTS": "GOUDIRY",
     "COMMUNES": "Goudiry Kothiary",
@@ -2457,6 +2853,7 @@
     "COMM. RURALES": "Koulor"
   },
   {
+    "CODE REGION": "SN-TC",
     "REGION": "TAMBACOUNDA",
     "DEPARTEMENTS": "GOUDIRY",
     "COMMUNES": "Goudiry Kothiary",
@@ -2465,6 +2862,7 @@
     "COMM. RURALES": "Bala"
   },
   {
+    "CODE REGION": "SN-TC",
     "REGION": "TAMBACOUNDA",
     "DEPARTEMENTS": "GOUDIRY",
     "COMMUNES": "Goudiry Kothiary",
@@ -2473,6 +2871,7 @@
     "COMM. RURALES": "Koar"
   },
   {
+    "CODE REGION": "SN-TC",
     "REGION": "TAMBACOUNDA",
     "DEPARTEMENTS": "GOUDIRY",
     "COMMUNES": "Goudiry Kothiary",
@@ -2481,6 +2880,7 @@
     "COMM. RURALES": "Goumbayel"
   },
   {
+    "CODE REGION": "SN-TC",
     "REGION": "TAMBACOUNDA",
     "DEPARTEMENTS": "KOUPENTOUM",
     "COMMUNES": "Koumpentoum",
@@ -2489,6 +2889,7 @@
     "COMM. RURALES": "Ndame"
   },
   {
+    "CODE REGION": "SN-TC",
     "REGION": "TAMBACOUNDA",
     "DEPARTEMENTS": "KOUPENTOUM",
     "COMMUNES": "Koumpentoum",
@@ -2497,6 +2898,7 @@
     "COMM. RURALES": "Kahène"
   },
   {
+    "CODE REGION": "SN-TC",
     "REGION": "TAMBACOUNDA",
     "DEPARTEMENTS": "KOUPENTOUM",
     "COMMUNES": "Koumpentoum",
@@ -2505,6 +2907,7 @@
     "COMM. RURALES": "Bamba Thialène"
   },
   {
+    "CODE REGION": "SN-TC",
     "REGION": "TAMBACOUNDA",
     "DEPARTEMENTS": "KOUPENTOUM",
     "COMMUNES": "Koumpentoum",
@@ -2513,6 +2916,7 @@
     "COMM. RURALES": "Payar"
   },
   {
+    "CODE REGION": "SN-TC",
     "REGION": "TAMBACOUNDA",
     "DEPARTEMENTS": "KOUPENTOUM",
     "COMMUNES": "Koumpentoum",
@@ -2521,6 +2925,7 @@
     "COMM. RURALES": "Kouthiaba Wolof"
   },
   {
+    "CODE REGION": "SN-TC",
     "REGION": "TAMBACOUNDA",
     "DEPARTEMENTS": "KOUPENTOUM",
     "COMMUNES": "Koumpentoum",
@@ -2529,6 +2934,7 @@
     "COMM. RURALES": "Malème Niani"
   },
   {
+    "CODE REGION": "SN-TC",
     "REGION": "TAMBACOUNDA",
     "DEPARTEMENTS": "KOUPENTOUM",
     "COMMUNES": "Koumpentoum",
@@ -2537,6 +2943,7 @@
     "COMM. RURALES": "Niani Toucouleur"
   },
   {
+    "CODE REGION": "SN-TC",
     "REGION": "TAMBACOUNDA",
     "DEPARTEMENTS": "KOUPENTOUM",
     "COMMUNES": "Koumpentoum",
@@ -2545,6 +2952,7 @@
     "COMM. RURALES": "Makacolibantang"
   },
   {
+    "CODE REGION": "SN-TC",
     "REGION": "TAMBACOUNDA",
     "DEPARTEMENTS": "KOUPENTOUM",
     "COMMUNES": "Koumpentoum",
@@ -2553,6 +2961,7 @@
     "COMM. RURALES": "Ndoga Babacar"
   },
   {
+    "CODE REGION": "SN-TC",
     "REGION": "TAMBACOUNDA",
     "DEPARTEMENTS": "TAMBA",
     "COMMUNES": "Tambacounda",
@@ -2561,6 +2970,7 @@
     "COMM. RURALES": "Dialacoto Missirah"
   },
   {
+    "CODE REGION": "SN-TC",
     "REGION": "TAMBACOUNDA",
     "DEPARTEMENTS": "TAMBA",
     "COMMUNES": "Tambacounda",
@@ -2569,6 +2979,7 @@
     "COMM. RURALES": "Néttéboulou"
   },
   {
+    "CODE REGION": "SN-TC",
     "REGION": "TAMBACOUNDA",
     "DEPARTEMENTS": "TAMBA",
     "COMMUNES": "Tambacounda",
@@ -2577,6 +2988,7 @@
     "COMM. RURALES": "Sinthiou Malème"
   },
   {
+    "CODE REGION": "SN-TC",
     "REGION": "TAMBACOUNDA",
     "DEPARTEMENTS": "TAMBA",
     "COMMUNES": "Tambacounda",
@@ -2585,6 +2997,7 @@
     "COMM. RURALES": "Koussanar"
   },
   {
+    "CODE REGION": "SN-TH",
     "REGION": "THIES",
     "DEPARTEMENTS": "MBOUR",
     "COMMUNES": "Joal – Fadhiouth Diass Nguekhokh Thiadiaye Saly Portudal Ngaparou Somone Popenguine",
@@ -2593,6 +3006,7 @@
     "COMM. RURALES": "Fissel"
   },
   {
+    "CODE REGION": "SN-TH",
     "REGION": "THIES",
     "DEPARTEMENTS": "MBOUR",
     "COMMUNES": "Joal – Fadhiouth Diass Nguekhokh Thiadiaye Saly Portudal Ngaparou Somone Popenguine",
@@ -2601,6 +3015,7 @@
     "COMM. RURALES": "Ndiaganiao"
   },
   {
+    "CODE REGION": "SN-TH",
     "REGION": "THIES",
     "DEPARTEMENTS": "MBOUR",
     "COMMUNES": "Joal – Fadhiouth Diass Nguekhokh Thiadiaye Saly Portudal Ngaparou Somone Popenguine",
@@ -2609,6 +3024,7 @@
     "COMM. RURALES": "Sessene"
   },
   {
+    "CODE REGION": "SN-TH",
     "REGION": "THIES",
     "DEPARTEMENTS": "MBOUR",
     "COMMUNES": "Joal – Fadhiouth Diass Nguekhokh Thiadiaye Saly Portudal Ngaparou Somone Popenguine",
@@ -2617,6 +3033,7 @@
     "COMM. RURALES": "Sandiara"
   },
   {
+    "CODE REGION": "SN-TH",
     "REGION": "THIES",
     "DEPARTEMENTS": "MBOUR",
     "COMMUNES": "Joal – Fadhiouth Diass Nguekhokh Thiadiaye Saly Portudal Ngaparou Somone Popenguine",
@@ -2625,6 +3042,7 @@
     "COMM. RURALES": "Nguéniène"
   },
   {
+    "CODE REGION": "SN-TH",
     "REGION": "THIES",
     "DEPARTEMENTS": "MBOUR",
     "COMMUNES": "Joal – Fadhiouth Diass Nguekhokh Thiadiaye Saly Portudal Ngaparou Somone Popenguine",
@@ -2633,6 +3051,7 @@
     "COMM. RURALES": "Sindia Mbour Malicounda"
   },
   {
+    "CODE REGION": "SN-TH",
     "REGION": "THIES",
     "DEPARTEMENTS": "MBOUR",
     "COMMUNES": "Joal – Fadhiouth Diass Nguekhokh Thiadiaye Saly Portudal Ngaparou Somone Popenguine",
@@ -2641,6 +3060,7 @@
     "COMM. RURALES": "Thiénaba"
   },
   {
+    "CODE REGION": "SN-TH",
     "REGION": "THIES",
     "DEPARTEMENTS": "MBOUR",
     "COMMUNES": "Joal – Fadhiouth Diass Nguekhokh Thiadiaye Saly Portudal Ngaparou Somone Popenguine",
@@ -2649,6 +3069,7 @@
     "COMM. RURALES": "Ngoudiane"
   },
   {
+    "CODE REGION": "SN-TH",
     "REGION": "THIES",
     "DEPARTEMENTS": "MBOUR",
     "COMMUNES": "Joal – Fadhiouth Diass Nguekhokh Thiadiaye Saly Portudal Ngaparou Somone Popenguine",
@@ -2657,6 +3078,7 @@
     "COMM. RURALES": "Ndiéyène Sirakh"
   },
   {
+    "CODE REGION": "SN-TH",
     "REGION": "THIES",
     "DEPARTEMENTS": "MBOUR",
     "COMMUNES": "Joal – Fadhiouth Diass Nguekhokh Thiadiaye Saly Portudal Ngaparou Somone Popenguine",
@@ -2665,6 +3087,7 @@
     "COMM. RURALES": "Touba Toul"
   },
   {
+    "CODE REGION": "SN-TH",
     "REGION": "THIES",
     "DEPARTEMENTS": "THIES",
     "COMMUNES": "Thies Kayar Khombole Pout",
@@ -2673,6 +3096,7 @@
     "COMM. RURALES": "Keur Moussa Diender"
   },
   {
+    "CODE REGION": "SN-TH",
     "REGION": "THIES",
     "DEPARTEMENTS": "THIES",
     "COMMUNES": "Thies Kayar Khombole Pout",
@@ -2681,6 +3105,7 @@
     "COMM. RURALES": "Fandène"
   },
   {
+    "CODE REGION": "SN-TH",
     "REGION": "THIES",
     "DEPARTEMENTS": "THIES",
     "COMMUNES": "Thies Kayar Khombole Pout",
@@ -2689,6 +3114,7 @@
     "COMM. RURALES": "Notto"
   },
   {
+    "CODE REGION": "SN-TH",
     "REGION": "THIES",
     "DEPARTEMENTS": "THIES",
     "COMMUNES": "Thies Kayar Khombole Pout",
@@ -2697,6 +3123,7 @@
     "COMM. RURALES": "Tassète"
   },
   {
+    "CODE REGION": "SN-TH",
     "REGION": "THIES",
     "DEPARTEMENTS": "THIES",
     "COMMUNES": "Thies Kayar Khombole Pout",
@@ -2705,6 +3132,7 @@
     "COMM. RURALES": "Méouane"
   },
   {
+    "CODE REGION": "SN-TH",
     "REGION": "THIES",
     "DEPARTEMENTS": "THIES",
     "COMMUNES": "Thies Kayar Khombole Pout",
@@ -2713,6 +3141,7 @@
     "COMM. RURALES": "Darou Khoudoss"
   },
   {
+    "CODE REGION": "SN-TH",
     "REGION": "THIES",
     "DEPARTEMENTS": "THIES",
     "COMMUNES": "Thies Kayar Khombole Pout",
@@ -2721,6 +3150,7 @@
     "COMM. RURALES": "Taïba Ndiaye"
   },
   {
+    "CODE REGION": "SN-TH",
     "REGION": "THIES",
     "DEPARTEMENTS": "TIVAOUANE",
     "COMMUNES": "Tivaouane Mboro Mékhé",
@@ -2729,6 +3159,7 @@
     "COMM. RURALES": "Mérina Dakhar"
   },
   {
+    "CODE REGION": "SN-TH",
     "REGION": "THIES",
     "DEPARTEMENTS": "TIVAOUANE",
     "COMMUNES": "Tivaouane Mboro Mékhé",
@@ -2737,6 +3168,7 @@
     "COMM. RURALES": "Koul"
   },
   {
+    "CODE REGION": "SN-TH",
     "REGION": "THIES",
     "DEPARTEMENTS": "TIVAOUANE",
     "COMMUNES": "Tivaouane Mboro Mékhé",
@@ -2745,6 +3177,7 @@
     "COMM. RURALES": "Pékèsse"
   },
   {
+    "CODE REGION": "SN-TH",
     "REGION": "THIES",
     "DEPARTEMENTS": "TIVAOUANE",
     "COMMUNES": "Tivaouane Mboro Mékhé",
@@ -2753,6 +3186,7 @@
     "COMM. RURALES": "Niakhène"
   },
   {
+    "CODE REGION": "SN-TH",
     "REGION": "THIES",
     "DEPARTEMENTS": "TIVAOUANE",
     "COMMUNES": "Tivaouane Mboro Mékhé",
@@ -2761,6 +3195,7 @@
     "COMM. RURALES": "Mbayène"
   },
   {
+    "CODE REGION": "SN-TH",
     "REGION": "THIES",
     "DEPARTEMENTS": "TIVAOUANE",
     "COMMUNES": "Tivaouane Mboro Mékhé",
@@ -2769,6 +3204,7 @@
     "COMM. RURALES": "Thilmakha"
   },
   {
+    "CODE REGION": "SN-TH",
     "REGION": "THIES",
     "DEPARTEMENTS": "TIVAOUANE",
     "COMMUNES": "Tivaouane Mboro Mékhé",
@@ -2777,6 +3213,7 @@
     "COMM. RURALES": "Ngandiouf"
   },
   {
+    "CODE REGION": "SN-TH",
     "REGION": "THIES",
     "DEPARTEMENTS": "TIVAOUANE",
     "COMMUNES": "Tivaouane Mboro Mékhé",
@@ -2785,6 +3222,7 @@
     "COMM. RURALES": "Notto Gouye Diama"
   },
   {
+    "CODE REGION": "SN-TH",
     "REGION": "THIES",
     "DEPARTEMENTS": "TIVAOUANE",
     "COMMUNES": "Tivaouane Mboro Mékhé",
@@ -2793,6 +3231,7 @@
     "COMM. RURALES": "Mont Rolland"
   },
   {
+    "CODE REGION": "SN-TH",
     "REGION": "THIES",
     "DEPARTEMENTS": "TIVAOUANE",
     "COMMUNES": "Tivaouane Mboro Mékhé",
@@ -2801,6 +3240,7 @@
     "COMM. RURALES": "Pire Goureye"
   },
   {
+    "CODE REGION": "SN-TH",
     "REGION": "THIES",
     "DEPARTEMENTS": "TIVAOUANE",
     "COMMUNES": "Tivaouane Mboro Mékhé",
@@ -2809,6 +3249,7 @@
     "COMM. RURALES": "Chérif Lo"
   },
   {
+    "CODE REGION": "SN-ZG",
     "REGION": "ZIGUINCHOR",
     "DEPARTEMENTS": "ZIGUINCHOR",
     "COMMUNES": "Ziguinchor",
@@ -2817,6 +3258,7 @@
     "COMM. RURALES": "Niaguis"
   },
   {
+    "CODE REGION": "SN-ZG",
     "REGION": "ZIGUINCHOR",
     "DEPARTEMENTS": "ZIGUINCHOR",
     "COMMUNES": "Ziguinchor",
@@ -2825,6 +3267,7 @@
     "COMM. RURALES": "Adéane"
   },
   {
+    "CODE REGION": "SN-ZG",
     "REGION": "ZIGUINCHOR",
     "DEPARTEMENTS": "ZIGUINCHOR",
     "COMMUNES": "Ziguinchor",
@@ -2833,6 +3276,7 @@
     "COMM. RURALES": "Boutoupa Camaracounda"
   },
   {
+    "CODE REGION": "SN-ZG",
     "REGION": "ZIGUINCHOR",
     "DEPARTEMENTS": "ZIGUINCHOR",
     "COMMUNES": "Ziguinchor",
@@ -2841,6 +3285,7 @@
     "COMM. RURALES": "Niassia"
   },
   {
+    "CODE REGION": "SN-ZG",
     "REGION": "ZIGUINCHOR",
     "DEPARTEMENTS": "ZIGUINCHOR",
     "COMMUNES": "Ziguinchor",
@@ -2849,6 +3294,7 @@
     "COMM. RURALES": "Enampore"
   },
   {
+    "CODE REGION": "SN-ZG",
     "REGION": "ZIGUINCHOR",
     "DEPARTEMENTS": "OUSSOUYE",
     "COMMUNES": "Oussouye",
@@ -2857,6 +3303,7 @@
     "COMM. RURALES": "Diembéring"
   },
   {
+    "CODE REGION": "SN-ZG",
     "REGION": "ZIGUINCHOR",
     "DEPARTEMENTS": "OUSSOUYE",
     "COMMUNES": "Oussouye",
@@ -2865,6 +3312,7 @@
     "COMM. RURALES": "Santhiaba Manjack"
   },
   {
+    "CODE REGION": "SN-ZG",
     "REGION": "ZIGUINCHOR",
     "DEPARTEMENTS": "OUSSOUYE",
     "COMMUNES": "Oussouye",
@@ -2873,6 +3321,7 @@
     "COMM. RURALES": "Oukout"
   },
   {
+    "CODE REGION": "SN-ZG",
     "REGION": "ZIGUINCHOR",
     "DEPARTEMENTS": "OUSSOUYE",
     "COMMUNES": "Oussouye",
@@ -2881,6 +3330,7 @@
     "COMM. RURALES": "Mlomp"
   },
   {
+    "CODE REGION": "SN-ZG",
     "REGION": "ZIGUINCHOR",
     "DEPARTEMENTS": "OUSSOUYE",
     "COMMUNES": "Oussouye",
@@ -2889,6 +3339,7 @@
     "COMM. RURALES": "Kataba 1"
   },
   {
+    "CODE REGION": "SN-ZG",
     "REGION": "ZIGUINCHOR",
     "DEPARTEMENTS": "OUSSOUYE",
     "COMMUNES": "Oussouye",
@@ -2897,6 +3348,7 @@
     "COMM. RURALES": "Djinaky"
   },
   {
+    "CODE REGION": "SN-ZG",
     "REGION": "ZIGUINCHOR",
     "DEPARTEMENTS": "OUSSOUYE",
     "COMMUNES": "Oussouye",
@@ -2905,6 +3357,7 @@
     "COMM. RURALES": "Kafontine"
   },
   {
+    "CODE REGION": "SN-ZG",
     "REGION": "ZIGUINCHOR",
     "DEPARTEMENTS": "BIGNONA",
     "COMMUNES": "Bignona Thionck-Essyl Diouloulou",
@@ -2913,6 +3366,7 @@
     "COMM. RURALES": "Niamone Tenghori"
   },
   {
+    "CODE REGION": "SN-ZG",
     "REGION": "ZIGUINCHOR",
     "DEPARTEMENTS": "BIGNONA",
     "COMMUNES": "Bignona Thionck-Essyl Diouloulou",
@@ -2921,6 +3375,7 @@
     "COMM. RURALES": "Ouonck"
   },
   {
+    "CODE REGION": "SN-ZG",
     "REGION": "ZIGUINCHOR",
     "DEPARTEMENTS": "BIGNONA",
     "COMMUNES": "Bignona Thionck-Essyl Diouloulou",
@@ -2929,6 +3384,7 @@
     "COMM. RURALES": "Coubalan"
   },
   {
+    "CODE REGION": "SN-ZG",
     "REGION": "ZIGUINCHOR",
     "DEPARTEMENTS": "BIGNONA",
     "COMMUNES": "Bignona Thionck-Essyl Diouloulou",
@@ -2937,6 +3393,7 @@
     "COMM. RURALES": "Balinghore"
   },
   {
+    "CODE REGION": "SN-ZG",
     "REGION": "ZIGUINCHOR",
     "DEPARTEMENTS": "BIGNONA",
     "COMMUNES": "Bignona Thionck-Essyl Diouloulou",
@@ -2945,6 +3402,7 @@
     "COMM. RURALES": "Diégoune"
   },
   {
+    "CODE REGION": "SN-ZG",
     "REGION": "ZIGUINCHOR",
     "DEPARTEMENTS": "BIGNONA",
     "COMMUNES": "Bignona Thionck-Essyl Diouloulou",
@@ -2953,6 +3411,7 @@
     "COMM. RURALES": "Kartiack"
   },
   {
+    "CODE REGION": "SN-ZG",
     "REGION": "ZIGUINCHOR",
     "DEPARTEMENTS": "BIGNONA",
     "COMMUNES": "Bignona Thionck-Essyl Diouloulou",
@@ -2961,6 +3420,7 @@
     "COMM. RURALES": "Mangagoulack"
   },
   {
+    "CODE REGION": "SN-ZG",
     "REGION": "ZIGUINCHOR",
     "DEPARTEMENTS": "BIGNONA",
     "COMMUNES": "Bignona Thionck-Essyl Diouloulou",
@@ -2969,6 +3429,7 @@
     "COMM. RURALES": "Mlom"
   },
   {
+    "CODE REGION": "SN-ZG",
     "REGION": "ZIGUINCHOR",
     "DEPARTEMENTS": "BIGNONA",
     "COMMUNES": "Bignona Thionck-Essyl Diouloulou",
@@ -2977,6 +3438,7 @@
     "COMM. RURALES": "Djibidione"
   },
   {
+    "CODE REGION": "SN-ZG",
     "REGION": "ZIGUINCHOR",
     "DEPARTEMENTS": "BIGNONA",
     "COMMUNES": "Bignona Thionck-Essyl Diouloulou",
@@ -2985,6 +3447,7 @@
     "COMM. RURALES": "Oulampane"
   },
   {
+    "CODE REGION": "SN-ZG",
     "REGION": "ZIGUINCHOR",
     "DEPARTEMENTS": "BIGNONA",
     "COMMUNES": "Bignona Thionck-Essyl Diouloulou",
@@ -2993,6 +3456,7 @@
     "COMM. RURALES": "Sindian"
   },
   {
+    "CODE REGION": "SN-ZG",
     "REGION": "ZIGUINCHOR",
     "DEPARTEMENTS": "BIGNONA",
     "COMMUNES": "Bignona Thionck-Essyl Diouloulou",

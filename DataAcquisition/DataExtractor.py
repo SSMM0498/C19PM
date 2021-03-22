@@ -1,7 +1,9 @@
 import re
+import json
 import io
 from PIL import Image, ImageEnhance, ImageFilter
 from pytesseract import pytesseract
+
 # import fitz 
 
 # Function To Get Images from a pdf file : Works if U install fitz
@@ -169,5 +171,20 @@ def getCityCases(text):
             cas.append(obj) 
     return cas
 
+def compare(a, b):
+    u = zip(a, b)
+    error = 0
+    for i,j in u:
+        if i==j:
+            continue
+        else: 
+            error = error + 1
+    if (error > 1):
+        return False
+    else:
+        return True
 
-
+def exportIntoJson(cas):
+    # with open("export_file.json", "w") as export_file:
+        with open("Senegal.json", "r") as da:
+            data = json.load(da)

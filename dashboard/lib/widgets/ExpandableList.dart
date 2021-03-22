@@ -12,7 +12,7 @@ class ExpandableList extends StatefulWidget {
 }
 
 class _ExpandableListState extends State<ExpandableList> {
-  bool _allchecked = false;
+  // bool _allchecked = false;
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
@@ -29,34 +29,53 @@ class _ExpandableListState extends State<ExpandableList> {
           ],
         ),
         children: <Widget>[
-          CheckboxListTile(
-              value: _allchecked,
-              onChanged: (bool newVal) {
-                setState(() {
-                  _allchecked = newVal;
-                  widget.list[i].days.map((d) {
-                    d.checked = _allchecked;
-                    // print(d.checked);
-                    setState(() => d.checked = _allchecked);
-                  });
-                });
-              },
-              title: Text("Tous cochés")),
+          // CheckboxListTile(
+          //   value: _allchecked,
+          //   onChanged: (bool newVal) {
+          //     setState(() {
+          //       _allchecked = newVal;
+          //       widget.list[i].days.map((d) {
+          //         d.checked = _allchecked;
+          //         setState(() => d.checked = _allchecked);
+          //       });
+          //     });
+          //   },
+          //   title: Text("Tous cochés"),
+          // ),
           ...createCheckbox(i)
         ],
       ),
     );
   }
 
-  List<ListElement> createCheckbox(int i) {
+  List<Row> createCheckbox(int i) {
     return widget.list[i].days
-        .map((day) => ListElement(
-            parentIndex: i,
-            day: day,
-            callBack: (Day d) {
-              setState(() => day.checked = d.checked);
-              widget.callBack(d);
-            }))
+        .map((day) => Row(
+              children: [
+                Expanded(
+                  child: ListElement(
+                    parentIndex: i,
+                    day: day,
+                    callBack: (Day d) {
+                      setState(() => day.checked = d.checked);
+                      widget.callBack(d);
+                    },
+                  ),
+                  flex: 7,
+                ),
+                Expanded(
+                  flex: 3,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      elevation: .5,
+                    ),
+                    onPressed: () => print("Open"),
+                    child: Text("Voir données"),
+                  ),
+                ),
+                SizedBox(width: 20),
+              ],
+            ))
         .toList();
   }
 }

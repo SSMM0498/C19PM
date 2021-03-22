@@ -8,7 +8,8 @@ with open("decoupage-administratif.json", "r") as read_file:
             continue
         else:
             regions.append(obj["REGION"])
-    # print(regions)
+    print(regions)
+
     departements = []
     for region in regions:
         r = {
@@ -21,7 +22,7 @@ with open("decoupage-administratif.json", "r") as read_file:
             else:
                 continue
         departements.append(r)
-    # print(departements)
+    print(departements)
     communes = []
     for departement in departements:
         r = {
@@ -31,75 +32,40 @@ with open("decoupage-administratif.json", "r") as read_file:
         for dept in departement["departements"]:
             d = {
                 "departement": dept,
-                "communes": []
+                "communes": [],
+                "arrondissements": [],
+                "comard": [],
+
             }
             for obj in data:
                 if ((obj["REGION"] == r["region"]) and (obj["DEPARTEMENTS"] == dept) and (obj["COMMUNES"] not in d["communes"])):
-                    d["communes"].append(obj["COMMUNES"])
+                    if(obj["COMMUNES"]!=''):
+                        d["communes"].append(obj["COMMUNES"])
+                    else:
+                        continue
+                else:
+                    continue
+            for obj in data:
+                if ((obj["REGION"] == r["region"]) and (obj["DEPARTEMENTS"] == d["departement"]) and (obj["ARRONDISSEMENTS"] not in d["arrondissements"])):
+                    if(obj["ARRONDISSEMENTS"]!=''):
+                        d["arrondissements"].append(obj["ARRONDISSEMENTS"])
+                    else:
+                        continue
+                else:
+                    continue
+            for obj in data:
+                if ((obj["REGION"] == r["region"]) and (obj["DEPARTEMENTS"] == d["departement"]) and (obj["C0MMUNESARRDT"] not in d["comard"])):
+                    if(obj["C0MMUNESARRDT"]!=''):
+                        d["comard"].append(obj["C0MMUNESARRDT"])
+                    else:
+                        continue
                 else:
                     continue
             r["departements"].append(d)
         communes.append(r)
     # print(communes)
-    arrond = []
 
-    for commune in communes:
-        r = {
-            "region": commune["region"],
-            "departements": []
-        }
-        for dept in commune["departements"]:
-            d = {
-                "departement": dept["departement"],
-                "communes": []
-            }
-            for comm in dept["communes"]:
-                c = {
-                    "commune": comm,
-                    "arrondissements": []
-                }
-                for obj in data:
-                    if ((obj["REGION"] == r["region"]) and (obj["DEPARTEMENTS"] == d["departement"]) and (obj["COMMUNES"] == comm) and (obj["ARRONDISSEMENTS"] not in c["arrondissements"])):
-                        c["arrondissements"].append(obj["ARRONDISSEMENTS"])
-                    else:
-                        continue
-                d["communes"].append(c)    
-            r["departements"].append(d)
-        arrond.append(r)
-    # print(arrond)
-    comard = []
-    for arr in arrond:
-        r = {
-            "region": arr["region"],
-            "departements": []
-        }
-        for dept in arr["departements"]:
-            d = {
-                "departement": dept["departement"],
-                "communes": []
-            }
-            for comm in dept["communes"]:
-                c = {
-                    "commune": comm["commune"],
-                    "arrondissements": []
-                }
-                for arr in comm["arrondissements"]:
-                    a = {
-                       "arrond": arr,
-                       "comard": []
-                    }
-                    for obj in data:
-                        if ((obj["REGION"] == r["region"]) and (obj["DEPARTEMENTS"] == d["departement"]) and (obj["COMMUNES"] == c["commune"]) and (obj["ARRONDISSEMENTS"] == arr) and (obj["C0MMUNESARRDT"] not in a["comard"])):
-                            a["comard"].append(obj["C0MMUNESARRDT"])
-                        else:
-                            continue
-                    c["arrondissements"].append(a)    
-                d["communes"].append(c)
-            r["departements"].append(d)
-        comard.append(r)
-    print(comard)
 
-with open("data_file.json", "w") as write_file:
-    json.dump(comard, write_file,ensure_ascii=False)
+    with open("dump.json", "w") as write_file:
+        json.dump(communes, write_file,ensure_ascii=False)
         
-

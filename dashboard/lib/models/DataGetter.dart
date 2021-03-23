@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:covid19_progression_modeler/models/DayStats.dart';
+import 'package:fl_chart/fl_chart.dart';
 import 'models.dart';
 
 // String pathToJsonFiles =
@@ -49,7 +50,27 @@ Month createMonthList(File fmonth) {
   return m;
 }
 
+List<FlSpot> createGraphPoint(String region) {
+  //1. Get data from SQL Database for the specific region
+  //2. Parse data date
+  //3. Parse data nbCase
+  //4. Create list of flspot
+  //5. Return the flspot list
+  return [
+    FlSpot(1, 1),
+    FlSpot(3, 2.8),
+    FlSpot(7, 1.2),
+    FlSpot(10, 2.8),
+    FlSpot(11, 3.9),
+    FlSpot(12, 2.6),
+  ];
+}
+
 List<Region> createRegionList() {
+  //1. Get data from SQL Database for the specific region
+  //2. Parse region and departement's data
+  //4. Create list of Region
+  //5. Return the list of Region
   List<Region> lr = [
     new Region(name: "Dakar", nbCase: 17, departements: [
       new Departement(name: "Dakar", nbCase: 19),

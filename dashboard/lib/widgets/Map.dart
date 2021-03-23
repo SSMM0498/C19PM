@@ -61,7 +61,7 @@ class _MapWidgetState extends State<MapWidget> {
   Widget build(BuildContext context) {
     refreshPositions();
     return Container(
-      color: Palette.primeColor,
+      color: Colors.white,
       width: double.infinity,
       height: SizeHelper.height() * .75,
       child: CanvasTouchDetector(

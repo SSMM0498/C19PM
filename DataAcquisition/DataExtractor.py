@@ -1,8 +1,10 @@
+import os
 import re
 import json
 import io
 from PIL import Image, ImageEnhance, ImageFilter
 from pytesseract import pytesseract
+from fuzzywuzzy import fuzz
 
 # import fitz 
 
@@ -138,6 +140,7 @@ def getCityCases(text):
                     for loc in tmp:
                         loc = loc.strip()
                         obj = {
+                            'found':False,
                             'lieu': '',
                             'nbCas': 0
                         }
@@ -156,6 +159,7 @@ def getCityCases(text):
         for words in text:
             words = words.split()
             obj = {
+                'found': False,
                 'lieu': '',
                 'nbCas': 0
             }
@@ -172,19 +176,182 @@ def getCityCases(text):
     return cas
 
 def compare(a, b):
-    u = zip(a, b)
-    error = 0
-    for i,j in u:
-        if i==j:
-            continue
-        else: 
-            error = error + 1
-    if (error > 1):
-        return False
-    else:
+    if (fuzz.ratio(a,b) >= 85):
         return True
+    else:
+        if fuzz.partial_ratio(a, b) > 80:
+            return True
+        else:
+            return False
 
 def exportIntoJson(cas):
-    # with open("export_file.json", "w") as export_file:
-        with open("Senegal.json", "r") as da:
+    with open("json/tmp_export.json", "w") as export_file:
+        with open("json/Senegal.json", "r") as da:
             data = json.load(da)
+            export = {
+                'regions': [],
+                'depts':[]
+            }
+            for loc in cas:
+                location = loc["lieu"]
+                if(location != ""):
+                    location = location.replace(" ","")
+                    location = location.replace("-", "")
+                    location = location.replace("é","e")
+                    location = location.replace("è","e")
+                    location = location.replace("ï","i")
+                    location = location.replace("’","")
+                    location = location.replace(".","")
+                    for r in data:
+                        if loc["found"] == True:
+                            break
+                        region = r["region"].lower()
+                        r_export = {
+                            "Region": region,
+                            "TotalCas": 0 
+                        }
+                        region = region.replace(" ","")
+                        region = region.replace("_","")
+                        if (compare(location, region) and loc["found"] == False ):
+                            print("Found Region:" + region)
+                            loc["found"] = True
+                            r_export["TotalCas"] += loc["nbCas"]
+                            break
+                        else:
+                            for d in r["departements"]:
+                                if loc["found"] == True:
+                                    break
+                                dept = d["departement"].lower()
+                                d_export = {
+                                    "region": r["region"],
+                                    "dept": dept,
+                                    "Cas":0
+                                }
+                                dept = dept.replace(" ","")    
+                                dept = dept.replace("-", "")
+                                if (compare(location, dept) and loc["found"] == False):
+                                    print("Found Department:" + dept)
+                                    loc["found"] = True
+                                    d_export["Cas"] += loc["nbCas"]
+                                    export["depts"].append(d_export)   
+                                else:
+                                    for c in d["communes"]:
+                                        if loc["found"] == True:
+                                            break
+                                        c = c.lower()
+                                        c = c.replace(" ","")
+                                        c = c.replace("-", "")
+                                        if (compare(location, c )and loc["found"] == False):
+                                            print("Found Commune:" + c)
+                                            loc["found"] = True
+                                            d_export["Cas"] += loc["nbCas"]
+                                            export["depts"].append(d_export)
+                                            break
+                                        else:
+                                            for a in d["arronds"]:
+                                                if loc["found"] == True:
+                                                    break
+                                                a = a.lower()
+                                                a = a.replace(" ","")
+                                                a = a.replace("-", "")
+                                                if (compare(location, a )and loc["found"] == False):
+                                                    print("Found arrond" + a)
+                                                    loc["found"] = True
+                                                    d_export["Cas"] += loc["nbCas"]
+                                                    export["depts"].append(d_export)
+                                                    break
+                                                else:
+                                                    for ca in d["comard"]:
+                                                        ca = ca.lower()
+                                                        ca = ca.replace(" ","")
+                                                        ca = ca.replace("-", "")
+                                                        if (compare(location, ca) and loc["found"] == False):
+                                                            print("Found Ca:" + ca)
+                                                            loc["found"] = True
+                                                            d_export["Cas"] += loc["nbCas"]
+                                                            export["depts"].append(d_export)
+                                                            break                             
+                    export["regions"].append(r_export)
+                else:
+                    continue
+            # for region in export["regions"]:
+            #     if (region["TotalCas"] != 0):
+            #         print(region)
+            # for dept in export["depts"]:
+            #     if (dept["Cas"] != 0):
+            #         print(dept)
+            All_Data = []
+            finished_departements = []
+            for dept in export["depts"]:
+                fini = False
+                for x in finished_departements:
+                    if (dept["dept"] == x["dept"]):
+                        fini = True
+                        break
+                if(not fini):
+                    departement = {
+                        "region": dept["region"],
+                        "dept": dept["dept"],
+                        "TotalCas": 0
+                    }
+                    for left in export["depts"]:
+                        if (dept["dept"] == left["dept"]):
+                            departement["TotalCas"] += left["Cas"]
+                    # print(departement)
+                    finished_departements.append(departement)
+                    All_Data.append(departement)
+                else:
+                    continue
+            print(finished_departements)
+            finished_regions = []
+            for reg in export["regions"]:
+                fini = False
+                for x in finished_regions:
+                    if (reg["Region"] == x["region"]):
+                        fini = True
+                        break
+                if (not fini):
+                    region = {
+                        "region": reg["Region"],
+                        "TotalCas": reg["TotalCas"]
+                    }
+                    for dept in finished_departements:
+                        if (dept["region"].lower() == region["region"].lower()):
+                            region["TotalCas"] += dept["TotalCas"]
+                        else:
+                            continue
+                    finished_regions.append(region)
+                    All_Data.append(region)
+                else:
+                    continue
+            print(finished_regions)
+        json.dump(All_Data, export_file, ensure_ascii=False)
+        return All_Data
+
+def exportToFile(date, month, year, nbTest, casCon, casCom,cases):
+    filename = str(year) + '-' + str(month)
+    filepath = "json/" + filename + ".json"
+    export = []
+    data = {
+            "Date": date,
+            "NbTest": nbTest,
+            "NbCasContact": casCon,
+            "NbCasComm": casCom,
+            "RepCas": cases
+        }
+    export.append(data)
+    if not os.path.isfile(filepath):
+        with open(filepath, "w") as export_file:
+            json.dump(export, export_file, ensure_ascii=False)
+    else:
+        with open(filepath, "r") as input_file:
+            feeds = json.load(input_file)
+        # feeds.append(data)
+        # # print(feeds)
+        feeds.append(data)
+        with open(filepath, "w") as export_file:
+            json.dump(feeds, export_file, ensure_ascii=False)
+        
+        
+
+            

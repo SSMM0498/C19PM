@@ -6,6 +6,10 @@ class SizeHelper {
     SizeHelper.context = context;
   }
 
+  static double margin() {
+    return SizeHelper.width() * 0.01;
+  }
+
   static double width() {
     return MediaQuery.of(context).size.width;
   }

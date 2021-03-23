@@ -1,3 +1,4 @@
+import 'package:covid19_progression_modeler/config/config.dart';
 import 'package:date_picker_timeline/date_picker_timeline.dart';
 import 'package:flutter/material.dart';
 
@@ -13,18 +14,19 @@ class _DatePcikerState extends State<DatePciker> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.grey[300],
+      color: Colors.white,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Container(
             child: DatePicker(
               DateTime.now(),
-              width: 60,
-              height: 90,
+              width: 50,
+              height: 75,
+              locale: "fr_FR",
               controller: widget._controller,
               initialSelectedDate: DateTime.now(),
-              selectionColor: Colors.black,
+              selectionColor: Palette.lightSecondColor,
               selectedTextColor: Colors.white,
               dateTextStyle: TextStyle(fontSize: 20),
               inactiveDates: [

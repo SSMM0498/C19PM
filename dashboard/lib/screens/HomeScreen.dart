@@ -13,14 +13,16 @@ class HomeScreen extends StatelessWidget {
           Container(
             width: SizeHelper.width() * 0.05,
             height: double.infinity,
-            color: Colors.green,
+            color: Colors.white,
+            margin: EdgeInsets.fromLTRB(SizeHelper.margin(),
+                SizeHelper.margin(), 0, SizeHelper.margin()),
             child: SideBar(),
           ),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
-            width: SizeHelper.width() * 0.65,
+            width: SizeHelper.width() * 0.64,
             height: SizeHelper.height() * 1,
-            color: Colors.grey[900],
+            color: Palette.primeColor,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
@@ -30,7 +32,7 @@ class HomeScreen extends StatelessWidget {
           ),
           Container(
               width: SizeHelper.width() * 0.3,
-              color: Colors.green,
+              color: Colors.white,
               child: DataViewer()),
         ],
       ),

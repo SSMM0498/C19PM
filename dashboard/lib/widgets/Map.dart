@@ -61,7 +61,7 @@ class _MapWidgetState extends State<MapWidget> {
   Widget build(BuildContext context) {
     refreshPositions();
     return Container(
-      color: Colors.grey[900],
+      color: Palette.primeColor,
       width: double.infinity,
       height: SizeHelper.height() * .75,
       child: CanvasTouchDetector(
@@ -118,7 +118,7 @@ class PathPainter extends CustomPainter {
 
     final Paint paint = Paint()
       ..style = PaintingStyle.stroke
-      ..color = Colors.green
+      ..color = Palette.lightSecondColor
       ..strokeWidth = 1.5;
 
     paths.forEach((title, path) {

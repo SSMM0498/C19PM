@@ -30,10 +30,10 @@ class _PopupState extends State<Popup> {
   Widget build(BuildContext context) {
     return AlertDialog(
       title: Text(widget.city),
-      titleTextStyle: TextStyle(color: Colors.white, fontSize: 24),
+      titleTextStyle: TextStyle(color: Palette.fontColor, fontSize: 24),
       titlePadding: EdgeInsets.all(15),
       contentPadding: EdgeInsets.all(5),
-      backgroundColor: Colors.grey[900],
+      backgroundColor: Palette.primeColor,
       content: Container(
         width: SizeHelper.width() * 0.8,
         height: SizeHelper.height() * 0.85,
@@ -46,22 +46,25 @@ class _PopupState extends State<Popup> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 IconButton(
-                  color: Colors.white,
-                  hoverColor: Colors.green,
+                  iconSize: 30.0,
+                  color: Palette.secondColor,
+                  hoverColor: Colors.white,
                   tooltip: "Voir les détails",
                   icon: Icon(Icons.remove_red_eye_sharp),
                   onPressed: toggleDetails,
                 ),
                 IconButton(
-                  color: Colors.white,
-                  hoverColor: Colors.green,
+                  iconSize: 30.0,
+                  color: Palette.secondColor,
+                  hoverColor: Colors.white,
                   icon: Icon(Icons.image_sharp),
                   tooltip: "Télécharger la carte",
                   onPressed: () => print("Download"),
                 ),
                 IconButton(
-                  color: Colors.white,
-                  hoverColor: Colors.green,
+                  iconSize: 30.0,
+                  color: Palette.secondColor,
+                  hoverColor: Colors.white,
                   tooltip: "Télécharger les stats",
                   icon: Icon(Icons.pie_chart_sharp),
                   onPressed: () => print("Download"),
@@ -87,7 +90,7 @@ class _PopupState extends State<Popup> {
                 child: Text(
                   "Hello, my name is infos",
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Palette.fontColor,
                   ),
                 ),
                 width: SizeHelper.width() * 0.5,

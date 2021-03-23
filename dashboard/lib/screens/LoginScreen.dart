@@ -17,7 +17,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Palette.primaryAppColor,
+      backgroundColor: Palette.primeColor,
       body: SingleChildScrollView(
         child: Stack(
           children: [
@@ -136,8 +136,8 @@ class _LoginScreenState extends State<LoginScreen> {
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
                               gradient: LinearGradient(colors: [
-                                Palette.primaryAppColor,
-                                Palette.secondaryAppColor,
+                                Palette.primeColor,
+                                Palette.primeColor,
                               ])),
                           child: InkWell(
                             onTap: () {

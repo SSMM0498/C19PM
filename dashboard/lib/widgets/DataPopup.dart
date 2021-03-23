@@ -11,10 +11,10 @@ class DataPopup extends StatelessWidget {
   Widget build(BuildContext context) {
     return AlertDialog(
       title: Text(day.date),
-      titleTextStyle: TextStyle(color: Colors.white, fontSize: 24),
+      titleTextStyle: TextStyle(color: Palette.fontColor, fontSize: 24),
       titlePadding: EdgeInsets.all(15),
       contentPadding: EdgeInsets.all(10),
-      backgroundColor: Colors.grey[900],
+      backgroundColor: Palette.primeColor,
       scrollable: true,
       content: Container(
         width: SizeHelper.width() * 0.6,
@@ -101,7 +101,7 @@ Column numberInfos({dynamic nb, String label}) {
         "$nb",
         style: TextStyle(
           fontSize: 30,
-          color: Colors.white,
+          color: Palette.fontColor,
         ),
       ),
       SizedBox(height: 5),
@@ -109,7 +109,7 @@ Column numberInfos({dynamic nb, String label}) {
         label,
         style: TextStyle(
           fontSize: 15,
-          color: Colors.white,
+          color: Palette.fontColor,
         ),
       ),
     ],

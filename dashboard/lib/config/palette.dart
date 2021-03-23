@@ -1,22 +1,18 @@
 import 'package:flutter/material.dart';
 
 class Palette {
-  static const Color scaffold = Color(0xFFF0F2F5);
-
-  static const Color droossBlue = Color(0xFF1777F2);
-
-  static const Color primaryAppColor = Color(0xFF21BFBD);
-  static const Color secondaryAppColor = Color(0xFF7A9BEE);
-
-  static const LinearGradient createRoomGradient = LinearGradient(
-    colors: [Color(0xFF496AE1), Color(0xFFCE48B1)],
-  );
-
-  static const Color online = Color(0xFF4BCB1F);
+  static const Color primeColor = Color(0xFFF2F4F5);
+  static const Color secondColor = Color(0xFFFC312F);
+  static const Color lightSecondColor = Color(0xFFEE6666);
+  static const Color healed = Color(0xFF1BB65D);
+  static Color fontColor = Colors.grey[900];
 
   static const LinearGradient storyGradient = LinearGradient(
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
-    colors: [Colors.transparent, Colors.black26],
+    colors: [
+      Color(0xFFFF8281),
+      Color(0xFFFFC7C7),
+    ],
   );
 }

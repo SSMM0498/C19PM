@@ -19,8 +19,8 @@ class _ExpandableListState extends State<ExpandableList> {
     return ListView.builder(
       itemCount: widget.list.length,
       itemBuilder: (context, i) => ExpansionTile(
-        collapsedBackgroundColor: Palette.primaryAppColor,
-        backgroundColor: Palette.scaffold,
+        collapsedBackgroundColor: Colors.white,
+        backgroundColor: Palette.primeColor,
         title: Row(
           children: [
             Text(
@@ -29,22 +29,7 @@ class _ExpandableListState extends State<ExpandableList> {
             ),
           ],
         ),
-        children: <Widget>[
-          // CheckboxListTile(
-          //   value: _allchecked,
-          //   onChanged: (bool newVal) {
-          //     setState(() {
-          //       _allchecked = newVal;
-          //       widget.list[i].days.map((d) {
-          //         d.checked = _allchecked;
-          //         setState(() => d.checked = _allchecked);
-          //       });
-          //     });
-          //   },
-          //   title: Text("Tous cochés"),
-          // ),
-          ...createCheckbox(i)
-        ],
+        children: <Widget>[...createCheckbox(i)],
       ),
     );
   }
@@ -62,18 +47,20 @@ class _ExpandableListState extends State<ExpandableList> {
                       widget.callBack(d);
                     },
                   ),
-                  flex: 7,
+                  flex: 8,
                 ),
                 Expanded(
-                  flex: 3,
-                  child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      elevation: .5,
-                    ),
+                  flex: 1,
+                  child: IconButton(
+                    iconSize: 30.0,
+                    color: Palette.lightSecondColor,
+                    hoverColor: Colors.white,
+                    tooltip: "Voir données",
+                    icon: Icon(Icons.remove_red_eye_sharp),
                     onPressed: () => showDialog(
-                        context: context,
-                        builder: (ctx) => DataPopup(day: day)),
-                    child: Text("Voir données"),
+                      context: context,
+                      builder: (ctx) => DataPopup(day: day),
+                    ),
                   ),
                 ),
                 SizedBox(width: 20),
@@ -107,6 +94,8 @@ class _ListElementState extends State<ListElement> {
   Widget build(BuildContext context) {
     return CheckboxListTile(
         value: _checked,
+        activeColor: Palette.fontColor,
+        // hoverColor: Palette.lightSecondColor,
         onChanged: (bool newVal) {
           setState(() {
             _checked = newVal;

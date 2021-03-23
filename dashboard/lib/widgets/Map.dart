@@ -21,7 +21,7 @@ class MapWidget extends StatefulWidget {
 class _MapWidgetState extends State<MapWidget> {
   Path _selectPath;
   Map<String, Path> paths = new Map();
-  Map<String, Position> positions;
+  Map<String, Position> positions = new Map();
 
   @override
   void initState() {
@@ -35,25 +35,31 @@ class _MapWidgetState extends State<MapWidget> {
       setState(() {
         paths = parser.getPaths();
         positions = parser.getPositions();
+        refreshPositions();
       });
     });
   }
 
-  @override
-  Widget build(BuildContext context) {
+  void refreshPositions() {
     widget.localities.forEach((l) {
       double scale = (widget.havePopup)
           ? SizeHelper.width() / 850 * SizeHelper.height() / 950
           : 1;
-      l.left = (positions[l.name].x * scale) - 25;
-      l.top = (positions[l.name].y * scale) - 25;
+      l.left =
+          ((positions[l.name] != null) ? positions[l.name].x : 0) * scale - 25;
+      l.top =
+          ((positions[l.name] != null) ? positions[l.name].y : 0) * scale - 25;
       if (l.name == "Fatick") {
         l.left -= 35;
       } else if (l.name == "Kaolack") {
         l.left -= 5;
       }
     });
+  }
 
+  @override
+  Widget build(BuildContext context) {
+    refreshPositions();
     return Container(
       color: Colors.grey[900],
       width: double.infinity,
@@ -108,10 +114,6 @@ class PathPainter extends CustomPainter {
     final Matrix4 matrix4 = Matrix4.identity();
     matrix4.scale(scale, scale);
 
-    // calculate offset to center the svg image
-    double offsetX = (havePopup) ? SizeHelper.width() / 50 * 2 : 0;
-    double offsetY = (havePopup) ? SizeHelper.height() / 50 * 2 : 0;
-
     final TouchyCanvas touchCanvas = TouchyCanvas(context, canvas);
 
     final Paint paint = Paint()
@@ -122,7 +124,7 @@ class PathPainter extends CustomPainter {
     paths.forEach((title, path) {
       paint.style = path == curPath ? PaintingStyle.fill : PaintingStyle.stroke;
       touchCanvas.drawPath(
-        path.transform(matrix4.storage).shift(Offset(0, 0)),
+        path.transform(matrix4.storage),
         paint,
         onTapDown: (details) {
           String city = title;

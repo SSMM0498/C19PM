@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
+import 'package:covid19_progression_modeler/models/DayStats.dart';
 import 'models.dart';
 
 // String pathToJsonFiles =
@@ -26,7 +27,22 @@ Month createMonthList(File fmonth) {
   dynamic jsoncontent = jsonDecode(contents);
 
   for (var j in jsoncontent) {
-    Day d = new Day(j["Date"], false);
+    DayStats ds = new DayStats(
+        numberOfTests: j["Nombre de Test"],
+        numberOfNewCases: j["Nombre de nouveaux Cas"],
+        numberOfContactCases: j["Nombre de Cas contacts"],
+        numberOfCommunityCases: j["Nombre de Cas Communautaires"],
+        numberOfHealed: j["Nombre de Guéris"],
+        numberOfDeaths: j["Nombre de Décès"]);
+    for (var k in j["Localités"]) {
+      LocalityStats l = new LocalityStats(
+        name: k["nomLocalité"],
+        adminLevel: k["niveauAdministratif"],
+        newCases: k["Nombre de Cas"],
+      );
+      ds.localities.add(l);
+    }
+    Day d = new Day(j["Date"], false, ds);
     m.days.add(d);
   }
 

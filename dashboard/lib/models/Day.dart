@@ -5,5 +5,5 @@ class Day {
   bool checked;
   DayStats dayStats;
 
-  Day(this.date, this.checked);
+  Day(this.date, this.checked, this.dayStats);
 }

@@ -4,5 +4,5 @@ class Locality {
   double left;
   int nbCase;
 
-  Locality({this.name, this.top, this.left, this.nbCase});
+  Locality({this.name, this.nbCase});
 }

@@ -1,5 +1,6 @@
 import 'package:covid19_progression_modeler/models/models.dart';
-import 'package:covid19_progression_modeler/widgets/Map.dart';
+import 'package:covid19_progression_modeler/widgets/DataLineChart.dart';
+import 'package:covid19_progression_modeler/widgets/RegionMap.dart';
 import 'package:flutter/material.dart';
 import 'package:covid19_progression_modeler/config/config.dart';
 
@@ -19,23 +20,46 @@ class Popup extends StatefulWidget {
 }
 
 class _PopupState extends State<Popup> {
-  bool _showDetails = true;
-  void toggleDetails() {
+  bool _showNumbers = true;
+  bool _showMap = false;
+  bool _showChart = false;
+
+  void toggleDetails(String visible) {
     setState(() {
-      _showDetails = !_showDetails;
+      switch (visible) {
+        case "nb":
+          _showNumbers = true;
+          _showMap = false;
+          _showChart = false;
+          break;
+        case "map":
+          _showMap = true;
+          _showNumbers = false;
+          _showChart = false;
+          break;
+        case "chart":
+          _showChart = true;
+          _showNumbers = false;
+          _showMap = false;
+          break;
+        default:
+      }
     });
   }
 
   @override
   Widget build(BuildContext context) {
+    print(SizeHelper.width());
     return AlertDialog(
       title: Text(widget.city),
-      titleTextStyle: TextStyle(color: Colors.white, fontSize: 24),
+      titleTextStyle: TextStyle(color: Palette.fontColor, fontSize: 24),
       titlePadding: EdgeInsets.all(15),
       contentPadding: EdgeInsets.all(5),
-      backgroundColor: Colors.grey[900],
+      backgroundColor: Palette.primeColor,
       content: Container(
-        width: SizeHelper.width() * 0.8,
+        width: (SizeHelper.width() >= 1366)
+            ? SizeHelper.width() * 0.65
+            : SizeHelper.width() * 0.75,
         height: SizeHelper.height() * 0.85,
         child: Row(
           mainAxisSize: MainAxisSize.min,
@@ -46,50 +70,55 @@ class _PopupState extends State<Popup> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 IconButton(
-                  color: Colors.white,
-                  hoverColor: Colors.green,
-                  tooltip: "Voir les détails",
-                  icon: Icon(Icons.remove_red_eye_sharp),
-                  onPressed: toggleDetails,
+                  iconSize: 30.0,
+                  color: Palette.secondColor,
+                  hoverColor: Colors.white,
+                  tooltip: "Voir les chiffres",
+                  icon: Icon(Icons.table_chart_outlined),
+                  onPressed: () => toggleDetails("nb"),
                 ),
                 IconButton(
-                  color: Colors.white,
-                  hoverColor: Colors.green,
-                  icon: Icon(Icons.image_sharp),
-                  tooltip: "Télécharger la carte",
-                  onPressed: () => print("Download"),
+                  iconSize: 30.0,
+                  color: Palette.secondColor,
+                  hoverColor: Colors.white,
+                  icon: Icon(Icons.map),
+                  tooltip: "Voir la carte",
+                  onPressed: () => toggleDetails("map"),
                 ),
                 IconButton(
-                  color: Colors.white,
-                  hoverColor: Colors.green,
-                  tooltip: "Télécharger les stats",
-                  icon: Icon(Icons.pie_chart_sharp),
-                  onPressed: () => print("Download"),
+                  iconSize: 30.0,
+                  color: Palette.secondColor,
+                  hoverColor: Colors.white,
+                  tooltip: "Voir la courbe",
+                  icon: Icon(Icons.show_chart),
+                  onPressed: () => toggleDetails("chart"),
                 ),
               ],
             ),
             SizedBox(width: 50),
             Visibility(
-              visible: _showDetails,
+              visible: _showNumbers,
               child: Container(
-                child: MapWidget(
+                child: Text("Number here"),
+                width: SizeHelper.width() * 0.5,
+                height: SizeHelper.height() * 0.75,
+              ),
+            ),
+            Visibility(
+              visible: _showMap,
+              child: Container(
+                child: RegionMap(
                   localities: widget.deps,
-                  mapname: "regions/${getFileName(widget.city)}",
-                  havePopup: false,
+                  mapname: getFileName(widget.city),
                 ),
                 width: SizeHelper.width() * 0.5,
                 height: SizeHelper.height() * 0.75,
               ),
             ),
             Visibility(
-              visible: !_showDetails,
+              visible: _showChart,
               child: Container(
-                child: Text(
-                  "Hello, my name is infos",
-                  style: TextStyle(
-                    color: Colors.white,
-                  ),
-                ),
+                child: DataLineChart(),
                 width: SizeHelper.width() * 0.5,
                 height: SizeHelper.height() * 0.75,
               ),

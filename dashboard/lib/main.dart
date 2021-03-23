@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:bitsdojo_window/bitsdojo_window.dart';
 import 'package:covid19_progression_modeler/config/config.dart';
 import 'package:covid19_progression_modeler/screens/screens.dart';
 import 'package:flutter/material.dart';
@@ -10,6 +11,12 @@ void main() {
     setWindowTitle('COVID19 Progression Modeler');
   }
   runApp(MyApp());
+  doWhenWindowReady(() {
+    final win = appWindow;
+    win.minSize = Size(1000, 650);
+    win.alignment = Alignment.center;
+    win.show();
+  });
 }
 
 class MyApp extends StatelessWidget {
@@ -21,7 +28,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity,
-          scaffoldBackgroundColor: Palette.scaffold),
+          scaffoldBackgroundColor: Palette.primeColor),
       home: HomeScreen(),
     );
   }

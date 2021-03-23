@@ -1,12 +1,15 @@
+import 'package:covid19_progression_modeler/config/config.dart';
 import 'package:flutter/material.dart';
 
 class CircleInfos extends StatelessWidget {
   final int infos;
   final String label;
+  final bool healed;
   const CircleInfos({
     Key key,
     @required this.infos,
     @required this.label,
+    this.healed = false,
   }) : super(key: key);
 
   @override
@@ -16,8 +19,8 @@ class CircleInfos extends StatelessWidget {
         Container(
           width: 40,
           height: 40,
-          decoration: BoxDecoration(
-              color: Color.fromRGBO(25, 125, 30, 0.75), shape: BoxShape.circle),
+          decoration:
+              BoxDecoration(color: (healed) ? Palette.healed : Palette.secondColor, shape: BoxShape.circle),
           child: Center(
             child: Text(
               "$infos",
@@ -33,7 +36,7 @@ class CircleInfos extends StatelessWidget {
           "$label",
           style: TextStyle(
             fontSize: 18,
-            color: Colors.white,
+            color: Palette.fontColor,
           ),
         )
       ],

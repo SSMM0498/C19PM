@@ -1,5 +1,4 @@
 import 'package:covid19_progression_modeler/config/config.dart';
-import 'package:covid19_progression_modeler/screens/HomeScreen.dart';
 import 'package:covid19_progression_modeler/screens/LoginScreen.dart';
 import 'package:flutter/material.dart';
 import 'CircleInfos.dart';
@@ -18,21 +17,17 @@ class SideBar extends StatelessWidget {
               SizedBox(height: 25),
               CircleInfos(infos: 125, label: "Cas"),
               SizedBox(height: 50),
-              CircleInfos(infos: 25, label: "Guérris"),
+              CircleInfos(infos: 25, label: "Guérris", healed: true),
               SizedBox(height: 50),
               CircleInfos(infos: 5, label: "Morts"),
             ],
           ),
           Column(
             children: [
-              // CircleAvatar(
-              //   radius: 22.5,
-              //   backgroundColor: Colors.grey[200],
-              //   // backgroundImage:
-              // ),
               IconButton(
-                color: Colors.white,
-                hoverColor: Palette.secondaryAppColor,
+                iconSize: 30.0,
+                color: Palette.secondColor,
+                hoverColor: Palette.lightSecondColor,
                 tooltip: "Se déconnecter",
                 icon: Icon(Icons.exit_to_app),
                 onPressed: () => Navigator.push(

@@ -1,6 +1,7 @@
 import 'package:covid19_progression_modeler/config/config.dart';
 import 'package:flutter/material.dart';
 import '../models/models.dart';
+import 'DataPopup.dart';
 
 class ExpandableList extends StatefulWidget {
   final List<Month> list;
@@ -12,14 +13,14 @@ class ExpandableList extends StatefulWidget {
 }
 
 class _ExpandableListState extends State<ExpandableList> {
-  bool _allchecked = false;
+  // bool _allchecked = false;
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
       itemCount: widget.list.length,
       itemBuilder: (context, i) => ExpansionTile(
-        collapsedBackgroundColor: Palette.primaryAppColor,
-        backgroundColor: Palette.scaffold,
+        collapsedBackgroundColor: Colors.white,
+        backgroundColor: Palette.primeColor,
         title: Row(
           children: [
             Text(
@@ -28,35 +29,43 @@ class _ExpandableListState extends State<ExpandableList> {
             ),
           ],
         ),
-        children: <Widget>[
-          CheckboxListTile(
-              value: _allchecked,
-              onChanged: (bool newVal) {
-                setState(() {
-                  _allchecked = newVal;
-                  widget.list[i].days.map((d) {
-                    d.checked = _allchecked;
-                    // print(d.checked);
-                    setState(() => d.checked = _allchecked);
-                  });
-                });
-              },
-              title: Text("Tous cochés")),
-          ...createCheckbox(i)
-        ],
+        children: <Widget>[...createCheckbox(i)],
       ),
     );
   }
 
-  List<ListElement> createCheckbox(int i) {
+  List<Row> createCheckbox(int i) {
     return widget.list[i].days
-        .map((day) => ListElement(
-            parentIndex: i,
-            day: day,
-            callBack: (Day d) {
-              setState(() => day.checked = d.checked);
-              widget.callBack(d);
-            }))
+        .map((day) => Row(
+              children: [
+                Expanded(
+                  child: ListElement(
+                    parentIndex: i,
+                    day: day,
+                    callBack: (Day d) {
+                      setState(() => day.checked = d.checked);
+                      widget.callBack(d);
+                    },
+                  ),
+                  flex: 8,
+                ),
+                Expanded(
+                  flex: 1,
+                  child: IconButton(
+                    iconSize: 30.0,
+                    color: Palette.lightSecondColor,
+                    hoverColor: Colors.white,
+                    tooltip: "Voir données",
+                    icon: Icon(Icons.remove_red_eye_sharp),
+                    onPressed: () => showDialog(
+                      context: context,
+                      builder: (ctx) => DataPopup(day: day),
+                    ),
+                  ),
+                ),
+                SizedBox(width: 20),
+              ],
+            ))
         .toList();
   }
 }
@@ -85,6 +94,8 @@ class _ListElementState extends State<ListElement> {
   Widget build(BuildContext context) {
     return CheckboxListTile(
         value: _checked,
+        activeColor: Palette.fontColor,
+        // hoverColor: Palette.lightSecondColor,
         onChanged: (bool newVal) {
           setState(() {
             _checked = newVal;

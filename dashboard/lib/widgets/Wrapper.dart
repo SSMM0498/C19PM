@@ -1,13 +1,21 @@
 import 'package:covid19_progression_modeler/config/config.dart';
+import 'package:covid19_progression_modeler/widgets/WidgetToImage.dart';
 import 'package:flutter/material.dart';
+import 'package:covid19_progression_modeler/utils/fileExporter.dart' as fe;
 
-class Wrapper extends StatelessWidget {
+class Wrapper extends StatefulWidget {
   final String title;
   final String downloadText;
   final Widget childWidget;
   const Wrapper({Key key, this.childWidget, this.title, this.downloadText})
       : super(key: key);
 
+  @override
+  _WrapperState createState() => _WrapperState();
+}
+
+class _WrapperState extends State<Wrapper> {
+  GlobalKey widgetKey;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -22,9 +30,9 @@ class Wrapper extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Text(
-                title,
+                widget.title,
                 style: TextStyle(
-                  color: Color(0xff827daa),
+                  color: Palette.fontColor,
                   fontSize: 20,
                 ),
                 textAlign: TextAlign.center,
@@ -35,7 +43,10 @@ class Wrapper extends StatelessWidget {
               Expanded(
                 child: Padding(
                   padding: const EdgeInsets.all(0.0),
-                  child: childWidget,
+                  child: WidgetToImage(builder: (key) {
+                    this.widgetKey = key;
+                    return widget.childWidget;
+                  }),
                 ),
               ),
               const SizedBox(
@@ -46,13 +57,13 @@ class Wrapper extends StatelessWidget {
           IconButton(
             padding: const EdgeInsets.all(1.0),
             iconSize: 25.0,
-            tooltip: downloadText,
+            tooltip: widget.downloadText,
             icon: Icon(
               Icons.download_sharp,
               color: Palette.secondColor,
             ),
             onPressed: () {
-              print("Download chart");
+              fe.export(widgetKey);
             },
           )
         ],

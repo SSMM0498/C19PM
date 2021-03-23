@@ -14,9 +14,12 @@ class DataLineChart extends StatelessWidget {
     return Wrapper(
       title: "Courbe d'évolution",
       downloadText: "Télécharger la courbe",
-      childWidget: LineChart(
-        chartData(),
-        swapAnimationDuration: const Duration(milliseconds: 250),
+      childWidget: Container(
+        color: Colors.white,
+        child: LineChart(
+          chartData(),
+          swapAnimationDuration: const Duration(milliseconds: 250),
+        ),
       ),
     );
   }

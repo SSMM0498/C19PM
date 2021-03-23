@@ -11,7 +11,7 @@ class Palette {
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
     colors: [
-      Color(0xFFFF8281),
+      Color(0xFFFFFFFF),
       Color(0xFFFFC7C7),
     ],
   );

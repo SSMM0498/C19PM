@@ -13,7 +13,10 @@ class HomeScreen extends StatelessWidget {
           Container(
             width: SizeHelper.width() * 0.05,
             height: double.infinity,
-            color: Colors.white,
+            decoration: const BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(18)),
+              color: Colors.white,
+            ),
             margin: EdgeInsets.fromLTRB(SizeHelper.margin(),
                 SizeHelper.margin(), 0, SizeHelper.margin()),
             child: SideBar(),
@@ -27,7 +30,11 @@ class HomeScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               mainAxisSize: MainAxisSize.max,
-              children: <Widget>[MainHeader(), SizedBox(height: 30), AppMap()],
+              children: <Widget>[
+                MainHeader(),
+                SizedBox(height: 30),
+                GlobalMap()
+              ],
             ),
           ),
           Container(

@@ -1,6 +1,7 @@
 import 'package:covid19_progression_modeler/config/config.dart';
 import 'package:flutter/material.dart';
 import '../models/models.dart';
+import 'DataPopup.dart';
 
 class ExpandableList extends StatefulWidget {
   final List<Month> list;
@@ -69,7 +70,9 @@ class _ExpandableListState extends State<ExpandableList> {
                     style: ElevatedButton.styleFrom(
                       elevation: .5,
                     ),
-                    onPressed: () => print("Open"),
+                    onPressed: () => showDialog(
+                        context: context,
+                        builder: (ctx) => DataPopup(day: day)),
                     child: Text("Voir données"),
                   ),
                 ),

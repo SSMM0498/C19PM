@@ -17,12 +17,12 @@ class DataPopup extends StatelessWidget {
       backgroundColor: Colors.grey[900],
       scrollable: true,
       content: Container(
-        width: SizeHelper.width() * 0.5,
+        width: SizeHelper.width() * 0.6,
         height: SizeHelper.height() * 0.75,
         child: Column(
           children: [
             Row(
-              mainAxisAlignment: MainAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 numberInfos(
                   nb: day.dayStats.numberOfTests,

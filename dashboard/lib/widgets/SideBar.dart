@@ -1,5 +1,4 @@
 import 'package:covid19_progression_modeler/config/config.dart';
-import 'package:covid19_progression_modeler/screens/HomeScreen.dart';
 import 'package:covid19_progression_modeler/screens/LoginScreen.dart';
 import 'package:flutter/material.dart';
 import 'CircleInfos.dart';
@@ -25,11 +24,6 @@ class SideBar extends StatelessWidget {
           ),
           Column(
             children: [
-              // CircleAvatar(
-              //   radius: 22.5,
-              //   backgroundColor: Colors.grey[200],
-              //   // backgroundImage:
-              // ),
               IconButton(
                 color: Colors.white,
                 hoverColor: Palette.secondaryAppColor,

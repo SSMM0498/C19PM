@@ -61,7 +61,7 @@ def download_ressources(communique_list):
                 print()
                 print('Telechargement du '+file_name+' ...')
                 print()
-                # pdf_download(url, file_name)
+                pdf_download(url, file_name)
     print('Download finished !!!')
     
 

@@ -1,2 +1,2 @@
 export 'palette.dart';
-export 'sizehelper.dart';
+export '../utils/sizeHelper.dart';

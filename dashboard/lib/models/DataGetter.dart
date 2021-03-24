@@ -1,15 +1,13 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:covid19_progression_modeler/models/DayStats.dart';
+import 'package:covid19_progression_modeler/utils/pathResolver.dart' as pr;
 import 'package:fl_chart/fl_chart.dart';
 import 'models.dart';
 
-// String pathToJsonFiles =
-//     '/home/ssmm0498/Documents/Courses/_DIC/_DIC2/1rst Semester/Advanced Database Management System/Exercices/Project/repo/dashboard/lib/data/json/';
-String pathToJsonFiles =
-    'C:/Users/SWIFT 5/Desktop/DIC2/SGBD/C19PM/dashboard/lib/data/json/';
-List<Month> retrieveJSON() {
-  Directory dir = Directory(pathToJsonFiles);
+Future<List<Month>> retrieveJSON() async {
+  String doc = await pr.getJsonFolder();
+  Directory dir = Directory("$doc");
   List<Month> listMonth = [];
 
   dir.listSync(recursive: false).forEach((file) {
@@ -23,7 +21,8 @@ List<Month> retrieveJSON() {
 }
 
 Month createMonthList(File fmonth) {
-  Month m = new Month(fmonth.path.split('/').last.split('.').first);
+  String fname = fmonth.path.split('/').last.split('.').first;
+  Month m = new Month(fname);
   String contents = fmonth.readAsStringSync();
   dynamic jsoncontent = jsonDecode(contents);
 

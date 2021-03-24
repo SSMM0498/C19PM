@@ -49,7 +49,6 @@ class _PopupState extends State<Popup> {
 
   @override
   Widget build(BuildContext context) {
-    print(SizeHelper.width());
     return AlertDialog(
       title: Text(widget.city),
       titleTextStyle: TextStyle(color: Palette.fontColor, fontSize: 24),

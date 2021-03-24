@@ -2,28 +2,28 @@ import 'package:flutter/material.dart';
 import 'ExpandableList.dart';
 import '../models/models.dart';
 import '../models/DataGetter.dart' as DataGetter;
-import '../data/DataLoader.dart' as DataLoader;
+import '../utils/DataLoader.dart' as DataLoader;
 
 class DataViewer extends StatefulWidget {
-  final List<Month> list = DataGetter.retrieveJSON();
   DataViewer({Key key}) : super(key: key);
-
-  void initState() {
-    print(list);
-  }
 
   @override
   _DataViewerState createState() => _DataViewerState();
 }
 
 class _DataViewerState extends State<DataViewer> {
+  List<Month> _monthList = [];
   bool _checked = false;
-  List<Day> _selectedDay;
+  List<Day> _selectedDay = [];
 
   @override
   void initState() {
     super.initState();
-    _selectedDay = [];
+    DataGetter.retrieveJSON().then((value) {
+      setState(() {
+        _monthList = value;
+      });
+    });
   }
 
   @override
@@ -46,7 +46,7 @@ class _DataViewerState extends State<DataViewer> {
         ]),
         Expanded(
             child: ExpandableList(
-                list: widget.list,
+                list: _monthList,
                 callBack: (Day d) {
                   setState(() {
                     if (d.checked == true) {

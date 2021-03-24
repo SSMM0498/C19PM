@@ -14,8 +14,6 @@ void main() {
   doWhenWindowReady(() {
     final win = appWindow;
     win.minSize = Size(1000, 650);
-    win.alignment = Alignment.center;
-    win.show();
   });
 }
 

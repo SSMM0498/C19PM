@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:covid19_progression_modeler/models/DayStats.dart';
 import 'package:covid19_progression_modeler/utils/pathResolver.dart' as pr;
 import 'package:fl_chart/fl_chart.dart';
-import 'models.dart';
+import '../models/models.dart';
 
 Future<List<Month>> retrieveJSON() async {
   String doc = await pr.getJsonFolder();
@@ -18,6 +18,30 @@ Future<List<Month>> retrieveJSON() async {
   });
 
   return listMonth;
+}
+
+Future<List<ArrowParam>> createArrowList(
+  Map<String, Position> positions,
+) async {
+  String doc = await pr.getJsonFolder();
+  File scenarioFile = new File(doc + "scenario/scenario.json");
+  dynamic jsoncontent = jsonDecode(scenarioFile.readAsStringSync());
+  List<ArrowParam> al = [];
+
+  for (var j in jsoncontent) {
+    ArrowParam a = new ArrowParam(
+      date: j["date"],
+      start: positions[j["start"]],
+      end: positions[j["end"]],
+    );
+    print(a);
+    print(a.date);
+    print(a.start);
+    print(a.end);
+    al.add(a);
+  }
+
+  return al;
 }
 
 Month createMonthList(File fmonth) {

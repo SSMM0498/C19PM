@@ -2,7 +2,7 @@ import 'package:covid19_progression_modeler/widgets/Wrapper.dart';
 import 'package:flutter/material.dart';
 import 'package:covid19_progression_modeler/models/models.dart';
 import 'Map.dart';
-import '../models/DataGetter.dart' as DataGetter;
+import '../utils/DataGetter.dart' as DataGetter;
 
 class GlobalMap extends StatelessWidget {
   final List<Region> regions = DataGetter.createRegionList();

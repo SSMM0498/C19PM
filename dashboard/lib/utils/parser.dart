@@ -1,18 +1,12 @@
 import 'dart:async';
 import 'dart:ui';
+import 'package:covid19_progression_modeler/models/models.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:path_parsing/path_parsing.dart';
 import 'package:xml/xml.dart' as xml;
 //SVG parsing
-
-class Position {
-  double x;
-  double y;
-
-  Position({this.x, this.y});
-}
 
 /// Parses a minimal subset of a SVG file and extracts all paths segments.
 class SvgParser {
@@ -33,6 +27,7 @@ class SvgParser {
       var title = attributes.firstWhere((attr) => attr.name.local == "title",
           orElse: () => null);
       if (dPath != null) {
+        // print("${title.value} : ${dPath.value}");
         Path path = new Path();
         writeSvgPathDataToPath(dPath.value, new PathModifier(path));
 

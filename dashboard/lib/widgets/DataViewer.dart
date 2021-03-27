@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'ExpandableList.dart';
 import '../models/models.dart';
-import '../models/DataGetter.dart' as DataGetter;
+import '../utils/DataGetter.dart' as DataGetter;
 import '../utils/DataLoader.dart' as DataLoader;
 
 class DataViewer extends StatefulWidget {

@@ -2,7 +2,6 @@ DataAcquisition/env
 *.pyc
 notes.md
 .vscode/
-dashboard
 DataAcquisition\env
 DataAcquisition\__pycache__
 DataAcquisition/__pycache__

@@ -1,26 +1,26 @@
 import 'package:covid19_progression_modeler/config/config.dart';
 import 'package:covid19_progression_modeler/models/User.dart';
 import 'package:covid19_progression_modeler/screens/HomeScreen.dart';
+import 'package:covid19_progression_modeler/services/user.service.dart';
 import 'package:covid19_progression_modeler/widgets/FadeAnimation.dart';
 import 'package:flutter/material.dart';
+import 'package:mysql1/mysql1.dart';
 // import 'package:flutter/services.dart';
 // import 'package:starflut/starflut.dart';
 
 class LoginScreen extends StatefulWidget {
-  final User currentUser = new User();
+  // final User currentUser = new User();
   @override
   _LoginScreenState createState() => _LoginScreenState();
 }
 
 class _LoginScreenState extends State<LoginScreen> {
   final User user = User();
+  final UserService userService = UserService();
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   // String _platformVersion = 'Unknown';
 
   @override
-
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -179,17 +179,49 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   void onSubmit(BuildContext context, User user) async {
-    print(user.login);
-    print(user.password);
-
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (context) => HomeScreen(),
-      ),
-    );
+    Results results = await this.userService.login(user);
+    if (results.length > 0) {
+      // for (var row in results) {
+      //   print('Name: ${row[0]}, email: ${row[1]}');
+      // }
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => HomeScreen(),
+        ),
+      );
+    } else {
+      await _showDialog();
+    }
   }
 
+  Future<void> _showDialog() async {
+    return showDialog<void>(
+      context: context,
+      barrierDismissible: false, // user must tap button!
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text('Utilisateur introuvable !'),
+          content: SingleChildScrollView(
+            child: ListBody(
+              children: <Widget>[
+                Text('Login ou mot de passe Incorrect'),
+                Text('Réessayer SVP !'),
+              ],
+            ),
+          ),
+          actions: <Widget>[
+            TextButton(
+              child: Text('ok'),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        );
+      },
+    );
+  }
   // Future<void> initPlatformState() async {
   //   String platformVersion;
   //   try {

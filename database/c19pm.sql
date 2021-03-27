@@ -26,6 +26,7 @@ CREATE TABLE IF NOT EXISTS `c19pm`.`t_user` (
   `idUser` INT(11) NOT NULL,
   `username` VARCHAR(45) NULL,
   `login` VARCHAR(25) NULL,
+  `password` VARCHAR(25) NULL,
   PRIMARY KEY (`idUser`))
 ENGINE = InnoDB;
 

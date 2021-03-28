@@ -55,3 +55,12 @@ flutter:
     - assets/regions/tambacounda.svg
     - assets/regions/thies.svg
     - assets/regions/ziguinchor.svg
+    - starfiles/
+
+msix_config:
+  display_name: C19PM
+  publisher_display_name: DeadEnd
+  identity_name: DeadEnd.EP.C19PM
+  msix_version: 1.0.0.0
+  icons_background_color: transparent
+  architecture: x64

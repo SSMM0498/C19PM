@@ -24,7 +24,12 @@ Future<List<ArrowParam>> createArrowList(
   Map<String, Position> positions,
 ) async {
   String doc = await pr.getJsonFolder();
-  File scenarioFile = new File(doc + "scenario/scenario.json");
+  File scenarioFile;
+  if (Platform.isWindows) {
+    scenarioFile = new File(doc + "scenario\\scenario.json");
+  } else {
+    scenarioFile = new File(doc + "scenario/scenario.json");
+  }
   dynamic jsoncontent = jsonDecode(scenarioFile.readAsStringSync());
   List<ArrowParam> al = [];
 
@@ -34,11 +39,6 @@ Future<List<ArrowParam>> createArrowList(
       start: positions[j["start"]],
       end: positions[j["end"]],
     );
-    print(a);
-    print(a.date);
-    print(a.start);
-    print(a.end);
-    al.add(a);
   }
 
   return al;

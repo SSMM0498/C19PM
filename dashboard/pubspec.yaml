@@ -25,6 +25,9 @@ dependencies:
   process_run: ^0.12.1
   arrow_path: ^1.0.0
   starflut: ^1.0.0
+  mysql1: ^0.17.1
+  flutter_redux: ^0.8.2
+  msix: ^1.0.3
   window_size:
     git:
       url: git://github.com/google/flutter-desktop-embedding.git
@@ -52,4 +55,3 @@ flutter:
     - assets/regions/tambacounda.svg
     - assets/regions/thies.svg
     - assets/regions/ziguinchor.svg
-    - starfiles/

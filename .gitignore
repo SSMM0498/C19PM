@@ -2,6 +2,8 @@ DataAcquisition/env
 *.pyc
 notes.md
 .vscode/
-DataAcquisition\env
-DataAcquisition\__pycache__
 DataAcquisition/__pycache__
+dashboard/pubspec.lock
+dashboard/windows
+dashboard/linux
+dashboard/build

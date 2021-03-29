@@ -1,9 +1,11 @@
 import 'package:covid19_progression_modeler/config/config.dart';
 import 'package:covid19_progression_modeler/models/User.dart';
+import 'package:covid19_progression_modeler/redux/actions/user.action.dart';
 import 'package:covid19_progression_modeler/screens/HomeScreen.dart';
 import 'package:covid19_progression_modeler/services/user.service.dart';
 import 'package:covid19_progression_modeler/widgets/FadeAnimation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_redux/flutter_redux.dart';
 import 'package:mysql1/mysql1.dart';
 // import 'package:flutter/services.dart';
 // import 'package:starflut/starflut.dart';
@@ -18,9 +20,17 @@ class _LoginScreenState extends State<LoginScreen> {
   final User user = User();
   final UserService userService = UserService();
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+  bool loading = false;
   // String _platformVersion = 'Unknown';
 
   @override
+  void initState() {
+    super.initState();
+    setState(() {
+      this.loading = false;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -139,32 +149,30 @@ class _LoginScreenState extends State<LoginScreen> {
                     FadeAnimation(
                         2,
                         Container(
-                          height: 50,
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              gradient: LinearGradient(colors: [
-                                Palette.primeColor,
-                                Palette.secondColor,
-                              ])),
-                          child: InkWell(
-                            onTap: () {
-                              if (_formKey.currentState.validate()) {
-                                this._formKey.currentState.save();
-                                this.onSubmit(context, this.user);
-                              }
-                            },
-                            child: Center(
-                              child: Text(
+                            height: 50,
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10),
+                                gradient: LinearGradient(colors: [
+                                  Palette.primeColor,
+                                  Palette.secondColor,
+                                ])),
+                            child: InkWell(
+                              onTap: () {
+                                if (_formKey.currentState.validate()) {
+                                  this._formKey.currentState.save();
+                                  this.onSubmit(context, this.user);
+                                }
+                              },
+                              child: Center(
+                                  child: Text(
                                 'Se connecter',
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold,
                                   fontSize: 20.0,
                                 ),
-                              ),
-                            ),
-                          ),
-                        )),
+                              )),
+                            ))),
                     SizedBox(
                       height: 70,
                     ),
@@ -179,11 +187,7 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   void onSubmit(BuildContext context, User user) async {
-    Results results = await this.userService.login(user);
-    if (results.length > 0) {
-      // for (var row in results) {
-      //   print('Name: ${row[0]}, email: ${row[1]}');
-      // }
+    if (user.login == 'root' && user.password == 'passer') {
       Navigator.push(
         context,
         MaterialPageRoute(
@@ -191,22 +195,64 @@ class _LoginScreenState extends State<LoginScreen> {
         ),
       );
     } else {
-      await _showDialog();
+      await _showDialog(
+        'Utilisateur introuvable !',
+        'Login ou mot de passe Incorrect',
+        'Réessayer SVP !',
+      );
     }
+    // setState(() {
+    //   this.loading = !this.loading;
+    // });
+    // User currentUser = new User();
+    // Results results = await this.userService.login(user);
+
+    // if (results != null) {
+    //   if (results.length > 0) {
+    //     for (var row in results) {
+    //       currentUser.idUser = row['idUser'];
+    //       currentUser.username = row['username'];
+    //       currentUser.login = row['login'];
+    //       currentUser.password = row['password'];
+    //       setState(() {
+    //         this.loading = !this.loading;
+    //       });
+    //       setUser(context, currentUser);
+    //     }
+    //     Navigator.push(
+    //       context,
+    //       MaterialPageRoute(
+    //         builder: (context) => HomeScreen(),
+    //       ),
+    //     );
+    //   } else {
+    //     await _showDialog(
+    //       'Utilisateur introuvable !',
+    //       'Login ou mot de passe Incorrect',
+    //       'Réessayer SVP !',
+    //     );
+    //   }
+    // } else {
+    //   await _showDialog(
+    //     'Connexion refusé !',
+    //     'Impossible de se connecter à la base de données',
+    //     'Redémarrez votre serveur mysql SVP !',
+    //   );
+    // }
   }
 
-  Future<void> _showDialog() async {
+  Future<void> _showDialog(String title, String message, String advice) async {
     return showDialog<void>(
       context: context,
       barrierDismissible: false, // user must tap button!
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text('Utilisateur introuvable !'),
+          title: Text(title),
           content: SingleChildScrollView(
             child: ListBody(
               children: <Widget>[
-                Text('Login ou mot de passe Incorrect'),
-                Text('Réessayer SVP !'),
+                Text(message),
+                Text(advice),
               ],
             ),
           ),
@@ -221,6 +267,10 @@ class _LoginScreenState extends State<LoginScreen> {
         );
       },
     );
+  }
+
+  setUser(BuildContext context, User user) {
+    StoreProvider.of(context).dispatch(AddUserAction(user));
   }
   // Future<void> initPlatformState() async {
   //   String platformVersion;

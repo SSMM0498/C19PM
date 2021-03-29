@@ -1,9 +1,13 @@
 class User {
+  int idUser;
   String login;
+  String username;
   String password;
-  
-    User() {
+
+  User() {
     this.login = '';
     this.password = '';
+    this.username = '';
+    this.idUser = -1;
   }
 }

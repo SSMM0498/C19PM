@@ -1,9 +1,14 @@
 import 'dart:io';
 import 'package:bitsdojo_window/bitsdojo_window.dart';
 import 'package:covid19_progression_modeler/config/config.dart';
+import 'package:covid19_progression_modeler/models/models.dart';
+import 'package:covid19_progression_modeler/redux/AppState.dart';
+import 'package:covid19_progression_modeler/redux/reducers/reducers.dart';
 import 'package:covid19_progression_modeler/screens/screens.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_redux/flutter_redux.dart';
 import 'package:window_size/window_size.dart';
+import 'package:redux/redux.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -18,16 +23,30 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  final Store<AppState> _store = Store<AppState>(
+    addUserReducer,
+    initialState: AppState(
+      days: [],
+      departements: [],
+      localities: [],
+      months: [],
+      regions: [],
+      user: new User(),
+    ),
+  );
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'COVID19 Progression Modeler',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-          primarySwatch: Colors.blue,
-          visualDensity: VisualDensity.adaptivePlatformDensity,
-          scaffoldBackgroundColor: Palette.primeColor),
-      home: HomeScreen(),
+    return StoreProvider(
+      store: _store,
+      child: MaterialApp(
+        title: 'COVID19 Progression Modeler',
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+            primarySwatch: Colors.blue,
+            visualDensity: VisualDensity.adaptivePlatformDensity,
+            scaffoldBackgroundColor: Palette.primeColor),
+        home: LoginScreen(),
+      ),
     );
   }
 }

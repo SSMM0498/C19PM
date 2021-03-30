@@ -20,6 +20,11 @@ Future<String> getJsonFolder() async {
   return doc+"json/";
 }
 
+Future<String> getImgFolder() async {
+  String doc = await getDocDirectory();
+  return doc+"img/";
+}
+
 Future<String> getXMLFolder() async {
   String doc = await getDocDirectory();
   if (Platform.isWindows) {

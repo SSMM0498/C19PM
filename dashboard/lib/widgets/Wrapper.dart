@@ -63,7 +63,7 @@ class _WrapperState extends State<Wrapper> {
               color: Palette.secondColor,
             ),
             onPressed: () {
-              fe.export(widgetKey);
+              fe.export(name: widget.title ,key: widgetKey);
             },
           )
         ],

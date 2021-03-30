@@ -39,11 +39,6 @@ Future<List<ArrowParam>> createArrowList(
       start: positions[j["start"]],
       end: positions[j["end"]],
     );
-    print(a);
-    print(a.date);
-    print(a.start);
-    print(a.end);
-    al.add(a);
   }
 
   return al;

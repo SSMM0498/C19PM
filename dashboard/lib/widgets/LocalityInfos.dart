@@ -4,10 +4,10 @@ import 'CircleInfos.dart';
 import 'package:flutter/material.dart';
 
 class LocalityInfos extends StatelessWidget {
-  final Locality locality;
-  final Position position;
+  final int nbCase;
+  final LocalityMapInfos position;
   final bool insidePopup;
-  const LocalityInfos({this.locality, this.insidePopup, this.position});
+  const LocalityInfos({this.nbCase, this.insidePopup, this.position});
 
   double refreshPos() {
     return (insidePopup)
@@ -19,8 +19,8 @@ class LocalityInfos extends StatelessWidget {
   Widget build(BuildContext context) {
     return Positioned(
       child: CircleInfos(
-        infos: locality.nbCase,
-        label: locality.name,
+        infos: nbCase,
+        label: position.name,
       ),
       left: position.x * refreshPos() - 25,
       top: position.y * refreshPos() - 25,

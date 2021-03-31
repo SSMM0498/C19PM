@@ -108,7 +108,7 @@ class _PopupState extends State<Popup> {
               child: Container(
                 child: RegionMap(
                   localities: widget.deps,
-                  mapname: getFileName(widget.city),
+                  mapname: widget.city,
                 ),
                 width: SizeHelper.width() * 0.5,
                 height: SizeHelper.height() * 0.75,

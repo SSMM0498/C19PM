@@ -1,23 +1,24 @@
-import 'package:covid19_progression_modeler/config/config.dart';
-import 'package:covid19_progression_modeler/models/models.dart';
 import 'package:flutter/material.dart';
 import 'package:touchable/touchable.dart';
+
+import 'package:covid19_progression_modeler/config/config.dart';
+import 'package:covid19_progression_modeler/models/models.dart';
 
 import '../Popup.dart';
 
 class MapPainter extends CustomPainter {
   final bool havePopup;
   final BuildContext context;
-  final Map<String, Path> paths;
+  List<LocalityMapInfos> listMapInfos;
   final Path curPath;
   final List<Locality> localities;
   final Function(Path curPath) onPressed;
   MapPainter({
-    this.context,
-    this.paths,
-    this.localities,
-    this.curPath,
     this.havePopup,
+    this.context,
+    this.listMapInfos,
+    this.curPath,
+    this.localities,
     this.onPressed,
   });
 
@@ -37,15 +38,17 @@ class MapPainter extends CustomPainter {
       ..color = Palette.lightSecondColor
       ..strokeWidth = 1.5;
 
-    paths.forEach((title, path) {
-      paint.style = path == curPath ? PaintingStyle.fill : PaintingStyle.stroke;
+    listMapInfos.forEach((i) {
+      paint.style =
+          i.path == curPath ? PaintingStyle.fill : PaintingStyle.stroke;
       touchCanvas.drawPath(
-        path.transform(matrix4.storage),
+        i.path.transform(matrix4.storage),
         paint,
         onTapDown: (details) {
-          String city = title;
-          onPressed(path);
+          String city = i.name;
+          onPressed(i.path);
           if (havePopup) {
+            print("clicked on $city");
             List<Departement> deps = (localities as List<Region>)
                 .firstWhere((r) => r.name == city)
                 .departements;

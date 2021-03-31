@@ -8,12 +8,13 @@ class MysqlConfig {
   static const String password = 'passer';
 
   static Future<MySqlConnection> newConnection() async {
-    final connection = await MySqlConnection.connect(ConnectionSettings(
-        host: host,
-        port: port,
-        user: user,
-        db: db,
-        password: password));
+    MySqlConnection connection;
+    try {
+      connection = await MySqlConnection.connect(ConnectionSettings(
+          host: host, port: port, user: user, db: db, password: password));
+    } catch (e) {
+      print(e);
+    }
 
     return connection;
   }

@@ -13,9 +13,12 @@ class MapWidget extends StatefulWidget {
   final bool havePopup;
   final bool withArrow;
 
-  MapWidget(
-      {this.localities, mapname, this.havePopup = true, this.withArrow = false})
-      : this.rootName = mapname;
+  MapWidget({
+    this.localities,
+    mapname,
+    this.havePopup = true,
+    this.withArrow = false,
+  }) : this.rootName = mapname;
 
   @override
   _MapWidgetState createState() => _MapWidgetState();

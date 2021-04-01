@@ -26,5 +26,9 @@ Future<void> writeToFile(ByteData data, String path) {
 void export({String name, GlobalKey key}) {
   String date = DateTime.now().toIso8601String();
   String fname = "$name $date";
+  if (Platform.isWindows) {
+    fname = fname.replaceAll(" ", "_");
+    fname = fname.replaceAll(":", "-");
+  }
   capture(fname, key);
 }

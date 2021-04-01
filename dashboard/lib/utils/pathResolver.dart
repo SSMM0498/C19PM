@@ -22,6 +22,9 @@ Future<String> getJsonFolder() async {
 
 Future<String> getImgFolder() async {
   String doc = await getDocDirectory();
+  if (Platform.isWindows) {
+  return doc+"img\\";
+  }
   return doc+"img/";
 }
 

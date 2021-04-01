@@ -1,7 +1,6 @@
 import 'dart:io';
 import 'package:bitsdojo_window/bitsdojo_window.dart';
 import 'package:covid19_progression_modeler/config/config.dart';
-import 'package:covid19_progression_modeler/models/models.dart';
 import 'package:covid19_progression_modeler/redux/AppState.dart';
 import 'package:covid19_progression_modeler/redux/reducers/reducers.dart';
 import 'package:covid19_progression_modeler/screens/screens.dart';
@@ -24,15 +23,8 @@ void main() {
 
 class MyApp extends StatelessWidget {
   final Store<AppState> _store = Store<AppState>(
-    addUserReducer,
-    initialState: AppState(
-      days: [],
-      departements: [],
-      localities: [],
-      months: [],
-      regions: [],
-      user: new User(),
-    ),
+    appStateReducer,
+    initialState: AppState.initialState(),
   );
   @override
   Widget build(BuildContext context) {

@@ -51,41 +51,41 @@ class SideBar extends StatelessWidget {
   }
 }
 
-displayUser(BuildContext context) {
-  return showDialog(
-      context: context,
-      builder: (context) {
-        return Center(
-          child: StoreConnector<AppState, User>(
-            converter: (store) => store.state.user,
-            builder: (context, User userState) => Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                color: Colors.white,
-              ),
-              padding: EdgeInsets.all(15),
-              width: SizeHelper.width() * 0.5,
-              height: 500,
-              child: Center(
-                child: Column(
-                  children: [
-                    Text(userState.username),
-                    TextButton(
-                      child: Text('se deconnecter'),
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => LoginScreen(),
-                          ),
-                        );
-                      },
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-        );
-      });
-}
+// displayUser(BuildContext context) {
+//   return showDialog(
+//       context: context,
+//       builder: (context) {
+//         return Center(
+//           child: StoreConnector<AppState, User>(
+//             converter: (store) => store.state.user,
+//             builder: (context, User userState) => Container(
+//               decoration: BoxDecoration(
+//                 borderRadius: BorderRadius.circular(10),
+//                 color: Colors.white,
+//               ),
+//               padding: EdgeInsets.all(15),
+//               width: SizeHelper.width() * 0.5,
+//               height: 500,
+//               child: Center(
+//                 child: Column(
+//                   children: [
+//                     Text(userState.username),
+//                     TextButton(
+//                       child: Text('se deconnecter'),
+//                       onPressed: () {
+//                         Navigator.push(
+//                           context,
+//                           MaterialPageRoute(
+//                             builder: (context) => LoginScreen(),
+//                           ),
+//                         );
+//                       },
+//                     ),
+//                   ],
+//                 ),
+//               ),
+//             ),
+//           ),
+//         );
+//       });
+// }

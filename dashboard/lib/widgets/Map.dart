@@ -11,7 +11,7 @@ class MapWidget extends StatefulWidget {
   final List<Locality> localities;
   final String rootName;
   final bool havePopup;
-  final bool withArrow;
+  final bool withArrow;  
 
   MapWidget(
       {this.localities, mapname, this.havePopup = true, this.withArrow = false})

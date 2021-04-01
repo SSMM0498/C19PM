@@ -14,9 +14,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     SizeHelper.getScreenSize(context);
     return Scaffold(
-      body: StoreConnector<AppState, ViewModelRegion>(
-        converter: (Store<AppState> store) => ViewModelRegion.create(store),
-        builder: (BuildContext context, ViewModelRegion viewModel) => Row(
+      body: StoreConnector<AppState, ViewModel>(
+        converter: (Store<AppState> store) => ViewModel.create(store),
+        builder: (BuildContext context, ViewModel viewModel) => Row(
           mainAxisSize: MainAxisSize.max,
           children: <Widget>[
             Container(
@@ -42,14 +42,23 @@ class HomeScreen extends StatelessWidget {
                 children: <Widget>[
                   MainHeader(),
                   SizedBox(height: 30),
-                  GlobalMap(model: viewModel,)
+                  GlobalMap(model: viewModel)
                 ],
               ),
             ),
             Container(
               width: SizeHelper.width() * 0.3,
               color: Colors.white,
-              child: DataViewer(),
+              child: DataViewer(
+                model: viewModel,
+              ),
+              // child: StoreBuilder<AppState>(
+              //   onInit: viewModel.onGetAllMonth(),
+              //   builder: (BuildContext context, Store<AppState> store) =>
+              //       DataViewer(
+              //     model: viewModel,
+              //   ),
+              // ),
             ),
           ],
         ),

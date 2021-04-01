@@ -3,7 +3,7 @@ import 'package:covid19_progression_modeler/redux/AppState.dart';
 import 'package:redux/redux.dart';
 import '../actions/region.action.dart';
 
-class ViewModelRegion {
+class RegionViewModel {
   final List<Region> regions;
   final Function() onGetAllRegion;
   final Function(Region) onRemoveRegion;
@@ -11,7 +11,7 @@ class ViewModelRegion {
   final Function() onRemoveAllRegion;
   final Function(Region, Region) onUpdateRegion;
 
-  ViewModelRegion(
+  RegionViewModel(
       {this.regions,
       this.onGetAllRegion,
       this.onRemoveAllRegion,
@@ -19,7 +19,7 @@ class ViewModelRegion {
       this.onUpdateRegion,
       this.onAddRegion});
 
-  factory ViewModelRegion.create(Store<AppState> store) {
+  factory RegionViewModel.create(Store<AppState> store) {
     _onAddRegion(Region region) {
       store.dispatch(AddRegionAction(region));
     }
@@ -40,7 +40,7 @@ class ViewModelRegion {
       store.dispatch(UpdateRegionAction(update, former));
     }
 
-    return new ViewModelRegion(
+    return new RegionViewModel(
       regions: store.state.regions,
       onAddRegion: _onAddRegion,
       onGetAllRegion: _onGetAllRegion,

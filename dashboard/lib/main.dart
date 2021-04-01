@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:bitsdojo_window/bitsdojo_window.dart';
 import 'package:covid19_progression_modeler/config/config.dart';
 import 'package:covid19_progression_modeler/redux/AppState.dart';
+import 'package:covid19_progression_modeler/redux/middleware.dart';
 import 'package:covid19_progression_modeler/redux/reducers/reducers.dart';
 import 'package:covid19_progression_modeler/screens/screens.dart';
 import 'package:flutter/material.dart';
@@ -22,10 +23,11 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  final Store<AppState> _store = Store<AppState>(
-    appStateReducer,
-    initialState: AppState.initialState(),
-  );
+  final Store<AppState> _store = Store<AppState>(appStateReducer,
+      initialState: AppState.initialState(),
+      middleware: [
+        appStateMiddleware,
+      ]);
   @override
   Widget build(BuildContext context) {
     return StoreProvider(

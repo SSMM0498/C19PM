@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 import 'Map.dart';
 
 class GlobalMap extends StatelessWidget {
-  final ViewModelRegion model;
+  // final List<Region> regions = DataGetter.createRegionList();
+  final ViewModel model;
   GlobalMap({this.model});
   @override
   Widget build(BuildContext context) {

@@ -1,16 +1,6 @@
 import 'package:covid19_progression_modeler/models/models.dart';
-import 'package:covid19_progression_modeler/redux/AppState.dart';
 import 'package:covid19_progression_modeler/redux/actions/region.action.dart';
 
-AppState appStateReducer(AppState state, action) {
-  return AppState(
-    days: state.days,
-    departements: state.departements,
-    months: state.months,
-    localities: state.localities,
-    regions: regionReducer(state.regions, action),
-  );
-}
 
 List<Region> regionReducer(List<Region> state, action) {
   if (action is GetAllRegionAction) {

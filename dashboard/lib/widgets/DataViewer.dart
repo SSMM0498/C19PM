@@ -1,29 +1,24 @@
+import 'package:covid19_progression_modeler/redux/viewModel/ViewModel.dart';
 import 'package:flutter/material.dart';
 import 'ExpandableList.dart';
 import '../models/models.dart';
-import '../models/DataGetter.dart' as DataGetter;
-import '../data/DataLoader.dart' as DataLoader;
+import '../utils/DataLoader.dart' as DataLoader;
 
 class DataViewer extends StatefulWidget {
-  final List<Month> list = DataGetter.retrieveJSON();
-  DataViewer({Key key}) : super(key: key);
-
-  void initState() {
-    print(list);
-  }
-
+  final ViewModel model;
+  DataViewer({Key key, this.model}) : super(key: key);
   @override
   _DataViewerState createState() => _DataViewerState();
 }
 
 class _DataViewerState extends State<DataViewer> {
   bool _checked = false;
-  List<Day> _selectedDay;
+  List<Day> _selectedDay = [];
 
   @override
   void initState() {
     super.initState();
-    _selectedDay = [];
+    widget.model.onGetAllMonth();
   }
 
   @override
@@ -46,7 +41,8 @@ class _DataViewerState extends State<DataViewer> {
         ]),
         Expanded(
             child: ExpandableList(
-                list: widget.list,
+                // list: _monthList,
+                list: widget.model.months,
                 callBack: (Day d) {
                   setState(() {
                     if (d.checked == true) {

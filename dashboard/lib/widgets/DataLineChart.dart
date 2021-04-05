@@ -1,5 +1,5 @@
 import 'package:covid19_progression_modeler/config/config.dart';
-import 'package:covid19_progression_modeler/models/DataGetter.dart'
+import 'package:covid19_progression_modeler/utils/DataGetter.dart'
     as DataGetter;
 import 'package:covid19_progression_modeler/widgets/Wrapper.dart';
 import 'package:fl_chart/fl_chart.dart';

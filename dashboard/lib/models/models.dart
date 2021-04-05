@@ -4,3 +4,6 @@ export 'Locality.dart';
 export 'Region.dart';
 export 'Departement.dart';
 export 'User.dart';
+export 'Position.dart';
+export 'LocalityMapInfos.dart';
+export 'ArrowParam.dart';

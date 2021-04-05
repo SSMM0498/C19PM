@@ -1,18 +1,24 @@
 import 'package:covid19_progression_modeler/config/config.dart';
+import 'package:covid19_progression_modeler/utils/mapInfos.dart';
+import 'package:covid19_progression_modeler/widgets/painter/ArrowPainter.dart';
+import 'package:covid19_progression_modeler/widgets/painter/MapPainter.dart';
 import 'package:flutter/material.dart';
 import 'package:covid19_progression_modeler/models/models.dart';
-import 'package:covid19_progression_modeler/utils/parser.dart';
 import 'package:touchable/touchable.dart';
 import 'LocalityInfos.dart';
-import 'Popup.dart';
 
 class MapWidget extends StatefulWidget {
   final List<Locality> localities;
-  final String svgPath;
+  final String rootName;
   final bool havePopup;
+  final bool withArrow;
 
-  MapWidget({this.localities, mapname, this.havePopup = true})
-      : this.svgPath = "assets/$mapname.svg";
+  MapWidget({
+    this.localities,
+    mapname,
+    this.havePopup = true,
+    this.withArrow = false,
+  }) : this.rootName = mapname;
 
   @override
   _MapWidgetState createState() => _MapWidgetState();
@@ -20,55 +26,26 @@ class MapWidget extends StatefulWidget {
 
 class _MapWidgetState extends State<MapWidget> {
   Path _selectPath;
-  Map<String, Path> paths = new Map();
-  Map<String, Position> positions = new Map();
+  List<LocalityMapInfos> _listMapInfos = [];
+  List<ArrowParam> _arrowList = [];
 
   @override
   void initState() {
     super.initState();
-    parseSvgToPath();
-  }
-
-  void parseSvgToPath() {
-    SvgParser parser = SvgParser();
-    parser.loadFromFile(widget.svgPath).then((value) {
-      setState(() {
-        paths = parser.getPaths();
-        positions = parser.getPositions();
-        refreshPositions();
-      });
-    });
-  }
-
-  void refreshPositions() {
-    widget.localities.forEach((l) {
-      double scale = (widget.havePopup)
-          ? SizeHelper.width() / 850 * SizeHelper.height() / 950
-          : 1;
-      l.left =
-          ((positions[l.name] != null) ? positions[l.name].x : 0) * scale - 25;
-      l.top =
-          ((positions[l.name] != null) ? positions[l.name].y : 0) * scale - 25;
-      if (l.name == "Fatick") {
-        l.left -= 35;
-      } else if (l.name == "Kaolack") {
-        l.left -= 5;
-      }
-    });
+    _listMapInfos = getMapInfos(widget.rootName);
   }
 
   @override
   Widget build(BuildContext context) {
-    refreshPositions();
     return Container(
       color: Colors.white,
       width: double.infinity,
       height: SizeHelper.height() * .75,
       child: CanvasTouchDetector(
         builder: (context) => CustomPaint(
-          painter: PathPainter(
+          painter: MapPainter(
             context: context,
-            paths: paths,
+            listMapInfos: _listMapInfos,
             havePopup: widget.havePopup,
             curPath: _selectPath,
             localities: widget.localities,
@@ -79,9 +56,16 @@ class _MapWidgetState extends State<MapWidget> {
             },
           ),
           child: Stack(
-            children: widget.localities
-                .map((region) => LocalityInfos(region))
-                .toList(),
+            children: (!widget.withArrow)
+                ? widget.localities
+                    .map((l) => LocalityInfos(
+                          nbCase: l.nbCase,
+                          position:
+                              _listMapInfos.firstWhere((e) => e.name == l.name),
+                          insidePopup: widget.havePopup,
+                        ))
+                    .toList()
+                : _arrowList.map((arrow) => Arrow(arrow: arrow)).toList(),
           ),
         ),
       ),
@@ -89,60 +73,18 @@ class _MapWidgetState extends State<MapWidget> {
   }
 }
 
-class PathPainter extends CustomPainter {
-  final bool havePopup;
-  final BuildContext context;
-  final Map<String, Path> paths;
-  final Path curPath;
-  final List<Locality> localities;
-  final Function(Path curPath) onPressed;
-  PathPainter({
-    this.context,
-    this.paths,
-    this.localities,
-    this.curPath,
-    this.havePopup,
-    this.onPressed,
-  });
+class Arrow extends StatelessWidget {
+  final ArrowParam arrow;
+
+  const Arrow({Key key, this.arrow}) : super(key: key);
 
   @override
-  void paint(Canvas canvas, Size size) {
-    double scale =
-        (havePopup) ? SizeHelper.width() / 850 * SizeHelper.height() / 950 : 1;
-
-    // scale each path to match canvas size
-    final Matrix4 matrix4 = Matrix4.identity();
-    matrix4.scale(scale, scale);
-
-    final TouchyCanvas touchCanvas = TouchyCanvas(context, canvas);
-
-    final Paint paint = Paint()
-      ..style = PaintingStyle.stroke
-      ..color = Palette.lightSecondColor
-      ..strokeWidth = 1.5;
-
-    paths.forEach((title, path) {
-      paint.style = path == curPath ? PaintingStyle.fill : PaintingStyle.stroke;
-      touchCanvas.drawPath(
-        path.transform(matrix4.storage),
-        paint,
-        onTapDown: (details) {
-          String city = title;
-          onPressed(path);
-          if (havePopup) {
-            List<Departement> deps = (localities as List<Region>)
-                .firstWhere((r) => r.name == city)
-                .departements;
-            return showDialog(
-              context: context,
-              builder: (ctx) => Popup(city: city, context: ctx, deps: deps),
-            );
-          }
-        },
-      );
-    });
+  Widget build(BuildContext context) {
+    return Container(
+      constraints: BoxConstraints.expand(),
+      child: CustomPaint(
+        painter: ArrowPainter(arrowParam: arrow),
+      ),
+    );
   }
-
-  @override
-  bool shouldRepaint(PathPainter oldDelegate) => true;
 }

@@ -1,11 +1,15 @@
 import requests
 from bs4 import BeautifulSoup
-import os 
+import os
+import random
 
-headers = {'User-Agent': 'Mozilla/5.0 (Android; Linux armv7l; rv:5.0) Gecko/20110615 Firefox/5.0 Fennec/5.0'}
+def getRandomUserAgent():
+    lines = open('user-agents.txt').read().splitlines()
+    return { 'User-Agent': random.choice(lines)}
 
 def crawl_link(link, tag, class_name):
-    response = requests.get(link, headers=headers)
+    response = requests.get(link, headers=getRandomUserAgent())
+    element_list = []
     if response.ok:
         soup = BeautifulSoup(response.text, "html.parser")
         element_list = soup.find_all(tag, {"class": class_name})
@@ -42,7 +46,7 @@ def get_links(element_list):
 def pdf_download(url, file_name):
     dir_path = os.path.dirname(os.path.realpath(__file__))
     file_path = dir_path+'\\assets\\'+file_name+'.pdf'
-    response=requests.get(url, headers=headers)
+    response=requests.get(url, headers=getRandomUserAgent())
     expdf=response.content
     egpdf=open(file_path,'wb')
     egpdf.write(expdf)
@@ -61,7 +65,7 @@ def download_ressources(communique_list):
                 print()
                 print('Telechargement du '+file_name+' ...')
                 print()
-                # pdf_download(url, file_name)
+                pdf_download(url, file_name)
     print('Download finished !!!')
     
 
@@ -111,7 +115,7 @@ def scrawl_page(index, first_communique):
 
 first_communique = {
     'title': ' comcovid19.pdf',
-    'links': ['http://www.sante.gouv.sn/sites/default/files/comcovid19.pdf']
+    'links': ['https://sante.sec.gouv.sn/sites/default/files/comcovid19.pdf']
 }
 
 isLastPage = False

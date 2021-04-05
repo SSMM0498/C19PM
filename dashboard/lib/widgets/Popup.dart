@@ -49,7 +49,6 @@ class _PopupState extends State<Popup> {
 
   @override
   Widget build(BuildContext context) {
-    print(SizeHelper.width());
     return AlertDialog(
       title: Text(widget.city),
       titleTextStyle: TextStyle(color: Palette.fontColor, fontSize: 24),
@@ -109,7 +108,7 @@ class _PopupState extends State<Popup> {
               child: Container(
                 child: RegionMap(
                   localities: widget.deps,
-                  mapname: getFileName(widget.city),
+                  mapname: widget.city,
                 ),
                 width: SizeHelper.width() * 0.5,
                 height: SizeHelper.height() * 0.75,

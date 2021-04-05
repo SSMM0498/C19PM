@@ -3,3 +3,11 @@ DataAcquisition/json/data
 *.pyc
 notes.md
 .vscode/
+<<<<<<< HEAD
+=======
+DataAcquisition/__pycache__
+dashboard/pubspec.lock
+dashboard/windows
+dashboard/linux
+dashboard/build
+>>>>>>> 040324a0a2e044001423acbe153e4c47cd49dd69

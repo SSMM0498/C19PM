@@ -1,4 +1,7 @@
+import 'dart:io';
+
 import 'package:covid19_progression_modeler/config/palette.dart';
+import 'package:covid19_progression_modeler/widgets/DialogNotification.dart';
 import 'package:flutter/material.dart';
 import 'package:covid19_progression_modeler/utils/fileExporter.dart'
     as fileExporter;
@@ -6,17 +9,15 @@ import 'package:covid19_progression_modeler/utils/fileExporter.dart'
 class DownloadDropDown extends StatelessWidget {
   final String widgetTitle;
   final GlobalKey<State<StatefulWidget>> widgetKey;
-  DownloadDropDown({
-    this.widgetKey,
-    this.widgetTitle,
-  });
+  final List<dynamic> payload;
+  DownloadDropDown({this.widgetKey, this.widgetTitle, this.payload});
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(vertical: 0, horizontal: 10),
       child: DropdownButton(
         value: 1,
-        onChanged: handleDropDownChange,
+        onChanged: (int value) => handleDropDownChange(value, context),
         icon: Icon(
           Icons.download_sharp,
           color: Palette.secondColor,
@@ -39,15 +40,36 @@ class DownloadDropDown extends StatelessWidget {
     );
   }
 
-  void handleDropDownChange(int value) {
+  void handleDropDownChange(int value, BuildContext context) async {
     if (value == 1) {
       fileExporter.export(name: widgetTitle, key: widgetKey);
     }
     if (value == 2) {
-      print('Télécharger en format CSV');
+      if (widgetTitle == 'Carte du Sénégal') {
+        print('Télécharger en format CSV fro senegal');
+        File result = await fileExporter.generateCountryCSV(
+            payload, 'communique_du_2021_02.csv');
+        if (result == null) {
+          dialogNotification(
+            context,
+            'Erreur',
+            'Impossible d\'exporter les donnés au format cvs',
+            'Réessayez plus tard SVP !!!',
+          );
+        } else {
+          dialogNotification(
+            context,
+            'Succés',
+            'Les données ont été exporté dans ' + result.path,
+            '',
+          );
+        }
+      }
     }
     if (value == 3) {
-      print('Télécharger en format SQL');
+      if (widgetTitle == 'Carte du Sénégal') {
+        print('Télécharger en format SQL for senegal');
+      }
     }
   }
 }

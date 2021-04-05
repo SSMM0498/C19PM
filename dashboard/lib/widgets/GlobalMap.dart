@@ -13,6 +13,7 @@ class GlobalMap extends StatelessWidget {
       child: Wrapper(
         title: "Carte du Sénégal",
         downloadText: "Télécharger la carte",
+        payload: model.regions,
         childWidget: MapWidget(
           localities: model.regions,
           mapname: "senegal",

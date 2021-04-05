@@ -8,7 +8,9 @@ class Wrapper extends StatefulWidget {
   final String title;
   final String downloadText;
   final Widget childWidget;
-  const Wrapper({Key key, this.childWidget, this.title, this.downloadText})
+  final List<dynamic> payload;
+  const Wrapper(
+      {Key key, this.childWidget, this.title, this.downloadText, this.payload})
       : super(key: key);
 
   @override
@@ -68,9 +70,9 @@ class _WrapperState extends State<Wrapper> {
           //   },
           // )
           DownloadDropDown(
-            widgetKey: widgetKey,
-            widgetTitle: widget.title,
-          ),
+              widgetKey: widgetKey,
+              widgetTitle: widget.title,
+              payload: widget.payload),
         ],
       ),
     );

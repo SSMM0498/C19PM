@@ -28,6 +28,7 @@ dependencies:
   mysql1: ^0.17.1
   flutter_redux: ^0.8.2
   msix: ^1.0.3
+  csv: ^5.0.0
   window_size:
     git:
       url: git://github.com/google/flutter-desktop-embedding.git

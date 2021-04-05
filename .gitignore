@@ -1,4 +1,5 @@
 DataAcquisition/env
+DataAcquisition/json/data
 *.pyc
 notes.md
 .vscode/

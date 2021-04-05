@@ -6,7 +6,7 @@ import 'package:covid19_progression_modeler/services/user.service.dart';
 import 'package:covid19_progression_modeler/widgets/FadeAnimation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
-import 'package:mysql1/mysql1.dart';
+// import 'package:mysql1/mysql1.dart';
 // import 'package:flutter/services.dart';
 // import 'package:starflut/starflut.dart';
 

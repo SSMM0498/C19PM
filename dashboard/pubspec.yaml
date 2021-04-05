@@ -40,21 +40,23 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/senegal.svg
-    - assets/regions/dakar.svg
-    - assets/regions/diourbel.svg
-    - assets/regions/fatick.svg
-    - assets/regions/kedougou.svg
-    - assets/regions/kaffrine.svg
-    - assets/regions/kaolack.svg
-    - assets/regions/kolda.svg
-    - assets/regions/louga.svg
-    - assets/regions/matam.svg
-    - assets/regions/sedhiou.svg
-    - assets/regions/saintlouis.svg
-    - assets/regions/tambacounda.svg
-    - assets/regions/thies.svg
-    - assets/regions/ziguinchor.svg
+    # - assets/senegal.svg
+    # - assets/regions/dakar.svg
+    # - assets/regions/diourbel.svg
+    # - assets/regions/fatick.svg
+    # - assets/regions/kedougou.svg
+    # - assets/regions/kaffrine.svg
+    # - assets/regions/kaolack.svg
+    # - assets/regions/kolda.svg
+    # - assets/regions/louga.svg
+    # - assets/regions/matam.svg
+    # - assets/regions/sedhiou.svg
+    # - assets/regions/saintlouis.svg
+    # - assets/regions/tambacounda.svg
+    # - assets/regions/thies.svg
+    # - assets/regions/ziguinchor.svg
+    - assets/senegal.dep.svg
+    - assets/mapvalues.json
     - starfiles/
 
 msix_config:

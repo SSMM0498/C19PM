@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:covid19_progression_modeler/config/config.dart';
 import 'package:flutter/material.dart';
 import '../models/models.dart';
@@ -14,6 +16,7 @@ class ExpandableList extends StatefulWidget {
 
 class _ExpandableListState extends State<ExpandableList> {
   // bool _allchecked = false;
+
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
@@ -24,7 +27,7 @@ class _ExpandableListState extends State<ExpandableList> {
         title: Row(
           children: [
             Text(
-              widget.list[i].label,
+              getLabelMonth(widget.list[i].label),
               style: TextStyle(decorationColor: Colors.amber),
             ),
           ],
@@ -67,6 +70,14 @@ class _ExpandableListState extends State<ExpandableList> {
               ],
             ))
         .toList();
+  }
+
+  String getLabelMonth(String label) {
+    if (Platform.isWindows) {
+      List<String> array = label.split("\\");
+      return array[array.length - 1];
+    }
+    return label;
   }
 }
 

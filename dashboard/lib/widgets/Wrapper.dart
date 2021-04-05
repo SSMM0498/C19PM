@@ -1,7 +1,8 @@
 import 'package:covid19_progression_modeler/config/config.dart';
+import 'package:covid19_progression_modeler/widgets/DropDown.dart';
 import 'package:covid19_progression_modeler/widgets/WidgetToImage.dart';
 import 'package:flutter/material.dart';
-import 'package:covid19_progression_modeler/utils/fileExporter.dart' as fe;
+// import 'package:covid19_progression_modeler/utils/fileExporter.dart' as fe;
 
 class Wrapper extends StatefulWidget {
   final String title;
@@ -54,18 +55,22 @@ class _WrapperState extends State<Wrapper> {
               ),
             ],
           ),
-          IconButton(
-            padding: const EdgeInsets.all(1.0),
-            iconSize: 25.0,
-            tooltip: widget.downloadText,
-            icon: Icon(
-              Icons.download_sharp,
-              color: Palette.secondColor,
-            ),
-            onPressed: () {
-              fe.export(name: widget.title ,key: widgetKey);
-            },
-          )
+          // IconButton(
+          //   padding: const EdgeInsets.all(1.0),
+          //   iconSize: 25.0,
+          //   tooltip: widget.downloadText,
+          //   icon: Icon(
+          //     Icons.download_sharp,
+          //     color: Palette.secondColor,
+          //   ),
+          //   onPressed: () {
+          //     fe.export(name: widget.title, key: widgetKey);
+          //   },
+          // )
+          DownloadDropDown(
+            widgetKey: widgetKey,
+            widgetTitle: widget.title,
+          ),
         ],
       ),
     );

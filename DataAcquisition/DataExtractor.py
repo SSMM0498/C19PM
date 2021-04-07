@@ -47,17 +47,44 @@ def getText(image):
     pytesseract.tesseract_cmd = path_to_tesseract
     text = pytesseract.image_to_string(img,lang='fra')
     text = text[0:-2]
-    return text 
+    return text
+    
+def switch(argument):
+    argument = argument.replace("é","e")
+    argument = argument.replace("è","e")
+    switcher = {
+        "janvier":1,
+        "fevrier": 2,
+        "mars" : 3,
+        "avril":4,
+        "mai":5,
+        "juin":6,
+        "juillet":7,
+        "aout":8,
+        "septembre":9,
+        "octobre":10,
+        "novembre":11,
+        "decembre":12
+    }
+    return (switcher.get(argument, "Invalid month"))
 
 def getDate(text):
     days = ["lundi","mardi","mercredi","jeudi","vendredi","samedi","dimanche"]
+    tmp = text[0:200]
     for day in days:
-        try:
-            dateBeginIndex = text.find(day)
-            dateEndIndex = text.index("2021") + 4
-            date = text[dateBeginIndex:dateEndIndex]
-            return { 'date':date,'endIndex':dateEndIndex }
-        except:
+        if(tmp.find(day) != -1):
+            tmp = tmp[tmp.find(day):-1]
+            tmp = tmp.split(',')
+            tmp = tmp[0]
+            tmp = tmp.split()            
+            obj = {
+                'day' : tmp[0],
+                'dayNumber' : tmp[1],
+                'month' : switch(tmp[2]),
+                'year' : tmp[3]
+            }
+            return obj
+        else:
             continue
 
 def getTests(text):
@@ -66,20 +93,27 @@ def getTests(text):
         testEndIndex = text.index("positifs")
         tests = text[testBeginIndex:testEndIndex]
         tests = tests.split()
+        result = {
+            "tests": 0,
+            "positifs": 0,
+            "taux":0
+        }
         numbers = []
         for word in tests:
             if(word.isdigit()):
                 numbers.append(int(word))
-        numbers.append((numbers[1]*100)/numbers[0])      
-        return { 'numbers' : numbers, 'endIndex':testEndIndex }
+        numbers.append((numbers[1] * 100) / numbers[0])
+        result["tests"] = numbers[0]
+        result["positifs"] = numbers[1]
+        result["taux"] = numbers[2]
+        return {'numbers': result, 'endIndex': testEndIndex}
     except: 
         return { 'numbers' : 0, 'endIndex':0 }
 
 def getCasContact(text):
     try:
-        casBeginIndex = text.index("comme suit :")
-        casBeginIndex += 13
-        casEndIndex = text.index("services ;")
+        casBeginIndex = 0
+        casEndIndex = text.index("services")
         contact = text[casBeginIndex:casEndIndex].split() 
         for word in contact:
             if(word.isdigit()):
@@ -100,22 +134,57 @@ def getCasCom(text):
     except:
         return  {'number': 0,'endIndex':0 }
 
+def getNbGueris(text):
+    tmp = text[0: text.find('patients')]
+    tmp = tmp.split()
+    for word in tmp:
+        if (word.isdigit()):
+            return word
+
+def getOverall(text):
+    tmp = text[text.find('ce jour'):text.find('traitement')]
+    tmp = tmp.split()
+    obj = {
+        "positifs": 0,
+        "gueris": 0,
+        "deces": 0,
+        "traitement" :0
+    }
+    ov = []
+    for word in tmp:
+        if (word.isdigit()):
+            ov.append(word)
+    obj["positifs"] = ov[0]
+    obj["gueris"] = ov[1]
+    obj["deces"] = ov[2]
+    obj["traitement"] = ov[3]
+    return obj
+
+def getDeces(text):
+    print(text)
+    tmp = text[text.find("services"):text.index("services")+60]
+    tmp = tmp.split()
+    for word in tmp:
+        if (word.isdigit()):
+            return word
+    return "0"
+
 def getCityCases(text):
     cas = []
     if(text.find('(') == -1 or text.find(')') == -1):
         beginIndex = text.find('-')
-        text = text[beginIndex:text.find('patients')-8]
-        text = text.replace('.',';')
-        text = text.replace('et',',')
-        text = text.replace('\n','')
+        endToStart = text.find('patients')-8
+        tmp = text[beginIndex:endToStart]
+        tmp = tmp.replace('.',';')
+        tmp = tmp.replace('et',',')
+        tmp = tmp.replace('\n','')
         try:
-            beginIndex = text.index('régions')
-            endIndex = text.index(':')
-            text = text[0:beginIndex] + text[endIndex+1:]
+            beginIndex = tmp.index('régions')
+            endIndex = tmp.index(':')
+            tmp = tmp[0:beginIndex] + tmp[endIndex+1:]
         except:
-            text = text
-        
-        m = re.split(';',text)
+            tmp = tmp
+        m = re.split(';',tmp)
         for words in m:
             words = words.replace('-','')
             words = words.replace('aux','')
@@ -150,13 +219,14 @@ def getCityCases(text):
     else:    
         beginIndex = 0
         endIndex = text.index(".")
-        text = text[beginIndex:endIndex]
-        text = text.replace("(","")
-        text = text.replace(")","")
-        text = text.replace("\n"," ")
-        text = text.replace("et",",")
-        text = text.split(',')
-        for words in text:
+        endToStart = text.find('patients')-8
+        tmp = text[beginIndex:endIndex]
+        tmp = tmp.replace("(","")
+        tmp = tmp.replace(")","")
+        tmp = tmp.replace("\n"," ")
+        tmp = tmp.replace("et",",")
+        tmp = tmp.split(',')
+        for words in tmp:
             words = words.split()
             obj = {
                 'found': False,
@@ -173,7 +243,8 @@ def getCityCases(text):
             else:
                 continue
             cas.append(obj) 
-    return cas
+    return {"cas": cas, 'endIndex': endToStart}
+    
 
 def compare(a, b):
     if (fuzz.ratio(a,b) >= 85):
@@ -274,12 +345,15 @@ def exportIntoJson(cas):
                     export["regions"].append(r_export)
                 else:
                     continue
-            # for region in export["regions"]:
-            #     if (region["TotalCas"] != 0):
-            #         print(region)
-            # for dept in export["depts"]:
-            #     if (dept["Cas"] != 0):
-            #         print(dept)
+            for region in export["regions"]:
+                if (region["TotalCas"] != 0):
+                    print(region)
+            for dept in export["depts"]:
+                if (dept["Cas"] != 0):
+                    print(dept)
+            for lieu in cas:
+                if(not lieu["found"]):
+                    print("Not Found " + lieu["lieu"])
             All_Data = []
             finished_departements = []
             for dept in export["depts"]:
@@ -297,7 +371,7 @@ def exportIntoJson(cas):
                     for left in export["depts"]:
                         if (dept["dept"] == left["dept"]):
                             departement["TotalCas"] += left["Cas"]
-                    # print(departement)
+                    print(departement)
                     finished_departements.append(departement)
                     All_Data.append(departement)
                 else:
@@ -307,7 +381,7 @@ def exportIntoJson(cas):
             for reg in export["regions"]:
                 fini = False
                 for x in finished_regions:
-                    if (reg["Region"] == x["region"]):
+                    if (compare(reg["Region"],x["region"])):
                         fini = True
                         break
                 if (not fini):
@@ -316,7 +390,7 @@ def exportIntoJson(cas):
                         "TotalCas": reg["TotalCas"]
                     }
                     for dept in finished_departements:
-                        if (dept["region"].lower() == region["region"].lower()):
+                        if (compare(region["region"].lower(),dept["region"].lower())):
                             region["TotalCas"] += dept["TotalCas"]
                         else:
                             continue
@@ -328,17 +402,20 @@ def exportIntoJson(cas):
         json.dump(All_Data, export_file, ensure_ascii=False)
         return All_Data
 
-def exportToFile(date, month, year, nbTest, casCon, casCom,cases):
+def exportToFile(date, month, year, nbTest, nbPositif, casCon, casCom,gueris,deces,cases):
     filename = str(year) + '-' + str(month)
-    filepath = "json/" + filename + ".json"
+    filepath = "json/data/" + filename + ".json"
     export = []
     data = {
-            "Date": date,
-            "NbTest": nbTest,
-            "NbCasContact": casCon,
-            "NbCasComm": casCom,
-            "RepCas": cases
-        }
+        "Date": date,
+        "NbTest": nbTest,
+        "NbDePositif": nbPositif,
+        "NbCasContact": casCon,
+        "NbCasComm": casCom,
+        "NbGueris": gueris,
+        "NbDeces": deces,
+        "RepCas": cases
+    }
     export.append(data)
     if not os.path.isfile(filepath):
         with open(filepath, "w") as export_file:
@@ -346,12 +423,6 @@ def exportToFile(date, month, year, nbTest, casCon, casCom,cases):
     else:
         with open(filepath, "r") as input_file:
             feeds = json.load(input_file)
-        # feeds.append(data)
-        # # print(feeds)
         feeds.append(data)
         with open(filepath, "w") as export_file:
             json.dump(feeds, export_file, ensure_ascii=False)
-        
-        
-
-            

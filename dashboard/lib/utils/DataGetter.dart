@@ -21,7 +21,7 @@ Future<List<Month>> retrieveJSON() async {
 }
 
 Future<List<ArrowParam>> createArrowList(
-  Map<String, Position> positions,
+  List<LocalityMapInfos> listMapInfos,
 ) async {
   String doc = await pr.getJsonFolder();
   File scenarioFile;
@@ -36,9 +36,10 @@ Future<List<ArrowParam>> createArrowList(
   for (var j in jsoncontent) {
     ArrowParam a = new ArrowParam(
       date: j["date"],
-      start: positions[j["start"]],
-      end: positions[j["end"]],
+      start: listMapInfos.firstWhere((e) => e.name == j["start"]).getPosition(),
+      end: listMapInfos.firstWhere((e) => e.name == j["end"]).getPosition(),
     );
+    al.add(a);
   }
 
   return al;

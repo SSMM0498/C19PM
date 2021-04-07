@@ -3,6 +3,7 @@ import 'package:covid19_progression_modeler/utils/mapInfos.dart';
 import 'package:covid19_progression_modeler/widgets/painter/ArrowPainter.dart';
 import 'package:covid19_progression_modeler/widgets/painter/MapPainter.dart';
 import 'package:flutter/material.dart';
+import '../utils/DataGetter.dart' as DataGetter;
 import 'package:covid19_progression_modeler/models/models.dart';
 import 'package:touchable/touchable.dart';
 import 'LocalityInfos.dart';
@@ -33,6 +34,11 @@ class _MapWidgetState extends State<MapWidget> {
   void initState() {
     super.initState();
     _listMapInfos = getMapInfos(widget.rootName);
+    if (widget.withArrow) {
+      DataGetter.createArrowList(_listMapInfos).then((value) {
+        _arrowList = value;
+      });
+    }
   }
 
   @override

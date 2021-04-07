@@ -242,7 +242,8 @@ def getCityCases(text):
                 obj['nbCas'] = int(nbCas)
             else:
                 continue
-            cas.append(obj) 
+            cas.append(obj)
+            
     return {"cas": cas, 'endIndex': endToStart}
     
 

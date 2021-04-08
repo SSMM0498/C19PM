@@ -7,8 +7,14 @@ class Wrapper extends StatefulWidget {
   final String title;
   final String downloadText;
   final Widget childWidget;
-  const Wrapper({Key key, this.childWidget, this.title, this.downloadText})
-      : super(key: key);
+  final Widget rightButton;
+  const Wrapper({
+    Key key,
+    this.childWidget,
+    this.title,
+    this.downloadText,
+    this.rightButton,
+  }) : super(key: key);
 
   @override
   _WrapperState createState() => _WrapperState();
@@ -63,8 +69,12 @@ class _WrapperState extends State<Wrapper> {
               color: Palette.secondColor,
             ),
             onPressed: () {
-              fe.export(name: widget.title ,key: widgetKey);
+              fe.export(name: widget.title, key: widgetKey);
             },
+          ),
+          Positioned(
+            right: 0,
+            child: widget.rightButton,
           )
         ],
       ),

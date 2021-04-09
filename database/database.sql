@@ -151,5 +151,79 @@ CREATE TABLE IF NOT EXISTS TransmissionLevel (
 );
 
 
+CREATE TRIGGER after_locationStat_insert
+AFTER INSERT
+ON locationStat FOR EACH ROW
+BEGIN
+    DECLARE var_nbPopulation INT;
+
+    DECLARE var_exist INT;
+
+    DECLARE var_isFirstCase INT;
+
+    DECLARE var_idMonth_Current INT;
+    DECLARE var_month_Current VARCHAR(7);
+    DECLARE var_idMonth_Previous INT;
+
+    DECLARE var_Conc_Current FLOAT;
+    DECLARE var_Conc_Previous FLOAT;
+    DECLARE var_Prog_Current FLOAT;
+
+    SELECT nbPopulation FROM location WHERE idLocation = NEW.idLocation
+    INTO var_nbPopulation;
+
+    SELECT idMonth, sourceFileName FROM monthStat WHERE idMonth = (
+        SELECT idMonth FROM dayStat WHERE idDay = NEW.idDay
+    ) INTO var_idMonth_Current, var_month_Current;
+
+    SET var_exist := 0;
+
+    SELECT 1, Conc FROM EvolutionStat WHERE idMonth = var_idMonth_Current AND idLocation = NEW.idLocation
+    INTO var_exist, var_Conc_Current;
+
+    SET var_idMonth_Previous := 0;
+
+    SELECT idMonth FROM monthStat WHERE sourceFileName = (
+        DATE_FORMAT(STR_TO_DATE(CONCAT(var_month_Current,'-1'), '%Y-%m-%d') - INTERVAL 1 MONTH, '%Y-%m')
+    ) INTO var_idMonth_Previous;
+
+    SET var_Prog_Current := 0;
+    SET var_Conc_Previous := 0;
+
+    IF (var_exist = 0) THEN
+        SET var_Conc_Current := (NEW.nbNewCases / var_nbPopulation);
+
+        IF (var_idMonth_Previous <> 0) THEN
+
+            SELECT Conc FROM EvolutionStat WHERE idMonth = var_idMonth_Previous AND idLocation = NEW.idLocation
+            INTO var_Conc_Previous;
+
+            SET var_Prog_Current := ((var_Conc_Current - var_Conc_Previous) / var_nbPopulation);
+
+        END IF;
+
+        INSERT INTO EvolutionStat(Conc, Prog, idMonth, idLocation)
+        VALUES (var_Conc_Current, var_Prog_Current, var_idMonth_Current, NEW.idLocation);
+
+    ELSE
+
+        SET var_Conc_Current := (var_Conc_Current + NEW.nbNewCases) / var_nbPopulation;
+
+        IF (var_idMonth_Previous <> 0) THEN
+
+            SELECT Conc FROM EvolutionStat WHERE idMonth = var_idMonth_Previous AND idLocation = NEW.idLocation
+            INTO var_Conc_Previous;
+
+            SET var_Prog_Current := ((var_Conc_Current - var_Conc_Previous) / var_nbPopulation);
+
+        END IF;
+
+        UPDATE EvolutionStat SET Conc=var_Conc_Current, Prog=var_Prog_Current
+        WHERE idMonth = var_idMonth_Current AND idLocation = NEW.idLocation;
+
+    END IF;
+
+END;
+
 INSERT INTO locationStat(idDay, idLocation, nbNewCases) VALUES
 (1, 1, 20),(2, 8, 15),(2, 1, 8),(2, 44, 14),(3, 9, 4),(4, 1, 8),(4, 5, 6),(4, 44, 3),(5, 22, 9),(6, 17, 10),(6, 1, 3),(6, 37, 15),(6, 13, 14),(7, 21, 16),(8, 33, 3),(8, 20, 15),(8, 43, 1),(8, 28, 8),(8, 1, 10),(8, 36, 2),(10, 15, 3),(11, 7, 3),(11, 7, 13),(11, 11, 16),(11, 10, 5),(11, 1, 11),(11, 3, 1),(11, 16, 3),(12, 21, 10),(12, 38, 8),(13, 8, 6),(13, 18, 8),(13, 4, 2),(13, 14, 5),(13, 4, 15),(13, 36, 6),(13, 1, 3),(14, 5, 14),(14, 3, 13),(14, 10, 16),(14, 38, 2),(14, 17, 9),(15, 2, 14),(15, 45, 7),(15, 21, 4),(15, 19, 2),(15, 42, 5),(17, 16, 12),(17, 39, 10),(17, 17, 16),(17, 12, 8),(18, 24, 12),(18, 27, 13),(19, 24, 7),(19, 23, 11),(19, 1, 4),(19, 32, 1),(19, 34, 7),(20, 29, 2),(20, 31, 8),(20, 14, 3),(20, 35, 12),(20, 26, 9),(20, 13, 2),(20, 14, 1),(20, 1, 13),(21, 45, 3),(21, 4, 7),(21, 13, 2),(21, 5, 2),(21, 5, 6),(21, 1, 6),(21, 22, 6),(23, 16, 10),(23, 25, 15),(24, 45, 8),(24, 9, 13),(24, 32, 8),(24, 7, 16),(24, 40, 12),(24, 9, 4),(24, 2, 16),(24, 1, 11),(25, 11, 14),(25, 13, 8),(26, 42, 4),(27, 32, 7),(27, 2, 6),(27, 25, 2),(30, 5, 9),(30, 25, 1),(30, 1, 11),(30, 37, 12),(30, 34, 16),(30, 12, 6),(30, 44, 7),(31, 35, 4),(31, 1, 13),(31, 13, 4),(31, 32, 4),(31, 41, 11),(31, 1, 8),(32, 8, 2),(33, 7, 16),(33, 8, 11),(33, 42, 15),(33, 12, 3),(34, 1, 12),(34, 38, 2),(34, 43, 8),(34, 13, 3),(34, 18, 2),(35, 9, 6),(38, 12, 3),(38, 1, 6),(38, 22, 12),(38, 31, 11),(38, 40, 12),(38, 18, 3),(40, 29, 16),(40, 33, 13),(40, 22, 4),(40, 33, 8),(40, 36, 13),(40, 42, 13),(40, 4, 11),(41, 1, 2),(41, 22, 12),(41, 13, 1),(41, 18, 5),(41, 40, 3),(41, 2, 5),(41, 31, 9),(42, 39, 13);

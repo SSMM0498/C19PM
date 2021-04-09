@@ -53,12 +53,13 @@ Month createMonthList(File fmonth) {
 
   for (var j in jsoncontent) {
     DayStats ds = new DayStats(
-        numberOfTests: j["Nombre de Test"],
-        numberOfNewCases: j["Nombre de nouveaux Cas"],
-        numberOfContactCases: j["Nombre de Cas contacts"],
-        numberOfCommunityCases: j["Nombre de Cas Communautaires"],
-        numberOfHealed: j["Nombre de Guéris"],
-        numberOfDeaths: j["Nombre de Décès"]);
+      numberOfTests: j["Nombre de Test"],
+      numberOfNewCases: j["Nombre de nouveaux Cas"],
+      numberOfContactCases: j["Nombre de Cas contacts"],
+      numberOfCommunityCases: j["Nombre de Cas Communautaires"],
+      numberOfHealed: j["Nombre de Guéris"],
+      numberOfDeaths: j["Nombre de Décès"],
+    );
     for (var k in j["Localités"]) {
       LocalityStats l = new LocalityStats(
         name: k["nomLocalité"],

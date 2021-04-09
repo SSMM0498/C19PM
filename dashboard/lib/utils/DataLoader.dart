@@ -4,11 +4,12 @@ import 'package:intl/intl.dart';
 
 void send(List<Day> days, bool isTransaction) async {
   var settings = new ConnectionSettings(
-      host: 'localhost',
-      port: 3306,
-      user: 'userc19pm',
-      password: 'passer',
-      db: 'c19pm');
+    host: 'localhost',
+    port: 3306,
+    user: 'userc19pm',
+    password: 'passer',
+    db: 'c19pm',
+  );
 //DateFormat("YYYY-MM-DD").format
   var conn = await MySqlConnection.connect(settings);
   var iduser = await conn.query('select idUser from t_user ');
@@ -17,7 +18,7 @@ void send(List<Day> days, bool isTransaction) async {
     var day =
         DateFormat('yyyy-MM-dd').format(DateFormat('dd-MM-yyyy').parse(d.date));
     var result = await conn.query(
-        'insert into dayStat (date,numberOfTests,numberOfNewCases,numberOfCommunityCases,numberOfContactCases,numberOfHealed,numberOfDeath,t_user_iduser) values (?,?,?,?,?,?,?,?)',
+        'INSERT INTO dayStat (date,numberOfTests,numberOfNewCases,numberOfCommunityCases,numberOfContactCases,numberOfHealed,numberOfDeath,t_user_iduser) VALUES (?,?,?,?,?,?,?,?)',
         [
           day,
           d.dayStats.numberOfTests,
@@ -30,7 +31,7 @@ void send(List<Day> days, bool isTransaction) async {
         ]);
     for (var l = 0; l < d.dayStats.localities.length; l++) {
       await conn.query(
-          'insert into location (locationName,locNumberOfNewCases,administrativeLevel,dayStat_idday) values (?,?,?,?)',
+          'INSERT INTO location (locationName,locNumberOfNewCases,administrativeLevel,dayStat_idday) VALUES (?,?,?,?)',
           [
             d.dayStats.localities[l].name,
             d.dayStats.localities[l].newCases,

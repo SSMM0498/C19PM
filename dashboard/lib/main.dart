@@ -23,11 +23,13 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  final Store<AppState> _store = Store<AppState>(appStateReducer,
-      initialState: AppState.initialState(),
-      middleware: [
-        appStateMiddleware,
-      ]);
+  final Store<AppState> _store = Store<AppState>(
+    appStateReducer,
+    initialState: AppState.initialState(),
+    middleware: [
+      appStateMiddleware,
+    ],
+  );
   @override
   Widget build(BuildContext context) {
     return StoreProvider(

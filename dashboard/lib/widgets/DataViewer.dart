@@ -1,4 +1,5 @@
 import 'package:covid19_progression_modeler/redux/viewModel/ViewModel.dart';
+import 'package:covid19_progression_modeler/widgets/ValidatorPopup.dart';
 import 'package:flutter/material.dart';
 import 'ExpandableList.dart';
 import '../models/models.dart';
@@ -28,30 +29,41 @@ class _DataViewerState extends State<DataViewer> {
         Row(children: <Widget>[
           SizedBox(width: 15),
           ElevatedButton(
-              onPressed: () => DataLoader.send(_selectedDay, _checked),
-              child: Text("Charger les données")),
+            onPressed: () {
+              DataLoader.send(_selectedDay, _checked);
+              if (_checked) {
+                return showDialog(
+                  context: context,
+                  builder: (ctx) => ValidatorPopup(),
+                );
+              }
+            },
+            child: Text("Charger les données"),
+          ),
           Expanded(
             child: CheckboxListTile(
-                value: _checked,
-                onChanged: (bool newVal) => setState(() {
-                      _checked = newVal;
-                    }),
-                title: Text("Mode transaction")),
+              value: _checked,
+              onChanged: (bool newVal) => setState(() {
+                _checked = newVal;
+              }),
+              title: Text("Mode transaction"),
+            ),
           )
         ]),
         Expanded(
-            child: ExpandableList(
-                // list: _monthList,
-                list: widget.model.months,
-                callBack: (Day d) {
-                  setState(() {
-                    if (d.checked == true) {
-                      _selectedDay.add(d);
-                    } else {
-                      _selectedDay.remove(d);
-                    }
-                  });
-                })),
+          child: ExpandableList(
+            list: widget.model.months,
+            callBack: (Day d) {
+              setState(() {
+                if (d.checked == true) {
+                  _selectedDay.add(d);
+                } else {
+                  _selectedDay.remove(d);
+                }
+              });
+            },
+          ),
+        ),
       ],
     );
   }

@@ -7,8 +7,6 @@ import 'package:covid19_progression_modeler/widgets/FadeAnimation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:mysql1/mysql1.dart';
-// import 'package:flutter/services.dart';
-// import 'package:starflut/starflut.dart';
 
 class LoginScreen extends StatefulWidget {
   // final User currentUser = new User();
@@ -34,7 +32,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Palette.secondColor,
+      backgroundColor: Palette.primeColor,
       body: SingleChildScrollView(
         child: Stack(
           children: [
@@ -55,7 +53,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     bottomLeft: Radius.circular(45.0),
                     bottomRight: Radius.circular(45.0),
                   ),
-                  color: Colors.white60,
+                  color: Colors.white,
                 ),
                 height: MediaQuery.of(context).size.height - 200,
                 width: MediaQuery.of(context).size.width,
@@ -79,9 +77,10 @@ class _LoginScreenState extends State<LoginScreen> {
                               borderRadius: BorderRadius.circular(10),
                               boxShadow: [
                                 BoxShadow(
-                                    color: Color.fromRGBO(143, 148, 251, .2),
-                                    blurRadius: 20.0,
-                                    offset: Offset(0, 10))
+                                  color: Color.fromRGBO(143, 148, 251, .2),
+                                  blurRadius: 20.0,
+                                  offset: Offset(0, 10),
+                                )
                               ]),
                           child: Form(
                             key: this._formKey,
@@ -92,7 +91,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                   decoration: BoxDecoration(
                                     border: Border(
                                       bottom:
-                                          BorderSide(color: Colors.grey[100]),
+                                          BorderSide(color: Colors.grey[200]),
                                     ),
                                   ),
                                   child: TextFormField(
@@ -100,7 +99,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                       border: InputBorder.none,
                                       hintText: 'Login',
                                       hintStyle:
-                                          TextStyle(color: Colors.grey[400]),
+                                          TextStyle(color: Colors.grey[900]),
                                     ),
                                     validator: (String value) {
                                       if (value.isEmpty) {
@@ -122,11 +121,12 @@ class _LoginScreenState extends State<LoginScreen> {
                                     ),
                                   ),
                                   child: TextFormField(
+                                    obscureText: true,
                                     decoration: InputDecoration(
                                       border: InputBorder.none,
                                       hintText: 'mot de passe',
                                       hintStyle:
-                                          TextStyle(color: Colors.grey[400]),
+                                          TextStyle(color: Colors.grey[900]),
                                     ),
                                     validator: (String value) {
                                       if (value.isEmpty) {

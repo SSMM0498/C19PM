@@ -16,10 +16,10 @@ class MapWidget extends StatefulWidget {
 
   MapWidget({
     this.localities,
-    mapname,
+    this.rootName,
     this.havePopup = true,
     this.withArrow = false,
-  }) : this.rootName = mapname;
+  });
 
   @override
   _MapWidgetState createState() => _MapWidgetState();
@@ -33,11 +33,13 @@ class _MapWidgetState extends State<MapWidget> {
   @override
   void initState() {
     super.initState();
-    _listMapInfos = getMapInfos(widget.rootName);
     if (widget.withArrow) {
+      _listMapInfos = getDeptInfos();
       DataGetter.createArrowList(_listMapInfos).then((value) {
         _arrowList = value;
       });
+    } else {
+      _listMapInfos = getMapInfos(widget.rootName);
     }
   }
 
@@ -53,6 +55,7 @@ class _MapWidgetState extends State<MapWidget> {
             context: context,
             listMapInfos: _listMapInfos,
             havePopup: widget.havePopup,
+            withArrow: widget.withArrow,
             curPath: _selectPath,
             localities: widget.localities,
             onPressed: (curPath) {

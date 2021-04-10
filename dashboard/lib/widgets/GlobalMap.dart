@@ -23,7 +23,7 @@ class _GlobalMapState extends State<GlobalMap> {
         downloadText: "Télécharger la carte",
         childWidget: MapWidget(
           localities: widget.model.regions,
-          mapname: "senegal",
+          rootName: "senegal",
           withArrow: _withArrow,
         ),
         rightButton: IconButton(

@@ -51,26 +51,53 @@ Month createMonthList(File fmonth) {
   dynamic jsoncontent = jsonDecode(contents);
 
   for (var j in jsoncontent) {
-    DayStats ds = new DayStats(
-        numberOfTests: j["Nombre de Test"],
-        numberOfNewCases: j["Nombre de nouveaux Cas"],
-        numberOfContactCases: j["Nombre de Cas contacts"],
-        numberOfCommunityCases: j["Nombre de Cas Communautaires"],
-        numberOfHealed: j["Nombre de Guéris"],
-        numberOfDeaths: j["Nombre de Décès"]);
-    for (var k in j["Localités"]) {
-      LocalityStats l = new LocalityStats(
-        name: k["nomLocalité"],
-        adminLevel: k["niveauAdministratif"],
-        newCases: k["Nombre de Cas"],
-      );
-      ds.localities.add(l);
+    List<Region> regionList = [];
+
+    for (var region in j['regions']) {
+      regionList.add(formatRegion(region));
     }
-    Day d = new Day(j["Date"], false, ds);
+
+    DayStats newDayStats = new DayStats(
+      numberOfCommunityCases: j['Nombre de Cas Communautaires'],
+      numberOfContactCases: j['Nombre de Cas contacts'],
+      numberOfDeaths: j['Nombre de Décès'],
+      numberOfHealed: j['Nombre de Guéris'],
+      numberOfNewCases: j['Nombre de nouveaux Cas'],
+      numberOfTests: j['Nombre de Test'],
+      extractionDate: j['DateHeureExtraction'],
+      fileSourceName: j['Nom Fichier Source'],
+      date: j['Date'],
+      regions: regionList,
+    );
+
+    print('regions');
+    print(newDayStats.regions);
+    Day d = new Day(j["Date"], false, newDayStats);
     m.days.add(d);
   }
 
   return m;
+}
+
+Region formatRegion(dynamic jsoncontent) {
+  List<Departement> departementList = [];
+
+  for (var department in jsoncontent['departements']) {
+    departementList.add(formatDepartement(department));
+  }
+  return new Region(
+    name: jsoncontent['name'],
+    nbCase: jsoncontent['nbCase'],
+    departements: departementList,
+  );
+}
+
+Departement formatDepartement(dynamic jsoncontent) {
+  print(jsoncontent);
+  return new Departement(
+    name: jsoncontent['name'],
+    nbCase: jsoncontent['nbCase'],
+  );
 }
 
 List<FlSpot> createGraphPoint(String region) {

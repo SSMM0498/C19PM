@@ -1,6 +1,5 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:covid19_progression_modeler/models/DayStats.dart';
 import 'package:covid19_progression_modeler/utils/pathResolver.dart' as pr;
 import 'package:fl_chart/fl_chart.dart';
 import '../models/models.dart';
@@ -59,6 +58,7 @@ Month createMonthList(File fmonth) {
       numberOfCommunityCases: j["Nombre de Cas Communautaires"],
       numberOfHealed: j["Nombre de Guéris"],
       numberOfDeaths: j["Nombre de Décès"],
+      localities: []
     );
     for (var k in j["Localités"]) {
       LocalityStats l = new LocalityStats(
@@ -68,7 +68,11 @@ Month createMonthList(File fmonth) {
       );
       ds.localities.add(l);
     }
-    Day d = new Day(j["Date"], false, ds);
+    Day d = new Day(
+      j["Date"],
+      false,
+      ds,
+    );
     m.days.add(d);
   }
 

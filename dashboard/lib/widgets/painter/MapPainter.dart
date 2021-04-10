@@ -54,7 +54,11 @@ class MapPainter extends CustomPainter {
                 .departements;
             return showDialog(
               context: context,
-              builder: (ctx) => Popup(city: city, context: ctx, deps: deps),
+              builder: (ctx) => Popup(
+                city: city,
+                context: ctx,
+                deps: deps,
+              ),
             );
           }
         },

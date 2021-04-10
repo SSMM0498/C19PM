@@ -72,10 +72,12 @@ class _WrapperState extends State<Wrapper> {
               fe.export(name: widget.title, key: widgetKey);
             },
           ),
-          Positioned(
-            right: 0,
-            child: widget.rightButton,
-          )
+          (widget.rightButton != null)
+              ? Positioned(
+                  right: 0,
+                  child: widget.rightButton,
+                )
+              : SizedBox.shrink()
         ],
       ),
     );

@@ -234,9 +234,9 @@
     "region": "KAOLACK",
     "departements": [
       {
-        "departement": "MBADAKHOUNE",
+        "departement": "Guinguineo",
         "communes": ["Guinguineo"],
-        "arronds": ["GUINGUINEO", "NGUELOU"],
+        "arronds": ["Mbadakhoune", "NGUELOU"],
         "comard": []
       },
       {

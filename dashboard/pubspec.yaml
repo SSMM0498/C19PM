@@ -1,7 +1,7 @@
 name: covid19_progression_modeler
 description: COVID19 Progression Modeler for Senegalese scientist
 
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 version: 1.0.0+1
 

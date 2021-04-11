@@ -1,5 +1,7 @@
 import 'dart:ui';
 
+import 'package:covid19_progression_modeler/models/Position.dart';
+
 class LocalityMapInfos {
   double x;
   double y;
@@ -12,4 +14,8 @@ class LocalityMapInfos {
     this.path,
     this.name,
   });
+
+  Position getPosition() {
+    return Position(x: x, y: y);
+  }
 }

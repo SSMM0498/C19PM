@@ -1,7 +1,7 @@
 name: covid19_progression_modeler
 description: COVID19 Progression Modeler for Senegalese scientist
 
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 version: 1.0.0+1
 
@@ -33,6 +33,7 @@ dependencies:
     git:
       url: git://github.com/google/flutter-desktop-embedding.git
       path: plugins/window_size
+  intl: ^0.17.0
 
 dev_dependencies:
   flutter_test:
@@ -41,6 +42,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
+<<<<<<< HEAD
     # - assets/senegal.svg
     # - assets/regions/dakar.svg
     # - assets/regions/diourbel.svg
@@ -58,6 +60,9 @@ flutter:
     # - assets/regions/ziguinchor.svg
     - assets/senegal.dep.svg
     - assets/mapvalues.json
+=======
+    - assets/
+>>>>>>> 85bee626e7c966e84fa4f7c8aa569941cb5eb6fb
     - starfiles/
 
 msix_config:

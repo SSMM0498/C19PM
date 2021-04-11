@@ -45,7 +45,27 @@
           "Grand Yoff",
           "Patte DOie",
           "Parcelles Assainies",
-          "Camberene"
+          "Camberene",
+          "zone de captage",
+          "fass",
+          "fass-delorme",
+          "scat-urbam",
+          "bourguiba",
+          "mamelles",
+          "niary-taly",
+          "yarakh",
+          "cite-comico",
+          "cite aliou sow",
+          "cite fadia",
+          "cite las palmas",
+          "cite-keur-damel",
+          "cite-keur-gorgui",
+          "keur-mbaye-fall",
+          "bopp",
+          "cite isra",
+          "centenaire",
+          "cite capverdienne",
+          "kounoune"
         ]
       },
       {
@@ -75,7 +95,10 @@
           "Dalifort",
           "Djidah Thiaroye Kao",
           "Guinaw Rail Nord",
-          "Guinaw Rail Sud"
+          "Guinaw Rail Sud",
+          "ben taly",
+          "gnary taly",
+          "cite tacko"
         ]
       },
       {
@@ -92,7 +115,8 @@
           "zac mbao",
           "grand mbao",
           "bambilor",
-          "cap des biches"
+          "cap des biches",
+          "yene"
         ]
       }
     ]
@@ -183,8 +207,8 @@
       {
         "departement": "KEUR MBOUCKI",
         "communes": [],
-        "arronds": ["BIRKELANE", "MABO"],
-        "comard": []
+        "arronds": ["BIRKILANE", "MABO"],
+        "comard": ["birkelane", "birkilane"]
       },
       {
         "departement": "KAFFRINE",
@@ -210,9 +234,9 @@
     "region": "KAOLACK",
     "departements": [
       {
-        "departement": "MBADAKHOUNE",
+        "departement": "Guinguineo",
         "communes": ["Guinguineo"],
-        "arronds": ["GUINGUINEO", "NGUELOU"],
+        "arronds": ["Mbadakhoune", "NGUELOU"],
         "comard": []
       },
       {
@@ -456,7 +480,7 @@
           "Popenguine"
         ],
         "arronds": ["FISSEL", "SESSENE", "SINDIA", "THIENABA"],
-        "comard": []
+        "comard": ["malicounda"]
       },
       {
         "departement": "THIES",
@@ -468,7 +492,7 @@
         "departement": "TIVAOUANE",
         "communes": ["Tivaouane", "Mboro", "Mekhe"],
         "arronds": ["MERINA DAKHAR", "NIAKHENE", "PAMBAL"],
-        "comard": []
+        "comard": ["pire", "pire goureye"]
       }
     ]
   },

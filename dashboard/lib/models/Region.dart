@@ -9,3 +9,16 @@ class Region extends Locality {
   String getName() => this.name;
   String getNbCase() => this.nbCase.toString();
 }
+
+Region formatRegion(dynamic jsoncontent) {
+  List<Departement> departementList = [];
+
+  for (var department in jsoncontent['departements']) {
+    departementList.add(formatDepartement(department));
+  }
+  return new Region(
+    name: jsoncontent['name'] ?? '',
+    nbCase: jsoncontent['nbCase'] ?? 0,
+    departements: departementList ?? const [],
+  );
+}

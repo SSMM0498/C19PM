@@ -23,7 +23,7 @@ USE `c19pm` ;
 DROP TABLE IF EXISTS `c19pm`.`t_user` ;
 
 CREATE TABLE IF NOT EXISTS `c19pm`.`t_user` (
-  `idUser` INT(11) NOT NULL,
+  `idUser` INT(11) NOT NULL AUTO_INCREMENT ,
   `username` VARCHAR(45) NULL,
   `login` VARCHAR(25) NULL,
   `password` VARCHAR(25) NULL,
@@ -37,7 +37,7 @@ ENGINE = InnoDB;
 DROP TABLE IF EXISTS `c19pm`.`dayStat` ;
 
 CREATE TABLE IF NOT EXISTS `c19pm`.`dayStat` (
-  `idday` INT(11) NOT NULL,
+  `idday` INT(11) NOT NULL AUTO_INCREMENT,
   `date` DATE NULL,
   `numberOfTests` INT(11) NULL,
   `numberOfNewCases` INT(11) NULL,
@@ -52,7 +52,7 @@ CREATE TABLE IF NOT EXISTS `c19pm`.`dayStat` (
   `extratedDate` DATE NULL,
   `filename` VARCHAR(45) NULL,
   `t_user_idUser` INT(11) NOT NULL,
-  PRIMARY KEY (`idday`),
+  PRIMARY KEY (`idday`)  ,
   INDEX `fk_dayStat_t_user1_idx` (`t_user_idUser` ASC),
   CONSTRAINT `fk_dayStat_t_user1`
     FOREIGN KEY (`t_user_idUser`)
@@ -68,11 +68,13 @@ ENGINE = InnoDB;
 DROP TABLE IF EXISTS `c19pm`.`location` ;
 
 CREATE TABLE IF NOT EXISTS `c19pm`.`location` (
+  `idlocation` INT(11) NOT NULL AUTO_INCREMENT,
   `locationName` VARCHAR(45) NULL,
   `locNumberofNewCases` INT(11) NULL,
   `locTotalCases` INT(11) NULL,
-  `administrativeLevel` ENUM('city', 'district', 'department') NULL,
+  `administrativeLevel` ENUM('region', 'departement') DEFAULT 'departement',
   `dayStat_idday` INT(11) NOT NULL,
+  PRIMARY KEY (`idlocation`),
   INDEX `fk_location_dayStat1_idx` (`dayStat_idday` ASC),
   CONSTRAINT `fk_location_dayStat1`
     FOREIGN KEY (`dayStat_idday`)
@@ -81,6 +83,7 @@ CREATE TABLE IF NOT EXISTS `c19pm`.`location` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
+INSERT INTO `c19pm`.`t_user`(username,login,password) VALUES ('root','root','passer');
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;

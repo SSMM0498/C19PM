@@ -21,7 +21,7 @@ Future<List<Month>> retrieveJSON() async {
 }
 
 Future<List<ArrowParam>> createArrowList(
-  Map<String, Position> positions,
+  List<LocalityMapInfos> listMapInfos,
 ) async {
   String doc = await pr.getJsonFolder();
   File scenarioFile;
@@ -36,9 +36,10 @@ Future<List<ArrowParam>> createArrowList(
   for (var j in jsoncontent) {
     ArrowParam a = new ArrowParam(
       date: j["date"],
-      start: positions[j["start"]],
-      end: positions[j["end"]],
+      start: listMapInfos.firstWhere((e) => e.name == j["start"]).getPosition(),
+      end: listMapInfos.firstWhere((e) => e.name == j["end"]).getPosition(),
     );
+    al.add(a);
   }
 
   return al;
@@ -70,8 +71,6 @@ Month createMonthList(File fmonth) {
       regions: regionList,
     );
 
-    print('regions');
-    print(newDayStats.regions);
     Day d = new Day(j["Date"], false, newDayStats);
     m.days.add(d);
   }
@@ -79,26 +78,6 @@ Month createMonthList(File fmonth) {
   return m;
 }
 
-Region formatRegion(dynamic jsoncontent) {
-  List<Departement> departementList = [];
-
-  for (var department in jsoncontent['departements']) {
-    departementList.add(formatDepartement(department));
-  }
-  return new Region(
-    name: jsoncontent['name'],
-    nbCase: jsoncontent['nbCase'],
-    departements: departementList,
-  );
-}
-
-Departement formatDepartement(dynamic jsoncontent) {
-  print(jsoncontent);
-  return new Departement(
-    name: jsoncontent['name'],
-    nbCase: jsoncontent['nbCase'],
-  );
-}
 
 List<FlSpot> createGraphPoint(String region) {
   //1. Get data from SQL Database for the specific region

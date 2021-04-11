@@ -104,16 +104,17 @@ class _ListElementState extends State<ListElement> {
   @override
   Widget build(BuildContext context) {
     return CheckboxListTile(
-        value: _checked,
-        activeColor: Palette.fontColor,
-        // hoverColor: Palette.lightSecondColor,
-        onChanged: (bool newVal) {
-          setState(() {
-            _checked = newVal;
-            widget.day.checked = newVal;
-          });
-          widget.callBack(widget.day);
-        },
-        title: Text(widget.day.date));
+      value: _checked,
+      activeColor: Palette.fontColor,
+      // hoverColor: Palette.lightSecondColor,
+      onChanged: (bool newVal) {
+        setState(() {
+          _checked = newVal;
+          widget.day.checked = newVal;
+        });
+        widget.callBack(widget.day);
+      },
+      title: Text(widget.day.date),
+    );
   }
 }

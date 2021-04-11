@@ -15,7 +15,7 @@ class RegionMap extends StatelessWidget {
       downloadText: "Télécharger la carte",
       childWidget: MapWidget(
         localities: localities,
-        mapname: mapname,
+        rootName: mapname,
         havePopup: false,
       ),
     );

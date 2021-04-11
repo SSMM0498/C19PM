@@ -1,6 +1,5 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:covid19_progression_modeler/models/DayStats.dart';
 import 'package:covid19_progression_modeler/utils/pathResolver.dart' as pr;
 import 'package:fl_chart/fl_chart.dart';
 import '../models/models.dart';
@@ -52,26 +51,28 @@ Month createMonthList(File fmonth) {
   dynamic jsoncontent = jsonDecode(contents);
 
   for (var j in jsoncontent) {
-    List<Region> regionList = [];
-
-    for (var region in j['regions']) {
-      regionList.add(formatRegion(region));
-    }
-
-    DayStats newDayStats = new DayStats(
-      numberOfCommunityCases: j['Nombre de Cas Communautaires'],
-      numberOfContactCases: j['Nombre de Cas contacts'],
-      numberOfDeaths: j['Nombre de Décès'],
-      numberOfHealed: j['Nombre de Guéris'],
-      numberOfNewCases: j['Nombre de nouveaux Cas'],
-      numberOfTests: j['Nombre de Test'],
-      extractionDate: j['DateHeureExtraction'],
-      fileSourceName: j['Nom Fichier Source'],
-      date: j['Date'],
-      regions: regionList,
+    DayStats ds = new DayStats(
+      numberOfTests: j["Nombre de Test"],
+      numberOfNewCases: j["Nombre de nouveaux Cas"],
+      numberOfContactCases: j["Nombre de Cas contacts"],
+      numberOfCommunityCases: j["Nombre de Cas Communautaires"],
+      numberOfHealed: j["Nombre de Guéris"],
+      numberOfDeaths: j["Nombre de Décès"],
+      localities: []
     );
-
-    Day d = new Day(j["Date"], false, newDayStats);
+    for (var k in j["Localités"]) {
+      LocalityStats l = new LocalityStats(
+        name: k["nomLocalité"],
+        adminLevel: k["niveauAdministratif"],
+        newCases: k["Nombre de Cas"],
+      );
+      ds.localities.add(l);
+    }
+    Day d = new Day(
+      j["Date"],
+      false,
+      ds,
+    );
     m.days.add(d);
   }
 

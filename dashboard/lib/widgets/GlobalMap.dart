@@ -24,7 +24,7 @@ class _GlobalMapState extends State<GlobalMap> {
         payload: widget.model.regions,
         childWidget: MapWidget(
           localities: widget.model.regions,
-          mapname: "senegal",
+          rootName: "senegal",
           withArrow: _withArrow,
         ),
         rightButton: IconButton(

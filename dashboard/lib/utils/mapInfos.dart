@@ -39,6 +39,24 @@ List<LocalityMapInfos> getMapInfos(String rootName) {
   return _listMapInfos;
 }
 
+List<LocalityMapInfos> getDeptInfos() {
+  dynamic jsoncontent = jsonDecode(deps);
+  List<LocalityMapInfos> _listMapInfos = [];
+
+  for (var j in jsoncontent) {
+    Path path = new Path();
+    writeSvgPathDataToPath(j["path"], new PathModifier(path));
+    _listMapInfos.add(new LocalityMapInfos(
+      name: j["name"],
+      path: path,
+      x: j["x"],
+      y: j["y"],
+    ));
+  }
+
+  return _listMapInfos;
+}
+
 class PathModifier extends PathProxy {
   PathModifier(this.path);
 

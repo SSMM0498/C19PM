@@ -8,6 +8,7 @@ import '../Popup.dart';
 
 class MapPainter extends CustomPainter {
   final bool havePopup;
+  final bool withArrow;
   final BuildContext context;
   List<LocalityMapInfos> listMapInfos;
   final Path curPath;
@@ -15,6 +16,7 @@ class MapPainter extends CustomPainter {
   final Function(Path curPath) onPressed;
   MapPainter({
     this.havePopup,
+    this.withArrow,
     this.context,
     this.listMapInfos,
     this.curPath,
@@ -47,14 +49,18 @@ class MapPainter extends CustomPainter {
         onTapDown: (details) {
           String city = i.name;
           onPressed(i.path);
-          if (havePopup) {
+          if (havePopup && !withArrow) {
             print("clicked on $city");
             List<Departement> deps = (localities as List<Region>)
                 .firstWhere((r) => r.name == city)
                 .departements;
             return showDialog(
               context: context,
-              builder: (ctx) => Popup(city: city, context: ctx, deps: deps),
+              builder: (ctx) => Popup(
+                city: city,
+                context: ctx,
+                deps: deps,
+              ),
             );
           }
         },

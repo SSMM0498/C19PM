@@ -69,10 +69,12 @@ class _WrapperState extends State<Wrapper> {
             widgetTitle: widget.title,
             payload: widget.payload,
           ),
-          Positioned(
-            right: 0,
-            child: widget.rightButton,
-          )
+          (widget.rightButton != null)
+              ? Positioned(
+                  right: 0,
+                  child: widget.rightButton,
+                )
+              : SizedBox.shrink()
         ],
       ),
     );

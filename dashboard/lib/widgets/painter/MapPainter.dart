@@ -4,7 +4,7 @@ import 'package:touchable/touchable.dart';
 import 'package:covid19_progression_modeler/config/config.dart';
 import 'package:covid19_progression_modeler/models/models.dart';
 
-import '../Popup.dart';
+import '../popup/Popup.dart';
 
 class MapPainter extends CustomPainter {
   final bool havePopup;

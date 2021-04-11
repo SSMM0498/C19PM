@@ -1,7 +1,7 @@
 import 'package:covid19_progression_modeler/config/config.dart';
 import 'package:flutter/material.dart';
-import '../models/models.dart';
-import 'DataPopup.dart';
+import '../../models/models.dart';
+import '../popup/DataPopup.dart';
 
 class ExpandableList extends StatefulWidget {
   final List<Month> list;

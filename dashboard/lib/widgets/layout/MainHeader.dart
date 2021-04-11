@@ -1,4 +1,4 @@
-import 'package:covid19_progression_modeler/widgets/DatePicker.dart';
+import 'package:covid19_progression_modeler/widgets/map/DatePicker.dart';
 import 'package:flutter/material.dart';
 
 class MainHeader extends StatelessWidget {

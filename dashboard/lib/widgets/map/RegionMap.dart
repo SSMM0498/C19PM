@@ -1,6 +1,6 @@
 import 'package:covid19_progression_modeler/models/models.dart';
-import 'package:covid19_progression_modeler/widgets/Map.dart';
-import 'package:covid19_progression_modeler/widgets/Wrapper.dart';
+import 'package:covid19_progression_modeler/widgets/map/Map.dart';
+import 'package:covid19_progression_modeler/widgets/wrapper/Wrapper.dart';
 import 'package:flutter/material.dart';
 
 class RegionMap extends StatelessWidget {

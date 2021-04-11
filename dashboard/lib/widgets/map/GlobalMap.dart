@@ -1,6 +1,6 @@
 import 'package:covid19_progression_modeler/config/config.dart';
 import 'package:covid19_progression_modeler/redux/viewModel/ViewModel.dart';
-import 'package:covid19_progression_modeler/widgets/Wrapper.dart';
+import 'package:covid19_progression_modeler/widgets/wrapper/Wrapper.dart';
 import 'package:flutter/material.dart';
 import 'Map.dart';
 

@@ -1,9 +1,9 @@
 import 'package:covid19_progression_modeler/redux/AppState.dart';
 import 'package:covid19_progression_modeler/redux/viewModel/ViewModel.dart';
-import 'package:covid19_progression_modeler/widgets/DataViewer.dart';
-import 'package:covid19_progression_modeler/widgets/GlobalMap.dart';
-import 'package:covid19_progression_modeler/widgets/MainHeader.dart';
-import 'package:covid19_progression_modeler/widgets/SideBar.dart';
+import 'package:covid19_progression_modeler/widgets/tree/DataViewer.dart';
+import 'package:covid19_progression_modeler/widgets/map/GlobalMap.dart';
+import 'package:covid19_progression_modeler/widgets/layout/MainHeader.dart';
+import 'package:covid19_progression_modeler/widgets/layout/SideBar.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:covid19_progression_modeler/config/config.dart';
 import 'package:flutter/material.dart';

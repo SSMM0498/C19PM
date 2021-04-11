@@ -1,9 +1,9 @@
 import 'package:covid19_progression_modeler/redux/viewModel/ViewModel.dart';
-import 'package:covid19_progression_modeler/widgets/ValidatorPopup.dart';
+import 'package:covid19_progression_modeler/widgets/popup/ValidatorPopup.dart';
 import 'package:flutter/material.dart';
 import 'ExpandableList.dart';
-import '../models/models.dart';
-import '../utils/DataLoader.dart' as DataLoader;
+import '../../models/models.dart';
+import '../../utils/DataLoader.dart' as DataLoader;
 
 class DataViewer extends StatefulWidget {
   final ViewModel model;

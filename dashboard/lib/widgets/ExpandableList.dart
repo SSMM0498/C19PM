@@ -24,7 +24,7 @@ class _ExpandableListState extends State<ExpandableList> {
         title: Row(
           children: [
             Text(
-              widget.list[i].label,
+              widget.list[i].sourceFileName,
               style: TextStyle(decorationColor: Colors.amber),
             ),
           ],
@@ -40,11 +40,11 @@ class _ExpandableListState extends State<ExpandableList> {
               children: [
                 Expanded(
                   child: ListElement(
-                    parentIndex: i,
+                    sourceFile: widget.list[i].sourceFileName,
                     day: day,
                     callBack: (Day d) {
                       setState(() => day.checked = d.checked);
-                      widget.callBack(d);
+                      widget.callBack(d, i);
                     },
                   ),
                   flex: 8,
@@ -71,11 +71,11 @@ class _ExpandableListState extends State<ExpandableList> {
 }
 
 class ListElement extends StatefulWidget {
-  final int parentIndex;
+  final String sourceFile;
   final Day day;
   final Function callBack;
 
-  ListElement({this.parentIndex, this.day, this.callBack});
+  ListElement({this.day, this.callBack, this.sourceFile,});
 
   @override
   _ListElementState createState() => _ListElementState();
@@ -103,7 +103,8 @@ class _ListElementState extends State<ListElement> {
         });
         widget.callBack(widget.day);
       },
-      title: Text(widget.day.date),
+      title:
+          Text("${widget.sourceFile}-${widget.day.annoucementDate}"),
     );
   }
 }

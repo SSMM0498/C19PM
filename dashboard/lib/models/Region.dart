@@ -5,5 +5,5 @@ class Region extends Locality {
   List<Departement> departements;
 
   Region({name, nbCase, this.departements})
-      : super(name: name, nbCase: nbCase);
+      : super(localityName: name, newCases: nbCase);
 }

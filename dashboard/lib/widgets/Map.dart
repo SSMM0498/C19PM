@@ -68,9 +68,9 @@ class _MapWidgetState extends State<MapWidget> {
             children: (!widget.withArrow)
                 ? widget.localities
                     .map((l) => LocalityInfos(
-                          nbCase: l.nbCase,
+                          nbCase: l.newCases,
                           position:
-                              _listMapInfos.firstWhere((e) => e.name == l.name),
+                              _listMapInfos.firstWhere((e) => e.name == l.localityName),
                           insidePopup: widget.havePopup,
                         ))
                     .toList()
@@ -90,7 +90,7 @@ class Arrow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      constraints: BoxConstraints.expand(),
+      // constraints: BoxConstraints.expand(),
       child: CustomPaint(
         painter: ArrowPainter(arrowParam: arrow),
       ),

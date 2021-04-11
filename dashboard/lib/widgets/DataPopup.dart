@@ -10,7 +10,7 @@ class DataPopup extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      title: Text(day.date),
+      title: Text("${day.annoucementDate}"),
       titleTextStyle: TextStyle(color: Palette.fontColor, fontSize: 24),
       titlePadding: EdgeInsets.all(15),
       contentPadding: EdgeInsets.all(10),
@@ -68,8 +68,8 @@ class DataPopup extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: <Widget>[
                                 numberInfos(
-                                  nb: l.name,
-                                  label: l.adminLevel,
+                                  nb: l.localityName,
+                                  label: (l.isRegion) ? "region" : "département",
                                 ),
                                 SizedBox(width: 20),
                                 numberInfos(

@@ -52,7 +52,7 @@ class MapPainter extends CustomPainter {
           if (havePopup && !withArrow) {
             print("clicked on $city");
             List<Departement> deps = (localities as List<Region>)
-                .firstWhere((r) => r.name == city)
+                .firstWhere((r) => r.localityName == city)
                 .departements;
             return showDialog(
               context: context,

@@ -46,35 +46,10 @@ Future<List<ArrowParam>> createArrowList(
 
 Month createMonthList(File fmonth) {
   String fname = fmonth.path.split('/').last.split('.').first;
-  Month m = new Month(fname);
   String contents = fmonth.readAsStringSync();
-  dynamic jsoncontent = jsonDecode(contents);
-
-  for (var j in jsoncontent) {
-    DayStats ds = new DayStats(
-      numberOfTests: j["Nombre de Test"],
-      numberOfNewCases: j["Nombre de nouveaux Cas"],
-      numberOfContactCases: j["Nombre de Cas contacts"],
-      numberOfCommunityCases: j["Nombre de Cas Communautaires"],
-      numberOfHealed: j["Nombre de Guéris"],
-      numberOfDeaths: j["Nombre de Décès"],
-      localities: []
-    );
-    for (var k in j["Localités"]) {
-      LocalityStats l = new LocalityStats(
-        name: k["nomLocalité"],
-        adminLevel: k["niveauAdministratif"],
-        newCases: k["Nombre de Cas"],
-      );
-      ds.localities.add(l);
-    }
-    Day d = new Day(
-      j["Date"],
-      false,
-      ds,
-    );
-    m.days.add(d);
-  }
+  List<dynamic> jsoncontent = jsonDecode(contents);
+  Month m = Month.fromList(jsoncontent);
+  m.sourceFileName = fname;
 
   return m;
 }

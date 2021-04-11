@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'Map.dart';
 
 class GlobalMap extends StatefulWidget {
-  // final List<Region> regions = DataGetter.createRegionList();
   final ViewModel model;
   GlobalMap({this.model});
 

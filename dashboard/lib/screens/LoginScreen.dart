@@ -1,14 +1,17 @@
 import 'package:covid19_progression_modeler/config/config.dart';
 import 'package:covid19_progression_modeler/models/User.dart';
+import 'package:covid19_progression_modeler/redux/AppState.dart';
 import 'package:covid19_progression_modeler/redux/actions/user.action.dart';
 import 'package:covid19_progression_modeler/screens/HomeScreen.dart';
 import 'package:covid19_progression_modeler/services/user.service.dart';
 import 'package:covid19_progression_modeler/widgets/FadeAnimation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
+import 'package:redux_dev_tools/redux_dev_tools.dart';
 
 class LoginScreen extends StatefulWidget {
-  // final User currentUser = new User();
+  final DevToolsStore<AppState> store;
+  LoginScreen({this.store});
   @override
   _LoginScreenState createState() => _LoginScreenState();
 }
@@ -190,7 +193,7 @@ class _LoginScreenState extends State<LoginScreen> {
       Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => HomeScreen(),
+          builder: (context) => HomeScreen(store: widget.store),
         ),
       );
     } else {

@@ -60,7 +60,7 @@ class DataPopup extends StatelessWidget {
               width: SizeHelper.width() * 0.35,
               child: Column(
                 children: [
-                      ...day.dayStats.regions
+                      ...day.dayStats.localities
                       .map(
                         (l) => Column(
                           children: [
@@ -69,11 +69,11 @@ class DataPopup extends StatelessWidget {
                               children: <Widget>[
                                 numberInfos(
                                   nb: l.name,
-                                  label: l.name,
+                                  label: l.adminLevel,
                                 ),
                                 SizedBox(width: 20),
                                 numberInfos(
-                                  nb: l.nbCase,
+                                  nb: l.newCases,
                                   label: "nouveaux cas",
                                 ),
                               ],

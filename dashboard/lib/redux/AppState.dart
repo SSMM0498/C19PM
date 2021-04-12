@@ -3,14 +3,17 @@ import 'package:covid19_progression_modeler/models/models.dart';
 class AppState {
   List<Month> months;
   List<Region> regions;
+  DateTime selectedDate;
 
   AppState({
     this.months = const [],
     this.regions = const [],
+    this.selectedDate,
   });
 
   static initialState() {
     return AppState(
+      selectedDate: DateTime.now(),
       months: [],
       regions: [
         new Region(name: "Dakar", nbCase: 17, departements: [

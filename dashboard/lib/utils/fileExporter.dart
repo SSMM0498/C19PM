@@ -16,16 +16,16 @@ void capture(String filename, GlobalKey key) async {
   final pngBytes = byteData.buffer.asByteData();
   String doc = await pr.getImgFolder();
 
-  writeToFile(pngBytes, doc + "$filename.png");
+  convertToFile(pngBytes, doc + "$filename.png");
 }
 
-Future<void> writeToFile(ByteData data, String path) {
+Future<void> convertToFile(ByteData data, String path) {
   final buffer = data.buffer;
   return new File(path)
       .writeAsBytes(buffer.asUint8List(data.offsetInBytes, data.lengthInBytes));
 }
 
-void export({String name, GlobalKey key}) {
+void exportToPicture({String name, GlobalKey key}) {
   String date = DateTime.now().toIso8601String();
   String fname = "$name $date";
   if (Platform.isWindows) {
@@ -35,7 +35,7 @@ void export({String name, GlobalKey key}) {
   capture(fname, key);
 }
 
-Future<File> generateCountryCSV(List<dynamic> data, String filename) async {
+Future<File> exportToCSV(List<dynamic> data, String filename) async {
   try {
     List<List<String>> csvData = [
       <String>['region', 'nombre de cas'],

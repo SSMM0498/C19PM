@@ -1,6 +1,5 @@
 import 'package:mysql1/mysql1.dart';
 import 'package:covid19_progression_modeler/models/models.dart';
-import 'package:intl/intl.dart';
 
 void send(List<Day> days, Set<Month> month, bool isTransaction) async {
   var settings = new ConnectionSettings(
@@ -61,7 +60,7 @@ void send(List<Day> days, Set<Month> month, bool isTransaction) async {
           'SELECT idLocality FROM locality WHERE localityName = ?',
           [l.localityName]);
           await conn.query(
-              'INSERT INTO localityStat (newCases,administrativeLevel,idDay,idLocality) VALUES (?,?,?,?)',
+              'INSERT INTO localityStat (newCases,isRegion,idDay,idLocality) VALUES (?,?,?,?)',
               [
                 l.localityName,
                 l.newCases,

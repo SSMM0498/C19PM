@@ -27,7 +27,7 @@ class _ExpandableListState extends State<ExpandableList> {
         title: Row(
           children: [
             Text(
-              getLabelMonth(widget.list[i].label),
+              getLabelMonth(widget.list[i].sourceFileName),
               style: TextStyle(decorationColor: Colors.amber),
             ),
           ],

@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:covid19_progression_modeler/config/palette.dart';
-import 'package:covid19_progression_modeler/widgets/DialogNotification.dart';
+import 'package:covid19_progression_modeler/widgets/popup/DialogNotification.dart';
 import 'package:flutter/material.dart';
 import 'package:covid19_progression_modeler/utils/fileExporter.dart'
     as fileExporter;
@@ -25,7 +25,7 @@ class DownloadDropDown extends StatelessWidget {
         items: [
           DropdownMenuItem(
             value: 1,
-            child: Text('Télécharger en format png'),
+            child: Text('Télécharger en format PNG'),
           ),
           DropdownMenuItem(
             value: 2,
@@ -42,12 +42,12 @@ class DownloadDropDown extends StatelessWidget {
 
   void handleDropDownChange(int value, BuildContext context) async {
     if (value == 1) {
-      fileExporter.export(name: widgetTitle, key: widgetKey);
+      fileExporter.exportToPicture(name: widgetTitle, key: widgetKey);
     }
     if (value == 2) {
       if (widgetTitle == 'Carte du Sénégal') {
         print('Télécharger en format CSV fro senegal');
-        File result = await fileExporter.generateCountryCSV(
+        File result = await fileExporter.exportToCSV(
             payload, 'communique_du_2021_02.csv');
         if (result == null) {
           dialogNotification(

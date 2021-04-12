@@ -12,51 +12,51 @@ CREATE TABLE IF NOT EXISTS locality (
 );
 
 INSERT INTO locality (localityName, nbPopulation) VALUES
-("Dakar",934498),
-("Guédiawaye",155279),
-("Pikine",773494),
-("Rufisque",688808),
-("Bambey",664383),
-("Diourbel",922148),
-("Mbacké",94691),
-("Fatick",513367),
-("Foundiougne",10118),
-("Gossas",415224),
-("Kaffrine",166659),
-("Birkilane",143479),
-("Koungheul",430154),
-("Malem Hoddar",349777),
-("Guinguinéo",111222),
-("Kaolack",598377),
-("Nioro du Rip",915994),
-("Kédougou",10056),
-("Salémata",17501),
-("Saraya",29484),
-("Kolda",676455),
-("Médina Yoro Foulah",148268),
-("Vélingara",61835),
-("Kébémer",741693),
-("Linguère",712343),
-("Louga",851889),
-("Kanel",953308),
-("Matam",241231),
-("Ranérou Ferlo",25426),
-("Dagana",498771),
-("Podor",493472),
-("Saint-Louis",771323),
-("Bounkiling",591804),
-("Goudomp",683051),
-("Sédhiou",283218),
-("Bakel",216972),
-("Goudiry",691342),
-("Koumpentoum",625333),
-("Tambacounda",341645),
-("M'bour",675545),
-("Thiès",353359),
-("Tivaouane",200501),
-("Bignona",260215),
-("Oussouye",10805),
-("Ziguinchor",343291);
+("dakar",934498),
+("guédiawaye",155279),
+("pikine",773494),
+("rufisque",688808),
+("bambey",664383),
+("diourbel",922148),
+("mbacké",94691),
+("fatick",513367),
+("foundiougne",10118),
+("gossas",415224),
+("kaffrine",166659),
+("birkilane",143479),
+("koungheul",430154),
+("malem hoddar",349777),
+("guinguinéo",111222),
+("kaolack",598377),
+("nioro du rip",915994),
+("kédougou",10056),
+("salémata",17501),
+("saraya",29484),
+("kolda",676455),
+("médina yoro foulah",148268),
+("vélingara",61835),
+("kébémer",741693),
+("linguère",712343),
+("louga",851889),
+("kanel",953308),
+("matam",241231),
+("ranérou ferlo",25426),
+("dagana",498771),
+("podor",493472),
+("saint-louis",771323),
+("bounkiling",591804),
+("goudomp",683051),
+("sédhiou",283218),
+("bakel",216972),
+("goudiry",691342),
+("koumpentoum",625333),
+("tambacounda",341645),
+("m'bour",675545),
+("thiès",353359),
+("tivaouane",200501),
+("bignona",260215),
+("oussouye",10805),
+("ziguinchor",343291);
 
 DROP TABLE IF EXISTS distance;
 
@@ -70,7 +70,6 @@ CREATE TABLE IF NOT EXISTS distance (
   CONSTRAINT fk_locs_loc2 FOREIGN KEY (idLocality2) REFERENCES locality (idLocality)
 );
 
-
 DROP TABLE IF EXISTS monthStat;
 
 CREATE TABLE IF NOT EXISTS monthStat (
@@ -83,9 +82,12 @@ CREATE TABLE IF NOT EXISTS monthStat (
 );
 
 INSERT INTO monthStat(totalCases, totalHealed, totalDeath, sourceFileName) VALUES
-(672,16,6,"2020-06"),
-(512,31,9,"2020-07"),
-(322,99,9,"2020-08");
+(333,14,4,"2020-01"),
+(333,14,4,"2020-05"),
+(345,45,3,"2020-06"),
+(368,86,2,"2020-07"),
+(310,78,7,"2020-08"),
+(188,42,6,"2020-10");
 
 DROP TABLE IF EXISTS dayStat;
 
@@ -114,8 +116,8 @@ DROP TABLE IF EXISTS localityStat;
 CREATE TABLE IF NOT EXISTS localityStat (
   idLocalityStat INT NOT NULL AUTO_INCREMENT,
   newCases INT NULL,
-  idDay INT NOT NULL,
   isRegion BOOLEAN DEFAULT false,
+  idDay INT NOT NULL,
   idLocality INT NOT NULL,
   PRIMARY KEY (idLocalityStat),
   CONSTRAINT fk_locs_days FOREIGN KEY (idDay) REFERENCES dayStat (idDay),
@@ -150,7 +152,7 @@ CREATE TABLE IF NOT EXISTS TransmissionLevel (
 );
 
 
-CREATE TRIGGER after_localityStat_insert
+CREATE TRIGGER calculate_evolution_values
 AFTER INSERT
 ON localityStat FOR EACH ROW
 BEGIN
@@ -182,9 +184,8 @@ BEGIN
 
     SET var_idMonth_Previous := 0;
 
-    SELECT idMonth FROM monthStat WHERE sourceFileName = (
-        DATE_FORMAT(STR_TO_DATE(CONCAT(var_month_Current,'-1'), '%Y-%m-%d') - INTERVAL 1 MONTH, '%Y-%m')
-    ) INTO var_idMonth_Previous;
+    SELECT idMonth FROM monthStat WHERE sourceFileName < var_month_Current ORDER BY sourceFileName DESC LIMIT 1
+    INTO var_idMonth_Previous;
 
     SET var_Prog_Current := 0;
     SET var_Conc_Previous := 0;
@@ -226,16 +227,20 @@ END;
 
 INSERT INTO localityStat(idDay, idLocality, newCases) VALUES
 (1, 1, 20),(2, 8, 15),(2, 1, 8),(2, 44, 14),(3, 9, 4),(4, 1, 8),(4, 5, 6),(4, 44, 3),(5, 22, 9),(6, 17, 10),(6, 1, 3),(6, 37, 15),(6, 13, 14),(7, 21, 16),(8, 33, 3),(8, 20, 15),(8, 43, 1),(8, 28, 8),(8, 1, 10),(8, 36, 2),(10, 15, 3),(11, 7, 3),(11, 7, 13),(11, 11, 16),(11, 10, 5),(11, 1, 11),(11, 3, 1),(11, 16, 3),(12, 21, 10),(12, 38, 8),(13, 8, 6),(13, 18, 8),(13, 4, 2),(13, 14, 5),(13, 4, 15),(13, 36, 6),(13, 1, 3),(14, 5, 14),(14, 3, 13),(14, 10, 16),(14, 38, 2),(14, 17, 9),(15, 2, 14),(15, 45, 7),(15, 21, 4),(15, 19, 2),(15, 42, 5),(17, 16, 12),(17, 39, 10),(17, 17, 16),(17, 12, 8),(18, 24, 12),(18, 27, 13),(19, 24, 7),(19, 23, 11),(19, 1, 4),(19, 32, 1),(19, 34, 7),(20, 29, 2),(20, 31, 8),(20, 14, 3),(20, 35, 12),(20, 26, 9),(20, 13, 2),(20, 14, 1),(20, 1, 13),(21, 45, 3),(21, 4, 7),(21, 13, 2),(21, 5, 2),(21, 5, 6),(21, 1, 6),(21, 22, 6),(23, 16, 10),(23, 25, 15),(24, 45, 8),(24, 9, 13),(24, 32, 8),(24, 7, 16),(24, 40, 12),(24, 9, 4),(24, 2, 16),(24, 1, 11),(25, 11, 14),(25, 13, 8),(26, 42, 4),(27, 32, 7),(27, 2, 6),(27, 25, 2),(30, 5, 9),(30, 25, 1),(30, 1, 11),(30, 37, 12),(30, 34, 16),(30, 12, 6),(30, 44, 7),(31, 35, 4),(31, 1, 13),(31, 13, 4),(31, 32, 4),(31, 41, 11),(31, 1, 8),(32, 8, 2),(33, 7, 16),(33, 8, 11),(33, 42, 15),(33, 12, 3),(34, 1, 12),(34, 38, 2),(34, 43, 8),(34, 13, 3),(34, 18, 2),(35, 9, 6),(38, 12, 3),(38, 1, 6),(38, 22, 12),(38, 31, 11),(38, 40, 12),(38, 18, 3),(40, 29, 16),(40, 33, 13),(40, 22, 4),(40, 33, 8),(40, 36, 13),(40, 42, 13),(40, 4, 11),(41, 1, 2),(41, 22, 12),(41, 13, 1),(41, 18, 5),(41, 40, 3),(41, 2, 5),(41, 31, 9),(42, 39, 13);
-INSERT INTO locationStat(idDay, idLocation, nbNewCases) VALUES
-(1, 1, 20),(2, 8, 15),(2, 1, 8),(2, 44, 14),(3, 9, 4),(4, 1, 8),(4, 5, 6),(4, 44, 3),(5, 22, 9),(6, 17, 10),(6, 1, 3),(6, 37, 15),(6, 13, 14),(7, 21, 16),(8, 33, 3),(8, 20, 15),(8, 43, 1),(8, 28, 8),(8, 1, 10),(8, 36, 2),(10, 15, 3),(11, 7, 3),(11, 7, 13),(11, 11, 16),(11, 10, 5),(11, 1, 11),(11, 3, 1),(11, 16, 3),(12, 21, 10),(12, 38, 8),(13, 8, 6),(13, 18, 8),(13, 4, 2),(13, 14, 5),(13, 4, 15),(13, 36, 6),(13, 1, 3),(14, 5, 14),(14, 3, 13),(14, 10, 16),(14, 38, 2),(14, 17, 9),(15, 2, 14),(15, 45, 7),(15, 21, 4),(15, 19, 2),(15, 42, 5),(17, 16, 12),(17, 39, 10),(17, 17, 16),(17, 12, 8),(18, 24, 12),(18, 27, 13),(19, 24, 7),(19, 23, 11),(19, 1, 4),(19, 32, 1),(19, 34, 7),(20, 29, 2),(20, 31, 8),(20, 14, 3),(20, 35, 12),(20, 26, 9),(20, 13, 2),(20, 14, 1),(20, 1, 13),(21, 45, 3),(21, 4, 7),(21, 13, 2),(21, 5, 2),(21, 5, 6),(21, 1, 6),(21, 22, 6),(23, 16, 10),(23, 25, 15),(24, 45, 8),(24, 9, 13),(24, 32, 8),(24, 7, 16),(24, 40, 12),(24, 9, 4),(24, 2, 16),(24, 1, 11),(25, 11, 14),(25, 13, 8),(26, 42, 4),(27, 32, 7),(27, 2, 6),(27, 25, 2),(30, 5, 9),(30, 25, 1),(30, 1, 11),(30, 37, 12),(30, 34, 16),(30, 12, 6),(30, 44, 7),(31, 35, 4),(31, 1, 13),(31, 13, 4),(31, 32, 4),(31, 41, 11),(31, 1, 8),(32, 8, 2),(33, 7, 16),(33, 8, 11),(33, 42, 15),(33, 12, 3),(34, 1, 12),(34, 38, 2),(34, 43, 8),(34, 13, 3),(34, 18, 2),(35, 9, 6),(38, 12, 3),(38, 1, 6),(38, 22, 12),(38, 31, 11),(38, 40, 12),(38, 18, 3),(40, 29, 16),(40, 33, 13),(40, 22, 4),(40, 33, 8),(40, 36, 13),(40, 42, 13),(40, 4, 11),(41, 1, 2),(41, 22, 12),(41, 13, 1),(41, 18, 5),(41, 40, 3),(41, 2, 5),(41, 31, 9),(42, 39, 13);
-
-
 
 -- recupérer les statistiques de tous les regions
-select locationName, nbNewCases, nbTests, nbCommunityCases, nbContactCases, nbHealed, nbDeath, extractionDate, nbPopulation, annoucementDate from
+SELECT localityName,
+newCases,
+numberOfTests,
+numberOfContactCases,
+numberOfCommunityCases,
+numberOfHealed,
+numberOfDeaths,
+nbPopulation,
+annoucementDate FROM
 (
-  select *
-  from locationstat
-  natural join location
+  SELECT *
+  FROM localityStat
+  NATURAL JOIN locality
 ) r1
-natural join daystat \G;
+NATURAL JOIN dayStat;

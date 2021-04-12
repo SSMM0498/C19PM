@@ -244,3 +244,5 @@ annoucementDate FROM
   NATURAL JOIN locality
 ) r1
 NATURAL JOIN dayStat;
+WHERE extractionDate = '2021-04-12'
+\G;

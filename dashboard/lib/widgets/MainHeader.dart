@@ -1,14 +1,20 @@
 import 'package:covid19_progression_modeler/redux/viewModel/ViewModel.dart';
-// import 'package:covid19_progression_modeler/widgets/DatePicker.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
-class MainHeader extends StatelessWidget {
+class MainHeader extends StatefulWidget {
   final ViewModel model;
   const MainHeader({
     Key key,
     this.model,
   }) : super(key: key);
 
+  @override
+  _MainHeaderState createState() => _MainHeaderState();
+}
+
+class _MainHeaderState extends State<MainHeader> {
+  DateTime _selectedValue = DateTime.now();
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -24,7 +30,11 @@ class MainHeader extends StatelessWidget {
                   onPressed: () async {
                     DateTime newDate = await displayDatePicker(context);
                     print(newDate);
-                    model.onSetSelectedDate(newDate);
+                    setState(() {
+                      this._selectedValue = newDate;
+                    });
+                    // widget.model.onSetSelectedDate(newDate);
+                    // load stats of this date
                   },
                   child: Text('Choisir une date'),
                   style: ElevatedButton.styleFrom(
@@ -39,7 +49,7 @@ class MainHeader extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  'Choisir une date',
+                  DateFormat.yMMMMd('fr_FR').format(this._selectedValue),
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.w500,

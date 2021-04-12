@@ -230,11 +230,13 @@ INSERT INTO locationStat(idDay, idLocation, nbNewCases) VALUES
 
 
 
--- recupérer les statistiques de tous les regions
+-- recupérer les statistiques de tous les regions suivant une date
 select locationName, nbNewCases, nbTests, nbCommunityCases, nbContactCases, nbHealed, nbDeath, extractionDate, nbPopulation, annoucementDate from
 (
   select *
   from locationstat
   natural join location
 ) r1
-natural join daystat \G;
+natural join daystat
+WHERE extractionDate = '2021-04-12'
+\G;

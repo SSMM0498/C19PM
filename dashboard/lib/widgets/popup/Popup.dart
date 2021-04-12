@@ -1,6 +1,6 @@
 import 'package:covid19_progression_modeler/models/models.dart';
-import 'package:covid19_progression_modeler/widgets/DataLineChart.dart';
-import 'package:covid19_progression_modeler/widgets/RegionMap.dart';
+import 'package:covid19_progression_modeler/widgets/popup/DataLineChart.dart';
+import 'package:covid19_progression_modeler/widgets/map/RegionMap.dart';
 import 'package:flutter/material.dart';
 import 'package:covid19_progression_modeler/config/config.dart';
 

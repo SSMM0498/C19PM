@@ -3,7 +3,7 @@ import 'package:covid19_progression_modeler/utils/mapInfos.dart';
 import 'package:covid19_progression_modeler/widgets/painter/ArrowPainter.dart';
 import 'package:covid19_progression_modeler/widgets/painter/MapPainter.dart';
 import 'package:flutter/material.dart';
-import '../utils/DataGetter.dart' as DataGetter;
+import '../../utils/DataGetter.dart' as DataGetter;
 import 'package:covid19_progression_modeler/models/models.dart';
 import 'package:touchable/touchable.dart';
 import 'LocalityInfos.dart';
@@ -68,9 +68,9 @@ class _MapWidgetState extends State<MapWidget> {
             children: (!widget.withArrow)
                 ? widget.localities
                     .map((l) => LocalityInfos(
-                          nbCase: l.nbCase,
+                          nbCase: l.newCases,
                           position:
-                              _listMapInfos.firstWhere((e) => e.name == l.name),
+                              _listMapInfos.firstWhere((e) => e.name == l.localityName),
                           insidePopup: widget.havePopup,
                         ))
                     .toList()
@@ -90,7 +90,7 @@ class Arrow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      constraints: BoxConstraints.expand(),
+      // constraints: BoxConstraints.expand(),
       child: CustomPaint(
         painter: ArrowPainter(arrowParam: arrow),
       ),

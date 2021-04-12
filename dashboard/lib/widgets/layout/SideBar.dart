@@ -1,7 +1,8 @@
 import 'package:covid19_progression_modeler/config/config.dart';
 import 'package:covid19_progression_modeler/screens/LoginScreen.dart';
 import 'package:flutter/material.dart';
-import 'CircleInfos.dart';
+import 'package:flutter_redux/flutter_redux.dart';
+import '../map/CircleInfos.dart';
 
 class SideBar extends StatelessWidget {
   const SideBar({Key key}) : super(key: key);

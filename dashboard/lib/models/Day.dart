@@ -1,17 +1,18 @@
+import 'Locality.dart';
 class Day {
-  String date;
-  bool checked;
+  int annoucementDate;
+  bool checked = false;
   DayStats dayStats;
 
   Day(
-    this.date,
+    this.annoucementDate,
     this.checked,
     this.dayStats,
   );
 
   Map<String, dynamic> toMap() {
     return {
-      'date': date,
+      'annoucementDate': annoucementDate,
       'checked': checked,
       'dayStats': dayStats.toMap(),
     };
@@ -19,9 +20,9 @@ class Day {
 
   factory Day.fromMap(Map<String, dynamic> map) {
     return Day(
-      map['date'] ?? '',
-      map['checked'] ?? false,
-      map['dayStats'] ?? false,
+      map['annoucementDate'] ?? 0,
+      false,
+      DayStats.fromMap((map)) ?? DayStats(),
     );
   }
 }
@@ -33,7 +34,7 @@ class DayStats {
   int numberOfCommunityCases;
   int numberOfHealed;
   int numberOfDeaths;
-  List<LocalityStats> localities;
+  List<Locality> localities;
 
   DayStats({
     this.numberOfTests,
@@ -65,36 +66,7 @@ class DayStats {
       numberOfCommunityCases: map['numberOfCommunityCases'] ?? 0,
       numberOfHealed: map['numberOfHealed'] ?? 0,
       numberOfDeaths: map['numberOfDeaths'] ?? 0,
-      localities: List<LocalityStats>.from(map['localities']?.map((x) => LocalityStats.fromMap(x) ?? LocalityStats()) ?? const []),
+      localities: List<Locality>.from(map['localities']?.map((x) => Locality.fromMap(x) ?? Locality()) ?? const []),
     );
   }
 }
-
-class LocalityStats {
-  String name;
-  int newCases;
-  String adminLevel;
-
-  LocalityStats({
-    this.name,
-    this.newCases,
-    this.adminLevel,
-  });
-
-  Map<String, dynamic> toMap() {
-    return {
-      'name': name,
-      'newCases': newCases,
-      'adminLevel': adminLevel,
-    };
-  }
-
-  factory LocalityStats.fromMap(Map<String, dynamic> map) {
-    return LocalityStats(
-      name: map['name'] ?? '',
-      newCases: map['newCases'] ?? 0,
-      adminLevel: map['adminLevel'] ?? '',
-    );
-  }
-}
-

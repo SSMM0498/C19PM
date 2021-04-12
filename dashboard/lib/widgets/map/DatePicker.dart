@@ -1,13 +1,16 @@
 import 'package:covid19_progression_modeler/config/config.dart';
+import 'package:covid19_progression_modeler/redux/viewModel/ViewModel.dart';
 import 'package:date_picker_timeline/date_picker_timeline.dart';
 import 'package:flutter/material.dart';
 
 class DatePciker extends StatefulWidget {
+  final ViewModel model;
+  DatePciker({this.model});
   @override
   _DatePcikerState createState() => _DatePcikerState();
 
   final DatePickerController _controller = DatePickerController();
-  DateTime _selectedValue = DateTime.now();
+  // DateTime _selectedValue = DateTime.now();
 }
 
 class _DatePcikerState extends State<DatePciker> {
@@ -39,8 +42,8 @@ class _DatePcikerState extends State<DatePciker> {
               ],
               onDateChange: (date) {
                 setState(() {
-                  print(date);
-                  widget._selectedValue = date;
+                  widget.model.onSetSelectedDate(date);
+                  // dispatch action;
                 });
               },
             ),

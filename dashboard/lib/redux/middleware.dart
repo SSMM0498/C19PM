@@ -9,7 +9,6 @@ void appStateMiddleware(
   next(action);
   if (action is GetAllMonthAction) {
     DataGetter.retrieveJSON().then((months) {
-      // print(months);
       store.dispatch(LoadedMonthAction(months));
     });
   }

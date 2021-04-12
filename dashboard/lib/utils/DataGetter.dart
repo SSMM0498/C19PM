@@ -54,6 +54,7 @@ Month createMonthList(File fmonth) {
   return m;
 }
 
+
 List<FlSpot> createGraphPoint(String region) {
   //1. Get data from SQL Database for the specific region
   //2. Parse data date

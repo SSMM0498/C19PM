@@ -60,7 +60,7 @@ class DataPopup extends StatelessWidget {
               width: SizeHelper.width() * 0.35,
               child: Column(
                 children: [
-                  ...day.dayStats.localities
+                      ...day.dayStats.localities
                       .map(
                         (l) => Column(
                           children: [

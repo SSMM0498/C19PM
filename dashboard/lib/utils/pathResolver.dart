@@ -28,6 +28,14 @@ Future<String> getImgFolder() async {
   return doc+"img/";
 }
 
+Future<String> getCSVFolder() async {
+  String doc = await getDocDirectory();
+  if (Platform.isWindows) {
+  return doc+"csv\\";
+  }
+  return doc+"csv/";
+}
+
 Future<String> getXMLFolder() async {
   String doc = await getDocDirectory();
   if (Platform.isWindows) {

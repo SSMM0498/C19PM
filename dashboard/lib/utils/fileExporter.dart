@@ -1,9 +1,11 @@
 import 'dart:io';
 import 'dart:typed_data';
+import 'package:covid19_progression_modeler/models/models.dart';
 import 'package:covid19_progression_modeler/utils/pathResolver.dart' as pr;
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'dart:ui' as ui;
+import 'package:csv/csv.dart';
 
 void capture(String filename, GlobalKey key) async {
   if (key == null) return null;
@@ -31,4 +33,23 @@ void export({String name, GlobalKey key}) {
     fname = fname.replaceAll(":", "-");
   }
   capture(fname, key);
+}
+
+Future<File> generateCountryCSV(List<dynamic> data, String filename) async {
+  try {
+    List<List<String>> csvData = [
+      <String>['region', 'nombre de cas'],
+      ...data.map((region) => [region.getName(), region.getNbCase()])
+    ];
+    String csv = const ListToCsvConverter().convert(csvData);
+    print(csv);
+    String doc = await pr.getCSVFolder();
+    String path = '$doc\ $filename';
+    final File csvFile = new File(path);
+
+    return await csvFile.writeAsString(csv);
+  } catch (e) {
+    print(e);
+    return null;
+  }
 }

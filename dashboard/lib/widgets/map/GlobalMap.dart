@@ -20,6 +20,7 @@ class _GlobalMapState extends State<GlobalMap> {
       child: Wrapper(
         title: "Carte du Sénégal",
         downloadText: "Télécharger la carte",
+        payload: widget.model.regions,
         childWidget: MapWidget(
           localities: widget.model.regions,
           rootName: "senegal",

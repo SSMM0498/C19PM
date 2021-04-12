@@ -7,9 +7,14 @@ import 'package:covid19_progression_modeler/widgets/layout/SideBar.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:covid19_progression_modeler/config/config.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_redux_dev_tools/flutter_redux_dev_tools.dart';
 import 'package:redux/redux.dart';
+import 'package:redux_dev_tools/redux_dev_tools.dart';
 
 class HomeScreen extends StatelessWidget {
+  final DevToolsStore<AppState> store;
+  HomeScreen({this.store});
+
   @override
   Widget build(BuildContext context) {
     SizeHelper.getScreenSize(context);
@@ -40,7 +45,9 @@ class HomeScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 mainAxisSize: MainAxisSize.max,
                 children: <Widget>[
-                  MainHeader(),
+                  MainHeader(
+                    model: viewModel,
+                  ),
                   SizedBox(height: 30),
                   GlobalMap(model: viewModel)
                 ],
@@ -52,16 +59,12 @@ class HomeScreen extends StatelessWidget {
               child: DataViewer(
                 model: viewModel,
               ),
-              // child: StoreBuilder<AppState>(
-              //   onInit: viewModel.onGetAllMonth(),
-              //   builder: (BuildContext context, Store<AppState> store) =>
-              //       DataViewer(
-              //     model: viewModel,
-              //   ),
-              // ),
             ),
           ],
         ),
+      ),
+      drawer: Container(
+        child: ReduxDevTools(store),
       ),
     );
   }

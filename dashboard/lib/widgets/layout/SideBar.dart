@@ -1,6 +1,4 @@
 import 'package:covid19_progression_modeler/config/config.dart';
-import 'package:covid19_progression_modeler/models/models.dart';
-import 'package:covid19_progression_modeler/redux/AppState.dart';
 import 'package:covid19_progression_modeler/screens/LoginScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';

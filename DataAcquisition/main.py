@@ -2,9 +2,9 @@ from PIL import Image
 import DataExtractor
 #  export TESSDATA_PREFIX=/Users/bemax/Documents/DIC2/SEM1/Sgbd/tessdata
 # images = DataExtractor.pdfToImage('fic7.pdf') <-- works if you have fitz
-images = ["./env/image1_1.png","./env/image2_1.png"]
+# images = ["./env/image1_1.png","./env/image2_1.png"]
 # images = ["./env/image3_1.jpeg","./env/image4_1.jpeg"]
-# images = ["./env/image7_1.jpeg","./env/image8_1.jpeg"]
+images = ["./env/image7_1.jpeg","./env/image8_1.jpeg"]
 # images = ["./env/image5_1.jpeg"]
 # images = ["./env/image6_1.jpeg"]
 

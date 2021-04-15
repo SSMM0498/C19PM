@@ -1,6 +1,7 @@
 import os
 import re
 import json
+import time
 import io
 from PIL import Image, ImageEnhance, ImageFilter
 from pytesseract import pytesseract
@@ -360,18 +361,18 @@ def exportIntoJson(cas):
             for dept in export["depts"]:
                 fini = False
                 for x in finished_departements:
-                    if (dept["dept"] == x["dept"]):
+                    if (dept["dept"] == x["localityName"]):
                         fini = True
                         break
                 if(not fini):
                     departement = {
-                        "region": dept["region"],
-                        "dept": dept["dept"],
-                        "TotalCas": 0
+                        "localityName": dept["dept"],
+                        "administrativeLevel": "dept",
+                        "newCases": 0
                     }
                     for left in export["depts"]:
                         if (dept["dept"] == left["dept"]):
-                            departement["TotalCas"] += left["Cas"]
+                            departement["newCases"] += left["Cas"]
                     print(departement)
                     finished_departements.append(departement)
                     All_Data.append(departement)
@@ -382,17 +383,18 @@ def exportIntoJson(cas):
             for reg in export["regions"]:
                 fini = False
                 for x in finished_regions:
-                    if (compare(reg["Region"],x["region"])):
+                    if (compare(reg["Region"],x["localityName"])):
                         fini = True
                         break
                 if (not fini):
                     region = {
-                        "region": reg["Region"],
-                        "TotalCas": reg["TotalCas"]
+                        "localityName": reg["Region"],
+                        "administrativeLevel": "region",
+                        "newCases": reg["TotalCas"]
                     }
                     for dept in finished_departements:
-                        if (compare(region["region"].lower(),dept["region"].lower())):
-                            region["TotalCas"] += dept["TotalCas"]
+                        if (compare(region["localityName"].lower(),dept["localityName"].lower())):
+                            region["newCases"] += dept["newCases"]
                         else:
                             continue
                     finished_regions.append(region)
@@ -407,15 +409,18 @@ def exportToFile(date, month, year, nbTest, nbPositif, casCon, casCom,gueris,dec
     filename = str(year) + '-' + str(month)
     filepath = "json/data/" + filename + ".json"
     export = []
+    named_tuple = time.localtime() 
     data = {
-        "Date": date,
-        "NbTest": nbTest,
-        "NbDePositif": nbPositif,
-        "NbCasContact": casCon,
-        "NbCasComm": casCom,
-        "NbGueris": gueris,
-        "NbDeces": deces,
-        "RepCas": cases
+        "annoucementDate": date,
+        "numberOfTests": nbTest,
+        "numberOfNewCases": nbPositif,
+        "numberOfContactCases": casCon,
+        "numberOfCommunityCases": casCom,
+        "numberOfHealed": gueris,
+        "numberOfDeaths": deces,
+        "sourceFileName": filename,
+        "extractionDate": time.strftime("%m/%d/%Y", named_tuple),
+        "localities": cases
     }
     export.append(data)
     if not os.path.isfile(filepath):

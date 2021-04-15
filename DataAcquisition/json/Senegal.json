@@ -205,9 +205,9 @@
     "region": "KAFFRINE",
     "departements": [
       {
-        "departement": "KEUR MBOUCKI",
+        "departement": "BIRKILANE",
         "communes": [],
-        "arronds": ["BIRKILANE", "MABO"],
+        "arronds": ["BIRKILANE", "MABO", "KEUR MBOUKI"],
         "comard": ["birkelane", "birkilane"]
       },
       {
@@ -367,7 +367,7 @@
     "region": "SAINT LOUIS",
     "departements": [
       {
-        "departement": "DAGANA ",
+        "departement": "DAGANA",
         "communes": [
           "Dagana",
           "Richard Toll",
@@ -380,7 +380,7 @@
         "comard": []
       },
       {
-        "departement": "PODOR ",
+        "departement": "PODOR",
         "communes": [
           "Podor",
           "Gollere",
@@ -408,13 +408,13 @@
     "region": "SEDHIOU",
     "departements": [
       {
-        "departement": "BOUNKILING ",
+        "departement": "BOUNKILING",
         "communes": ["Bounkiling", "Madina", "Wandifa"],
         "arronds": ["BOGHAL", "BONA", "DIAROUME"],
         "comard": []
       },
       {
-        "departement": "GOUDOMP ",
+        "departement": "GOUDOMP",
         "communes": ["Goudomp", "Samine", "Tanaff", "Diattacounda"],
         "arronds": [
           "DIAROUME",
@@ -455,7 +455,7 @@
         "comard": []
       },
       {
-        "departement": "TAMBA",
+        "departement": "TAMBACOUNDA",
         "communes": ["Tambacounda"],
         "arronds": ["MISSIRAH", "KOUSSANAR "],
         "comard": []

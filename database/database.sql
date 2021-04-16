@@ -204,7 +204,8 @@ BEGIN
 
     SET v_Conc_Previous := 0;
 
-    SELECT (MAX(Conc) - v_Conc) / getPopulation(idLocality) FROM ConcentrationCumul WHERE idLocality = 1
+    SELECT (MAX(Conc) - v_Conc) / getPopulation(idLocality)
+    FROM ConcentrationCumul WHERE idLocality = 1
     AND annoucementDate <= v_currentDATE
     GROUP BY DATE_FORMAT(annoucementDate, '%Y-%m') ORDER BY DATE_FORMAT(annoucementDate, '%Y-%m') DESC LIMIT 1, 1
     INTO v_Conc_Previous;
@@ -219,12 +220,11 @@ SELECT idLocality, annoucementDate, newCases, Conc, TauxProgression(idLocality, 
 DROP TABLE IF EXISTS TransmissionScenario;
 
 CREATE TABLE IF NOT EXISTS TransmissionScenario (
-  idContamin INT NOT NULL AUTO_INCREMENT,
-  contaminationDate DATE NOT NULL,
   idOrigin INT NOT NULL,
-  PRIMARY KEY (idContamin, idOrigin),
-  CONSTRAINT fk_trans_cont FOREIGN KEY (idContamin) REFERENCES locality (idLocality),
-  CONSTRAINT fk_trans_orig FOREIGN KEY (idOrigin) REFERENCES locality (idLocality)
+  idContamin INT NOT NULL,
+  contaminationDate DATE NULL,
+  Prog FLOAT NULL,
+  PRIMARY KEY (idContamin, idOrigin)
 );
 
 CREATE FUNCTION getDistance (id1 INT, id2 INT)
@@ -233,16 +233,55 @@ DETERMINISTIC
 BEGIN
   DECLARE v_distance FLOAT;
 
-  SELECT distance FROM distance WHERE (idLocality1 = id1 AND idLocality2 = id2) OR (idLocality2 = id1 OR idLocality1 = id1)
+  SELECT distance FROM distance WHERE 
+  (idLocality1 = id1 AND idLocality2 = id2) OR 
+  (idLocality2 = id1 AND idLocality1 = id2)
   INTO v_distance;
 
   RETURN v_distance;
 END;
 
--- CREATE PROCEDURE generateScenario()
--- BEGIN
---     DECLARE c_
--- END;
+CREATE PROCEDURE generateScenario()
+BEGIN
+    DECLARE done INT DEFAULT FALSE;
+    DECLARE v_idLoc INT;
+    DECLARE v_idOrgin INT;
+    DECLARE v_prog FLOAT;
+    DECLARE v_firstCase DATE;
+    DECLARE c_localityFirstCase CURSOR FOR
+    SELECT idLocality, (
+        SELECT annoucementDate FROM EvolutionStat
+        WHERE idLocality = t.idLocality
+        ORDER BY annoucementDate ASC LIMIT 1
+    ) AS firstCase FROM locality t ORDER BY firstCase ASC;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+
+    OPEN c_localityFirstCase;
+
+    scenario:REPEAT
+        IF done THEN
+            LEAVE scenario;
+        END IF;
+
+        FETCH c_localityFirstCase INTO v_idLoc, v_firstCase;
+
+        IF (v_firstCase IS NOT NULL) THEN
+
+            SELECT idLocality, Prog / getDistance(v_idOrgin, idLocality) AS trans FROM EvolutionStat
+            WHERE annoucementDate <= v_firstCase AND idLocality <> v_idLoc ORDER BY trans DESC, Conc DESC LIMIT 1
+            INTO v_idOrgin, v_prog;
+
+            INSERT INTO TransmissionScenario VALUES
+            (v_idOrgin, v_idLoc, v_firstCase, v_prog);
+
+
+        END IF;
+
+        UNTIL done
+    END REPEAT scenario;
+
+    CLOSE c_localityFirstCase;
+END;
 
 INSERT INTO localityStat(idDay, idLocality, newCases) VALUES
 (1, 2, 2),

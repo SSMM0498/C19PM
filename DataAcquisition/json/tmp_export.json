@@ -1,1 +1,59 @@
-[{"region": "DAKAR", "dept": "dakar", "TotalCas": 54}, {"region": "DAKAR", "dept": "guediawaye", "TotalCas": 14}, {"region": "DAKAR", "dept": "rufisque", "TotalCas": 5}, {"region": "SAINT LOUIS", "dept": "podor ", "TotalCas": 1}, {"region": "ZIGUINCHOR", "dept": "ziguinchor", "TotalCas": 1}, {"region": "KEDOUGOU", "dept": "saraya", "TotalCas": 16}, {"region": "THIES", "dept": "mbour", "TotalCas": 7}, {"region": "THIES", "dept": "thies", "TotalCas": 5}, {"region": "THIES", "dept": "tivaouane", "TotalCas": 3}, {"region": "SAINT LOUIS", "dept": "dagana ", "TotalCas": 2}, {"region": "DIOURBEL", "dept": "mbacke", "TotalCas": 2}, {"region": "FATICK", "dept": "foundiougne", "TotalCas": 1}, {"region": "LOUGA", "dept": "linguere", "TotalCas": 1}, {"region": "FATICK", "dept": "fatick", "TotalCas": 1}, {"region": "LOUGA", "dept": "kebemer", "TotalCas": 1}, {"region": "KEDOUGOU", "dept": "salemata", "TotalCas": 1}, {"region": "dakar", "TotalCas": 73}, {"region": "saint louis", "TotalCas": 3}, {"region": "ziguinchor", "TotalCas": 1}, {"region": "kedougou", "TotalCas": 17}, {"region": "thies", "TotalCas": 15}, {"region": "diourbel", "TotalCas": 2}, {"region": "kaolack", "TotalCas": 2}, {"region": "kolda", "TotalCas": 2}, {"region": "fatick", "TotalCas": 2}, {"region": "sedhiou", "TotalCas": 1}, {"region": "louga", "TotalCas": 2}, {"region": "kaffrine", "TotalCas": 1}]
+[
+  { "localityName": "dakar", "administrativeLevel": "dept", "newCases": 58 },
+  { "localityName": "rufisque", "administrativeLevel": "dept", "newCases": 10 },
+  {
+    "localityName": "guediawaye",
+    "administrativeLevel": "dept",
+    "newCases": 36
+  },
+  { "localityName": "bambey", "administrativeLevel": "dept", "newCases": 2 },
+  { "localityName": "mbour", "administrativeLevel": "dept", "newCases": 9 },
+  { "localityName": "saraya", "administrativeLevel": "dept", "newCases": 5 },
+  { "localityName": "velingara", "administrativeLevel": "dept", "newCases": 3 },
+  { "localityName": "mbacke", "administrativeLevel": "dept", "newCases": 3 },
+  { "localityName": "fatick", "administrativeLevel": "dept", "newCases": 4 },
+  { "localityName": "dagana ", "administrativeLevel": "dept", "newCases": 2 },
+  { "localityName": "louga", "administrativeLevel": "dept", "newCases": 3 },
+  { "localityName": "bignona", "administrativeLevel": "dept", "newCases": 1 },
+  {
+    "localityName": "guinguineo",
+    "administrativeLevel": "dept",
+    "newCases": 1
+  },
+  { "localityName": "kebemer", "administrativeLevel": "dept", "newCases": 1 },
+  { "localityName": "thies", "administrativeLevel": "dept", "newCases": 1 },
+  { "localityName": "salemata", "administrativeLevel": "dept", "newCases": 1 },
+  {
+    "localityName": "foundiougne",
+    "administrativeLevel": "dept",
+    "newCases": 1
+  },
+  { "localityName": "tivaouane", "administrativeLevel": "dept", "newCases": 1 },
+  { "localityName": "dakar", "administrativeLevel": "region", "newCases": 58 },
+  {
+    "localityName": "diourbel",
+    "administrativeLevel": "region",
+    "newCases": 0
+  },
+  { "localityName": "thies", "administrativeLevel": "region", "newCases": 17 },
+  { "localityName": "louga", "administrativeLevel": "region", "newCases": 15 },
+  { "localityName": "kaolack", "administrativeLevel": "region", "newCases": 7 },
+  {
+    "localityName": "kedougou",
+    "administrativeLevel": "region",
+    "newCases": 7
+  },
+  { "localityName": "kolda", "administrativeLevel": "region", "newCases": 0 },
+  { "localityName": "fatick", "administrativeLevel": "region", "newCases": 4 },
+  {
+    "localityName": "saint louis",
+    "administrativeLevel": "region",
+    "newCases": 0
+  },
+  {
+    "localityName": "ziguinchor",
+    "administrativeLevel": "region",
+    "newCases": 0
+  },
+  { "localityName": "sedhiou", "administrativeLevel": "region", "newCases": 1 }
+]

@@ -14,6 +14,11 @@ class MainHeader extends StatefulWidget {
 }
 
 class _MainHeaderState extends State<MainHeader> {
+  @override
+  void initState() {
+    super.initState();
+  }
+
   DateTime _selectedValue = DateTime.now();
   @override
   Widget build(BuildContext context) {
@@ -35,6 +40,7 @@ class _MainHeaderState extends State<MainHeader> {
                     });
                     // widget.model.onSetSelectedDate(newDate);
                     // load stats of this date
+                    widget.model.onGetDayStatsAction(newDate);
                   },
                   child: Text('Choisir une date'),
                   style: ElevatedButton.styleFrom(

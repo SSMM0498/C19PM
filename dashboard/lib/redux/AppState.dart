@@ -4,10 +4,12 @@ class AppState {
   List<Month> months;
   List<Region> regions;
   DateTime selectedDate;
+  DayStats dayStats;
 
   AppState({
     this.months = const [],
     this.regions = const [],
+    this.dayStats,
     this.selectedDate,
   });
 
@@ -15,6 +17,7 @@ class AppState {
     return AppState(
       selectedDate: DateTime.now(),
       months: [],
+      dayStats: DayStats.initDayStat(),
       regions: [
         new Region(name: "Dakar", nbCase: 17, departements: [
           new Departement(name: "Dakar", nbCase: 19),

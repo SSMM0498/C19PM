@@ -3,11 +3,13 @@ import 'Locality.dart';
 
 class Region extends Locality {
   List<Departement> departements;
+  String name;
+  int nbCase;
 
-  Region({name, nbCase, this.departements}) : super(localityName: name, newCases: nbCase);
+  Region({this.name, this.nbCase, this.departements}) : super();
 
-  String getName() => this.localityName;
-  String getNbCase() => this.newCases.toString();
+  String getName() => this.name;
+  int getNbCase() => this.nbCase;
 }
 
 Region formatRegion(dynamic jsoncontent) {

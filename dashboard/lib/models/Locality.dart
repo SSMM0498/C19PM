@@ -24,4 +24,12 @@ class Locality {
       isRegion: (map['adminLevel'] == 'region') ? true : false ?? false,
     );
   }
+
+  static Locality initLocality() {
+    return Locality(
+      localityName: '',
+      newCases: 0,
+      isRegion: true,
+    );
+  }
 }

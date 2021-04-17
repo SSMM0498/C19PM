@@ -23,6 +23,10 @@ class ViewModel {
   final Function onGetSelectedDate;
   final Function(DateTime) onSetSelectedDate;
 
+  // Daystats
+  final DayStats dayStats;
+  final Function(DateTime) onGetDayStatsAction;
+
   ViewModel({
     // regions
     this.regions,
@@ -38,6 +42,9 @@ class ViewModel {
     this.selectedDate,
     this.onGetSelectedDate,
     this.onSetSelectedDate,
+    // daysStats
+    this.dayStats,
+    this.onGetDayStatsAction,
   });
 
   factory ViewModel.create(Store<AppState> store) {
@@ -76,11 +83,17 @@ class ViewModel {
       store.dispatch(SetSelectedDate(newValue: newValue));
     }
 
+    // daystats
+    _onGetDayStatsAction(DateTime statsDate) {
+      store.dispatch(GetDayStatsAction(statsDate));
+    }
+
     return new ViewModel(
       // data
       regions: store.state.regions,
       months: store.state.months,
       selectedDate: store.state.selectedDate,
+      dayStats: store.state.dayStats,
 
       // region actions
       onAddRegion: _onAddRegion,
@@ -92,7 +105,9 @@ class ViewModel {
       onGetAllMonth: _onGetAllMonth,
       // selected date action
       onGetSelectedDate: _onGetSelectedDate,
-      onSetSelectedDate: _onSetSelectedDate, 
+      onSetSelectedDate: _onSetSelectedDate,
+      // daystats
+      onGetDayStatsAction: _onGetDayStatsAction,
     );
   }
 }

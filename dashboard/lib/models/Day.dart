@@ -1,4 +1,7 @@
+import 'package:mysql1/mysql1.dart';
+
 import 'Locality.dart';
+
 class Day {
   int annoucementDate;
   bool checked = false;
@@ -66,7 +69,32 @@ class DayStats {
       numberOfCommunityCases: map['numberOfCommunityCases'] ?? 0,
       numberOfHealed: map['numberOfHealed'] ?? 0,
       numberOfDeaths: map['numberOfDeaths'] ?? 0,
-      localities: List<Locality>.from(map['localities']?.map((x) => Locality.fromMap(x) ?? Locality()) ?? const []),
+      localities: List<Locality>.from(
+          map['localities']?.map((x) => Locality.fromMap(x) ?? Locality()) ??
+              const []),
+    );
+  }
+
+  static DayStats initDayStat() {
+    return DayStats(
+      numberOfTests: 0,
+      numberOfNewCases: 0,
+      numberOfContactCases: 0,
+      numberOfCommunityCases: 0,
+      numberOfHealed: 0,
+      numberOfDeaths: 0,
+      localities: const [],
+    );
+  }
+
+  static DayStats rowToDateStats(Row row) {
+    return DayStats(
+      numberOfCommunityCases: row['nbCommunityCases'],
+      numberOfContactCases: row['nbContactCases'],
+      numberOfDeaths: row['nbDeath'],
+      numberOfHealed: row['nbHealed'],
+      numberOfNewCases: row['nbNewCases'],
+      numberOfTests: row['nbTests'],
     );
   }
 }

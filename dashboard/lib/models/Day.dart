@@ -1,5 +1,3 @@
-import 'package:mysql1/mysql1.dart';
-
 import 'Locality.dart';
 
 class Day {

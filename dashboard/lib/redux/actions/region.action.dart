@@ -1,8 +1,6 @@
 import 'package:covid19_progression_modeler/models/models.dart';
 
-class GetAllRegionAction {
-  GetAllRegionAction();
-}
+class GetAllRegionAction {}
 
 class AddRegionAction {
   Region newRegion;
@@ -22,4 +20,9 @@ class UpdateRegionAction {
   Region update;
   Region former;
   UpdateRegionAction(this.update, this.former);
+}
+
+class LoadedRegionsAction {
+  final List<Region> regions;
+  LoadedRegionsAction(this.regions);
 }

@@ -4,7 +4,7 @@ import 'package:covid19_progression_modeler/services/services.dart';
 import 'package:mysql1/mysql1.dart';
 import 'package:redux/redux.dart';
 
-void dayStatsMiddleware(
+void regionsMiddleware(
   Store<AppState> store,
   action,
   NextDispatcher next,
@@ -12,7 +12,7 @@ void dayStatsMiddleware(
   next(action);
   if (action is GetDayStatsAction) {
     print("GetDayStatsAction");
-    Results results = await DayStatService.getDayStat(action.statsDate);
+    Results results = await RegionService.getDayStat(action.statsDate);
     print(results);
     if (results != null) {
       if (results.length > 0) {
@@ -20,20 +20,13 @@ void dayStatsMiddleware(
           print(row);
           // get departements
           // sum nbcases
-          // 
+          //
         }
       } else {
         print('liste vide');
       }
+    } else {
+      print('erreur lors de la récupération des statistiques');
     }
-    // else {
-    //   await _showDialog(
-    //     'Connexion refusé !',
-    //     'Impossible de se connecter à la base de données',
-    //     'Redémarrez votre serveur mysql SVP !',
-    //   );
-    // }
-    // store.dispatch(LoadedDayStatsAction(dayStats));
-
   }
 }

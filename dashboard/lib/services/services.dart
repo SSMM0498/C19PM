@@ -1,2 +1,2 @@
-export './dayStat.service.dart';
+export 'regions.service.dart';
 export './user.service.dart';

@@ -1,7 +1,7 @@
 import 'package:covid19_progression_modeler/config/config.dart';
 import 'package:mysql1/mysql1.dart';
 
-class DayStatService {
+class RegionService {
   static Future<Results> getDayStat(DateTime date) async {
     Results result;
     try {

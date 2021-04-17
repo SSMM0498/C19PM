@@ -19,4 +19,4 @@ from
   NATURAL JOIN locality
 ) r1
 join daystat
-WHERE (daystat.extractionDate = '2021-04-13' AND r1.idDay = daystat.idDay) \G;
+WHERE (daystat.annoucementDate = '2020-01-01' AND r1.idDay = daystat.idDay) \G;

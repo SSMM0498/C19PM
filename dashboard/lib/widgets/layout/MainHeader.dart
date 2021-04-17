@@ -14,12 +14,14 @@ class MainHeader extends StatefulWidget {
 }
 
 class _MainHeaderState extends State<MainHeader> {
+  DateTime _selectedValue = DateTime.now();
+
   @override
   void initState() {
     super.initState();
+    widget.model.onGetDayStatsAction(this._selectedValue);
   }
 
-  DateTime _selectedValue = DateTime.now();
   @override
   Widget build(BuildContext context) {
     return Row(

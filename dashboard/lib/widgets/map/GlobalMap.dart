@@ -14,33 +14,36 @@ class GlobalMap extends StatefulWidget {
 
 class _GlobalMapState extends State<GlobalMap> {
   bool _withArrow = false;
+
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      child: Wrapper(
-        title: "Carte du Sénégal",
-        downloadText: "Télécharger la carte",
-        // payload: widget.model.dayStats.localities,
-        payload: [],
-        childWidget: MapWidget(
-          // localities: widget.model.dayStats.localities,
-          localities: [],
-          rootName: "senegal",
-          withArrow: _withArrow,
-        ),
-        rightButton: IconButton(
-          padding: const EdgeInsets.all(1.0),
-          iconSize: 25.0,
-          tooltip: "Voir la propagation",
-          icon: Icon(
-            Icons.remove_red_eye_outlined,
-            color: Palette.secondColor,
+      child: Center(
+        child: Wrapper(
+          title: "Carte du Sénégal",
+          downloadText: "Télécharger la carte",
+          payload: widget.model.regions,
+          // payload: [],
+          childWidget: MapWidget(
+            localities: widget.model.regions,
+            // localities: [],
+            rootName: "senegal",
+            withArrow: _withArrow,
           ),
-          onPressed: () {
-            setState(() {
-              _withArrow = !_withArrow;
-            });
-          },
+          rightButton: IconButton(
+            padding: const EdgeInsets.all(1.0),
+            iconSize: 25.0,
+            tooltip: "Voir la propagation",
+            icon: Icon(
+              Icons.remove_red_eye_outlined,
+              color: Palette.secondColor,
+            ),
+            onPressed: () {
+              setState(() {
+                _withArrow = !_withArrow;
+              });
+            },
+          ),
         ),
       ),
     );

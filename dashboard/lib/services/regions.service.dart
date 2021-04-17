@@ -9,25 +9,27 @@ class RegionService {
       if (connection != null && date != null) {
         String queryString = '''
           select
-            r1.locationName,
-            r1.nbNewCases as newCases,
-            daystat.nbNewCases,
-            daystat.nbTests,
-            daystat.nbCommunityCases,
-            daystat.nbContactCases,
-            daystat.nbHealed,
-            daystat.nbDeath,
+            r1.localityName as localityName,
+            r1.newCases as newCases,
+            r1.regionName as regionName, 
+            r1.nbPopulation as nbPopulation,
+            r1.regionName as regionName,
+            daystat.numberOfNewCases,
+            daystat.numberOfTests,
+            daystat.numberOfCommunityCases,
+            daystat.numberOfContactCases,
+            daystat.numberOfHealed,
+            daystat.numberOfDeaths,
             daystat.extractionDate,
-            r1.nbPopulation,
             daystat.annoucementDate
           from
           (
-            select *
-            from locationstat
-            natural join location
+            SELECT *
+            FROM localityStat
+            NATURAL JOIN locality
           ) r1
           join daystat
-          WHERE (daystat.extractionDate = ? AND r1.idDay = daystat.idDay);
+          WHERE (daystat.annoucementDate = ? AND r1.idDay = daystat.idDay);
         ''';
         result = await connection.query(queryString, [date.toUtc()]);
         connection.close();

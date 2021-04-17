@@ -1,3 +1,5 @@
+import 'package:mysql1/mysql1.dart';
+
 import 'Departement.dart';
 import 'Locality.dart';
 
@@ -23,4 +25,29 @@ Region formatRegion(dynamic jsoncontent) {
     nbCase: jsoncontent['nbCase'] ?? 0,
     departements: departementList ?? const [],
   );
+}
+
+Region calculateRegionNbCases(Results results, String regionName) {
+  int nbCases = 0;
+  Region newRegion = Region();
+
+  newRegion.isRegion = true;
+  newRegion.name = regionName;
+  newRegion.newCases = nbCases;
+  newRegion.localityName = regionName;
+  newRegion.name = regionName;
+  newRegion.departements = [];
+
+  if (results != null && results.length > 0) {
+    for (var row in results) {
+      if (row['regionName'] == regionName) {
+        nbCases += row['newCases'];
+        newRegion.departements.add(departementFromRow(row));
+      }
+    }
+    newRegion.newCases = nbCases;
+    newRegion.nbCase = nbCases;
+  }
+
+  return newRegion;
 }

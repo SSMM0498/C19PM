@@ -86,15 +86,4 @@ class DayStats {
       localities: const [],
     );
   }
-
-  static DayStats rowToDateStats(Row row) {
-    return DayStats(
-      numberOfCommunityCases: row['nbCommunityCases'],
-      numberOfContactCases: row['nbContactCases'],
-      numberOfDeaths: row['nbDeath'],
-      numberOfHealed: row['nbHealed'],
-      numberOfNewCases: row['nbNewCases'],
-      numberOfTests: row['nbTests'],
-    );
-  }
 }

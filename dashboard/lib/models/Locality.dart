@@ -13,7 +13,7 @@ class Locality {
     return {
       'localityName': localityName,
       'newCases': newCases,
-      'isRegion': isRegion,
+      'administrativeLevel': (isRegion) ? 'region' : 'dept',
     };
   }
 
@@ -21,7 +21,7 @@ class Locality {
     return Locality(
       localityName: map['localityName'] ?? '',
       newCases: map['newCases'] ?? 0,
-      isRegion: (map['adminLevel'] == 'region') ? true : false ?? false,
+      isRegion: (map['administrativeLevel'] == 'region') ? true : false ?? false,
     );
   }
 }

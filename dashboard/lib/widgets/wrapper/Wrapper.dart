@@ -2,7 +2,6 @@ import 'package:covid19_progression_modeler/config/config.dart';
 import 'package:covid19_progression_modeler/widgets/wrapper/WidgetToImage.dart';
 import 'package:covid19_progression_modeler/widgets/wrapper/DropDown.dart';
 import 'package:flutter/material.dart';
-// import 'package:covid19_progression_modeler/utils/fileExporter.dart' as fe;
 
 class Wrapper extends StatefulWidget {
   final String title;

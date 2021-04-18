@@ -1,0 +1,16 @@
+const List<String> regionNameList = const [
+  "Dakar",
+  "Diourbel",
+  "Fatick",
+  "Kaffrine",
+  "Kaolack",
+  "Kédougou",
+  "Kolda",
+  "Louga",
+  "Matam",
+  "Saint-Louis",
+  "Sédhiou",
+  "Tambacounda",
+  "Thiès",
+  "Ziguinchor",
+];

@@ -4,7 +4,7 @@ import 'package:redux/redux.dart';
 import 'package:covid19_progression_modeler/utils/DataGetter.dart'
     as DataGetter;
 
-void appStateMiddleware(
+void monthStateMiddleware(
     Store<AppState> store, action, NextDispatcher next) async {
   next(action);
   if (action is GetAllMonthAction) {

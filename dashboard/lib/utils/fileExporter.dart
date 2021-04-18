@@ -1,6 +1,5 @@
 import 'dart:io';
 import 'dart:typed_data';
-import 'package:covid19_progression_modeler/models/models.dart';
 import 'package:covid19_progression_modeler/utils/pathResolver.dart' as pr;
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';

@@ -1,4 +1,6 @@
 import 'package:covid19_progression_modeler/config/config.dart';
+import 'package:covid19_progression_modeler/redux/AppState.dart';
+import 'package:covid19_progression_modeler/redux/viewModel/ViewModel.dart';
 import 'package:covid19_progression_modeler/utils/mapInfos.dart';
 import 'package:covid19_progression_modeler/widgets/painter/ArrowPainter.dart';
 import 'package:covid19_progression_modeler/widgets/painter/MapPainter.dart';
@@ -7,6 +9,8 @@ import '../../utils/DataGetter.dart' as DataGetter;
 import 'package:covid19_progression_modeler/models/models.dart';
 import 'package:touchable/touchable.dart';
 import 'LocalityInfos.dart';
+import 'package:flutter_redux/flutter_redux.dart';
+import 'package:redux/redux.dart';
 
 class MapWidget extends StatefulWidget {
   final List<Locality> localities;
@@ -64,17 +68,20 @@ class _MapWidgetState extends State<MapWidget> {
               });
             },
           ),
-          child: Stack(
-            children: (!widget.withArrow)
-                ? widget.localities
-                    .map((l) => LocalityInfos(
-                          nbCase: l.newCases,
-                          position:
-                              _listMapInfos.firstWhere((e) => e.name == l.localityName),
-                          insidePopup: widget.havePopup,
-                        ))
-                    .toList()
-                : _arrowList.map((arrow) => Arrow(arrow: arrow)).toList(),
+          child: StoreConnector<AppState, ViewModel>(
+            converter: (Store<AppState> store) => ViewModel.create(store),
+            builder: (BuildContext context, ViewModel model) => Stack(
+              children: (!widget.withArrow)
+                  ? model.regions
+                      .map((l) => LocalityInfos(
+                            nbCase: l.newCases,
+                            position: _listMapInfos
+                                .firstWhere((e) => e.name == l.localityName),
+                            insidePopup: widget.havePopup,
+                          ))
+                      .toList()
+                  : _arrowList.map((arrow) => Arrow(arrow: arrow)).toList(),
+            ),
           ),
         ),
       ),

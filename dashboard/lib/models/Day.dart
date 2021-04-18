@@ -1,4 +1,5 @@
 import 'Locality.dart';
+
 class Day {
   String annoucementDate = '';
   bool checked = false;
@@ -66,7 +67,21 @@ class DayStats {
       numberOfCommunityCases: map['numberOfCommunityCases'] ?? 0,
       numberOfHealed: map['numberOfHealed'] ?? 0,
       numberOfDeaths: map['numberOfDeaths'] ?? 0,
-      localities: List<Locality>.from(map['localities']?.map((x) => Locality.fromMap(x) ?? Locality()) ?? const []),
+      localities: List<Locality>.from(
+          map['localities']?.map((x) => Locality.fromMap(x) ?? Locality()) ??
+              const []),
+    );
+  }
+
+  static DayStats initDayStat() {
+    return DayStats(
+      numberOfTests: 0,
+      numberOfNewCases: 0,
+      numberOfContactCases: 0,
+      numberOfCommunityCases: 0,
+      numberOfHealed: 0,
+      numberOfDeaths: 0,
+      localities: const [],
     );
   }
 }

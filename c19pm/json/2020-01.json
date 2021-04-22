@@ -1,0 +1,870 @@
+[
+    {
+        "annoucementDate": "2020-01-01",
+        "numberOfTests": 68,
+        "numberOfNewCases": 8,
+        "numberOfContactCases": 15,
+        "numberOfCommunityCases": 78,
+        "numberOfHealed": 35,
+        "numberOfDeaths": 72,
+        "sourceFileName": "2020-01",
+        "extractionDate": "Fri Feb 12 2021 12:15:37",
+        "localities": [
+            {
+                "localityName": "port emmieton",
+                "administrativeLevel": "dept",
+                "newCases": 82
+            },
+            {
+                "localityName": "keelingtown",
+                "administrativeLevel": "dept",
+                "newCases": 59
+            },
+            {
+                "localityName": "north may",
+                "administrativeLevel": "dept",
+                "newCases": 16
+            }
+        ]
+    },
+    {
+        "annoucementDate": "2020-01-02",
+        "numberOfTests": 52,
+        "numberOfNewCases": 10,
+        "numberOfContactCases": 4,
+        "numberOfCommunityCases": 96,
+        "numberOfHealed": 5,
+        "numberOfDeaths": 79,
+        "sourceFileName": "2020-01",
+        "extractionDate": "Fri Feb 12 2021 12:15:37",
+        "localities": [
+            {
+                "localityName": "schoenshire",
+                "administrativeLevel": "dept",
+                "newCases": 4
+            },
+            {
+                "localityName": "ernestinaburgh",
+                "administrativeLevel": "dept",
+                "newCases": 29
+            },
+            {
+                "localityName": "lake joaquinville",
+                "administrativeLevel": "dept",
+                "newCases": 97
+            }
+        ]
+    },
+    {
+        "annoucementDate": "2020-01-03",
+        "numberOfTests": 88,
+        "numberOfNewCases": 10,
+        "numberOfContactCases": 13,
+        "numberOfCommunityCases": 76,
+        "numberOfHealed": 7,
+        "numberOfDeaths": 93,
+        "sourceFileName": "2020-01",
+        "extractionDate": "Fri Feb 12 2021 12:15:37",
+        "localities": [
+            {
+                "localityName": "stanburgh",
+                "administrativeLevel": "dept",
+                "newCases": 6
+            },
+            {
+                "localityName": "cummingshaven",
+                "administrativeLevel": "dept",
+                "newCases": 90
+            },
+            {
+                "localityName": "bernhardberg",
+                "administrativeLevel": "dept",
+                "newCases": 80
+            }
+        ]
+    },
+    {
+        "annoucementDate": "2020-01-04",
+        "numberOfTests": 35,
+        "numberOfNewCases": 50,
+        "numberOfContactCases": 77,
+        "numberOfCommunityCases": 11,
+        "numberOfHealed": 62,
+        "numberOfDeaths": 57,
+        "sourceFileName": "2020-01",
+        "extractionDate": "Fri Feb 12 2021 12:15:37",
+        "localities": [
+            {
+                "localityName": "juanitafurt",
+                "administrativeLevel": "region",
+                "newCases": 86
+            },
+            {
+                "localityName": "lake freida",
+                "administrativeLevel": "region",
+                "newCases": 31
+            },
+            {
+                "localityName": "north chelseyport",
+                "administrativeLevel": "region",
+                "newCases": 26
+            }
+        ]
+    },
+    {
+        "annoucementDate": "2020-01-05",
+        "numberOfTests": 96,
+        "numberOfNewCases": 59,
+        "numberOfContactCases": 15,
+        "numberOfCommunityCases": 73,
+        "numberOfHealed": 16,
+        "numberOfDeaths": 74,
+        "sourceFileName": "2020-01",
+        "extractionDate": "Fri Feb 12 2021 12:15:37",
+        "localities": [
+            {
+                "localityName": "port keshawn",
+                "administrativeLevel": "dept",
+                "newCases": 28
+            },
+            {
+                "localityName": "bergstromshire",
+                "administrativeLevel": "dept",
+                "newCases": 29
+            },
+            {
+                "localityName": "lake bobby",
+                "administrativeLevel": "dept",
+                "newCases": 91
+            }
+        ]
+    },
+    {
+        "annoucementDate": "2020-01-06",
+        "numberOfTests": 84,
+        "numberOfNewCases": 50,
+        "numberOfContactCases": 5,
+        "numberOfCommunityCases": 4,
+        "numberOfHealed": 9,
+        "numberOfDeaths": 91,
+        "sourceFileName": "2020-01",
+        "extractionDate": "Fri Feb 12 2021 12:15:37",
+        "localities": [
+            {
+                "localityName": "new percyfurt",
+                "administrativeLevel": "dept",
+                "newCases": 71
+            },
+            {
+                "localityName": "josefinafurt",
+                "administrativeLevel": "dept",
+                "newCases": 89
+            },
+            {
+                "localityName": "marleehaven",
+                "administrativeLevel": "dept",
+                "newCases": 76
+            }
+        ]
+    },
+    {
+        "annoucementDate": "2020-01-07",
+        "numberOfTests": 68,
+        "numberOfNewCases": 71,
+        "numberOfContactCases": 26,
+        "numberOfCommunityCases": 99,
+        "numberOfHealed": 44,
+        "numberOfDeaths": 47,
+        "sourceFileName": "2020-01",
+        "extractionDate": "Fri Feb 12 2021 12:15:37",
+        "localities": [
+            {
+                "localityName": "lemkeview",
+                "administrativeLevel": "dept",
+                "newCases": 82
+            },
+            {
+                "localityName": "vicenteton",
+                "administrativeLevel": "dept",
+                "newCases": 76
+            },
+            {
+                "localityName": "south jasmin",
+                "administrativeLevel": "dept",
+                "newCases": 43
+            }
+        ]
+    },
+    {
+        "annoucementDate": "2020-01-08",
+        "numberOfTests": 13,
+        "numberOfNewCases": 41,
+        "numberOfContactCases": 89,
+        "numberOfCommunityCases": 2,
+        "numberOfHealed": 52,
+        "numberOfDeaths": 90,
+        "sourceFileName": "2020-01",
+        "extractionDate": "Fri Feb 12 2021 12:15:37",
+        "localities": [
+            {
+                "localityName": "port edafort",
+                "administrativeLevel": "dept",
+                "newCases": 67
+            },
+            {
+                "localityName": "ortizland",
+                "administrativeLevel": "dept",
+                "newCases": 2
+            },
+            {
+                "localityName": "alessandroland",
+                "administrativeLevel": "dept",
+                "newCases": 20
+            }
+        ]
+    },
+    {
+        "annoucementDate": "2020-01-09",
+        "numberOfTests": 35,
+        "numberOfNewCases": 44,
+        "numberOfContactCases": 45,
+        "numberOfCommunityCases": 59,
+        "numberOfHealed": 65,
+        "numberOfDeaths": 45,
+        "sourceFileName": "2020-01",
+        "extractionDate": "Fri Feb 12 2021 12:15:37",
+        "localities": [
+            {
+                "localityName": "anikahaven",
+                "administrativeLevel": "dept",
+                "newCases": 97
+            },
+            {
+                "localityName": "west tony",
+                "administrativeLevel": "dept",
+                "newCases": 71
+            },
+            {
+                "localityName": "south maudie",
+                "administrativeLevel": "dept",
+                "newCases": 17
+            }
+        ]
+    },
+    {
+        "annoucementDate": "2020-01-10",
+        "numberOfTests": 49,
+        "numberOfNewCases": 88,
+        "numberOfContactCases": 64,
+        "numberOfCommunityCases": 62,
+        "numberOfHealed": 71,
+        "numberOfDeaths": 26,
+        "sourceFileName": "2020-01",
+        "extractionDate": "Fri Feb 12 2021 12:15:37",
+        "localities": [
+            {
+                "localityName": "new wilfordmouth",
+                "administrativeLevel": "dept",
+                "newCases": 49
+            },
+            {
+                "localityName": "bernhardton",
+                "administrativeLevel": "dept",
+                "newCases": 30
+            },
+            {
+                "localityName": "tremaynefurt",
+                "administrativeLevel": "dept",
+                "newCases": 66
+            }
+        ]
+    },
+    {
+        "annoucementDate": "2020-01-11",
+        "numberOfTests": 81,
+        "numberOfNewCases": 41,
+        "numberOfContactCases": 13,
+        "numberOfCommunityCases": 1,
+        "numberOfHealed": 88,
+        "numberOfDeaths": 74,
+        "sourceFileName": "2020-01",
+        "extractionDate": "Fri Feb 12 2021 12:15:37",
+        "localities": [
+            {
+                "localityName": "north phoebe",
+                "administrativeLevel": "dept",
+                "newCases": 68
+            },
+            {
+                "localityName": "michealburgh",
+                "administrativeLevel": "dept",
+                "newCases": 93
+            },
+            {
+                "localityName": "hackettside",
+                "administrativeLevel": "dept",
+                "newCases": 60
+            }
+        ]
+    },
+    {
+        "annoucementDate": "2020-01-12",
+        "numberOfTests": 2,
+        "numberOfNewCases": 2,
+        "numberOfContactCases": 5,
+        "numberOfCommunityCases": 57,
+        "numberOfHealed": 18,
+        "numberOfDeaths": 42,
+        "sourceFileName": "2020-01",
+        "extractionDate": "Fri Feb 12 2021 12:15:37",
+        "localities": [
+            {
+                "localityName": "sophiabury",
+                "administrativeLevel": "dept",
+                "newCases": 80
+            },
+            {
+                "localityName": "lake dulce",
+                "administrativeLevel": "dept",
+                "newCases": 2
+            },
+            {
+                "localityName": "sigmundfurt",
+                "administrativeLevel": "dept",
+                "newCases": 39
+            }
+        ]
+    },
+    {
+        "annoucementDate": "2020-01-13",
+        "numberOfTests": 32,
+        "numberOfNewCases": 27,
+        "numberOfContactCases": 50,
+        "numberOfCommunityCases": 83,
+        "numberOfHealed": 70,
+        "numberOfDeaths": 20,
+        "sourceFileName": "2020-01",
+        "extractionDate": "Fri Feb 12 2021 12:15:37",
+        "localities": [
+            {
+                "localityName": "mrazborough",
+                "administrativeLevel": "dept",
+                "newCases": 26
+            },
+            {
+                "localityName": "mitchellborough",
+                "administrativeLevel": "dept",
+                "newCases": 2
+            },
+            {
+                "localityName": "lake dixie",
+                "administrativeLevel": "dept",
+                "newCases": 65
+            }
+        ]
+    },
+    {
+        "annoucementDate": "2020-01-14",
+        "numberOfTests": 12,
+        "numberOfNewCases": 10,
+        "numberOfContactCases": 5,
+        "numberOfCommunityCases": 25,
+        "numberOfHealed": 19,
+        "numberOfDeaths": 36,
+        "sourceFileName": "2020-01",
+        "extractionDate": "Fri Feb 12 2021 12:15:37",
+        "localities": [
+            {
+                "localityName": "east torreyborough",
+                "administrativeLevel": "dept",
+                "newCases": 21
+            },
+            {
+                "localityName": "moenshire",
+                "administrativeLevel": "dept",
+                "newCases": 55
+            },
+            {
+                "localityName": "faytown",
+                "administrativeLevel": "dept",
+                "newCases": 20
+            }
+        ]
+    },
+    {
+        "annoucementDate": "2020-01-15",
+        "numberOfTests": 75,
+        "numberOfNewCases": 16,
+        "numberOfContactCases": 22,
+        "numberOfCommunityCases": 30,
+        "numberOfHealed": 97,
+        "numberOfDeaths": 50,
+        "sourceFileName": "2020-01",
+        "extractionDate": "Fri Feb 12 2021 12:15:37",
+        "localities": [
+            {
+                "localityName": "west andreanne",
+                "administrativeLevel": "dept",
+                "newCases": 18
+            },
+            {
+                "localityName": "south murray",
+                "administrativeLevel": "dept",
+                "newCases": 1
+            },
+            {
+                "localityName": "kavonmouth",
+                "administrativeLevel": "dept",
+                "newCases": 42
+            }
+        ]
+    },
+    {
+        "annoucementDate": "2020-01-16",
+        "numberOfTests": 19,
+        "numberOfNewCases": 16,
+        "numberOfContactCases": 11,
+        "numberOfCommunityCases": 26,
+        "numberOfHealed": 82,
+        "numberOfDeaths": 32,
+        "sourceFileName": "2020-01",
+        "extractionDate": "Fri Feb 12 2021 12:15:37",
+        "localities": [
+            {
+                "localityName": "port jana",
+                "administrativeLevel": "dept",
+                "newCases": 14
+            },
+            {
+                "localityName": "port greenview",
+                "administrativeLevel": "dept",
+                "newCases": 30
+            },
+            {
+                "localityName": "maribelmouth",
+                "administrativeLevel": "dept",
+                "newCases": 23
+            }
+        ]
+    },
+    {
+        "annoucementDate": "2020-01-17",
+        "numberOfTests": 66,
+        "numberOfNewCases": 47,
+        "numberOfContactCases": 81,
+        "numberOfCommunityCases": 48,
+        "numberOfHealed": 44,
+        "numberOfDeaths": 31,
+        "sourceFileName": "2020-01",
+        "extractionDate": "Fri Feb 12 2021 12:15:37",
+        "localities": [
+            {
+                "localityName": "lake hectorbury",
+                "administrativeLevel": "dept",
+                "newCases": 35
+            },
+            {
+                "localityName": "north corashire",
+                "administrativeLevel": "dept",
+                "newCases": 10
+            },
+            {
+                "localityName": "domenickmouth",
+                "administrativeLevel": "dept",
+                "newCases": 34
+            }
+        ]
+    },
+    {
+        "annoucementDate": "2020-01-18",
+        "numberOfTests": 57,
+        "numberOfNewCases": 18,
+        "numberOfContactCases": 39,
+        "numberOfCommunityCases": 70,
+        "numberOfHealed": 96,
+        "numberOfDeaths": 37,
+        "sourceFileName": "2020-01",
+        "extractionDate": "Fri Feb 12 2021 12:15:37",
+        "localities": [
+            {
+                "localityName": "celestinoton",
+                "administrativeLevel": "region",
+                "newCases": 80
+            },
+            {
+                "localityName": "elmiraberg",
+                "administrativeLevel": "region",
+                "newCases": 58
+            },
+            {
+                "localityName": "port elmore",
+                "administrativeLevel": "region",
+                "newCases": 84
+            }
+        ]
+    },
+    {
+        "annoucementDate": "2020-01-19",
+        "numberOfTests": 20,
+        "numberOfNewCases": 9,
+        "numberOfContactCases": 73,
+        "numberOfCommunityCases": 29,
+        "numberOfHealed": 57,
+        "numberOfDeaths": 90,
+        "sourceFileName": "2020-01",
+        "extractionDate": "Fri Feb 12 2021 12:15:37",
+        "localities": [
+            {
+                "localityName": "klingland",
+                "administrativeLevel": "region",
+                "newCases": 90
+            },
+            {
+                "localityName": "new landen",
+                "administrativeLevel": "region",
+                "newCases": 3
+            },
+            {
+                "localityName": "south lillian",
+                "administrativeLevel": "region",
+                "newCases": 51
+            }
+        ]
+    },
+    {
+        "annoucementDate": "2020-01-20",
+        "numberOfTests": 23,
+        "numberOfNewCases": 56,
+        "numberOfContactCases": 40,
+        "numberOfCommunityCases": 35,
+        "numberOfHealed": 7,
+        "numberOfDeaths": 13,
+        "sourceFileName": "2020-01",
+        "extractionDate": "Fri Feb 12 2021 12:15:37",
+        "localities": [
+            {
+                "localityName": "yoshikoside",
+                "administrativeLevel": "dept",
+                "newCases": 17
+            },
+            {
+                "localityName": "new saigefort",
+                "administrativeLevel": "dept",
+                "newCases": 34
+            },
+            {
+                "localityName": "gibsonborough",
+                "administrativeLevel": "dept",
+                "newCases": 60
+            }
+        ]
+    },
+    {
+        "annoucementDate": "2020-01-21",
+        "numberOfTests": 80,
+        "numberOfNewCases": 22,
+        "numberOfContactCases": 51,
+        "numberOfCommunityCases": 83,
+        "numberOfHealed": 3,
+        "numberOfDeaths": 25,
+        "sourceFileName": "2020-01",
+        "extractionDate": "Fri Feb 12 2021 12:15:37",
+        "localities": [
+            {
+                "localityName": "lake terence",
+                "administrativeLevel": "dept",
+                "newCases": 22
+            },
+            {
+                "localityName": "earnestburgh",
+                "administrativeLevel": "dept",
+                "newCases": 41
+            },
+            {
+                "localityName": "east jeremieburgh",
+                "administrativeLevel": "dept",
+                "newCases": 35
+            }
+        ]
+    },
+    {
+        "annoucementDate": "2020-01-22",
+        "numberOfTests": 77,
+        "numberOfNewCases": 14,
+        "numberOfContactCases": 7,
+        "numberOfCommunityCases": 70,
+        "numberOfHealed": 2,
+        "numberOfDeaths": 16,
+        "sourceFileName": "2020-01",
+        "extractionDate": "Fri Feb 12 2021 12:15:37",
+        "localities": [
+            {
+                "localityName": "new mose",
+                "administrativeLevel": "region",
+                "newCases": 3
+            },
+            {
+                "localityName": "emardmouth",
+                "administrativeLevel": "region",
+                "newCases": 46
+            },
+            {
+                "localityName": "alfredhaven",
+                "administrativeLevel": "region",
+                "newCases": 10
+            }
+        ]
+    },
+    {
+        "annoucementDate": "2020-01-23",
+        "numberOfTests": 68,
+        "numberOfNewCases": 10,
+        "numberOfContactCases": 30,
+        "numberOfCommunityCases": 87,
+        "numberOfHealed": 25,
+        "numberOfDeaths": 36,
+        "sourceFileName": "2020-01",
+        "extractionDate": "Fri Feb 12 2021 12:15:37",
+        "localities": [
+            {
+                "localityName": "south anastacioburgh",
+                "administrativeLevel": "region",
+                "newCases": 77
+            },
+            {
+                "localityName": "north catalina",
+                "administrativeLevel": "region",
+                "newCases": 51
+            },
+            {
+                "localityName": "pinkieland",
+                "administrativeLevel": "region",
+                "newCases": 65
+            }
+        ]
+    },
+    {
+        "annoucementDate": "2020-01-24",
+        "numberOfTests": 71,
+        "numberOfNewCases": 46,
+        "numberOfContactCases": 63,
+        "numberOfCommunityCases": 63,
+        "numberOfHealed": 24,
+        "numberOfDeaths": 46,
+        "sourceFileName": "2020-01",
+        "extractionDate": "Fri Feb 12 2021 12:15:37",
+        "localities": [
+            {
+                "localityName": "candidohaven",
+                "administrativeLevel": "dept",
+                "newCases": 99
+            },
+            {
+                "localityName": "lake magnus",
+                "administrativeLevel": "dept",
+                "newCases": 51
+            },
+            {
+                "localityName": "west maiaview",
+                "administrativeLevel": "dept",
+                "newCases": 36
+            }
+        ]
+    },
+    {
+        "annoucementDate": "2020-01-25",
+        "numberOfTests": 52,
+        "numberOfNewCases": 2,
+        "numberOfContactCases": 53,
+        "numberOfCommunityCases": 3,
+        "numberOfHealed": 89,
+        "numberOfDeaths": 99,
+        "sourceFileName": "2020-01",
+        "extractionDate": "Fri Feb 12 2021 12:15:37",
+        "localities": [
+            {
+                "localityName": "wardstad",
+                "administrativeLevel": "dept",
+                "newCases": 85
+            },
+            {
+                "localityName": "huelsshire",
+                "administrativeLevel": "dept",
+                "newCases": 73
+            },
+            {
+                "localityName": "schmelerview",
+                "administrativeLevel": "dept",
+                "newCases": 54
+            }
+        ]
+    },
+    {
+        "annoucementDate": "2020-01-26",
+        "numberOfTests": 33,
+        "numberOfNewCases": 35,
+        "numberOfContactCases": 65,
+        "numberOfCommunityCases": 28,
+        "numberOfHealed": 24,
+        "numberOfDeaths": 51,
+        "sourceFileName": "2020-01",
+        "extractionDate": "Fri Feb 12 2021 12:15:37",
+        "localities": [
+            {
+                "localityName": "north josefafurt",
+                "administrativeLevel": "dept",
+                "newCases": 9
+            },
+            {
+                "localityName": "lake jesusberg",
+                "administrativeLevel": "dept",
+                "newCases": 98
+            },
+            {
+                "localityName": "faybury",
+                "administrativeLevel": "dept",
+                "newCases": 83
+            }
+        ]
+    },
+    {
+        "annoucementDate": "2020-01-27",
+        "numberOfTests": 37,
+        "numberOfNewCases": 52,
+        "numberOfContactCases": 58,
+        "numberOfCommunityCases": 23,
+        "numberOfHealed": 92,
+        "numberOfDeaths": 45,
+        "sourceFileName": "2020-01",
+        "extractionDate": "Fri Feb 12 2021 12:15:37",
+        "localities": [
+            {
+                "localityName": "angelicaberg",
+                "administrativeLevel": "dept",
+                "newCases": 95
+            },
+            {
+                "localityName": "lake kylietown",
+                "administrativeLevel": "dept",
+                "newCases": 51
+            },
+            {
+                "localityName": "grimesborough",
+                "administrativeLevel": "dept",
+                "newCases": 85
+            }
+        ]
+    },
+    {
+        "annoucementDate": "2020-01-28",
+        "numberOfTests": 83,
+        "numberOfNewCases": 68,
+        "numberOfContactCases": 7,
+        "numberOfCommunityCases": 18,
+        "numberOfHealed": 4,
+        "numberOfDeaths": 62,
+        "sourceFileName": "2020-01",
+        "extractionDate": "Fri Feb 12 2021 12:15:37",
+        "localities": [
+            {
+                "localityName": "south yvonnetown",
+                "administrativeLevel": "region",
+                "newCases": 27
+            },
+            {
+                "localityName": "langoshmouth",
+                "administrativeLevel": "region",
+                "newCases": 2
+            },
+            {
+                "localityName": "east fannie",
+                "administrativeLevel": "region",
+                "newCases": 85
+            }
+        ]
+    },
+    {
+        "annoucementDate": "2020-01-29",
+        "numberOfTests": 85,
+        "numberOfNewCases": 40,
+        "numberOfContactCases": 74,
+        "numberOfCommunityCases": 30,
+        "numberOfHealed": 4,
+        "numberOfDeaths": 91,
+        "sourceFileName": "2020-01",
+        "extractionDate": "Fri Feb 12 2021 12:15:37",
+        "localities": [
+            {
+                "localityName": "south zula",
+                "administrativeLevel": "region",
+                "newCases": 60
+            },
+            {
+                "localityName": "gunnerburgh",
+                "administrativeLevel": "region",
+                "newCases": 92
+            },
+            {
+                "localityName": "crooksbury",
+                "administrativeLevel": "region",
+                "newCases": 41
+            }
+        ]
+    },
+    {
+        "annoucementDate": "2020-01-30",
+        "numberOfTests": 11,
+        "numberOfNewCases": 47,
+        "numberOfContactCases": 39,
+        "numberOfCommunityCases": 96,
+        "numberOfHealed": 93,
+        "numberOfDeaths": 34,
+        "sourceFileName": "2020-01",
+        "extractionDate": "Fri Feb 12 2021 12:15:37",
+        "localities": [
+            {
+                "localityName": "kariannestad",
+                "administrativeLevel": "region",
+                "newCases": 21
+            },
+            {
+                "localityName": "jacobstown",
+                "administrativeLevel": "region",
+                "newCases": 5
+            },
+            {
+                "localityName": "north cara",
+                "administrativeLevel": "region",
+                "newCases": 85
+            }
+        ]
+    },
+    {
+        "annoucementDate": "2020-01-31",
+        "numberOfTests": 26,
+        "numberOfNewCases": 23,
+        "numberOfContactCases": 64,
+        "numberOfCommunityCases": 12,
+        "numberOfHealed": 43,
+        "numberOfDeaths": 50,
+        "sourceFileName": "2020-01",
+        "extractionDate": "Fri Feb 12 2021 12:15:37",
+        "localities": [
+            {
+                "localityName": "lake sofialand",
+                "administrativeLevel": "dept",
+                "newCases": 24
+            },
+            {
+                "localityName": "south jermey",
+                "administrativeLevel": "dept",
+                "newCases": 85
+            },
+            {
+                "localityName": "kochfurt",
+                "administrativeLevel": "dept",
+                "newCases": 13
+            }
+        ]
+    }
+]

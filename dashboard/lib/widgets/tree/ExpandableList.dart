@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:covid19_progression_modeler/config/config.dart';
 import 'package:flutter/material.dart';
+
 import '../../models/models.dart';
 import '../popup/DataPopup.dart';
 
@@ -43,7 +44,6 @@ class _ExpandableListState extends State<ExpandableList> {
               children: [
                 Expanded(
                   child: ListElement(
-                    sourceFile: widget.list[i].sourceFileName,
                     day: day,
                     callBack: (Day d) {
                       setState(() => day.checked = d.checked);
@@ -82,11 +82,14 @@ class _ExpandableListState extends State<ExpandableList> {
 }
 
 class ListElement extends StatefulWidget {
-  final String sourceFile;
   final Day day;
   final Function callBack;
 
-  ListElement({this.day, this.callBack, this.sourceFile,});
+  ListElement({
+    Key key,
+    this.day,
+    this.callBack,
+  }) : super(key: key);
 
   @override
   _ListElementState createState() => _ListElementState();
@@ -114,8 +117,7 @@ class _ListElementState extends State<ListElement> {
         });
         widget.callBack(widget.day);
       },
-      title:
-          Text("${widget.sourceFile}-${widget.day.annoucementDate}"),
+      title: Text("${widget.day.annoucementDate}"),
     );
   }
 }

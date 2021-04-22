@@ -1,5 +1,4 @@
 import 'package:covid19_progression_modeler/redux/viewModel/ViewModel.dart';
-import 'package:covid19_progression_modeler/widgets/popup/ValidatorPopup.dart';
 import 'package:flutter/material.dart';
 import 'ExpandableList.dart';
 import '../../models/models.dart';
@@ -31,13 +30,8 @@ class _DataViewerState extends State<DataViewer> {
           SizedBox(width: 15),
           ElevatedButton(
             onPressed: () {
-              DataLoader.send(_selectedDay, _selectedMonth, _checked);
-              if (_checked) {
-                return showDialog(
-                  context: context,
-                  builder: (ctx) => ValidatorPopup(),
-                );
-              }
+              return DataLoader.send(
+                  _selectedDay, _selectedMonth, _checked, context);
             },
             child: Text("Charger les données"),
           ),
@@ -66,7 +60,9 @@ class _DataViewerState extends State<DataViewer> {
                   bool test = false;
                   for (var day in _selectedDay) {
                     test = widget.model.months[index].days.contains(day);
-                    if (test) { break; }
+                    if (test) {
+                      break;
+                    }
                   }
                   if (!test) {
                     _selectedMonth.remove(widget.model.months[index]);

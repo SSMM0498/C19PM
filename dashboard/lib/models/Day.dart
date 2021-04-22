@@ -1,7 +1,7 @@
 import 'Locality.dart';
 
 class Day {
-  int annoucementDate;
+  String annoucementDate = '';
   bool checked = false;
   DayStats dayStats;
 
@@ -21,7 +21,7 @@ class Day {
 
   factory Day.fromMap(Map<String, dynamic> map) {
     return Day(
-      map['annoucementDate'] ?? 0,
+      map['annoucementDate'] ?? '',
       false,
       DayStats.fromMap((map)) ?? DayStats(),
     );

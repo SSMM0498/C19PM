@@ -56,34 +56,36 @@ class DataPopup extends StatelessWidget {
               ],
             ),
             SizedBox(height: 50),
-            Container(
-              width: SizeHelper.width() * 0.35,
-              child: Column(
-                children: [
-                      ...day.dayStats.localities
-                      .map(
-                        (l) => Column(
-                          children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: <Widget>[
-                                numberInfos(
-                                  nb: l.localityName,
-                                  label: (l.isRegion) ? "region" : "département",
-                                ),
-                                SizedBox(width: 20),
-                                numberInfos(
-                                  nb: l.newCases,
-                                  label: "nouveaux cas",
-                                ),
-                              ],
-                            ),
-                            SizedBox(height: 25),
-                          ],
-                        ),
-                      )
-                      .toList(),
-                ],
+            Expanded(
+              child: Container(
+                width: SizeHelper.width() * 0.35,
+                child: Scrollbar(
+                  child: ListView.builder(
+                    itemCount: day.dayStats.localities.length,
+                    itemBuilder: (BuildContext context, int index) {
+                      Locality l = day.dayStats.localities[index];
+                      return Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: <Widget>[
+                              numberInfos(
+                                nb: l.localityName,
+                                label: (l.isRegion) ? "region" : "département",
+                              ),
+                              SizedBox(width: 20),
+                              numberInfos(
+                                nb: l.newCases,
+                                label: "nouveaux cas",
+                              ),
+                            ],
+                          ),
+                          SizedBox(height: 25),
+                        ],
+                      );
+                    },
+                  ),
+                ),
               ),
             ),
           ],

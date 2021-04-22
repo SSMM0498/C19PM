@@ -1,0 +1,77 @@
+[
+    {
+        "date" : "3/17/2020",
+        "start": "Dakar",
+        "end": "Diourbel"
+    },
+    {
+        "date" : "3/20/2020",
+        "start": "Dakar",
+        "end": "Thiès"
+    },
+    {
+        "date" : "3/23/2020",
+        "start": "Thiès",
+        "end": "Tivaouane"
+    },
+    {
+        "date" : "3/4/2020",
+        "start": "Diourbel",
+        "end": "Louga"
+    },
+    {
+        "date" : "3/8/2020",
+        "start": "Diourbel",
+        "end": "Mbacké"
+    },
+    {
+        "date" : "3/21/2020",
+        "start": "Mbacké",
+        "end": "M'bour"
+    },
+    {
+        "date" : "3/14/2020",
+        "start": "M'bour",
+        "end": "Foundiougne"
+    },
+    {
+        "date" : "3/15/2020",
+        "start": "M'bour",
+        "end": "Fatick"
+    },
+    {
+        "date" : "3/8/2020",
+        "start": "Fatick",
+        "end": "Kaolack"
+    },
+    {
+        "date" : "3/12/2020",
+        "start": "Kaolack",
+        "end": "Nioro du Rip"
+    },
+    {
+        "date" : "3/6/2020",
+        "start": "Mbacké",
+        "end": "Linguère"
+    },
+    {
+        "date" : "3/5/2020",
+        "start": "Podor",
+        "end": "Matam"
+    },
+    {
+        "date" : "3/16/2020",
+        "start": "Podor",
+        "end": "Ranérou Ferlo"
+    },
+    {
+        "date" : "3/17/2020",
+        "start": "Saint-Louis",
+        "end": "Podor"
+    },
+    {
+        "date" : "3/0/2020",
+        "start": "Saint-Louis",
+        "end": "Dagana"
+    }
+]

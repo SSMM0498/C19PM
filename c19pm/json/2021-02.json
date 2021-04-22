@@ -1,0 +1,160 @@
+[
+  {
+    "annoucementDate": "2021-02-26",
+    "numberOfTests": 2762,
+    "numberOfNewCases": 290,
+    "numberOfContactCases": 103,
+    "numberOfCommunityCases": 187,
+    "numberOfHealed": 265,
+    "numberOfDeaths": 5,
+    "sourceFileName": "2021-02",
+    "extractionDate": "Fri Feb 12 2021 12:15:37",
+    "localities": [
+      {
+        "localityName": "dakar",
+        "administrativeLevel": "dept",
+        "newCases": 58
+      },
+      {
+        "localityName": "rufisque",
+        "administrativeLevel": "dept",
+        "newCases": 10
+      },
+      {
+        "localityName": "guédiawaye",
+        "administrativeLevel": "dept",
+        "newCases": 36
+      },
+      {
+        "localityName": "bambey",
+        "administrativeLevel": "dept",
+        "newCases": 2
+      },
+      {
+        "localityName": "mbour",
+        "administrativeLevel": "dept",
+        "newCases": 9
+      },
+      {
+        "localityName": "saraya",
+        "administrativeLevel": "dept",
+        "newCases": 5
+      },
+      {
+        "localityName": "vélingara",
+        "administrativeLevel": "dept",
+        "newCases": 3
+      },
+      {
+        "localityName": "mbacké",
+        "administrativeLevel": "dept",
+        "newCases": 3
+      },
+      {
+        "localityName": "fatick",
+        "administrativeLevel": "dept",
+        "newCases": 4
+      },
+      {
+        "localityName": "dagana ",
+        "administrativeLevel": "dept",
+        "newCases": 2
+      },
+      {
+        "localityName": "louga",
+        "administrativeLevel": "dept",
+        "newCases": 3
+      },
+      {
+        "localityName": "bignona",
+        "administrativeLevel": "dept",
+        "newCases": 1
+      },
+      {
+        "localityName": "guinguinéo",
+        "administrativeLevel": "dept",
+        "newCases": 1
+      },
+      {
+        "localityName": "kébémer",
+        "administrativeLevel": "dept",
+        "newCases": 1
+      },
+      {
+        "localityName": "thiès",
+        "administrativeLevel": "dept",
+        "newCases": 1
+      },
+      {
+        "localityName": "salémata",
+        "administrativeLevel": "dept",
+        "newCases": 1
+      },
+      {
+        "localityName": "foundiougne",
+        "administrativeLevel": "dept",
+        "newCases": 1
+      },
+      {
+        "localityName": "tivaouane",
+        "administrativeLevel": "dept",
+        "newCases": 1
+      },
+      {
+        "localityName": "dakar",
+        "administrativeLevel": "region",
+        "newCases": 104
+      },
+      {
+        "localityName": "diourbel",
+        "administrativeLevel": "region",
+        "newCases": 5
+      },
+      {
+        "localityName": "thiès",
+        "administrativeLevel": "region",
+        "newCases": 27
+      },
+      {
+        "localityName": "louga",
+        "administrativeLevel": "region",
+        "newCases": 16
+      },
+      {
+        "localityName": "kaolack",
+        "administrativeLevel": "region",
+        "newCases": 8
+      },
+      {
+        "localityName": "kedougou",
+        "administrativeLevel": "region",
+        "newCases": 13
+      },
+      {
+        "localityName": "kolda",
+        "administrativeLevel": "region",
+        "newCases": 3
+      },
+      {
+        "localityName": "fatick",
+        "administrativeLevel": "region",
+        "newCases": 5
+      },
+      {
+        "localityName": "saint louis",
+        "administrativeLevel": "region",
+        "newCases": 2
+      },
+      {
+        "localityName": "ziguinchor",
+        "administrativeLevel": "region",
+        "newCases": 1
+      },
+      {
+        "localityName": "sedhiou",
+        "administrativeLevel": "region",
+        "newCases": 1
+      }
+    ]
+  }
+]

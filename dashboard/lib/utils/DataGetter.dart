@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
+import 'package:covid19_progression_modeler/config/mysql.dart';
 import 'package:covid19_progression_modeler/utils/pathResolver.dart' as pr;
 import 'package:fl_chart/fl_chart.dart';
 import '../models/models.dart';
@@ -22,22 +23,30 @@ Future<List<Month>> retrieveJSON() async {
 Future<List<ArrowParam>> createArrowList(
   List<LocalityMapInfos> listMapInfos,
 ) async {
-  String doc = await pr.getJsonFolder();
-  File scenarioFile;
-  if (Platform.isWindows) {
-    scenarioFile = new File(doc + "scenario\\scenario.json");
-  } else {
-    scenarioFile = new File(doc + "scenario/scenario.json");
-  }
-  dynamic jsoncontent = jsonDecode(scenarioFile.readAsStringSync());
+  var conn = await MysqlConfig.newConnection();
+
+  conn.query("CALL generateScenario()");
+  var res = await conn.query('''
+    SELECT (
+      SELECT localityName FROM locality WHERE idLocality=ts.idOrigin
+    ) AS Origin, (
+        SELECT localityName FROM locality WHERE idLocality=ts.idContamin
+    ) AS Contaminated, contaminationDate FROM TransmissionScenario ts
+  ''');
+
   List<ArrowParam> al = [];
 
-  for (var j in jsoncontent) {
+  for (var r in res) {
     ArrowParam a = new ArrowParam(
-      date: j["date"],
-      start: listMapInfos.firstWhere((e) => e.name == j["start"]).getPosition(),
-      end: listMapInfos.firstWhere((e) => e.name == j["end"]).getPosition(),
+      start: listMapInfos
+          .firstWhere((e) => e.name == r.fields["Origin"])
+          .getPosition(),
+      end: listMapInfos
+          .firstWhere((e) => e.name == r.fields["Contaminated"])
+          .getPosition(),
+      date: r.fields["contaminationDate"].toString(),
     );
+    print(a.toString());
     al.add(a);
   }
 
@@ -53,7 +62,6 @@ Month createMonthList(File fmonth) {
 
   return m;
 }
-
 
 List<FlSpot> createGraphPoint(String region) {
   //1. Get data from SQL Database for the specific region

@@ -53,30 +53,34 @@ class _MapWidgetState extends State<MapWidget> {
       color: Colors.white,
       width: double.infinity,
       height: SizeHelper.height() * .75,
-      child: CanvasTouchDetector(
-        builder: (context) => CustomPaint(
-          painter: MapPainter(
-            context: context,
-            listMapInfos: _listMapInfos,
-            havePopup: widget.havePopup,
-            withArrow: widget.withArrow,
-            curPath: _selectPath,
-            localities: widget.localities,
-            onPressed: (curPath) {
-              setState(() {
-                _selectPath = curPath;
-              });
-            },
-          ),
-          child: StoreConnector<AppState, ViewModel>(
-            converter: (Store<AppState> store) => ViewModel.create(store),
-            builder: (BuildContext context, ViewModel model) => Stack(
+      child: StoreConnector<AppState, ViewModel>(
+        converter: (Store<AppState> store) => ViewModel.create(store),
+        builder: (BuildContext context, ViewModel model) => CanvasTouchDetector(
+          builder: (context) => CustomPaint(
+            painter: MapPainter(
+              context: context,
+              listMapInfos: _listMapInfos,
+              havePopup: widget.havePopup,
+              withArrow: widget.withArrow,
+              curPath: _selectPath,
+              // localities: widget.localities,
+              localities: model.regions,
+              onPressed: (curPath) {
+                setState(() {
+                  _selectPath = curPath;
+                });
+              },
+            ),
+            child: Stack(
               children: (!widget.withArrow)
                   ? model.regions
+                  // ? widget.localities
                       .map((l) => LocalityInfos(
                             nbCase: l.newCases,
-                            position: _listMapInfos
-                                .firstWhere((e) => e.name == l.localityName),
+                            position: _listMapInfos.firstWhere(
+                              (e) => e.name == l.localityName,
+                              orElse: () => LocalityMapInfos(),
+                            ),
                             insidePopup: widget.havePopup,
                           ))
                       .toList()

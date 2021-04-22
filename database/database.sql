@@ -52,7 +52,7 @@ INSERT INTO locality (localityName, nbPopulation, regionName) VALUES
 ("Goudiry",114847,"Tambacounda"),
 ("Koupentoum",128433,"Tambacounda"),
 ("Tambacounda",299163,"Tambacounda"),
-("M'Bour",668878,"Thiès"),
+("M'bour",668878,"Thiès"),
 ("Thiès",667814,"Thiès"),
 ("Tivaouane",452172,"Thiès"),
 ("Bignona",252554,"Ziguinchor"),
@@ -127,7 +127,7 @@ BEGIN
   RETURN v_nbPopulation;
 END;
 
-CREATE VIEW ConcentrationCumul AS
+CREATE VIEW ConcCumul AS
 SELECT idLocality, t1.annoucementDate, t1.newCases, (
     SELECT SUM(newCases) / getPopulation(t1.idLocality)
     FROM localityStat
@@ -143,7 +143,7 @@ SELECT idLocality, t1.annoucementDate, t1.newCases, (
     ORDER BY idLocality, annoucementDate
 ) t1;
 
-CREATE FUNCTION TauxProgression(
+CREATE FUNCTION progressionRate(
     v_idLocality INT,
     v_Conc INT,
     v_currentDATE DATE
@@ -166,7 +166,7 @@ BEGIN
 END;
 
 CREATE VIEW EvolutionStat AS
-SELECT idLocality, annoucementDate, newCases, Conc, TauxProgression(idLocality, Conc, annoucementDate) AS Prog FROM ConcentrationCumul;
+SELECT idLocality, annoucementDate, newCases, Conc, progressionRate(idLocality, Conc, annoucementDate) AS Prog FROM ConcCumul;
 
 DROP TABLE IF EXISTS TransmissionScenario;
 
@@ -222,9 +222,8 @@ BEGIN
             WHERE annoucementDate <= v_firstCase AND idLocality <> v_idLoc ORDER BY trans DESC, Conc DESC LIMIT 1
             INTO v_idOrgin, v_prog;
 
-            INSERT INTO TransmissionScenario VALUES
+            INSERT IGNORE INTO TransmissionScenario VALUES
             (v_idOrgin, v_idLoc, v_firstCase, v_prog);
-
 
         END IF;
 

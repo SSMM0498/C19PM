@@ -21,7 +21,7 @@ class Locality {
     return Locality(
       localityName: map['localityName'] ?? '',
       newCases: map['newCases'] ?? 0,
-      isRegion: (map['administrativeLevel'] == 'region') ? true : false ?? false,
+      isRegion: (map['administrativeLevel'] == 'region') ? true : false,
     );
   }
 

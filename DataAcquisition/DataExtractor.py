@@ -7,39 +7,6 @@ from PIL import Image, ImageEnhance, ImageFilter
 from pytesseract import pytesseract
 from fuzzywuzzy import fuzz
 
-# import fitz 
-
-# Function To Get Images from a pdf file : Works if U install fitz
-# def pdfToImage(pdf):
-#     # File path you want to extract images from
-#     file = pdf
-#     # open the file
-#     pdf_file = fitz.open(file)
-#     images = []
-#     for page_index in range(len(pdf_file)):
-#         # get the page itself
-#         page = pdf_file[page_index]
-#         image_list = page.getImageList()
-#         # printing number of images found in this page
-#         # if image_list:
-#         #     print(f'[+] Found a total of {len(image_list)} images in page {page_index}')
-#         # else:
-#         #     print("[!] No images found on page", page_index)
-#         for image_index, img in enumerate(page.getImageList(), start=1):
-#             # get the XREF of the image
-#             xref = img[0]
-#             # extract the image bytes
-#             base_image = pdf_file.extractImage(xref)
-#             image_bytes = base_image["image"]
-#             # get the image extension
-#             image_ext = base_image["ext"]
-#             # load it to PIL
-#             image = Image.open(io.BytesIO(image_bytes))
-#             # save it to local disk
-#             images.append(f"image{page_index+1}_{image_index}.{image_ext}")
-#             image.save(open(f"image{page_index+1}_{image_index}.{image_ext}", "wb"))
-#     return images
-
 def getText(image):    
     path_to_tesseract = r"/opt/homebrew/Cellar/tesseract/4.1.1/bin/tesseract"
     # path_to_tesseract = <-- pathToTesseract here
@@ -432,3 +399,65 @@ def exportToFile(date, month, year, nbTest, nbPositif, casCon, casCom,gueris,dec
         feeds.append(data)
         with open(filepath, "w") as export_file:
             json.dump(feeds, export_file, ensure_ascii=False)
+
+
+def extract(iamges):
+    # images = ["./env/image7_1.jpeg","./env/image8_1.jpeg"]
+
+    text = ''
+
+    # Extract the text of all images and concat them
+    for image in images:
+        text += getText(image)
+    text = text.lower()
+
+    # Get date
+    o = getDate(text)
+
+    jour = int(o["dayNumber"])
+    mois = o["month"]
+    an = o["year"]
+
+    # get total of tests
+    o = getTests(text)
+    text = text[o["endIndex"]:-1]
+    numbers = o['numbers']
+    nombreDeTest = numbers['tests']
+    nombreDePositif = numbers['positifs']
+    tauxPositivite = numbers['taux']
+
+    # get number of contact cases
+    o = getCasContact(text)
+    text = text[o["endIndex"] :-1]
+    nombreCasContact = o['number']
+
+    # get number of communautary cases
+    o = getCasCom(text)
+    text = text[o["endIndex"] :-1]
+    nombreCasCommunautaire = o['number']
+
+    # Truncate text to listing of cases per city
+    try:
+        text = text[text.index("comme suit")+12:]
+    except:
+        try:
+            text = text[text.index(":")+1:-1]
+        except:
+            print('Unable to Gather More Information!')
+
+    # get array of location and there number of cases
+    cas = getCityCases(text)
+    text = text[cas["endIndex"] :-1]
+
+    # get healed
+    nombreDeGueris = int(getNbGueris(text))
+
+    # get dead
+    nombreDeDeces = int(getDeces(text))
+
+    # get overall data since the begining
+    # (getOverall(text))
+
+    cases = exportIntoJson(cas["cas"])
+
+    exportToFile(jour,mois,an,nombreDeTest,nombreDePositif,nombreCasContact,nombreCasCommunautaire,nombreDeGueris,nombreDeDeces,cases)

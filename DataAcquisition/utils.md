@@ -3,7 +3,7 @@
 
 # active the virtual environment
 ### Linux
-`env/Scripts/activate`
+`source env/bin/activate`
 ### Windows
 `env\Scripts\activate`
 

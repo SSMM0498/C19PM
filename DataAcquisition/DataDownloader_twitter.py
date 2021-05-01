@@ -5,6 +5,7 @@ import os
 import requests
 # import csv
 import platform
+import DataExtractor
 
 # def createDirectory(directoryName):
 #     path = os.getcwd()+"\\assets\\"+directoryName
@@ -15,7 +16,8 @@ import platform
 #     else:
 #         print ("Successfully created the directory %s " % path)
 
-def downloadPhotos(image):
+def downloadImage(image):
+    path = ""
     if(type(image) is dict):
         filename = image["filename"]
         url = image["url"]
@@ -37,8 +39,24 @@ def downloadPhotos(image):
                 print ("Erreu while downloading"+filename)
             else:
                 print (filename +" download ✅✅")
+                # extract data
         else:
             print('no url')
+        
+    return path
+
+def downloadPhotos(images):
+    pathList = []
+    if(type(images) is dict):
+        pathList.append(downloadImage(images))
+    else:
+    # if(type(image) is list):
+        for image in images:
+            pathList.append(downloadImage(image))
+
+    print(pathList)
+    #extract data
+
 
 # def flatten_list(list):
 #     flatten_list = []
@@ -96,13 +114,12 @@ def loadResutl():
         payload = json.load(json_file)
         images = formatFileNames(payload)
         for image in images:
-            print(image)
-            # createDirectory(directoryName=image['photos'][0])
-            if(type(image) is dict):
-                downloadPhotos(image)
-            if(type(image) is list):
-                for i in image:
-                    downloadPhotos(i)
+            downloadPhotos(image)
+            # if(type(image) is dict):
+            #     downloadPhotos(image)
+            # if(type(image) is list):
+            #     for i in image:
+            #         downloadPhotos(i)
 
 # def loadCvResult():
 #     with open('data.csv', newline='') as csvfile:

@@ -3,27 +3,27 @@ import sys
 import json
 import os
 import requests
+# import csv
+import platform
 
-class Image:
-    def  __init__(self, filename, url):
-        self.filename = filename
-        self.url = url
-
-
-def createDirectory(directoryName):
-    path = os.getcwd()+"\\assets\\"+directoryName
-    try:
-        os.mkdir(path)
-    except OSError:
-        print ("Creation of the directory %s failed" % path)
-    else:
-        print ("Successfully created the directory %s " % path)
+# def createDirectory(directoryName):
+#     path = os.getcwd()+"\\assets\\"+directoryName
+#     try:
+#         os.mkdir(path)
+#     except OSError:
+#         print ("Creation of the directory %s failed" % path)
+#     else:
+#         print ("Successfully created the directory %s " % path)
 
 def downloadPhotos(image):
     if(type(image) is dict):
         filename = image["filename"]
         url = image["url"]
-        path = os.getcwd()+"\\assets\\"+filename+"\\"+filename+".jpg"
+        if(platform.system() == 'Linux'):
+            path = os.getcwd()+"/assets/"+filename+".jpg"
+
+        if(platform.system() == 'Windows'):
+            path = os.getcwd()+"\\assets\\"+filename+".jpg"
         print(path)
         if(len(url) == 1):
             try:
@@ -40,12 +40,12 @@ def downloadPhotos(image):
         else:
             print('no url')
 
-def flatten_list(list):
-    flatten_list = []
-    for sublist in list:
-        for item in sublist:
-            flatten_list.append(item)
-    return flatten_list
+# def flatten_list(list):
+#     flatten_list = []
+#     for sublist in list:
+#         for item in sublist:
+#             flatten_list.append(item)
+#     return flatten_list
 
 def isvalidDate(date_string):
     isvalid = False
@@ -59,6 +59,18 @@ def getLimit(limit_string):
         limit = True
     return limit
 
+def correctJson():
+    filename = "data.json"
+    result= "result.json"
+    with open(filename, 'r') as myfile:
+        data = myfile.read().replace('"trans_dest": ""}', '"trans_dest": ""},')
+        data = data[:-1]
+
+    correct = "["+data+"]"
+    correct = correct.replace('"trans_dest": ""},]', '"trans_dest": ""}]')
+    with open(result, 'w') as myfile:
+        myfile.write(correct)
+
 def getCommunique(date="2020-02-28", interval= False):
     print('Récupération des tweets ...')
     try:
@@ -67,12 +79,13 @@ def getCommunique(date="2020-02-28", interval= False):
         config.Search = "Communiqué"
         config.Since = date
         config.Media = True
-        config.Output = "result.json"
+        config.Output = "data.json"
         config.Store_json = True
+        # config.Store_csv = True
+        # config.Output = "data.csv"
         if(interval):
             config.Limit = 1
         twint.run.Search(config)
-        print(config.Limit)
         print('Tweets récupérer avec succés')
     except:
         print("Erreur lors de la récupération de tweets")
@@ -83,18 +96,31 @@ def loadResutl():
         payload = json.load(json_file)
         images = formatFileNames(payload)
         for image in images:
-            createDirectory(directoryName=image['photos'][0])
+            print(image)
+            # createDirectory(directoryName=image['photos'][0])
             if(type(image) is dict):
                 downloadPhotos(image)
             if(type(image) is list):
                 for i in image:
                     downloadPhotos(i)
-            
-            
+
+# def loadCvResult():
+#     with open('data.csv', newline='') as csvfile:
+#         tweets = csv.DictReader(csvfile)
+#         tweetList = []
+#         for tweet in tweets:
+#             tweetList.append(tweet)
+#         data = {
+#             "data": tweetList
+#         }
+
+#     with open('data.json', 'w') as jsonFile:
+#         jsonFile.write(json.dumps(data, indent=4))
+#     print('Tweets are saved in json and csv format')
 
 def formatFileNames(payload):
     images = []
-    tweets = payload['data']
+    tweets = payload
     for tweet in tweets:
         if (len(tweet['photos']) > 1):
             filenames= []
@@ -127,14 +153,13 @@ def Main():
     if(len(sys.argv) == 2):
         if(isvalidDate(sys.argv[1])):
             getCommunique(sys.argv[1])
+            correctJson()
+            loadResutl()
         else:
             print("Le format de la date est incorrect. Réessayer avec  ce format: YYYY-MM-DD")
+    else:
+        getCommunique()
+        correctJson()
+        loadResutl()
 
-    if(len(sys.argv) == 3):
-        if(isvalidDate(sys.argv[1]) and getLimit(sys.argv[2])):
-            getCommunique(sys.argv[1], getLimit(sys.argv[2]))
-        else:
-            print("Le format de la date est incorrect. Réessayer avec  ce format: YYYY-MM-DD")
-            print("Ou bien le format de la limite")
-
-loadResutl()
+Main()

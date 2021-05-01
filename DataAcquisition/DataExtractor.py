@@ -401,7 +401,7 @@ def exportToFile(date, month, year, nbTest, nbPositif, casCon, casCom,gueris,dec
             json.dump(feeds, export_file, ensure_ascii=False)
 
 
-def extract(iamges):
+def extract(images):
     # images = ["./env/image7_1.jpeg","./env/image8_1.jpeg"]
 
     text = ''

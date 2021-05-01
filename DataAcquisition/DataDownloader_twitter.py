@@ -56,7 +56,7 @@ def downloadPhotos(images):
 
     print(pathList)
     #extract data
-
+    DataExtractor.extract(pathList)
 
 # def flatten_list(list):
 #     flatten_list = []

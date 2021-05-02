@@ -129,13 +129,15 @@ def getOverall(text):
     return obj
 
 def getDeces(text):
-    print(text)
-    tmp = text[text.find("services"):text.index("services")+60]
-    tmp = tmp.split()
-    for word in tmp:
-        if (word.isdigit()):
-            return word
-    return "0"
+    try:
+        tmp = text[text.find("services"):text.index("services")+60]
+        tmp = tmp.split()
+        for word in tmp:
+            if (word.isdigit()):
+                return word
+        return "0"
+    except:
+        return "0"
 
 def getCityCases(text):
     cas = []

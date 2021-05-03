@@ -41,7 +41,7 @@ Region calculateRegionNbCases(Results results, String regionName) {
   if (results != null && results.length > 0) {
     for (var row in results) {
       if (row['regionName'] == regionName) {
-        nbCases += row['newCases'];
+        nbCases += row['newCases'] ?? 0;
         newRegion.departements.add(departementFromRow(row));
       }
     }

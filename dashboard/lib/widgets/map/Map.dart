@@ -50,7 +50,7 @@ class _MapWidgetState extends State<MapWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.white,
+      // color: Colors.white38,
       width: double.infinity,
       height: SizeHelper.height() * .75,
       child: CanvasTouchDetector(
@@ -72,14 +72,26 @@ class _MapWidgetState extends State<MapWidget> {
             converter: (Store<AppState> store) => ViewModel.create(store),
             builder: (BuildContext context, ViewModel model) => Stack(
               children: (!widget.withArrow)
-                  ? model.regions
-                      .map((l) => LocalityInfos(
-                            nbCase: l.newCases,
-                            position: _listMapInfos
-                                .firstWhere((e) => e.name == l.localityName),
-                            insidePopup: widget.havePopup,
-                          ))
-                      .toList()
+                  ? (widget.localities.isEmpty)
+                      ? model.regions
+                          .map(
+                            (l) => LocalityInfos(
+                              nbCase: l.newCases,
+                              position: _listMapInfos.firstWhere(
+                                (e) => e.name == l.localityName,
+                              ),
+                              insidePopup: widget.havePopup,
+                            ),
+                          )
+                          .toList()
+                      : widget.localities
+                          .map((l) => LocalityInfos(
+                                nbCase: l.newCases,
+                                position: _listMapInfos.firstWhere(
+                                    (e) => e.name == l.localityName),
+                                insidePopup: widget.havePopup,
+                              ))
+                          .toList()
                   : _arrowList.map((arrow) => Arrow(arrow: arrow)).toList(),
             ),
           ),

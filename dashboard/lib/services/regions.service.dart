@@ -8,28 +8,22 @@ class RegionService {
       MySqlConnection connection = await MysqlConfig.newConnection();
       if (connection != null && date != null) {
         String queryString = '''
-          select
-            r1.localityName as localityName,
-            r1.newCases as newCases,
-            r1.regionName as regionName, 
-            r1.nbPopulation as nbPopulation,
-            r1.regionName as regionName,
-            daystat.numberOfNewCases,
-            daystat.numberOfTests,
-            daystat.numberOfCommunityCases,
-            daystat.numberOfContactCases,
-            daystat.numberOfHealed,
-            daystat.numberOfDeaths,
-            daystat.extractionDate,
-            daystat.annoucementDate
-          from
-          (
-            SELECT *
-            FROM localityStat
-            NATURAL JOIN locality
-          ) r1
-          join daystat
-          WHERE (daystat.annoucementDate = ? AND r1.idDay = daystat.idDay);
+          SELECT r1.localityName AS localityName,
+            r1.newCases AS newCases,
+            r1.regionName AS regionName
+          FROM (
+            SELECT locality.localityName AS localityName,
+              locality.regionName AS regionName,
+              l.newCases AS newCases,
+              l.idDay AS idDay
+            FROM locality
+            LEFT JOIN (
+              SELECT * FROM localityStat
+              NATURAL JOIN dayStat
+              WHERE dayStat.annoucementDate = ?
+            ) l
+            ON locality.idLocality=l.idLocality
+          ) r1;
         ''';
         result = await connection.query(queryString, [date.toUtc()]);
         connection.close();

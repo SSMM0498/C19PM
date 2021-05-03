@@ -26,8 +26,8 @@ class SideBar extends StatelessWidget {
             children: [
               IconButton(
                   iconSize: 30.0,
-                  color: Palette.secondColor,
-                  hoverColor: Palette.lightSecondColor,
+                  color: Palette.primaryColor,
+                  hoverColor: Palette.lSecondaryColor,
                   tooltip: "Se déconnecter",
                   icon: Icon(Icons.exit_to_app),
                   onPressed: () {

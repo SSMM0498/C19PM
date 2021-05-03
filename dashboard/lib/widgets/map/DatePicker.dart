@@ -32,7 +32,7 @@ class _DatePcikerState extends State<DatePciker> {
               locale: "fr_FR",
               controller: widget._controller,
               initialSelectedDate: DateTime.now(),
-              selectionColor: Palette.lightSecondColor,
+              selectionColor: Palette.lSecondaryColor,
               selectedTextColor: Colors.white,
               dateTextStyle: TextStyle(fontSize: 15),
               inactiveDates: [

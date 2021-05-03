@@ -1,4 +1,5 @@
 import 'package:covid19_progression_modeler/redux/viewModel/ViewModel.dart';
+import 'package:covid19_progression_modeler/widgets/basics/basics.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
@@ -26,46 +27,34 @@ class _MainHeaderState extends State<MainHeader> {
   Widget build(BuildContext context) {
     return Row(
       mainAxisSize: MainAxisSize.max,
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Expanded(
-          flex: 6,
-          // child: DatePciker(model: model),
-          child: Center(
-            child: Column(
-              children: [
-                ElevatedButton(
-                  onPressed: () async {
-                    DateTime newDate = await displayDatePicker(context);
-                    print(newDate);
-                    setState(() {
-                      this._selectedValue = newDate;
-                    });
-                    // widget.model.onSetSelectedDate(newDate);
-                    // load stats of this date
-                    widget.model.onGetDayStatsAction(newDate);
-                  },
-                  child: Text('Choisir une date'),
-                  style: ElevatedButton.styleFrom(
-                    padding: EdgeInsets.symmetric(
-                      horizontal: 50,
-                      vertical: 20,
-                    ),
-                    textStyle: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
-                ),
-                Text(
-                  DateFormat.yMMMMd('fr_FR').format(this._selectedValue),
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-              ],
+        Image.asset("assets/logo.xs.png"),
+        Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(
+              DateFormat.yMMMMd('fr_FR').format(this._selectedValue),
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w500,
+              ),
             ),
-          ),
+            SizedBox(width: 25),
+            Btn(
+              callBack: () async {
+                DateTime newDate = await displayDatePicker(context);
+                print(newDate);
+                setState(() {
+                  this._selectedValue = newDate;
+                });
+                // widget.model.onSetSelectedDate(newDate);
+                // load stats of this date
+                widget.model.onGetDayStatsAction(newDate);
+              },
+              label: 'Choisir une date',
+            ),
+          ],
         )
       ],
     );

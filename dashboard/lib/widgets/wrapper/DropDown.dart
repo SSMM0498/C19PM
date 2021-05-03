@@ -20,7 +20,7 @@ class DownloadDropDown extends StatelessWidget {
         onChanged: (int value) => handleDropDownChange(value, context),
         icon: Icon(
           Icons.download_sharp,
-          color: Palette.secondColor,
+          color: Palette.primaryColor,
         ),
         items: [
           DropdownMenuItem(

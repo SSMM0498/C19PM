@@ -4,7 +4,7 @@ import 'package:touchable/touchable.dart';
 import 'package:covid19_progression_modeler/config/config.dart';
 import 'package:covid19_progression_modeler/models/models.dart';
 
-import '../popup/Popup.dart';
+import '../popup/RegionPopup.dart';
 
 class MapPainter extends CustomPainter {
   final bool havePopup;
@@ -37,12 +37,12 @@ class MapPainter extends CustomPainter {
 
     final Paint paint = Paint()
       ..style = PaintingStyle.stroke
-      ..color = Palette.lightSecondColor
+      ..color = Palette.lSecondaryColor
       ..strokeWidth = 1.5;
 
     listMapInfos.forEach((i) {
       paint.style =
-          i.path == curPath ? PaintingStyle.fill : PaintingStyle.stroke;
+          (i.path == curPath) ? PaintingStyle.fill : PaintingStyle.stroke;
       touchCanvas.drawPath(
         i.path.transform(matrix4.storage),
         paint,
@@ -50,13 +50,12 @@ class MapPainter extends CustomPainter {
           String city = i.name;
           onPressed(i.path);
           if (havePopup && !withArrow) {
-            print("clicked on $city");
             List<Departement> deps = (localities as List<Region>)
                 .firstWhere((r) => r.localityName == city)
                 .departements;
             return showDialog(
               context: context,
-              builder: (ctx) => Popup(
+              builder: (ctx) => RegionPopup(
                 city: city,
                 context: ctx,
                 deps: deps,

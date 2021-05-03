@@ -92,62 +92,62 @@
       {
         "localityName": "dakar",
         "newCases": 73,
-        "administrativeLevel": "reg"
+        "administrativeLevel": "region"
       },
       {
         "localityName": "saint-louis",
         "newCases": 3,
-        "administrativeLevel": "reg"
+        "administrativeLevel": "region"
       },
       {
         "localityName": "ziguinchor",
         "newCases": 1,
-        "administrativeLevel": "reg"
+        "administrativeLevel": "region"
       },
       {
         "localityName": "kédougou",
         "newCases": 17,
-        "administrativeLevel": "reg"
+        "administrativeLevel": "region"
       },
       {
         "localityName": "thiès",
         "newCases": 15,
-        "administrativeLevel": "reg"
+        "administrativeLevel": "region"
       },
       {
         "localityName": "diourbel",
         "newCases": 2,
-        "administrativeLevel": "reg"
+        "administrativeLevel": "region"
       },
       {
         "localityName": "kaolack",
         "newCases": 2,
-        "administrativeLevel": "reg"
+        "administrativeLevel": "region"
       },
       {
         "localityName": "kolda",
         "newCases": 2,
-        "administrativeLevel": "reg"
+        "administrativeLevel": "region"
       },
       {
         "localityName": "fatick",
         "newCases": 2,
-        "administrativeLevel": "reg"
+        "administrativeLevel": "region"
       },
       {
         "localityName": "sedhiou",
         "newCases": 1,
-        "administrativeLevel": "reg"
+        "administrativeLevel": "region"
       },
       {
         "localityName": "louga",
         "newCases": 2,
-        "administrativeLevel": "reg"
+        "administrativeLevel": "region"
       },
       {
         "localityName": "kaffrine",
         "newCases": 1,
-        "administrativeLevel": "reg"
+        "administrativeLevel": "region"
       }
     ]
   },
@@ -203,42 +203,42 @@
       {
         "localityName": "dakar",
         "newCases": 22,
-        "administrativeLevel": "reg"
+        "administrativeLevel": "region"
       },
       {
         "localityName": "louga",
         "newCases": 4,
-        "administrativeLevel": "reg"
+        "administrativeLevel": "region"
       },
       {
         "localityName": "kolda",
         "newCases": 4,
-        "administrativeLevel": "reg"
+        "administrativeLevel": "region"
       },
       {
         "localityName": "fatick",
         "newCases": 3,
-        "administrativeLevel": "reg"
+        "administrativeLevel": "region"
       },
       {
         "localityName": "kédougou",
         "newCases": 5,
-        "administrativeLevel": "reg"
+        "administrativeLevel": "region"
       },
       {
         "localityName": "diourbel",
         "newCases": 3,
-        "administrativeLevel": "reg"
+        "administrativeLevel": "region"
       },
       {
         "localityName": "kaolack",
         "newCases": 1,
-        "administrativeLevel": "reg"
+        "administrativeLevel": "region"
       },
       {
         "localityName": "thiès",
         "newCases": 1,
-        "administrativeLevel": "reg"
+        "administrativeLevel": "region"
       }
     ]
   }

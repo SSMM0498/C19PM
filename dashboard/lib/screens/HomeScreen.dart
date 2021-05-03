@@ -1,9 +1,8 @@
+import 'dart:ui';
+
 import 'package:covid19_progression_modeler/redux/AppState.dart';
 import 'package:covid19_progression_modeler/redux/viewModel/ViewModel.dart';
-import 'package:covid19_progression_modeler/widgets/tree/DataViewer.dart';
-import 'package:covid19_progression_modeler/widgets/map/GlobalMap.dart';
-import 'package:covid19_progression_modeler/widgets/layout/MainHeader.dart';
-import 'package:covid19_progression_modeler/widgets/layout/SideBar.dart';
+import 'package:covid19_progression_modeler/widgets/widgets.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:covid19_progression_modeler/config/config.dart';
 import 'package:flutter/material.dart';
@@ -21,46 +20,68 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: StoreConnector<AppState, ViewModel>(
         converter: (Store<AppState> store) => ViewModel.create(store),
-        builder: (BuildContext context, ViewModel viewModel) => Row(
-          mainAxisSize: MainAxisSize.max,
-          children: <Widget>[
-            Container(
-              width: SizeHelper.width() * 0.05,
-              height: double.infinity,
-              decoration: const BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(18)),
-                color: Colors.white,
-              ),
-              margin: EdgeInsets.fromLTRB(SizeHelper.margin(),
-                  SizeHelper.margin(), 0, SizeHelper.margin()),
-              child: SideBar(),
-            ),
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
-              width: SizeHelper.width() * 0.64,
-              height: SizeHelper.height() * 1,
-              color: Palette.primeColor,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.center,
-                mainAxisSize: MainAxisSize.max,
-                children: <Widget>[
-                  MainHeader(
-                    model: viewModel,
+        builder: (BuildContext context, ViewModel viewModel) => backGround(
+          Row(
+            mainAxisSize: MainAxisSize.max,
+            children: <Widget>[
+              Container(
+                width: SizeHelper.width() * 0.05,
+                height: double.infinity,
+                decoration: const BoxDecoration(
+                  border: Border.fromBorderSide(
+                    BorderSide(
+                      color: Colors.white,
+                      width: 2.5,
+                    ),
                   ),
-                  SizedBox(height: 30),
-                  GlobalMap(model: viewModel)
-                ],
+                  borderRadius: BorderRadius.all(Radius.circular(15)),
+                  color: Colors.white54,
+                ),
+                margin: EdgeInsets.fromLTRB(
+                  SizeHelper.margin(),
+                  SizeHelper.margin(),
+                  0,
+                  SizeHelper.margin(),
+                ),
+                child: SideBar(),
               ),
-            ),
-            Container(
-              width: SizeHelper.width() * 0.3,
-              color: Colors.white,
-              child: DataViewer(
-                model: viewModel,
+              Container(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 25,
+                  vertical: 10,
+                ),
+                width: SizeHelper.width() * 0.645,
+                height: SizeHelper.height() * 1,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisSize: MainAxisSize.max,
+                  children: <Widget>[
+                    MainHeader(
+                      model: viewModel,
+                    ),
+                    SizedBox(height: 10),
+                    GlobalMap(model: viewModel)
+                  ],
+                ),
               ),
-            ),
-          ],
+              Container(
+                width: SizeHelper.width() * 0.3,
+                decoration: BoxDecoration(
+                  color: Colors.white54,
+                  border: Border(
+                    left: BorderSide(
+                      color: Colors.white,
+                      width: 2.5,
+                    ),
+                  ),
+                ),
+                child: DataViewer(
+                  model: viewModel,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
       drawer: Container(

@@ -20,7 +20,7 @@ class CircleInfos extends StatelessWidget {
           width: 40,
           height: 40,
           decoration:
-              BoxDecoration(color: (healed) ? Palette.healed : Palette.secondColor, shape: BoxShape.circle),
+              BoxDecoration(color: (healed) ? Palette.healed : Palette.primaryColor, shape: BoxShape.circle),
           child: Center(
             child: Text(
               "$infos",

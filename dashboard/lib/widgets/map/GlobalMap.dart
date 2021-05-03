@@ -36,7 +36,7 @@ class _GlobalMapState extends State<GlobalMap> {
             tooltip: "Voir la propagation",
             icon: Icon(
               Icons.remove_red_eye_outlined,
-              color: Palette.secondColor,
+              color: Palette.primaryColor,
             ),
             onPressed: () {
               setState(() {

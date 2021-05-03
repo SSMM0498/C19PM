@@ -14,7 +14,7 @@ class DataPopup extends StatelessWidget {
       titleTextStyle: TextStyle(color: Palette.fontColor, fontSize: 24),
       titlePadding: EdgeInsets.all(15),
       contentPadding: EdgeInsets.all(10),
-      backgroundColor: Palette.primeColor,
+      backgroundColor: Palette.backgroundColor,
       scrollable: true,
       content: Container(
         width: SizeHelper.width() * 0.6,

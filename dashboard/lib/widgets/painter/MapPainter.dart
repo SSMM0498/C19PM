@@ -51,7 +51,7 @@ class MapPainter extends CustomPainter {
           onPressed(i.path);
           if (havePopup && !withArrow) {
             List<Departement> deps = (localities as List<Region>)
-                .firstWhere((r) => r.localityName == city)
+                .firstWhere((r) => r.localityName == city, orElse: () => null)
                 .departements;
             return showDialog(
               context: context,

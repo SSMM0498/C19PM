@@ -7,39 +7,6 @@ from PIL import Image, ImageEnhance, ImageFilter
 from pytesseract import pytesseract
 from fuzzywuzzy import fuzz
 
-# import fitz 
-
-# Function To Get Images from a pdf file : Works if U install fitz
-# def pdfToImage(pdf):
-#     # File path you want to extract images from
-#     file = pdf
-#     # open the file
-#     pdf_file = fitz.open(file)
-#     images = []
-#     for page_index in range(len(pdf_file)):
-#         # get the page itself
-#         page = pdf_file[page_index]
-#         image_list = page.getImageList()
-#         # printing number of images found in this page
-#         # if image_list:
-#         #     print(f'[+] Found a total of {len(image_list)} images in page {page_index}')
-#         # else:
-#         #     print("[!] No images found on page", page_index)
-#         for image_index, img in enumerate(page.getImageList(), start=1):
-#             # get the XREF of the image
-#             xref = img[0]
-#             # extract the image bytes
-#             base_image = pdf_file.extractImage(xref)
-#             image_bytes = base_image["image"]
-#             # get the image extension
-#             image_ext = base_image["ext"]
-#             # load it to PIL
-#             image = Image.open(io.BytesIO(image_bytes))
-#             # save it to local disk
-#             images.append(f"image{page_index+1}_{image_index}.{image_ext}")
-#             image.save(open(f"image{page_index+1}_{image_index}.{image_ext}", "wb"))
-#     return images
-
 def getText(image):    
     path_to_tesseract = r"/opt/homebrew/Cellar/tesseract/4.1.1/bin/tesseract"
     # path_to_tesseract = <-- pathToTesseract here
@@ -162,25 +129,30 @@ def getOverall(text):
     return obj
 
 def getDeces(text):
-    print(text)
-    tmp = text[text.find("services"):text.index("services")+60]
-    tmp = tmp.split()
-    for word in tmp:
-        if (word.isdigit()):
-            return word
-    return "0"
+    try:
+        tmp = text[text.find("services"):text.index("services")+60]
+        tmp = tmp.split()
+        for word in tmp:
+            if (word.isdigit()):
+                return word
+        return "0"
+    except:
+        return "0"
 
 def getCityCases(text):
     cas = []
-    if(text.find('(') == -1 or text.find(')') == -1):
-        beginIndex = text.find('-')
-        endToStart = text.find('patients')-8
-        tmp = text[beginIndex:endToStart]
+    endToStart = text.find('patients')-7
+    tmp = text[0:endToStart]
+    if((tmp.find('(') == -1 or tmp.find(')') == -1)):
+        beginIndex = tmp.find('-')
         tmp = tmp.replace('.',';')
         tmp = tmp.replace('et',',')
-        tmp = tmp.replace('\n','')
+        tmp = tmp.replace('\n', '')
+        tmp = tmp.replace("é","e")
+        tmp = tmp.replace("è","e")
+        tmp = tmp.replace("ï","i")
         try:
-            beginIndex = tmp.index('régions')
+            beginIndex = tmp.index('regions')
             endIndex = tmp.index(':')
             tmp = tmp[0:beginIndex] + tmp[endIndex+1:]
         except:
@@ -217,24 +189,28 @@ def getCityCases(text):
                         obj['lieu'] = loc
                         obj['nbCas'] = int(nbCasList)
                         cas.append(obj) 
-    else:    
+    else:
         beginIndex = 0
-        endIndex = text.index(".")
-        endToStart = text.find('patients')-8
-        tmp = text[beginIndex:endIndex]
+        try:  
+            endIndex = tmp.index(".")
+        except:
+            endIndex = -1            
+        tmp = tmp[beginIndex:endIndex]
         tmp = tmp.replace("(","")
         tmp = tmp.replace(")","")
         tmp = tmp.replace("\n"," ")
         tmp = tmp.replace("et",",")
         tmp = tmp.split(',')
+        print(tmp)
         for words in tmp:
             words = words.split()
+            # print(words)
+            i = 0
             obj = {
-                'found': False,
+                'found':False,
                 'lieu': '',
                 'nbCas': 0
             }
-            i = 0
             while(i < len(words)-1):
                 obj['lieu'] += words[i]
                 i += 1
@@ -244,7 +220,9 @@ def getCityCases(text):
             else:
                 continue
             cas.append(obj)
-            
+        # print(cas)
+
+        
     return {"cas": cas, 'endIndex': endToStart}
     
 
@@ -373,7 +351,6 @@ def exportIntoJson(cas):
                     for left in export["depts"]:
                         if (dept["dept"] == left["dept"]):
                             departement["newCases"] += left["Cas"]
-                    print(departement)
                     finished_departements.append(departement)
                     All_Data.append(departement)
                 else:
@@ -432,3 +409,80 @@ def exportToFile(date, month, year, nbTest, nbPositif, casCon, casCom,gueris,dec
         feeds.append(data)
         with open(filepath, "w") as export_file:
             json.dump(feeds, export_file, ensure_ascii=False)
+
+ 
+def extract(images):
+    # images = ["./env/image7_1.jpeg","./env/image8_1.jpeg"]
+
+    text = ''
+
+    # Extract the text of all images and concat them
+    for image in images:
+        text += getText(image)
+    text = text.lower()
+
+    # Get date
+    o = getDate(text)
+
+    jour = int(o["dayNumber"])
+    mois = o["month"]
+    an = o["year"]
+
+    # get total of tests
+    o = getTests(text)
+    text = text[o["endIndex"]:-1]
+    numbers = o['numbers']
+    nombreDeTest = numbers['tests']
+    nombreDePositif = numbers['positifs']
+    tauxPositivite = numbers['taux']
+
+    # get number of contact cases
+    o = getCasContact(text)
+    text = text[o["endIndex"] :-1]
+    nombreCasContact = o['number']
+
+    # get number of communautary cases
+    o = getCasCom(text)
+    text = text[o["endIndex"] :-1]
+    nombreCasCommunautaire = o['number']
+
+    # Truncate text to listing of cases per city
+    try:
+        text = text[text.index("comme suit") + 12 :]
+        # get array of location and there number of cases
+        cas = getCityCases(text)
+        text = text[cas["endIndex"] :-1]
+
+        # get healed 
+        nombreDeGueris = int(getNbGueris(text))
+
+        # get dead
+        nombreDeDeces = int(getDeces(text))
+
+        # get overall data since the begining
+        # (getOverall(text))
+
+        cases = exportIntoJson(cas["cas"])
+        exportToFile(jour,mois,an,nombreDeTest,nombreDePositif,nombreCasContact,nombreCasCommunautaire,nombreDeGueris,nombreDeDeces,cases)
+    except:
+        try:
+            text = text[text.index(":") + 1 :-1]
+            # get array of location and there number of cases
+            cas = getCityCases(text)
+            text = text[cas["endIndex"] :-1]
+
+            # get healed 
+            nombreDeGueris = int(getNbGueris(text))
+
+            # get dead
+            nombreDeDeces = int(getDeces(text))
+
+            # get overall data since the begining
+            # (getOverall(text))
+
+            cases = exportIntoJson(cas["cas"])
+            exportToFile(jour,mois,an,nombreDeTest,nombreDePositif,nombreCasContact,nombreCasCommunautaire,nombreDeGueris,nombreDeDeces,cases)
+        except:
+            print('Unable to Gather More Information!')
+
+   

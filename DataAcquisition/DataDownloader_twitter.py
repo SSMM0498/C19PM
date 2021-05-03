@@ -22,10 +22,10 @@ def downloadImage(image):
         filename = image["filename"]
         url = image["url"]
         if(platform.system() == 'Linux'):
-            path = os.getcwd()+"/assets/"+filename+".jpg"
+            path = "./assets/"+filename+".jpg"
 
         if(platform.system() == 'Windows'):
-            path = os.getcwd()+"\\assets\\"+filename+".jpg"
+            path = ".\\assets\\"+filename+".jpg"
         print(path)
         if(len(url) == 1):
             try:
@@ -36,10 +36,9 @@ def downloadImage(image):
                 file.write(response.content)
                 file.close()
             except:
-                print ("Erreu while downloading"+filename)
+                print ("Error while downloading"+filename)
             else:
                 print (filename +" download ✅✅")
-                # extract data
         else:
             print('no url')
         

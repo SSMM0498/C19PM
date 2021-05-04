@@ -389,7 +389,7 @@ def exportToFile(date, month, year, nbTest, nbPositif, casCon, casCom,gueris,dec
     export = []
     named_tuple = time.localtime() 
     data = {
-        "annoucementDate": date,
+        "announcementDate": date,
         "numberOfTests": nbTest,
         "numberOfNewCases": nbPositif,
         "numberOfContactCases": casCon,

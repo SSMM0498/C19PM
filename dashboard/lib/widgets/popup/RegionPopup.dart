@@ -4,8 +4,8 @@ import 'package:covid19_progression_modeler/widgets/map/RegionMap.dart';
 import 'package:flutter/material.dart';
 import 'package:covid19_progression_modeler/config/config.dart';
 
-class Popup extends StatefulWidget {
-  const Popup({
+class RegionPopup extends StatefulWidget {
+  const RegionPopup({
     Key key,
     @required this.city,
     @required this.deps,
@@ -16,10 +16,10 @@ class Popup extends StatefulWidget {
   final List<Departement> deps;
 
   @override
-  _PopupState createState() => _PopupState();
+  _RegionPopupState createState() => _RegionPopupState();
 }
 
-class _PopupState extends State<Popup> {
+class _RegionPopupState extends State<RegionPopup> {
   bool _showNumbers = true;
   bool _showMap = false;
   bool _showChart = false;
@@ -54,7 +54,7 @@ class _PopupState extends State<Popup> {
       titleTextStyle: TextStyle(color: Palette.fontColor, fontSize: 24),
       titlePadding: EdgeInsets.all(15),
       contentPadding: EdgeInsets.all(5),
-      backgroundColor: Palette.primeColor,
+      backgroundColor: Palette.backgroundColor,
       content: Container(
         width: (SizeHelper.width() >= 1366)
             ? SizeHelper.width() * 0.65
@@ -70,7 +70,7 @@ class _PopupState extends State<Popup> {
               children: [
                 IconButton(
                   iconSize: 30.0,
-                  color: Palette.secondColor,
+                  color: Palette.primaryColor,
                   hoverColor: Colors.white,
                   tooltip: "Voir les chiffres",
                   icon: Icon(Icons.table_chart_outlined),
@@ -78,7 +78,7 @@ class _PopupState extends State<Popup> {
                 ),
                 IconButton(
                   iconSize: 30.0,
-                  color: Palette.secondColor,
+                  color: Palette.primaryColor,
                   hoverColor: Colors.white,
                   icon: Icon(Icons.map),
                   tooltip: "Voir la carte",
@@ -86,7 +86,7 @@ class _PopupState extends State<Popup> {
                 ),
                 IconButton(
                   iconSize: 30.0,
-                  color: Palette.secondColor,
+                  color: Palette.primaryColor,
                   hoverColor: Colors.white,
                   tooltip: "Voir la courbe",
                   icon: Icon(Icons.show_chart),

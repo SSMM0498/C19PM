@@ -155,8 +155,8 @@ BEGIN
 
     SET v_Conc_Previous := 0;
 
-    SELECT (MAX(Conc) - v_Conc) / getPopulation(idLocality)
-    FROM ConcentrationCumul WHERE idLocality = 1
+    SELECT (MAX(Conc) - v_Conc) / getPopulation(v_idLocality)
+    FROM ConcCumul WHERE idLocality = v_idLocality
     AND annoucementDate <= v_currentDATE
     GROUP BY DATE_FORMAT(annoucementDate, '%Y-%m') ORDER BY DATE_FORMAT(annoucementDate, '%Y-%m') DESC LIMIT 1, 1
     INTO v_Conc_Previous;
@@ -192,20 +192,40 @@ BEGIN
   RETURN v_distance;
 END;
 
+CREATE PROCEDURE addContamination(v_idCont INT, v_firstCase DATE)
+BEGIN
+    DECLARE v_trans FLOAT;
+    DECLARE v_isOrigin INT;
+    DECLARE v_idOrgin INT;
+
+    SET v_isOrigin := 0;
+    SELECT idOrigin INTO v_isOrigin FROM TransmissionScenario WHERE idOrigin = v_idCont LIMIT 1;
+
+    IF (v_isOrigin = 0) THEN
+        SELECT idLocality, Prog / getDistance(v_idCont, idLocality) AS trans FROM EvolutionStat
+        WHERE annoucementDate <= v_firstCase AND idLocality <> v_idCont ORDER BY trans DESC, Conc DESC LIMIT 1
+        INTO v_idOrgin, v_trans;
+
+        INSERT IGNORE INTO TransmissionScenario VALUES
+        (v_idOrgin, v_idCont, v_firstCase, v_trans);
+    END IF;
+END;
+
 CREATE PROCEDURE generateScenario()
 BEGIN
     DECLARE done INT DEFAULT FALSE;
     DECLARE v_idLoc INT;
-    DECLARE v_idOrgin INT;
-    DECLARE v_prog FLOAT;
     DECLARE v_firstCase DATE;
     DECLARE c_localityFirstCase CURSOR FOR
     SELECT idLocality, (
         SELECT annoucementDate FROM EvolutionStat
         WHERE idLocality = t.idLocality
         ORDER BY annoucementDate ASC LIMIT 1
-    ) AS firstCase FROM locality t ORDER BY firstCase ASC;
+    ) AS firstCase FROM EvolutionStat t
+    GROUP BY idLocality ORDER BY firstCase ASC;
     DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+
+    TRUNCATE TransmissionScenario;
 
     OPEN c_localityFirstCase;
 
@@ -218,12 +238,7 @@ BEGIN
 
         IF (v_firstCase IS NOT NULL) THEN
 
-            SELECT idLocality, Prog / getDistance(v_idOrgin, idLocality) AS trans FROM EvolutionStat
-            WHERE annoucementDate <= v_firstCase AND idLocality <> v_idLoc ORDER BY trans DESC, Conc DESC LIMIT 1
-            INTO v_idOrgin, v_prog;
-
-            INSERT IGNORE INTO TransmissionScenario VALUES
-            (v_idOrgin, v_idLoc, v_firstCase, v_prog);
+            CALL addContamination(v_idLoc, v_firstCase);
 
         END IF;
 

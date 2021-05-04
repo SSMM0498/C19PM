@@ -5,6 +5,7 @@ import 'package:covid19_progression_modeler/redux/actions/user.action.dart';
 import 'package:covid19_progression_modeler/screens/HomeScreen.dart';
 import 'package:covid19_progression_modeler/services/user.service.dart';
 import 'package:covid19_progression_modeler/widgets/FadeAnimation.dart';
+import 'package:covid19_progression_modeler/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:redux_dev_tools/redux_dev_tools.dart';
@@ -33,156 +34,109 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
+    SizeHelper.getScreenSize(context);
     return Scaffold(
-      backgroundColor: Palette.primeColor,
-      body: SingleChildScrollView(
-        child: Stack(
-          children: [
-            Container(
-              height: MediaQuery.of(context).size.height - 82.0,
-              width: MediaQuery.of(context).size.width,
-              color: Colors.transparent,
-            ),
-            Positioned(
-              top: 75.0,
-              left: 100,
-              right: 100,
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(45.0),
-                    topRight: Radius.circular(45.0),
-                    bottomLeft: Radius.circular(45.0),
-                    bottomRight: Radius.circular(45.0),
-                  ),
-                  color: Colors.white,
+      backgroundColor: Palette.backgroundColor,
+      body: backGround(
+        Container(
+          width: SizeHelper.width(),
+          height: SizeHelper.height(),
+          child: Center(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Image.asset(
+                  "assets/logo.png",
+                  height: 150,
                 ),
-                height: MediaQuery.of(context).size.height - 200,
-                width: MediaQuery.of(context).size.width,
-              ),
-            ),
-            Positioned(
-              top: 150,
-              left: MediaQuery.of(context).size.width / 4,
-              height: MediaQuery.of(context).size.height,
-              width: MediaQuery.of(context).size.width / 2,
-              child: Padding(
-                padding: EdgeInsets.all(30.0),
-                child: Column(
-                  children: <Widget>[
-                    FadeAnimation(
+                SizedBox(height: 25),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white38,
+                    border: Border.fromBorderSide(
+                      BorderSide(
+                        color: Colors.white,
+                        width: 2.5,
+                      ),
+                    ),
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(18),
+                    ),
+                  ),
+                  padding: EdgeInsets.all(50),
+                  width: SizeHelper.width() * .5,
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      FadeAnimation(
                         1.8,
                         Container(
-                          padding: EdgeInsets.all(5),
+                          padding: EdgeInsets.all(2.5),
                           decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(10),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Color.fromRGBO(143, 148, 251, .2),
-                                  blurRadius: 20.0,
-                                  offset: Offset(0, 10),
-                                )
-                              ]),
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(10),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Color.fromRGBO(143, 148, 251, .2),
+                                blurRadius: 20.0,
+                                offset: Offset(0, 10),
+                              )
+                            ],
+                          ),
                           child: Form(
                             key: this._formKey,
                             child: Column(
                               children: <Widget>[
-                                Container(
-                                  padding: EdgeInsets.all(8.0),
-                                  decoration: BoxDecoration(
-                                    border: Border(
-                                      bottom:
-                                          BorderSide(color: Colors.grey[200]),
-                                    ),
-                                  ),
-                                  child: TextFormField(
-                                    decoration: InputDecoration(
-                                      border: InputBorder.none,
-                                      hintText: 'Login',
-                                      hintStyle:
-                                          TextStyle(color: Colors.grey[900]),
-                                    ),
-                                    validator: (String value) {
-                                      if (value.isEmpty) {
-                                        return 'Le login est obligatoire';
-                                      }
-                                      return null;
-                                    },
-                                    onSaved: (String value) {
-                                      this.user.login = value;
-                                    },
-                                  ),
+                                Input(
+                                  hint: 'Login',
+                                  validator: (String value) {
+                                    if (value.isEmpty) {
+                                      return 'Le login est obligatoire';
+                                    }
+                                    return null;
+                                  },
+                                  saved: (String value) {
+                                    this.user.login = value;
+                                  },
                                 ),
-                                Container(
-                                  padding: EdgeInsets.all(8.0),
-                                  decoration: BoxDecoration(
-                                    border: Border(
-                                      bottom:
-                                          BorderSide(color: Colors.grey[100]),
-                                    ),
-                                  ),
-                                  child: TextFormField(
-                                    obscureText: true,
-                                    decoration: InputDecoration(
-                                      border: InputBorder.none,
-                                      hintText: 'mot de passe',
-                                      hintStyle:
-                                          TextStyle(color: Colors.grey[900]),
-                                    ),
-                                    validator: (String value) {
-                                      if (value.isEmpty) {
-                                        return 'le mot de passe est obligatoire';
-                                      }
-                                      return null;
-                                    },
-                                    onSaved: (String value) {
-                                      this.user.password = value;
-                                    },
-                                  ),
+                                Input(
+                                  hint: 'Mot de passe',
+                                  validator: (String value) {
+                                    if (value.isEmpty) {
+                                      return 'le mot de passe est obligatoire';
+                                    }
+                                    return null;
+                                  },
+                                  saved: (String value) {
+                                    this.user.password = value;
+                                  },
                                 ),
                               ],
                             ),
                           ),
-                        )),
-                    SizedBox(
-                      height: 30,
-                    ),
-                    FadeAnimation(
+                        ),
+                      ),
+                      SizedBox(
+                        height: 30,
+                      ),
+                      FadeAnimation(
                         2,
-                        Container(
-                            height: 50,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10),
-                                gradient: LinearGradient(colors: [
-                                  Palette.lightSecondColor,
-                                  Palette.secondColor,
-                                ])),
-                            child: InkWell(
-                              onTap: () {
-                                if (_formKey.currentState.validate()) {
-                                  this._formKey.currentState.save();
-                                  this.onSubmit(context, this.user);
-                                }
-                              },
-                              child: Center(
-                                  child: Text(
-                                'Se connecter',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 20.0,
-                                ),
-                              )),
-                            ))),
-                    SizedBox(
-                      height: 70,
-                    ),
-                  ],
+                        Btn(
+                          label: 'Se connecter',
+                          callBack: () {
+                            if (_formKey.currentState.validate()) {
+                              this._formKey.currentState.save();
+                              this.onSubmit(context, this.user);
+                            }
+                          },
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
-              ),
+              ],
             ),
-          ],
+          ),
         ),
       ),
     );

@@ -17,6 +17,6 @@ Departement formatDepartement(dynamic jsoncontent) {
 Departement departementFromRow(Row row) {
   return new Departement(
     name: row['localityName'] ?? '',
-    nbCase: row['newCases'] ?? '',
+    nbCase: row['newCases'] ?? 0,
   );
 }

@@ -1,5 +1,4 @@
 import 'Position.dart';
-
 class ArrowParam {
   String date;
   Position start;

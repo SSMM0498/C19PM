@@ -1,1 +1,19 @@
+<<<<<<< HEAD
 [{"localityName": "guediawaye", "administrativeLevel": "dept", "newCases": 1}, {"localityName": "dakar", "administrativeLevel": "dept", "newCases": 1}, {"localityName": "dakar", "administrativeLevel": "region", "newCases": 3}, {"localityName": "ziguinchor", "administrativeLevel": "region", "newCases": 2}, {"localityName": "tambacounda", "administrativeLevel": "region", "newCases": 1}]
+=======
+[
+  { "localityName": "mbacke", "administrativeLevel": "dept", "newCases": 10 },
+  {
+    "localityName": "guediawaye",
+    "administrativeLevel": "dept",
+    "newCases": 5
+  },
+  {
+    "localityName": "diourbel",
+    "administrativeLevel": "region",
+    "newCases": 0
+  },
+  { "localityName": "dakar", "administrativeLevel": "region", "newCases": 0 },
+  { "localityName": "thies", "administrativeLevel": "region", "newCases": 5 }
+]
+>>>>>>> fa4e0adb5269e07712692048f8df09b029426359

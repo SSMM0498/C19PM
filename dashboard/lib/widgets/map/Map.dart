@@ -50,7 +50,7 @@ class _MapWidgetState extends State<MapWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.white,
+      // color: Colors.white38,
       width: double.infinity,
       height: SizeHelper.height() * .75,
       child: StoreConnector<AppState, ViewModel>(
@@ -73,17 +73,26 @@ class _MapWidgetState extends State<MapWidget> {
             ),
             child: Stack(
               children: (!widget.withArrow)
-                  ? model.regions
-                  // ? widget.localities
-                      .map((l) => LocalityInfos(
-                            nbCase: l.newCases,
-                            position: _listMapInfos.firstWhere(
-                              (e) => e.name == l.localityName,
-                              orElse: () => LocalityMapInfos(),
+                  ? (widget.localities.isEmpty)
+                      ? model.regions
+                          .map(
+                            (l) => LocalityInfos(
+                              nbCase: l.newCases,
+                              position: _listMapInfos.firstWhere(
+                                (e) => e.name == l.localityName,
+                              ),
+                              insidePopup: widget.havePopup,
                             ),
-                            insidePopup: widget.havePopup,
-                          ))
-                      .toList()
+                          )
+                          .toList()
+                      : widget.localities
+                          .map((l) => LocalityInfos(
+                                nbCase: l.newCases,
+                                position: _listMapInfos.firstWhere(
+                                    (e) => e.name == l.localityName),
+                                insidePopup: widget.havePopup,
+                              ))
+                          .toList()
                   : _arrowList.map((arrow) => Arrow(arrow: arrow)).toList(),
             ),
           ),

@@ -23,13 +23,12 @@ class _ExpandableListState extends State<ExpandableList> {
     return ListView.builder(
       itemCount: widget.list.length,
       itemBuilder: (context, i) => ExpansionTile(
-        collapsedBackgroundColor: Colors.white,
-        backgroundColor: Palette.primeColor,
+        collapsedBackgroundColor: Colors.white54,
+        backgroundColor: Colors.white54,
         title: Row(
           children: [
             Text(
               getLabelMonth(widget.list[i].sourceFileName),
-              style: TextStyle(decorationColor: Colors.amber),
             ),
           ],
         ),
@@ -56,7 +55,7 @@ class _ExpandableListState extends State<ExpandableList> {
                   flex: 1,
                   child: IconButton(
                     iconSize: 30.0,
-                    color: Palette.lightSecondColor,
+                    color: Palette.lSecondaryColor,
                     hoverColor: Colors.white,
                     tooltip: "Voir données",
                     icon: Icon(Icons.remove_red_eye_sharp),

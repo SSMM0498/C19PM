@@ -7,15 +7,6 @@ import requests
 import platform
 import DataExtractor
 
-# def createDirectory(directoryName):
-#     path = os.getcwd()+"\\assets\\"+directoryName
-#     try:
-#         os.mkdir(path)
-#     except OSError:
-#         print ("Creation of the directory %s failed" % path)
-#     else:
-#         print ("Successfully created the directory %s " % path)
-
 def downloadImage(image):
     path = ""
     if(type(image) is dict):
@@ -23,7 +14,7 @@ def downloadImage(image):
         url = image["url"]
         print("downloading"+filename+" ...")
         if(platform.system() == 'Linux'):
-            path = os.getcwd()+"/assets/"+filename+".jpg"
+            path = "./assets/"+filename+".jpg"
 
         if(platform.system() == 'Windows'):
             path = os.getcwd()+"\\assets\\"+filename+".jpg"
@@ -35,7 +26,7 @@ def downloadImage(image):
                     file.write(response.content)
                     file.close()
             except:
-                print ("Erreu while downloading"+filename)
+                print ("Error while downloading"+filename)
             else:
                 print (filename +" download ✅✅")
         if(type(url) is str):

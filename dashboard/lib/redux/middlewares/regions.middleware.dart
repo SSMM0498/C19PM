@@ -17,10 +17,8 @@ void regionsMiddleware(
     List<Region> regions = [];
     if (results != null) {
       if (results.length > 0) {
-        print(regionNameList);
         for (var regionName in regionNameList) {
           Region region = calculateRegionNbCases(results, regionName);
-          print(region.departements.length);
           regions.add(region);
         }
       } else {

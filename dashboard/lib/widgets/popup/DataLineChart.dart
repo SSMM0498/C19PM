@@ -28,7 +28,7 @@ class DataLineChart extends StatelessWidget {
     return LineChartData(
       lineTouchData: LineTouchData(
         touchTooltipData: LineTouchTooltipData(
-          tooltipBgColor: Palette.primeColor,
+          tooltipBgColor: Palette.backgroundColor,
         ),
         touchCallback: (LineTouchResponse touchResponse) {},
         handleBuiltInTouches: true,
@@ -64,11 +64,11 @@ class DataLineChart extends StatelessWidget {
         show: true,
         border: const Border(
           bottom: BorderSide(
-            color: Palette.lightSecondColor,
+            color: Palette.lSecondaryColor,
             width: 2,
           ),
           left: BorderSide(
-            color: Palette.lightSecondColor,
+            color: Palette.lSecondaryColor,
             width: 2,
           ),
           right: BorderSide(
@@ -92,7 +92,7 @@ class DataLineChart extends StatelessWidget {
       spots: DataGetter.createGraphPoint(localityname),
       isCurved: true,
       colors: [
-        Palette.secondColor,
+        Palette.primaryColor,
       ],
       barWidth: 5,
       isStrokeCapRound: true,

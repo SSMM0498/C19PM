@@ -44,9 +44,8 @@ Future<List<ArrowParam>> createArrowList(
       end: listMapInfos
           .firstWhere((e) => e.name == r.fields["Contaminated"])
           .getPosition(),
-      date: r.fields["contaminationDate"].toString(),
+      date: r.fields["contaminationDate"].toString().split(' ').first,
     );
-    print(a.toString());
     al.add(a);
   }
 

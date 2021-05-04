@@ -29,8 +29,18 @@ class _WrapperState extends State<Wrapper> {
   Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(
+        border: Border.fromBorderSide(
+          BorderSide(
+            color: Colors.white,
+            width: 2.5,
+          ),
+        ),
         borderRadius: BorderRadius.all(Radius.circular(18)),
-        color: Colors.white,
+        color: Colors.white38,
+        // gradient: LinearGradient(colors: [
+        //   Palette.primeColor,
+        //   Palette.secondColor,
+        // ]),
       ),
       child: Stack(
         children: <Widget>[

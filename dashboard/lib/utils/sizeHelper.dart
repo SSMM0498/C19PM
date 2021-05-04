@@ -7,7 +7,7 @@ class SizeHelper {
   }
 
   static double margin() {
-    return SizeHelper.width() * 0.01;
+    return SizeHelper.width() * 0.005;
   }
 
   static double width() {

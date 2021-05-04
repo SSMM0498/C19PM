@@ -142,15 +142,18 @@ def getDeces(text):
 
 def getCityCases(text):
     cas = []
-    if(text.find('(') == -1 or text.find(')') == -1):
-        beginIndex = text.find('-')
-        endToStart = text.find('patients')-8
-        tmp = text[beginIndex:endToStart]
+    endToStart = text.find('patients')-7
+    tmp = text[0:endToStart]
+    if((tmp.find('(') == -1 or tmp.find(')') == -1)):
+        beginIndex = tmp.find('-')
         tmp = tmp.replace('.',';')
         tmp = tmp.replace('et',',')
-        tmp = tmp.replace('\n','')
+        tmp = tmp.replace('\n', '')
+        tmp = tmp.replace("é","e")
+        tmp = tmp.replace("è","e")
+        tmp = tmp.replace("ï","i")
         try:
-            beginIndex = tmp.index('régions')
+            beginIndex = tmp.index('regions')
             endIndex = tmp.index(':')
             tmp = tmp[0:beginIndex] + tmp[endIndex+1:]
         except:
@@ -187,24 +190,28 @@ def getCityCases(text):
                         obj['lieu'] = loc
                         obj['nbCas'] = int(nbCasList)
                         cas.append(obj) 
-    else:    
+    else:
         beginIndex = 0
-        endIndex = text.index(".")
-        endToStart = text.find('patients')-8
-        tmp = text[beginIndex:endIndex]
+        try:  
+            endIndex = tmp.index(".")
+        except:
+            endIndex = -1            
+        tmp = tmp[beginIndex:endIndex]
         tmp = tmp.replace("(","")
         tmp = tmp.replace(")","")
         tmp = tmp.replace("\n"," ")
         tmp = tmp.replace("et",",")
         tmp = tmp.split(',')
+        print(tmp)
         for words in tmp:
             words = words.split()
+            # print(words)
+            i = 0
             obj = {
-                'found': False,
+                'found':False,
                 'lieu': '',
                 'nbCas': 0
             }
-            i = 0
             while(i < len(words)-1):
                 obj['lieu'] += words[i]
                 i += 1
@@ -214,7 +221,9 @@ def getCityCases(text):
             else:
                 continue
             cas.append(obj)
-            
+        # print(cas)
+
+        
     return {"cas": cas, 'endIndex': endToStart}
     
 
@@ -343,7 +352,6 @@ def exportIntoJson(cas):
                     for left in export["depts"]:
                         if (dept["dept"] == left["dept"]):
                             departement["newCases"] += left["Cas"]
-                    print(departement)
                     finished_departements.append(departement)
                     All_Data.append(departement)
                 else:
@@ -403,7 +411,7 @@ def exportToFile(date, month, year, nbTest, nbPositif, casCon, casCom,gueris,dec
         with open(filepath, "w") as export_file:
             json.dump(feeds, export_file, ensure_ascii=False)
 
-
+ 
 def extract(images):
     # images = ["./env/image7_1.jpeg","./env/image8_1.jpeg"]
 
@@ -441,26 +449,41 @@ def extract(images):
 
     # Truncate text to listing of cases per city
     try:
-        text = text[text.index("comme suit")+12:]
+        text = text[text.index("comme suit") + 12 :]
+        # get array of location and there number of cases
+        cas = getCityCases(text)
+        text = text[cas["endIndex"] :-1]
+
+        # get healed 
+        nombreDeGueris = int(getNbGueris(text))
+
+        # get dead
+        nombreDeDeces = int(getDeces(text))
+
+        # get overall data since the begining
+        # (getOverall(text))
+
+        cases = exportIntoJson(cas["cas"])
+        exportToFile(jour,mois,an,nombreDeTest,nombreDePositif,nombreCasContact,nombreCasCommunautaire,nombreDeGueris,nombreDeDeces,cases)
     except:
         try:
-            text = text[text.index(":")+1:-1]
+            text = text[text.index(":") + 1 :-1]
+            # get array of location and there number of cases
+            cas = getCityCases(text)
+            text = text[cas["endIndex"] :-1]
+
+            # get healed 
+            nombreDeGueris = int(getNbGueris(text))
+
+            # get dead
+            nombreDeDeces = int(getDeces(text))
+
+            # get overall data since the begining
+            # (getOverall(text))
+
+            cases = exportIntoJson(cas["cas"])
+            exportToFile(jour,mois,an,nombreDeTest,nombreDePositif,nombreCasContact,nombreCasCommunautaire,nombreDeGueris,nombreDeDeces,cases)
         except:
             print('Unable to Gather More Information!')
 
-    # get array of location and there number of cases
-    cas = getCityCases(text)
-    text = text[cas["endIndex"] :-1]
-
-    # get healed
-    nombreDeGueris = int(getNbGueris(text))
-
-    # get dead
-    nombreDeDeces = int(getDeces(text))
-
-    # get overall data since the begining
-    # (getOverall(text))
-
-    cases = exportIntoJson(cas["cas"])
-
-    exportToFile(jour,mois,an,nombreDeTest,nombreDePositif,nombreCasContact,nombreCasCommunautaire,nombreDeGueris,nombreDeDeces,cases)
+   

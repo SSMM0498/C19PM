@@ -21,7 +21,7 @@ class ArrowPainter extends CustomPainter {
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round
-      ..strokeWidth = 3.0;
+      ..strokeWidth = 2.5;
 
     /// Draw a single arrow.
     path = Path();

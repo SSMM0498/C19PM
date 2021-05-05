@@ -39,6 +39,7 @@ def switch(argument):
 def getDate(text):
     days = ["lundi","mardi","mercredi","jeudi","vendredi","samedi","dimanche"]
     tmp = text[0:200]
+    tmp = tmp.replace("*","")
     for day in days:
         if(tmp.find(day) != -1):
             tmp = tmp[tmp.find(day):-1]

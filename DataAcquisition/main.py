@@ -6,7 +6,8 @@ import DataExtractor
 # images = ["./env/image3_1.jpeg","./env/image4_1.jpeg"]
 # images = ["./env/1.jpeg","./env/2.jpeg"]
 # images = ["./env/3.jpeg"]
-images = ["./assets/2020-03-17.jpg"]
+# images = ["./assets/2021-05-1.jpg"]
 # images = ["./assets/2021-04-17.jpg","./assets/2021-04-17(suite 01).jpg"]
+images = ["./assets/2021-05-01.jpg","./assets/2021-05-01(suite 01).jpg"]
 
 DataExtractor.extract(images)

@@ -1,15 +1,1 @@
-[
-  { "localityName": "mbacke", "administrativeLevel": "dept", "newCases": 10 },
-  {
-    "localityName": "guediawaye",
-    "administrativeLevel": "dept",
-    "newCases": 5
-  },
-  {
-    "localityName": "diourbel",
-    "administrativeLevel": "region",
-    "newCases": 0
-  },
-  { "localityName": "dakar", "administrativeLevel": "region", "newCases": 0 },
-  { "localityName": "thies", "administrativeLevel": "region", "newCases": 5 }
-]
+[{"localityName": "dakar", "administrativeLevel": "dept", "newCases": 12}, {"localityName": "salemata", "administrativeLevel": "dept", "newCases": 1}, {"localityName": "dakar", "administrativeLevel": "region", "newCases": 12}, {"localityName": "kaolack", "administrativeLevel": "region", "newCases": 1}, {"localityName": "kedougou", "administrativeLevel": "region", "newCases": 1}]

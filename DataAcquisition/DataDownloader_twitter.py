@@ -7,62 +7,48 @@ import requests
 import platform
 import DataExtractor
 
-# def createDirectory(directoryName):
-#     path = os.getcwd()+"\\assets\\"+directoryName
-#     try:
-#         os.mkdir(path)
-#     except OSError:
-#         print ("Creation of the directory %s failed" % path)
-#     else:
-#         print ("Successfully created the directory %s " % path)
-
 def downloadImage(image):
     path = ""
     if(type(image) is dict):
         filename = image["filename"]
         url = image["url"]
+        print("downloading"+filename+" ...")
         if(platform.system() == 'Linux'):
             path = "./assets/"+filename+".jpg"
 
         if(platform.system() == 'Windows'):
-            path = ".\\assets\\"+filename+".jpg"
-        print(path)
-        if(len(url) == 1):
+            path = os.getcwd()+"\\assets\\"+filename+".jpg"
+        if(type(url) is list):
             try:
-                print("downloading"+filename+" ...")
-                url = url[0]
-                response = requests.get(url)
-                file = open(path, "wb")
-                file.write(response.content)
-                file.close()
+                for link in url:
+                    response = requests.get(link)
+                    file = open(path, "wb")
+                    file.write(response.content)
+                    file.close()
             except:
                 print ("Error while downloading"+filename)
             else:
                 print (filename +" download ✅✅")
-        else:
-            print('no url')
-        
+        if(type(url) is str):
+            response = requests.get(url)
+            file = open(path, "wb")
+            file.write(response.content)
+            file.close()
     return path
 
 def downloadPhotos(images):
     pathList = []
     if(type(images) is dict):
         pathList.append(downloadImage(images))
-    else:
-    # if(type(image) is list):
+    if(type(images) is list):
         for image in images:
             pathList.append(downloadImage(image))
 
-    print(pathList)
+    with open('pathList.json', 'w') as outfile:
+        json.dump(pathList, outfile)
     #extract data
-    DataExtractor.extract(pathList)
+    # DataExtractor.extract(pathList)
 
-# def flatten_list(list):
-#     flatten_list = []
-#     for sublist in list:
-#         for item in sublist:
-#             flatten_list.append(item)
-#     return flatten_list
 
 def isvalidDate(date_string):
     isvalid = False
@@ -114,11 +100,6 @@ def loadResutl():
         images = formatFileNames(payload)
         for image in images:
             downloadPhotos(image)
-            # if(type(image) is dict):
-            #     downloadPhotos(image)
-            # if(type(image) is list):
-            #     for i in image:
-            #         downloadPhotos(i)
 
 # def loadCvResult():
 #     with open('data.csv', newline='') as csvfile:
@@ -155,8 +136,6 @@ def formatFileNames(payload):
             images.append(filenames)
         else:
             url = tweet["photos"]
-            # if isinstance(url, list):
-            #     url = flatten_list(url)
             image = {
                 "filename": tweet["date"],
                 "url":  url
@@ -179,3 +158,5 @@ def Main():
         loadResutl()
 
 Main()
+# pathList = ["C:\\Users\\SWIFT 5\\Desktop\\DIC2\\SGBD\\C19PM\\DataAcquisition\\assets\\2020-09-22.jpg"]
+# DataExtractor.extract(pathList)

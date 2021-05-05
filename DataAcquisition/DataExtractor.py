@@ -8,7 +8,8 @@ from pytesseract import pytesseract
 from fuzzywuzzy import fuzz
 
 def getText(image):    
-    path_to_tesseract = r"/opt/homebrew/Cellar/tesseract/4.1.1/bin/tesseract"
+    # path_to_tesseract = r"/opt/homebrew/Cellar/tesseract/4.1.1/bin/tesseract"
+    path_to_tesseract = "C:\\Program Files (x86)\\Tesseract-OCR\\tesseract.exe"
     # path_to_tesseract = <-- pathToTesseract here
     image_path = image
     img = Image.open(image_path)

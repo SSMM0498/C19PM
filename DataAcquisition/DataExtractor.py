@@ -452,40 +452,26 @@ def extract(images):
     # Truncate text to listing of cases per city
     try:
         text = text[text.index("comme suit") + 12 :]
-        # get array of location and there number of cases
-        cas = getCityCases(text)
-        text = text[cas["endIndex"] :-1]
-
-        # get healed 
-        nombreDeGueris = int(getNbGueris(text))
-
-        # get dead
-        nombreDeDeces = int(getDeces(text))
-
-        # get overall data since the begining
-        # (getOverall(text))
-
-        cases = exportIntoJson(cas["cas"])
-        exportToFile(jour,mois,an,nombreDeTest,nombreDePositif,nombreCasContact,nombreCasCommunautaire,nombreDeGueris,nombreDeDeces,cases)
+        
     except:
         try:
             text = text[text.index(":") + 1 :-1]
-            # get array of location and there number of cases
-            cas = getCityCases(text)
-            text = text[cas["endIndex"] :-1]
-
-            # get healed 
-            nombreDeGueris = int(getNbGueris(text))
-
-            # get dead
-            nombreDeDeces = int(getDeces(text))
-
-            # get overall data since the begining
-            # (getOverall(text))
-
-            cases = exportIntoJson(cas["cas"])
-            exportToFile(jour,mois,an,nombreDeTest,nombreDePositif,nombreCasContact,nombreCasCommunautaire,nombreDeGueris,nombreDeDeces,cases)
         except:
-            print('Unable to Gather More Information!')
+            text = text
+            # print('Unable to Gather More Information!')
 
-   
+   # get array of location and there number of cases
+    cas = getCityCases(text)
+    text = text[cas["endIndex"] :-1]
+
+    # get healed 
+    nombreDeGueris = int(getNbGueris(text))
+
+    # get dead
+    nombreDeDeces = int(getDeces(text))
+
+    # get overall data since the begining
+    # (getOverall(text))
+
+    cases = exportIntoJson(cas["cas"])
+    exportToFile(jour,mois,an,nombreDeTest,nombreDePositif,nombreCasContact,nombreCasCommunautaire,nombreDeGueris,nombreDeDeces,cases)

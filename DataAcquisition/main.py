@@ -1,13 +1,24 @@
-from PIL import Image
+import os
 import DataExtractor
-#  export TESSDATA_PREFIX=/Users/bemax/Documents/DIC2/SEM1/Sgbd/tessdata
-# images = DataExtractor.pdfToImage('fic7.pdf') <-- works if you have fitz
-# images = ["./env/image1_1.png","./env/image2_1.png"]
-# images = ["./env/image3_1.jpeg","./env/image4_1.jpeg"]
-# images = ["./env/1.jpeg","./env/2.jpeg"]
-# images = ["./env/3.jpeg"]
-# images = ["./assets/2021-05-1.jpg"]
-# images = ["./assets/2021-04-17.jpg","./assets/2021-04-17(suite 01).jpg"]
-images = ["./assets/2021-05-01.jpg","./assets/2021-05-01(suite 01).jpg"]
 
-DataExtractor.extract(images)
+def search_next(filename):
+    filename = filename.replace(".jpg", "")
+    filename += "(suite 01).jpg"
+    for file in os.listdir("./assets"):
+        if (file == filename):
+            return filename
+    return "null"
+
+
+images = []
+for filename in sorted(os.listdir("./assets"),reverse=True):
+    if ("(suite 01)" in filename):
+        continue
+    else:
+        images.append("./assets/"+filename)
+        restfilename = search_next(filename)
+        if(restfilename != "null"):
+            images.append("./assets/" + restfilename)
+        print("Extracting " + filename + "...")
+        DataExtractor.extract(images)
+        images = []

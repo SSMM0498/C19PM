@@ -8,8 +8,8 @@ from pytesseract import pytesseract
 from fuzzywuzzy import fuzz
 
 def getText(image):    
-    # path_to_tesseract = r"/opt/homebrew/Cellar/tesseract/4.1.1/bin/tesseract"
-    path_to_tesseract = "C:\\Program Files (x86)\\Tesseract-OCR\\tesseract.exe"
+    path_to_tesseract = r"/opt/homebrew/Cellar/tesseract/4.1.1/bin/tesseract"
+    # path_to_tesseract = "C:\\Program Files (x86)\\Tesseract-OCR\\tesseract.exe"
     # path_to_tesseract = <-- pathToTesseract here
     image_path = image
     img = Image.open(image_path)
@@ -41,13 +41,16 @@ def getDate(text):
     days = ["lundi","mardi","mercredi","jeudi","vendredi","samedi","dimanche"]
     tmp = text[0:200]
     tmp = tmp.replace("*","")
+    tmp = tmp.replace("-"," ")
     tmp = tmp.replace("\"","")
     for day in days:
         if(tmp.find(day) != -1):
             tmp = tmp[tmp.find(day):-1]
             tmp = tmp.split(',')
             tmp = tmp[0]
-            tmp = tmp.split()            
+            tmp = tmp.split()
+            if (not tmp[1].isdigit()):
+                tmp[1] = tmp[1].replace("o","")
             obj = {
                 'day' : tmp[0],
                 'dayNumber' : tmp[1],
@@ -372,9 +375,9 @@ def exportIntoJson(cas):
                         "administrativeLevel": "region",
                         "newCases": reg["TotalCas"]
                     }
-                    for dept in finished_departements:
-                        if (compare(region["localityName"].lower(),dept["localityName"].lower())):
-                            region["newCases"] += dept["newCases"]
+                    for dept in export["depts"]:
+                        if (compare(region["localityName"].lower(),dept["region"].lower())):
+                            region["newCases"] += dept["Cas"]
                         else:
                             continue
                     finished_regions.append(region)
@@ -425,30 +428,39 @@ def extract(images):
     text = text.lower()
 
     # Get date
-    o = getDate(text)
-
-    jour = int(o["dayNumber"])
-    mois = o["month"]
-    an = o["year"]
-
+    try:
+        o = getDate(text)
+        jour = int(o["dayNumber"])
+        mois = o["month"]
+        an = o["year"]
+    except:
+        return
     # get total of tests
-    o = getTests(text)
-    text = text[o["endIndex"]:-1]
-    numbers = o['numbers']
-    nombreDeTest = numbers['tests']
-    nombreDePositif = numbers['positifs']
-    tauxPositivite = numbers['taux']
-
+    try:
+        o = getTests(text)
+        text = text[o["endIndex"]:-1]
+        numbers = o['numbers']
+        nombreDeTest = numbers['tests']
+        nombreDePositif = numbers['positifs']
+        tauxPositivite = numbers['taux']
+    except:
+        return
     # get number of contact cases
-    o = getCasContact(text)
-    text = text[o["endIndex"] :-1]
-    nombreCasContact = o['number']
+
+    try:
+        o = getCasContact(text)
+        text = text[o["endIndex"] :-1]
+        nombreCasContact = o['number']
+    except:
+        return
 
     # get number of communautary cases
-    o = getCasCom(text)
-    text = text[o["endIndex"] :-1]
-    nombreCasCommunautaire = o['number']
-
+    try:
+        o = getCasCom(text)
+        text = text[o["endIndex"] :-1]
+        nombreCasCommunautaire = o['number']
+    except:
+        return
     # Truncate text to listing of cases per city
     try:
         text = text[text.index("comme suit") + 12 :]
@@ -461,17 +473,29 @@ def extract(images):
             # print('Unable to Gather More Information!')
 
    # get array of location and there number of cases
-    cas = getCityCases(text)
-    text = text[cas["endIndex"] :-1]
-
-    # get healed 
-    nombreDeGueris = int(getNbGueris(text))
-
+    try:
+        cas = getCityCases(text)
+        text = text[cas["endIndex"] :-1]
+    except:
+        return
+    # get healed
+    try: 
+        nombreDeGueris = int(getNbGueris(text))
+    except:
+        nombreDeGueris = 0
+        print("Unable to gather More Information")
     # get dead
-    nombreDeDeces = int(getDeces(text))
+
+    try:
+        nombreDeDeces = int(getDeces(text))
+    except:
+        nombreDeDeces = 0
+        print("Unable to gather More Information")
 
     # get overall data since the begining
     # (getOverall(text))
-
-    cases = exportIntoJson(cas["cas"])
+    try:
+        cases = exportIntoJson(cas["cas"])
+    except:
+        return
     exportToFile(jour,mois,an,nombreDeTest,nombreDePositif,nombreCasContact,nombreCasCommunautaire,nombreDeGueris,nombreDeDeces,cases)

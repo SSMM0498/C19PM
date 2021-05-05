@@ -12,3 +12,11 @@ Le système à développer devra être composé de 4 modules utilisables séquen
 +   Module DataLoader
 +   Module DataExplorer
 +   Module EvolutionAnalyzer.
+
+## MEMBRES
++   Mame Néné Ba
++   Ngoumba Diop
++   Mouhamadou Moustapha Gaye
++   Serigne Saliou Mbacké Mbaye
++   Massamba Niang
++   Adama Rama Wade

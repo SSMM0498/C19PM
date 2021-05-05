@@ -20,3 +20,6 @@ Le système à développer devra être composé de 4 modules utilisables séquen
 +   Serigne Saliou Mbacké Mbaye
 +   Massamba Niang
 +   Adama Rama Wade
+
+## TRELLO
+https://trello.com/b/Hqj0yJ3E/c19pm

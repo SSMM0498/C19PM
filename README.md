@@ -16,9 +16,9 @@ Le système à développer devra être composé de 4 modules utilisables séquen
 ## MEMBRES
 +   Mame Néné Ba
 +   Ngoumba Diop
-+   Mouhamadou Moustapha Gaye
-+   Serigne Saliou Mbacké Mbaye
-+   Massamba Niang
++   Mouhamadou Moustapha Gaye     warnerb47
++   Serigne Saliou Mbacké Mbaye   SSMM0498
++   Massamba Niang                Bemax3
 +   Adama Rama Wade
 
 ## TRELLO
